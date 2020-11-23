@@ -1,0 +1,21 @@
+* UI Stuffs
+#+BEGIN_SRC emacs-lisp
+  ;; Directory tree
+  (use-package neotree
+  :config
+  (global-set-key [f8] 'neotree-toggle)
+  )
+  ;;Auto resize windows
+  (use-package zoom
+  :config
+  )
+  ;; Dashboard
+  (use-package dashboard
+  :config
+  (dashboard-setup-startup-hook)
+  )
+ 
+
+#+END_SRC 
+
+

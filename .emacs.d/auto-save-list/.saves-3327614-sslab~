@@ -1,0 +1,10 @@
+/home/khadinh/projects/pim-sgx/test_program/main_host.c
+/home/khadinh/projects/pim-sgx/test_program/#main_host.c#
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/src/dpu_loader.c
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/src/#dpu_loader.c#
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/src/api/dpu_loader.c
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/src/api/#dpu_loader.c#
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/include/lowlevel/dpu_program.h
+/home/khadinh/projects/pim-sgx/upmem/src/backends/api/include/lowlevel/#dpu_program.h#
+/home/khadinh/projects/pim-sgx/upmem/modules/dpu_runner.c
+/home/khadinh/projects/pim-sgx/upmem/modules/#dpu_runner.c#

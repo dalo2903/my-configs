@@ -1,0 +1,277 @@
+;; Object semanticdb-project-database-file-157a416b4284
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157a416b4284"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157a416b4264"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_ELF_INTERNALS_H" variable (:constant-flag t) nil [192 211])
+            ("libelf.h" include (:system-flag t) nil [213 232])
+            ("dpu_elf.h" include (:system-flag t) nil [233 253])
+            ("_elf_fd" type
+               (:members 
+                  ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [284 291])
+                    ("elf" variable
+                       (:pointer 1
+                        :type ("Elf" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [296 305])
+                    ("ek" variable (:type ("Elf_Kind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [310 322])
+                    ("shnum" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [327 340])
+                    ("shstrndx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [345 361])
+                    ("phnum" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [366 379])
+                    ("symtab_index" variable (:type "unsigned int") (reparse-symbol classsubparts) [384 410])
+                    ("strtab_index" variable (:type "unsigned int") (reparse-symbol classsubparts) [415 441])
+                    ("symbol_maps" variable
+                       (:pointer 1
+                        :type ("dpu_elf_symbols_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 619])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [624 639]))                  
+                :type "struct")
+                nil [255 651])
+            ("elf_fd" type
+               (:typedef ("_elf_fd" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [255 651]))          
+      :file "dpu_elf_internals.h"
+      :pointmax 683
+      :fsize 682
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_ELF_INTERNALS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-157a416b429a"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_INTERNALS_H" variable (:constant-flag t) nil [188 203])
+            ("stdbool.h" include (:system-flag t) nil [205 225])
+            ("stdint.h" include (:system-flag t) nil [226 245])
+            ("dpu_error.h" include (:system-flag t) nil [247 269])
+            ("dpu_types.h" include (:system-flag t) nil [270 292])
+            ("dpu_debug.h" include (:system-flag t) nil [293 315])
+            ("dpu_config.h" include (:system-flag t) nil [316 339])
+            ("dpu_rank.h" include (:system-flag t) nil [341 362])
+            ("DPU_GET_UNSAFE" variable (:constant-flag t) nil [372 386])
+            ("DPU_INDEX" variable (:constant-flag t) nil [452 461])
+            ("FF" variable (:constant-flag t) nil [571 573])
+            ("verify_thread_id" variable (:constant-flag t) nil [1243 1259])
+            ("verify_notify_id" variable (:constant-flag t) nil [2046 2062])
+            ("verify_wram_access" variable (:constant-flag t) nil [2849 2867])
+            ("verify_iram_access" variable (:constant-flag t) nil [4962 4980])
+            ("verify_iram_access" variable (:constant-flag t) nil [4962 4980])
+            ("verify_mram_access_offset_and_size" variable (:constant-flag t) nil [7075 7109])
+            ("drain_pipeline" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9207 9225])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("dpu_context_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9226 9256])
+                    ("should_add_to_schedule" variable (:type "bool") (reparse-symbol arg-sub-list) [9257 9285]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [9180 9286])
+            ("set_pc_in_core_dump_or_restore_registers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("thread" variable (:type ("dpu_thread_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9334 9354])
+                    ("pc" variable (:type ("iram_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9359 9374])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpuinstruction_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9379 9405])
+                    ("program_size" variable (:type ("iram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9410 9435])
+                    ("nr_of_threads" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9440 9462]))                  
+                :type "void")
+                nil [9288 9463])
+            ("from_division_factor_to_dpu_enum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("factor" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9519 9534]))                  
+                :type ("dpu_clock_division_t" type (:type "class") nil nil))
+                nil [9465 9535])
+            ("map_rank_status_to_api_status" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_status" variable (:type ("dpu_rank_status_e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9579 9609]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [9537 9610])
+            ("dpu_thread_boot_safe_for_dpu" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9653 9671])
+                    ("ci_mask" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9672 9688])
+                    ("thread" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9689 9704])
+                    ("previous" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9705 9723])
+                    ("resume" variable (:type "bool") (reparse-symbol arg-sub-list) [9724 9736]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [9612 9737])
+            ("dpu_thread_boot_safe_for_rank" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9780 9804])
+                    ("ci_mask" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9805 9821])
+                    ("thread" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9822 9837])
+                    ("previous" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9838 9856])
+                    ("resume" variable (:type "bool") (reparse-symbol arg-sub-list) [9857 9869]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [9738 9870])
+            ("dpu_get_host_mux_mram_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9908 9932])
+                    ("slice_id" variable (:type ("dpu_slice_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9933 9957])
+                    ("dpu_id" variable (:type ("dpu_member_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9958 9981]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9872 9982])
+            ("dpu_set_host_mux_mram_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10016 10040])
+                    ("slice_id" variable (:type ("dpu_slice_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10041 10065])
+                    ("dpu_id" variable (:type ("dpu_member_id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10066 10089])
+                    ("set" variable (:type "bool") (reparse-symbol arg-sub-list) [10090 10099]))                  
+                :type "void")
+                nil [9983 10100])
+            ("dpu_disable_one_dpu" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10134 10152]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [10102 10153]))          
+      :file "dpu_internals.h"
+      :pointmax 10184
+      :fsize 10183
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("verify_notify_id" (spp-arg-list ("t" "r") 2062 . 2068) . 
+              ((DO "do" 2173 . 2175) (semantic-list "{                                                                                                                         \\
+        if ((t) >= (r)->description->hw.dpu.nr_of_notify_bits) {                                                                 \\
+            LOG_RANK(WARNING, r, \"ERROR: invalid notify id (%d >= %d)\", t, (r)->description->hw.dpu.nr_of_notify_bits);          \\
+            return DPU_ERR_INVALID_NOTIFY_ID;                                                                                    \\
+        }                                                                                                                        \\
+    }" 2176 . 2829) (WHILE "while" 2830 . 2835) (semantic-list "(0)" 2836 . 2839)))
+          ("verify_mram_access_offset_and_size" (spp-arg-list ("o" "s" "r") 7109 . 7118) . 
+              ((DO "do" 7202 . 7204) (semantic-list "{                                                                                                                         \\
+        if (((s) % 8 != 0) || ((o) % 8 != 0)) {                                                                                  \\
+            LOG_RANK(WARNING, (r), \"ERROR: invalid mram acess (size and offset need to be 8-byte aligned): (%d, %d)\", (o), (s)); \\
+            return DPU_ERR_INVALID_MRAM_ACCESS;                                                                                  \\
+        }                                                                                                                        \\
+        if (((o) >= (r)->description->hw.memories.mram_size) || (((o) + (s)) > (r)->description->hw.memories.mram_size)) {       \\
+            LOG_RANK(WARNING,                                                                                                    \\
+                r,                                                                                                               \\
+                \"ERROR: invalid mram access ((%d >= %d) || (%d > %d))\",                                                          \\
+                o,                                                                                                               \\
+                (r)->description->hw.memories.mram_size,                                                                         \\
+                (o) + (s),                                                                                                       \\
+                (r)->description->hw.memories.mram_size);                                                                        \\
+            return DPU_ERR_INVALID_MRAM_ACCESS;                                                                                  \\
+        }                                                                                                                        \\
+    }" 7205 . 9168) (WHILE "while" 9169 . 9174) (semantic-list "(0)" 9175 . 9178)))
+          ("DPU_GET_UNSAFE" (spp-arg-list ("rank" "ci" "dpu") 386 . 401) . ((semantic-list "((rank)->dpus + DPU_INDEX(rank, ci, dpu))" 402 . 443)))
+          ("DPU_INDEX" (spp-arg-list ("rank" "ci" "dpu") 461 . 476) . ((semantic-list "(((rank)->description->hw.topology.nr_of_dpus_per_control_interface * (ci)) + (dpu))" 477 . 561)))
+          ("FF" (spp-arg-list ("s") 573 . 576) . 
+              ((DO "do" 698 . 700) (semantic-list "{                                                                                                                         \\
+        if ((status = (s)) != DPU_OK) {                                                                                          \\
+            goto end;                                                                                                            \\
+        }                                                                                                                        \\
+    }" 701 . 1223) (WHILE "while" 1224 . 1229) (semantic-list "(0)" 1230 . 1233)))
+          ("verify_iram_access" (spp-arg-list ("o" "s" "r") 4980 . 4989) . 
+              ((DO "do" 5089 . 5091) (semantic-list "{                                                                                                                         \\
+        if (!(s)) {                                                                                                              \\
+            LOG_RANK(WARNING, r, \"WARNING: iram access of size 0 at offset %d\", o);                                              \\
+            return DPU_OK;                                                                                                       \\
+        }                                                                                                                        \\
+        if (((o) >= (r)->description->hw.memories.iram_size) || (((o) + (s)) > (r)->description->hw.memories.iram_size)) {       \\
+            LOG_RANK(WARNING,                                                                                                    \\
+                r,                                                                                                               \\
+                \"ERROR: invalid iram access ((%d >= %d) || (%d > %d))\",                                                          \\
+                o,                                                                                                               \\
+                (r)->description->hw.memories.iram_size,                                                                         \\
+                (o) + (s),                                                                                                       \\
+                (r)->description->hw.memories.iram_size);                                                                        \\
+            return DPU_ERR_INVALID_IRAM_ACCESS;                                                                                  \\
+        }                                                                                                                        \\
+    }" 5092 . 7055) (WHILE "while" 7056 . 7061) (semantic-list "(0)" 7062 . 7065)))
+          ("verify_wram_access" (spp-arg-list ("o" "s" "r") 2867 . 2876) . 
+              ((DO "do" 2976 . 2978) (semantic-list "{                                                                                                                         \\
+        if (!(s)) {                                                                                                              \\
+            LOG_RANK(WARNING, r, \"WARNING: wram access of size 0 at offset %d\", o);                                              \\
+            return DPU_OK;                                                                                                       \\
+        }                                                                                                                        \\
+        if (((o) >= (r)->description->hw.memories.wram_size) || (((o) + (s)) > (r)->description->hw.memories.wram_size)) {       \\
+            LOG_RANK(WARNING,                                                                                                    \\
+                r,                                                                                                               \\
+                \"ERROR: invalid wram access ((%d >= %d) || (%d > %d))\",                                                          \\
+                o,                                                                                                               \\
+                (r)->description->hw.memories.wram_size,                                                                         \\
+                (o) + (s),                                                                                                       \\
+                (r)->description->hw.memories.wram_size);                                                                        \\
+            return DPU_ERR_INVALID_WRAM_ACCESS;                                                                                  \\
+        }                                                                                                                        \\
+    }" 2979 . 4942) (WHILE "while" 4943 . 4948) (semantic-list "(0)" 4949 . 4952)))
+          ("DPU_INTERNALS_H")
+          ("verify_thread_id" (spp-arg-list ("t" "r") 1259 . 1265) . 
+              ((DO "do" 1370 . 1372) (semantic-list "{                                                                                                                         \\
+        if ((t) >= (r)->description->hw.dpu.nr_of_threads) {                                                                     \\
+            LOG_RANK(WARNING, r, \"ERROR: invalid thread id (%d >= %d)\", t, (r)->description->hw.dpu.nr_of_threads);              \\
+            return DPU_ERR_INVALID_THREAD_ID;                                                                                    \\
+        }                                                                                                                        \\
+    }" 1373 . 2026) (WHILE "while" 2027 . 2032) (semantic-list "(0)" 2033 . 2036)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!backends!api!src!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

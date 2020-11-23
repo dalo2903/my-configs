@@ -1,0 +1,204 @@
+;; Object semanticdb-project-database-file-157236ef9c3a
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157236ef9c3a"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157236ccce14"
+      :major-mode c++-mode
+      :tags 
+        '( ("SystemZHazardRecognizer.h" include nil nil [1285 1321])
+            ("llvm/ADT/Statistic.h" include nil nil [1322 1353])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1355 1376])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [1386 1396])
+            ("ProcResCostLim" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1628 1639])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1675 1791])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1828 1839]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1573 1841])
+            ("getNumDecoderSlots" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1897 1907]))                  
+                :type "unsigned int")
+                nil [1843 2459])
+            ("getCurrCycleIdx" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2511 2521]))                  
+                :type "unsigned int")
+                nil [2461 2764])
+            ("getHazardType" function
+               (:parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2843 2852])
+                    ("Stalls" variable (:type "int") (reparse-symbol arg-sub-list) [2853 2864]))                  
+                :type ("ScheduleHazardRecognizer::HazardType" type (:type "class") nil nil))
+                nil [2766 2924])
+            ("Reset" function
+               (:parent "SystemZHazardRecognizer"
+                :type "void")
+                nil [2926 3153])
+            ("fitsIntoCurrentGroup" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3206 3216]))                  
+                :type "bool")
+                nil [3155 4057])
+            ("has4RegOps" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4100 4123]))                  
+                :type "bool")
+                nil [4059 4652])
+            ("nextGroup" function
+               (:parent "SystemZHazardRecognizer"
+                :type "void")
+                nil [4654 5669])
+            ("dumpSU" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5739 5749])
+                    ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5750 5766]))                  
+                :type "void")
+                nil [5702 6884])
+            ("dumpCurrGroup" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("Msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6930 6946]))                  
+                :type "void")
+                nil [6886 7286])
+            ("dumpProcResourceCounters" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :type "void")
+                nil [7288 7992])
+            ("dumpState" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :type "void")
+                nil [7994 8310])
+            ("clearProcResCounters" function
+               (:parent "SystemZHazardRecognizer"
+                :type "void")
+                nil [8329 8492])
+            ("isBranchRetTrap" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8529 8546]))                  
+                :type "bool")
+                nil [8494 8645])
+            ("EmitInstruction" function
+               (:parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8746 8756]))                  
+                :type "void")
+                nil [8699 11274])
+            ("groupingCost" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11318 11328]))                  
+                :type "int")
+                nil [11276 12174])
+            ("isFPdOpPreferred_distance" function
+               (:methodconst-flag t
+                :parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12232 12242]))                  
+                :type "bool")
+                nil [12176 12825])
+            ("resourcesCost" function
+               (:parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("SU" variable
+                       (:pointer 1
+                        :type ("SUnit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12871 12881]))                  
+                :type "int")
+                nil [12827 13568])
+            ("emitInstruction" function
+               (:parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("MI" variable
+                       (:pointer 1
+                        :type ("MachineInstr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13616 13633])
+                    ("TakenBranch" variable (:type "bool") (reparse-symbol arg-sub-list) [13680 13697]))                  
+                :type "void")
+                nil [13570 14643])
+            ("copyState" function
+               (:parent "SystemZHazardRecognizer"
+                :arguments 
+                  ( ("Incoming" variable
+                       (:pointer 1
+                        :type ("SystemZHazardRecognizer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14686 14720]))                  
+                :type "void")
+                nil [14645 15078]))          
+      :file "SystemZHazardRecognizer.cpp"
+      :pointmax 15079
+      :fsize 15078
+      :lastmodtime '(24494 20477 372512 148000)
+      :unmatched-syntax '((semantic-list 1836 . 1839) (semantic-list 1683 . 1791) (string 1608 . 1626))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"machine-scheduler\"" 1397 . 1416)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1572365d011a"
+      :file "SystemZHazardRecognizer.h"
+      :fsize 5971
+      :lastmodtime '(24494 20477 372512 148000)))
+  :file "!home!khadinh!gits!llvm!lib!Target!SystemZ!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

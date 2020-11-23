@@ -1,0 +1,236 @@
+;; Object semanticdb-project-database-file-1587e56bc9e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1587e56bc9e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1587e56bc948"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 11])
+            ("UPMEM_CC" variable (:default-value ("dpu-upmem-dpurte-clang")) nil [11 45])
+            ("UPMEM_LD" variable (:default-value ("ld.lld")) nil [45 63])
+            ("CC" variable (:default-value ("gcc")) nil [63 72])
+            ("CFLAGS" variable (:default-value ("-Wall" "-Iinclude" "-ffast-math")) nil [72 110])
+            ("LDFLAGS" variable (:default-value ("-verbose" "-Map" "dpu.map" "--trace" "-T/home/khadinh/projects/pim-sgx/upmem/share/upmem/include/link/dpu.lds")) nil [110 222])
+            ("LFLAGS" variable (:default-value ("-Wl,-verbose,-Map,dpu.map,--trace,-S")) nil [222 268])
+            ("HOSTFLAGS" variable (:default-value ("-Itiny-AES-c" "-I/home/khadinh/projects/pim-sgx/upmem/include/dpu" "-L/home/khadinh/projects/pim-sgx/upmem/lib" "-ldpu" "tiny-AES-c/aes.o" "-g" "-ggdb")) nil [268 419])
+            ("MBEDTLS_LIBS" variable (:default-value ("../mbedtls/library")) nil [533 565])
+            ("_MBEDTLS_OBJS" variable (:default-value ("platform_util.o" "aes.o")) nil [565 603])
+            ("MBEDTLS_OBJS" variable (:default-value ("$(patsubst %.o,$(MBEDTLS_LIBS)/%.o,$(_MBEDTLS_OBJS))")) nil [603 672])
+            ("UPMEM_OBJS" variable (:default-value ("../upmem/sharee/upmem/include/built-in/librt.a" "../upmem/share/upmem/include/misc/crt0.o")) nil [672 775])
+            ("LOCAL_OBJS" variable (:default-value ("dpu_alloc.o" "tiny-AES-c/aes_dpu.a" "RSA-Library/librsa_dpu.a")) nil [775 846])
+            ("OBJS" variable (:default-value ("$(MBEDTLS_OBJS)" "$(LOCAL_OBJS)")) nil [847 884])
+            ("UPMEM_OBJS" variable (:default-value ("$(MBEDTLS_OBJS)" "$(LOCAL_OBJS)")) nil [884 929])
+            ("all" function (:arguments ("clean" "main" "main_host")) nil [929 955])
+            ("main_host" function (:arguments ("main_host.c")) nil [956 1034])
+            ("main_ld" function (:arguments ("main.o")) nil [1035 1106])
+            ("main" function (:arguments ("main.o")) nil [1106 1166])
+            ("main.o" function (:arguments ("main.c" "dpu_alloc.c")) nil [1166 1238])
+            ("dpu_alloc.o" function nil nil [1239 1290])
+            ("clean" function nil nil [1290 1316]))          
+      :file "Makefile"
+      :pointmax 1316
+      :fsize 1315
+      :lastmodtime '(24503 18354 531724 348000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1587e56bc968"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mbedtls/md5.h" include nil nil [91 115])
+            ("mbedtls/rsa.h" include nil nil [311 335])
+            ("mbedtls/bignum.h" include nil nil [336 363])
+            ("mbedtls/aes.h" include nil nil [364 388])
+            ("dpu_alloc.h" include nil nil [389 411])
+            ("alloc.h" include (:system-flag t) nil [412 430])
+            ("perfcounter.h" include (:system-flag t) nil [431 455])
+            ("string.h" include (:system-flag t) nil [482 501])
+            ("mram.h" include (:system-flag t) nil [502 519])
+            ("COUNT_EVENT" variable (:constant-flag t) nil [1208 1219])
+            ("in_message" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1248 1271])
+            ("out_message" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1279 1303])
+            ("print_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1331 1347])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1348 1359]))                  
+                :type "void")
+                nil [1306 1471])
+            ("receive_decrypt" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1473 2594])
+            ("__aes_start" variable
+               (:typemodifiers ("extern")
+                :type "char")
+                nil [2595 2619])
+            ("__aes_end" variable
+               (:typemodifiers ("extern")
+                :type "char")
+                nil [2620 2642])
+            ("send_encrypt" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2644 3773])
+            ("main" function (:type "int") nil [3776 4699]))          
+      :file "main.c"
+      :pointmax 10420
+      :fsize 10421
+      :lastmodtime '(24502 28351 779393 908000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COUNT_EVENT" . ((symbol "COUNT_CYCLES" 1220 . 1232)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1587e56bc988"
+      :major-mode c-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [1 20])
+            ("dpu.h" include (:system-flag t) nil [21 37])
+            ("dpu_log.h" include (:system-flag t) nil [38 58])
+            ("stdio.h" include (:system-flag t) nil [59 77])
+            ("aes.h" include nil nil [78 94])
+            ("DPU_ELF_VERBOSE" variable (:constant-flag t) nil [104 119])
+            ("DPU_BINARY" variable (:constant-flag t) nil [147 157])
+            ("recieve_decrypt" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [197 240])
+            ("print_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [265 281])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [282 293]))                  
+                :type "int")
+                nil [241 393])
+            ("key" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ 0x60, 0x3d, 0xeb, 0x10, 0x15, 0xca, 0x71, 0xbe, 0x2b, 0x73, 0xae, 0xf0, 0x85, 0x7d, 0x77, 0x81,
+  0x1f, 0x35, 0x2c, 0x07, 0x3b, 0x61, 0x08, 0xd7, 0x2d, 0x98, 0x10, 0xa3, 0x09, 0x14, 0xdf, 0xf4 }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [394 614])
+            ("iv" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [615 737])
+            ("message" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"Helloooooooooooo :D\""
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [738 789])
+            ("send_encrypt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [815 836]))                  
+                :type "int")
+                nil [791 1784])
+            ("recv_decrypt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dpu" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1810 1831]))                  
+                :type "int")
+                nil [1785 2138])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2148 2153]))                  
+                :type "int")
+                nil [2139 2558]))          
+      :file "main_host.c"
+      :pointmax 2559
+      :fsize 2558
+      :lastmodtime '(24502 21016 314416 714000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_ELF_VERBOSE")
+          ("DPU_BINARY" . ((string "\"./main\"" 158 . 166)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1587e56bc9a8"
+      :major-mode c-mode
+      :tags 
+        '( ("alloc.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("calloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54 63])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64 76]))                  
+                :type "void")
+                nil [41 77])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [88 98]))                  
+                :type "void")
+                nil [78 99])
+            ("malloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113 125]))                  
+                :type "void")
+                nil [100 126]))          
+      :file "dpu_alloc.h"
+      :pointmax 127
+      :fsize 126
+      :lastmodtime '(24499 31938 262763 398000)
+      :unmatched-syntax '((semantic-list 112 . 121) (symbol 106 . 112) (punctuation 104 . 105) (VOID 100 . 104)))
+    (semanticdb-table "semanticdb-table-1587e56bc9c8"
+      :major-mode c-mode
+      :tags 
+        '( ("dpu_alloc.h" include nil nil [2 24])
+            ("calloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39 48])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49 61]))                  
+                :type "void")
+                nil [26 141])
+            ("free" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [153 163]))                  
+                :type "void")
+                nil [143 185])
+            ("malloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [200 212]))                  
+                :type "void")
+                nil [187 243]))          
+      :file "dpu_alloc.c"
+      :pointmax 244
+      :fsize 243
+      :lastmodtime '(24499 31995 947022 721000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!pim-sgx!test_program!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

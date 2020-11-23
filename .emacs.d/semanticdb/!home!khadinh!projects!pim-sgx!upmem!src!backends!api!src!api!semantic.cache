@@ -1,0 +1,1315 @@
+;; Object semanticdb-project-database-file-155e096ae6ba
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155e096ae6ba"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155e0959f33c"
+      :major-mode c-mode
+      :tags 
+        '( ("dpu.h" include (:system-flag t) nil [156 172])
+            ("dpu_rank.h" include (:system-flag t) nil [173 194])
+            ("dpu_management.h" include (:system-flag t) nil [195 222])
+            ("dpu_polling.h" include (:system-flag t) nil [223 247])
+            ("dpu_api_verbose.h" include (:system-flag t) nil [248 276])
+            ("dpu_types.h" include (:system-flag t) nil [277 299])
+            ("dpu_error.h" include (:system-flag t) nil [300 322])
+            ("dpu_attributes.h" include (:system-flag t) nil [323 350])
+            ("dpu_log_utils.h" include (:system-flag t) nil [351 377])
+            ("dpu_thread_job.h" include (:system-flag t) nil [378 405])
+            ("dpu_mask.h" include (:system-flag t) nil [406 427])
+            ("dpu_launch_policy_to_string" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("policy" variable (:type ("dpu_launch_policy_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [477 504]))                  
+                :type "char")
+                nil [429 713])
+            ("dpu_launch" function
+               (:arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [753 778])
+                    ("policy" variable (:type ("dpu_launch_policy_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [779 806]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [730 2150])
+            ("dpu_status" function
+               (:arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [2190 2215])
+                    ("done" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2216 2227])
+                    ("fault" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [2228 2240]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [2167 3046]))          
+      :file "dpu_runner.c"
+      :pointmax 3047
+      :fsize 3046
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax '((symbol 2152 . 2166) (symbol 715 . 729)))
+    (semanticdb-table "semanticdb-table-155e0959f35c"
+      :major-mode c-mode
+      :tags 
+        '( ("_GNU_SOURCE" variable (:constant-flag t) nil [164 175])
+            ("dpu_rank.h" include (:system-flag t) nil [176 197])
+            ("dpu_transfer_matrix.h" include (:system-flag t) nil [198 230])
+            ("dpu_thread_job.h" include (:system-flag t) nil [231 258])
+            ("dpu_memory.h" include (:system-flag t) nil [260 283])
+            ("dpu_program.h" include (:system-flag t) nil [284 308])
+            ("dpu_error.h" include (:system-flag t) nil [309 331])
+            ("dpu_types.h" include (:system-flag t) nil [332 354])
+            ("dpu_internals.h" include (:system-flag t) nil [355 381])
+            ("dpu_log_utils.h" include (:system-flag t) nil [382 408])
+            ("dpu_management.h" include (:system-flag t) nil [409 436])
+            ("dpu_attributes.h" include (:system-flag t) nil [437 464])
+            ("dpu_api_memory.h" include (:system-flag t) nil [465 492])
+            ("dpu_polling.h" include (:system-flag t) nil [493 517])
+            ("pthread.h" include (:system-flag t) nil [518 538])
+            ("stdint.h" include (:system-flag t) nil [539 558])
+            ("sys/queue.h" include (:system-flag t) nil [559 581])
+            ("STAILQ_HEAD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_thread_job_rank_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [595 620])
+                    ("" variable (:type ("dpu_thread_job" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [621 636]))                  
+                :type "int")
+                nil [583 637])
+            ("job_list" variable
+               (:typemodifiers ("static")
+                :default-value "STAILQ_HEAD_INITIALIZER(job_list)"
+                :type ("dpu_thread_job_rank_list" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [638 722])
+            ("job_list_mutex" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [723 789])
+            ("job_list_cond" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_COND_INITIALIZER"
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [790 853])
+            ("dpu_thread_job_peek_unlocked" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("jobs" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [915 948]))                  
+                :type ("dpu_thread_job" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [855 983])
+            ("dpu_thread_job_pop_unlocked" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("jobs" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1044 1077]))                  
+                :type ("dpu_thread_job" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [985 1206])
+            ("dpu_thread_release_job_slot_unlocked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1281])
+                    ("job" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1282 1309]))                  
+                :type "void")
+                nil [1208 1574])
+            ("dpu_thread_insert_rank_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("first_job" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1616 1649]))                  
+                :type "void")
+                nil [1576 1889])
+            ("dpu_thread_advance_to_next_job" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1953 1977]))                  
+                :type ("dpu_thread_job" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1891 2294])
+            ("dpu_thread_handle_global_block" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2339 2363])
+                    ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2390])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2391 2409]))                  
+                :type "void")
+                nil [2296 2884])
+            ("do_sync_job" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sync" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job_sync" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2910 2943]))                  
+                :type "void")
+                nil [2886 3138])
+            ("dpu_thread_compute_job" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3182 3206])
+                    ("job" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3207 3234])
+                    ("keep_job_list" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [3235 3255]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [3140 9250])
+            ("dpu_thread_update_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("status" variable (:type ("dpu_error_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9289 9308])
+                    ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9309 9333])
+                    ("job" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9334 9361]))                  
+                :type "void")
+                nil [9252 10079])
+            ("dpu_thread_job_fct" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10114 10124]))                  
+                :type "void")
+                nil [10081 11494])
+            ("dpu_thread_job_unget_jobs" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11527 11553])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11554 11572])
+                    ("nr_jobs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11573 11590])
+                    ("job_list" variable
+                       (:pointer 2
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11591 11624]))                  
+                :type "void")
+                nil [11496 12197])
+            ("dpu_thread_job_get_job_unlocked" function
+               (:arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12243 12267])
+                    ("job" variable
+                       (:pointer 2
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12268 12296]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [12199 12718])
+            ("dpu_thread_job_get_jobs" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12756 12782])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12783 12801])
+                    ("nr_jobs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12802 12819])
+                    ("job_list" variable
+                       (:pointer 2
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12820 12853]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [12720 13527])
+            ("dpu_thread_job_add_jobs" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13558 13584])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13585 13603])
+                    ("nr_jobs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13604 13621])
+                    ("jobs_to_add" variable
+                       (:pointer 2
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13622 13658]))                  
+                :type "void")
+                nil [13529 14587])
+            ("dpu_thread_job_do_jobs" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14624 14650])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14655 14673])
+                    ("nr_job_per_rank" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14678 14703])
+                    ("jobs" variable
+                       (:pointer 2
+                        :type ("dpu_thread_job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14708 14737])
+                    ("synchronous" variable (:type "bool") (reparse-symbol arg-sub-list) [14742 14759])
+                    ("sync" variable
+                       (:pointer 1
+                        :type ("dpu_thread_job_sync" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14764 14797]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [14589 15347])
+            ("dpu_thread_job_create" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15383 15409])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15410 15428]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [15349 18315])
+            ("dpu_thread_job_free" function
+               (:arguments 
+                  ( ("ranks" variable
+                       (:pointer 2
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18342 18368])
+                    ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18369 18387]))                  
+                :type "void")
+                nil [18317 19019]))          
+      :file "dpu_thread_job.c"
+      :pointmax 19020
+      :fsize 19019
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GNU_SOURCE")
+          )
+)
+    (semanticdb-table "semanticdb-table-155e0959f37c"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [156 175])
+            ("dpu_api_verbose.h" include (:system-flag t) nil [177 205])
+            ("dpu_types.h" include (:system-flag t) nil [206 228])
+            ("dpu_error.h" include (:system-flag t) nil [229 251])
+            ("dpu_description.h" include (:system-flag t) nil [252 280])
+            ("dpu_management.h" include (:system-flag t) nil [281 308])
+            ("dpu_loader.h" include (:system-flag t) nil [309 332])
+            ("dpu_internals.h" include (:system-flag t) nil [333 359])
+            ("dpu_program.h" include (:system-flag t) nil [360 384])
+            ("dpu_attributes.h" include (:system-flag t) nil [385 412])
+            ("dpu_log_utils.h" include (:system-flag t) nil [413 439])
+            ("dpu_load_rank" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [474 498])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [499 529])
+                    ("elf_info" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [530 554]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [441 1951])
+            ("dpu_load_dpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1985 2003])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2004 2034])
+                    ("elf_info" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2035 2059]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [1953 2977])
+            ("load_elf_program_fct_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("elf_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3025 3050])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3055 3072])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3077 3093])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3098 3117])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3122 3152])
+                    ("mram_size_hint" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3157 3184]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [2987 3185])
+            ("get_set_description" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("set" variable
+                       (:pointer 1
+                        :type ("dpu_set_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3232 3254]))                  
+                :type ("dpu_description_t" type (:type "class") nil nil))
+                nil [3187 3573])
+            ("dpu_load_generic" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [3611 3636])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3641 3658])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3663 3679])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3684 3703])
+                    ("program" variable
+                       (:pointer 2
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3708 3739])
+                    ("load_elf_program" variable (:type ("load_elf_program_fct_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3744 3784]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [3575 5125])
+            ("__dpu_load_elf_program_from_incbin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elf_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5181 5206])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5211 5228])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5233 5249])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5254 5273])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5278 5308])
+                    ("mram_size_hint" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5313 5340]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [5127 5451])
+            ("dpu_load_from_memory" function
+               (:arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [5501 5526])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5527 5543])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5544 5563])
+                    ("program" variable
+                       (:pointer 2
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5564 5595]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [5468 5760])
+            ("dpu_load_from_incbin" function
+               (:arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [5810 5835])
+                    ("incbin" variable
+                       (:pointer 1
+                        :type ("dpu_incbin_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5836 5864])
+                    ("program" variable
+                       (:pointer 2
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5865 5896]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [5777 6103])
+            ("__dpu_load_elf_program" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elf_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6147 6172])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6177 6194])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6223 6239])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6268 6287])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6292 6322])
+                    ("mram_size_hint" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6327 6354]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [6105 6432])
+            ("dpu_load" function
+               (:arguments 
+                  ( ("dpu_set" variable (:type ("dpu_set_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [6470 6495])
+                    ("binary_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6496 6520])
+                    ("program" variable
+                       (:pointer 2
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6521 6552]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [6449 6691]))          
+      :file "dpu_loader.c"
+      :pointmax 6692
+      :fsize 6691
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155e096ae6d4"
+      :major-mode c-mode
+      :tags 
+        '( ("jni.h" include (:system-flag t) nil [156 172])
+            ("stdlib.h" include (:system-flag t) nil [173 192])
+            ("runtime_info.h" include (:system-flag t) nil [194 219])
+            ("dpu_config.h" include (:system-flag t) nil [220 243])
+            ("dpu_custom.h" include (:system-flag t) nil [244 267])
+            ("dpu_debug.h" include (:system-flag t) nil [268 290])
+            ("dpu_description.h" include (:system-flag t) nil [291 319])
+            ("dpu_loader.h" include (:system-flag t) nil [320 343])
+            ("dpu_management.h" include (:system-flag t) nil [344 371])
+            ("dpu_profiler.h" include (:system-flag t) nil [372 397])
+            ("dpu_runner.h" include (:system-flag t) nil [398 421])
+            ("dpu_transfer_matrix.h" include (:system-flag t) nil [422 454])
+            ("dpu_memory.h" include (:system-flag t) nil [455 478])
+            ("dpu_internals.h" include (:system-flag t) nil [479 505])
+            ("__UNUSED_PARAM__" variable (:constant-flag t) nil [515 531])
+            ("__DPU_JNI_FUNCTION__" variable (:constant-flag t) nil [565 585])
+            ("_this_rank" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [654 663]))                  
+                :type ("dpu_rank_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [609 713])
+            ("flush_outputs" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [748 753]))                  
+                :type "void")
+                nil [715 797])
+            ("buildDpuDescription" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [841 853])
+                    ("description" variable (:type ("dpu_description_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [854 884]))                  
+                :type ("jobject" type (:type "class") nil nil))
+                nil [799 2037])
+            ("Java_com_upmem_dpujni_DpuJNI_getBackendDescription" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2137 2149])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2167 2180])
+                    ("profile" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2181 2197]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [2057 2764])
+            ("Java_com_upmem_dpujni_DpuJNI_getTargetDescription" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2863 2875])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2893 2906])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2907 2916]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [2784 2994])
+            ("Java_com_upmem_dpujni_DpuJNI_reserveDpuRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3289 3301])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3323 3336])
+                    ("profile" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3341 3357])
+                    ("is_attaching" variable (:type ("jboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3362 3384])
+                    ("attaching_to_slice_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3406 3433])
+                    ("attaching_to_dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3455 3480])
+                    ("host_pid" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3502 3516]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [3216 4051])
+            ("Java_com_upmem_dpujni_DpuJNI_releaseDpuRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4158 4170])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4188 4201])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4211]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [4068 4277])
+            ("Java_com_upmem_dpujni_DpuJNI_isDpuEnabled" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4386 4398])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4433])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4438 4447])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4452 4463])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4468 4480]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [4298 4584])
+            ("Java_com_upmem_dpujni_DpuJNI_resetDpu" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4686 4698])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4720 4733])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4738 4747])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4752 4763])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4768 4780]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [4602 4919])
+            ("Java_com_upmem_dpujni_DpuJNI_stopDpu" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5022 5034])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5056 5069])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5074 5083])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5088 5099])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5104 5116]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [4939 7840])
+            ("Java_com_upmem_dpujni_DpuJNI_stopRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8031 8043])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8065 8078])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8083 8092])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8097 8109])
+                    ("host_pid" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8114 8128]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [7947 12990])
+            ("Java_com_upmem_dpujni_DpuJNI_resumeDpu" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13119 13131])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13153 13166])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13171 13180])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13185 13196])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13201 13213])
+                    ("dump_pointer" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13218 13237]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [13034 13699])
+            ("Java_com_upmem_dpujni_DpuJNI_resumeRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13802 13814])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13832 13845])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13846 13855])
+                    ("dump_pointer" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13856 13875]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [13716 14886])
+            ("Java_com_upmem_dpujni_DpuJNI_launchThread" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14992 15004])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15026 15039])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15044 15053])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15058 15069])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15074 15086])
+                    ("thread" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15091 15103])
+                    ("should_resume" variable (:type ("jboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15108 15131]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [14904 15413])
+            ("Java_com_upmem_dpujni_DpuJNI_launchThreadOnRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15524 15536])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15558 15571])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15576 15585])
+                    ("thread" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15590 15602])
+                    ("should_resume" variable (:type ("jboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15607 15630]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [15430 15849])
+            ("Java_com_upmem_dpujni_DpuJNI_pollDpu" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15935 15947])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15965 15978])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15979 15988])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15989 16000])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16001 16013]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [15869 16688])
+            ("Java_com_upmem_dpujni_DpuJNI_pollRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16772 16784])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16802 16815])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16816 16825])
+                    ("running" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16826 16844])
+                    ("fault" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16845 16861]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [16705 17764])
+            ("Java_com_upmem_dpujni_DpuJNI_copyToWram" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17851 17863])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17885 17898])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17903 17912])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17917 17928])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17933 17945])
+                    ("toWordAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17950 17969])
+                    ("source" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17974 17991])
+                    ("nbOfWords" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17996 18011]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [17782 18373])
+            ("Java_com_upmem_dpujni_DpuJNI_copyFromWram" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18462 18474])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18496 18509])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18514 18523])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18528 18539])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18544 18556])
+                    ("fromWordAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18561 18582])
+                    ("nbOfWords" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18587 18602])
+                    ("destination" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18607 18629]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [18391 19075])
+            ("Java_com_upmem_dpujni_DpuJNI_copyToIram" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19162 19174])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19196 19209])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19214 19223])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19228 19239])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19244 19256])
+                    ("toInstructionAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19261 19287])
+                    ("source" variable (:type ("jlongArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19292 19310])
+                    ("nbOfInstructions" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19315 19337]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [19093 19723])
+            ("Java_com_upmem_dpujni_DpuJNI_copyFromIram" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19812 19824])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19846 19859])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19864 19873])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19878 19889])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19894 19906])
+                    ("fromInstructionAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19911 19939])
+                    ("nbOfInstructions" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19944 19966])
+                    ("destination" variable (:type ("jlongArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19971 19994]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [19741 20472])
+            ("Java_com_upmem_dpujni_DpuJNI_copyToMramNumber" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20565 20577])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20599 20612])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20617 20626])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20631 20642])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20647 20659])
+                    ("toByteAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20664 20683])
+                    ("source" variable (:type ("jbyteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20688 20706])
+                    ("nbOfBytes" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20711 20726])
+                    ("mramNumber" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20748 20764]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [20490 21321])
+            ("mram_access" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21347 21359])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21364 21373])
+                    ("transfer" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21378 21395])
+                    ("transfer_fn" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("dpu_rank_t" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21427 21447])
+                            ("" variable
+                               (:pointer 1
+                                :type ("dpu_transfer_matrix" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21448 21477]))                          
+                        :type ("dpu_error_t" type (:type "class") nil nil))
+                        nil nil)
+                    ("nbOfBytes" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21483 21498])
+                    ("byteAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21503 21520]))                  
+                :type "void")
+                nil [21323 23735])
+            ("Java_com_upmem_dpujni_DpuJNI_copyToMrams" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23822 23834])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23856 23869])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23874 23883])
+                    ("transfer" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23888 23905])
+                    ("nbOfBytes" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23910 23925])
+                    ("toByteAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23930 23949]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [23752 24034])
+            ("Java_com_upmem_dpujni_DpuJNI_copyFromMrams" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24123 24135])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24157 24170])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24175 24184])
+                    ("transfer" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24189 24206])
+                    ("nbOfBytes" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24211 24226])
+                    ("fromByteAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24231 24252]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [24051 24341])
+            ("Java_com_upmem_dpujni_DpuJNI_copyFromMramNumber" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24436 24448])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24470 24483])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24488 24497])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24502 24513])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24518 24530])
+                    ("fromByteAtIndex" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24535 24556])
+                    ("nbOfBytes" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24561 24576])
+                    ("destination" variable (:type ("jbyteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24581 24604])
+                    ("mramNumber" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24626 24642]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [24359 25284])
+            ("Java_com_upmem_dpujni_DpuJNI_triggerFaultOnRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25395 25407])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25425 25438])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25439 25448]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [25301 25526])
+            ("Java_com_upmem_dpujni_DpuJNI_clearFaultOnRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25635 25647])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25665 25678])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25679 25688]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [25543 25764])
+            ("Java_com_upmem_dpujni_DpuJNI_dumpDpuContext" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25857 25869])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25887 25900])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25901 25910])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25911 25922])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25923 25935]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [25784 28133])
+            ("Java_com_upmem_dpujni_DpuJNI_initializeFaultProcess" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28234 28246])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28264 28277])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28278 28287])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28288 28299])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28300 28312]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [28153 31055])
+            ("Java_com_upmem_dpujni_DpuJNI_dumpFaultRemainingDpuContext" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31162 31174])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31196 31209])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31214 31223])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31228 31239])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31244 31256])
+                    ("dump_pointer" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31261 31280]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [31075 33268])
+            ("Java_com_upmem_dpujni_DpuJNI_doDebugStep" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33358 33370])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33392 33405])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33410 33419])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33424 33435])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33440 33452])
+                    ("dump_pointer" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33457 33476])
+                    ("thread" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33481 33493]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [33288 35332])
+            ("Java_com_upmem_dpujni_DpuJNI_finalizeFaultProcess" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35445 35457])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35479 35492])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35497 35506])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35511 35522])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35527 35539])
+                    ("dump_pointer" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35544 35563])
+                    ("just_clean" variable (:type ("jboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35568 35588]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [35349 36084])
+            ("Java_com_upmem_dpujni_DpuJNI_readAndUpdateNotifyBit" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36203 36215])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36237 36250])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36255 36264])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36269 36280])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36285 36297])
+                    ("notify_bit_index" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36302 36324])
+                    ("value" variable (:type ("jboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36329 36344]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [36105 36639])
+            ("Java_com_upmem_dpujni_DpuJNI_systemReport" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36727 36739])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36761 36774])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36779 36788])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36793 36804])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36809 36821])
+                    ("output" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36826 36841]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [36656 37236])
+            ("Java_com_upmem_dpujni_DpuJNI_preExecution" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37341 37353])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37375 37388])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37393 37402])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37407 37418])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37423 37435]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [37253 37581])
+            ("Java_com_upmem_dpujni_DpuJNI_postExecution" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37687 37699])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37721 37734])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37739 37748])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37753 37764])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37769 37781]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [37598 37928])
+            ("Java_com_upmem_dpujni_DpuJNI_utilFormatString" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38023 38035])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38053 38066])
+                    ("format" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38067 38082])
+                    ("string" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38083 38098]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [37948 38607])
+            ("Java_com_upmem_dpujni_DpuJNI_utilFormatInt" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38699 38711])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38729 38742])
+                    ("format" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38743 38758])
+                    ("value" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38759 38770]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [38627 39145])
+            ("Java_com_upmem_dpujni_DpuJNI_utilFormatLong" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39238 39250])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39268 39281])
+                    ("format" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39282 39297])
+                    ("value" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39298 39310]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [39165 39685])
+            ("Java_com_upmem_dpujni_DpuJNI_utilFormatDouble" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39780 39792])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39810 39823])
+                    ("format" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39824 39839])
+                    ("value" variable (:type ("jdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39840 39854]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [39705 40229])
+            ("Java_com_upmem_dpujni_DpuJNI_utilFormatChar" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40322 40334])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40352 40365])
+                    ("format" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40366 40381])
+                    ("value" variable (:type ("jbyte" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40382 40394]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [40249 40769])
+            ("Java_com_upmem_dpujni_DpuJNI_openElfFile" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40857 40869])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40887 40902])
+                    ("file_name" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40903 40921]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [40787 41103])
+            ("Java_com_upmem_dpujni_DpuJNI_mapElfFile" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41190 41202])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41224 41239])
+                    ("buffer" variable (:type ("jbyteArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41244 41262])
+                    ("buffer_size" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41267 41284])
+                    ("file_or_null" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41289 41310]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [41121 41744])
+            ("Java_com_upmem_dpujni_DpuJNI_closeElfFile" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41849 41861])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41879 41894])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41895 41910]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [41761 41991])
+            ("Java_com_upmem_dpujni_DpuJNI_loadElfProgram" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42084 42096])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42118 42131])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42136 42145])
+                    ("ci_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42150 42161])
+                    ("dpu_id" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42166 42178])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42183 42198])
+                    ("mcountAddress" variable (:type ("jshort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42203 42224])
+                    ("retMcountAddress" variable (:type ("jshort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42229 42253])
+                    ("threadProfilingAddress" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42258 42286]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [42011 43082])
+            ("Java_com_upmem_dpujni_DpuJNI_loadElfProgramOnRank" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43181 43193])
+                    ("that" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43211 43224])
+                    ("lp" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43225 43234])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43235 43250]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [43102 43792])
+            ("Java_com_upmem_dpujni_DpuJNI_loadElfSection" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43880 43892])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43910 43925])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43926 43941])
+                    ("name" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43942 43955]))                  
+                :type ("jbyteArray" type (:type "class") nil nil))
+                nil [43804 44441])
+            ("Java_com_upmem_dpujni_DpuJNI_loadElfSymbols" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44523 44535])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44557 44572])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44577 44592])
+                    ("name" variable (:type ("jstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44597 44610])
+                    ("map" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44615 44627]))                  
+                :type "void")
+                nil [44453 46026])
+            ("Java_com_upmem_dpujni_DpuJNI_getElfSections" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46108 46120])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46138 46153])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46154 46169])
+                    ("list" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46170 46183]))                  
+                :type "void")
+                nil [46038 46855])
+            ("Java_com_upmem_dpujni_DpuJNI_getRuntimeInfo" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46940 46952])
+                    ("unused" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46970 46985])
+                    ("elf_info" variable (:type ("jlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46986 47001]))                  
+                :type ("jobject" type (:type "class") nil nil))
+                nil [46867 52174]))          
+      :file "java_api.c"
+      :pointmax 52175
+      :fsize 52174
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax '((symbol 46857 . 46866) (symbol 46028 . 46037) (symbol 44443 . 44452) (symbol 43794 . 43803) (symbol 43094 . 43101) (symbol 43084 . 43093) (symbol 42003 . 42010) (symbol 41993 . 42002) (VOID 41756 . 41760) (symbol 41746 . 41755) (symbol 41115 . 41120) (symbol 41105 . 41114) (symbol 40781 . 40786) (symbol 40771 . 40780) (symbol 40241 . 40248) (symbol 40231 . 40240) (symbol 39697 . 39704) (symbol 39687 . 39696) (symbol 39157 . 39164) (symbol 39147 . 39156) (symbol 38619 . 38626) (symbol 38609 . 38618) (symbol 37940 . 37947) (symbol 37930 . 37939) (VOID 37593 . 37597) (symbol 37583 . 37592) (VOID 37248 . 37252) (symbol 37238 . 37247) (VOID 36651 . 36655) (symbol 36641 . 36650) (symbol 36096 . 36104) (symbol 36086 . 36095) (VOID 35344 . 35348) (symbol 35334 . 35343) (symbol 33280 . 33287) (symbol 33270 . 33279) (symbol 31067 . 31074) (symbol 31057 . 31066) (symbol 28145 . 28152) (symbol 28135 . 28144) (symbol 25776 . 25783) (symbol 25766 . 25775) (VOID 25538 . 25542) (symbol 25528 . 25537) (VOID 25296 . 25300) (symbol 25286 . 25295) (symbol 24353 . 24358) (symbol 24343 . 24352) (VOID 24046 . 24050) (symbol 24036 . 24045) (VOID 23747 . 23751) (symbol 23737 . 23746) (symbol 20484 . 20489) (symbol 20474 . 20483) (symbol 19735 . 19740) (symbol 19725 . 19734) (symbol 19087 . 19092) (symbol 19077 . 19086) (symbol 18385 . 18390) (symbol 18375 . 18384) (symbol 17776 . 17781) (symbol 17766 . 17775) (VOID 16700 . 16704) (symbol 16690 . 16699) (symbol 15861 . 15868) (symbol 15851 . 15860) (VOID 15425 . 15429) (symbol 15415 . 15424) (symbol 14898 . 14903) (symbol 14888 . 14897) (VOID 13711 . 13715) (symbol 13701 . 13710) (VOID 13029 . 13033) (symbol 13019 . 13028) (symbol 13014 . 13017) (symbol 13003 . 13013) (symbol 12999 . 13002) (symbol 12992 . 12998) (punctuation 12991 . 12992) (symbol 7939 . 7946) (symbol 7929 . 7938) (string 7901 . 7928) (symbol 7893 . 7900) (symbol 7882 . 7892) (symbol 7878 . 7881) (symbol 7871 . 7877) (punctuation 7870 . 7871) (symbol 7865 . 7869) (symbol 7854 . 7864) (symbol 7850 . 7853) (symbol 7843 . 7849) (punctuation 7842 . 7843) (symbol 4931 . 4938) (symbol 4921 . 4930) (symbol 4596 . 4601) (symbol 4586 . 4595) (symbol 4289 . 4297) (symbol 4279 . 4288) (VOID 4063 . 4067) (symbol 4053 . 4062) (symbol 3210 . 3215) (symbol 3200 . 3209) (symbol 2776 . 2783) (symbol 2766 . 2775) (symbol 2049 . 2056) (symbol 2039 . 2048))
+      :lexical-table 
+        '(("__UNUSED_PARAM__" . ((symbol "__attribute__" 532 . 545) (semantic-list "((unused))" 545 . 555)))
+          ("__DPU_JNI_FUNCTION__" . ((symbol "__attribute__" 586 . 599) (semantic-list "((used))" 599 . 607)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!backends!api!src!api!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("AddressSanitizer.cpp"
+ (filename . "~/gits/llvm-project/llvm/lib/Transforms/Instrumentation/AddressSanitizer.cpp")
+ (front-context-string . "  LLVM_DEBUG(dbg")
+ (rear-context-string . "ctionModified;\n\n")
+ (position . 107979))
+)

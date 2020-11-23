@@ -1,0 +1,890 @@
+;; Object semanticdb-project-database-file-158feac88c00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158feac88c00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158feac88c12"
+      :major-mode c++-mode
+      :tags 
+        '( ("clang/CodeGen/BackendUtil.h" include nil nil [371 409])
+            ("clang/Basic/CodeGenOptions.h" include nil nil [410 449])
+            ("clang/Basic/Diagnostic.h" include nil nil [450 485])
+            ("clang/Basic/LangOptions.h" include nil nil [486 522])
+            ("clang/Basic/TargetOptions.h" include nil nil [523 561])
+            ("clang/Frontend/FrontendDiagnostic.h" include nil nil [562 608])
+            ("clang/Frontend/Utils.h" include nil nil [609 642])
+            ("clang/Lex/HeaderSearchOptions.h" include nil nil [643 685])
+            ("llvm/ADT/SmallSet.h" include nil nil [686 716])
+            ("llvm/ADT/StringExtras.h" include nil nil [717 751])
+            ("llvm/ADT/StringSwitch.h" include nil nil [752 786])
+            ("llvm/ADT/Triple.h" include nil nil [787 815])
+            ("llvm/Analysis/TargetLibraryInfo.h" include nil nil [816 860])
+            ("llvm/Analysis/TargetTransformInfo.h" include nil nil [861 907])
+            ("llvm/Bitcode/BitcodeReader.h" include nil nil [908 947])
+            ("llvm/Bitcode/BitcodeWriter.h" include nil nil [948 987])
+            ("llvm/Bitcode/BitcodeWriterPass.h" include nil nil [988 1031])
+            ("llvm/CodeGen/RegAllocRegistry.h" include nil nil [1032 1074])
+            ("llvm/CodeGen/SchedulerRegistry.h" include nil nil [1075 1118])
+            ("llvm/CodeGen/TargetSubtargetInfo.h" include nil nil [1119 1164])
+            ("llvm/IR/DataLayout.h" include nil nil [1165 1196])
+            ("llvm/IR/IRPrintingPasses.h" include nil nil [1197 1234])
+            ("llvm/IR/LegacyPassManager.h" include nil nil [1235 1273])
+            ("llvm/IR/Module.h" include nil nil [1274 1301])
+            ("llvm/IR/ModuleSummaryIndex.h" include nil nil [1302 1341])
+            ("llvm/IR/Verifier.h" include nil nil [1342 1371])
+            ("llvm/LTO/LTOBackend.h" include nil nil [1372 1404])
+            ("llvm/MC/MCAsmInfo.h" include nil nil [1405 1435])
+            ("llvm/MC/SubtargetFeature.h" include nil nil [1436 1473])
+            ("llvm/Passes/PassBuilder.h" include nil nil [1474 1510])
+            ("llvm/Passes/PassPlugin.h" include nil nil [1511 1546])
+            ("llvm/Passes/StandardInstrumentations.h" include nil nil [1547 1596])
+            ("llvm/Support/BuryPointer.h" include nil nil [1597 1634])
+            ("llvm/Support/CommandLine.h" include nil nil [1635 1672])
+            ("llvm/Support/MemoryBuffer.h" include nil nil [1673 1711])
+            ("llvm/Support/PrettyStackTrace.h" include nil nil [1712 1754])
+            ("llvm/Support/TargetRegistry.h" include nil nil [1755 1795])
+            ("llvm/Support/TimeProfiler.h" include nil nil [1796 1834])
+            ("llvm/Support/Timer.h" include nil nil [1835 1866])
+            ("llvm/Support/raw_ostream.h" include nil nil [1867 1904])
+            ("llvm/Target/TargetMachine.h" include nil nil [1905 1943])
+            ("llvm/Target/TargetOptions.h" include nil nil [1944 1982])
+            ("llvm/Transforms/Coroutines.h" include nil nil [1983 2022])
+            ("llvm/Transforms/IPO.h" include nil nil [2023 2055])
+            ("llvm/Transforms/IPO/AlwaysInliner.h" include nil nil [2056 2102])
+            ("llvm/Transforms/IPO/PassManagerBuilder.h" include nil nil [2103 2154])
+            ("llvm/Transforms/IPO/ThinLTOBitcodeWriter.h" include nil nil [2155 2208])
+            ("llvm/Transforms/InstCombine/InstCombine.h" include nil nil [2209 2261])
+            ("llvm/Transforms/Instrumentation.h" include nil nil [2262 2306])
+            ("llvm/Transforms/Instrumentation/AddressSanitizer.h" include nil nil [2307 2368])
+            ("llvm/Transforms/Instrumentation/BoundsChecking.h" include nil nil [2369 2428])
+            ("llvm/Transforms/Instrumentation/GCOVProfiler.h" include nil nil [2429 2486])
+            ("llvm/Transforms/Instrumentation/HWAddressSanitizer.h" include nil nil [2487 2550])
+            ("llvm/Transforms/Instrumentation/InstrProfiling.h" include nil nil [2551 2610])
+            ("llvm/Transforms/Instrumentation/MemorySanitizer.h" include nil nil [2611 2671])
+            ("llvm/Transforms/Instrumentation/SanitizerCoverage.h" include nil nil [2672 2734])
+            ("llvm/Transforms/Instrumentation/ThreadSanitizer.h" include nil nil [2735 2795])
+            ("llvm/Transforms/ObjCARC.h" include nil nil [2796 2832])
+            ("llvm/Transforms/Scalar.h" include nil nil [2833 2868])
+            ("llvm/Transforms/Scalar/GVN.h" include nil nil [2869 2908])
+            ("llvm/Transforms/Utils.h" include nil nil [2909 2943])
+            ("llvm/Transforms/Utils/CanonicalizeAliases.h" include nil nil [2944 2998])
+            ("llvm/Transforms/Utils/EntryExitInstrumenter.h" include nil nil [2999 3055])
+            ("llvm/Transforms/Utils/NameAnonGlobals.h" include nil nil [3056 3106])
+            ("llvm/Transforms/Utils/SymbolRewriter.h" include nil nil [3107 3156])
+            ("memory" include (:system-flag t) nil [3157 3174])
+            ("clang" using (:type ("clang" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3175 3197])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3198 3219])
+            ("HANDLE_EXTENSION" variable (:constant-flag t) nil [3229 3245])
+            ("llvm/Support/Extension.def" include nil nil [3356 3393])
+            ("unnamed" type
+               (:members 
+                  ( ("DefaultProfileGenName" variable
+                       (:default-value "\"default_%m.profraw\""
+                        :type ("StringLiteral" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3474 3533])
+                    ("EmitAssemblyHelper" type
+                       (:members 
+                          ( ("Diags" variable (:type ("DiagnosticsEngine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3564 3589])
+                            ("HSOpts" variable
+                               (:constant-flag t
+                                :type ("HeaderSearchOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3592 3626])
+                            ("CodeGenOpts" variable
+                               (:constant-flag t
+                                :type ("CodeGenOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3629 3663])
+                            ("TargetOpts" variable
+                               (:constant-flag t
+                                :type ("clang::TargetOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3666 3705])
+                            ("LangOpts" variable
+                               (:constant-flag t
+                                :type ("LangOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3708 3736])
+                            ("TheModule" variable
+                               (:pointer 1
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3739 3757])
+                            ("CodeGenerationTime" variable (:type ("Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3761 3786])
+                            ("OS" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("raw_pwrite_stream" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3790 3828])
+                            ("getTargetIRAnalysis" function
+                               (:methodconst-flag t
+                                :type ("TargetIRAnalysis" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3832 3966])
+                            ("CreatePasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MPM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3988 4013])
+                                    ("FPM" variable
+                                       (:reference 1
+                                        :type ("legacy::FunctionPassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4014 4047]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3970 4048])
+                            ("CreateTargetMachine" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MustCreateTM" variable (:type "bool") (reparse-symbol arg-sub-list) [4566 4584]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4541 4585])
+                            ("AddEmitPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("CodeGenPasses" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4701 4736])
+                                    ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4737 4758])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_pwrite_stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4780 4802])
+                                    ("DwoOS" variable
+                                       (:pointer 1
+                                        :type ("raw_pwrite_stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4803 4828]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4682 4829])
+                            ("openOutputFile" function
+                               (:arguments 
+                                  ( ("Path" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4886 4901]))                                  
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("llvm::ToolOutputFile" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4833 5202])
+                            ("public" label nil (reparse-symbol classsubparts) [5204 5211])
+                            ("EmitAssemblyHelper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_Diags" variable
+                                       (:reference 1
+                                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5233 5259])
+                                    ("HeaderSearchOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("HeaderSearchOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5281 5325])
+                                    ("CGOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5347 5376])
+                                    ("TOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("clang::TargetOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5398 5432])
+                                    ("LOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LangOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5454 5479])
+                                    ("M" variable
+                                       (:pointer 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5480 5490]))                                  
+                                :type ("EmitAssemblyHelper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5214 5683])
+                            ("EmitAssemblyHelper" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5687 5781])
+                            ("TM" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("TargetMachine" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5785 5819])
+                            ("EmitAssembly" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5841 5862])
+                                    ("OS" variable (:type ("std::unique_ptr" type
+                                         (:template-specifier 
+                                            ( ("raw_pwrite_stream" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5883 5921]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5823 5922])
+                            ("EmitAssemblyWithNewPassManager" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5962 5983])
+                                    ("OS" variable (:type ("std::unique_ptr" type
+                                         (:template-specifier 
+                                            ( ("raw_pwrite_stream" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6022 6060]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5926 6061]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3535 6064])
+                    ("PassManagerBuilderWrapper" type
+                       (:superclasses 
+                          ( ("PassManagerBuilder" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6249 6256])
+                            ("PassManagerBuilderWrapper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("TargetTriple" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Triple" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6285 6312])
+                                    ("CGOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6341 6370])
+                                    ("LangOpts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LangOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6399 6427]))                                  
+                                :type ("PassManagerBuilderWrapper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6259 6531])
+                            ("getTargetTriple" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("Triple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6534 6596])
+                            ("getCGOpts" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("CodeGenOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6599 6657])
+                            ("getLangOpts" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("LangOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6660 6719])
+                            ("private" label nil (reparse-symbol classsubparts) [6721 6729])
+                            ("TargetTriple" variable
+                               (:constant-flag t
+                                :type ("Triple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6732 6759])
+                            ("CGOpts" variable
+                               (:constant-flag t
+                                :type ("CodeGenOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6762 6791])
+                            ("LangOpts" variable
+                               (:constant-flag t
+                                :type ("LangOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6794 6822]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6187 6825]))                  
+                :type "namespace")
+                nil [3395 6827])
+            ("addObjCARCAPElimPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6862 6896])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6897 6917]))                  
+                :type "void")
+                nil [6829 6988])
+            ("addObjCARCExpandPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7023 7057])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7058 7078]))                  
+                :type "void")
+                nil [6990 7149])
+            ("addObjCARCOptPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7181 7215])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7216 7236]))                  
+                :type "void")
+                nil [7151 7304])
+            ("addAddDiscriminatorsPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7343 7377])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7415 7443]))                  
+                :type "void")
+                nil [7306 7488])
+            ("addBoundsCheckingPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7524 7558])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7593 7621]))                  
+                :type "void")
+                nil [7490 7669])
+            ("getSancovOptsFromCGOpts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CGOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7727 7756]))                  
+                :type ("SanitizerCoverageOptions" type (:type "class") nil nil))
+                nil [7671 8567])
+            ("addSanitizerCoveragePass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8606 8640])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8678 8706]))                  
+                :type "void")
+                nil [8569 8994])
+            ("asanUseGlobalsGC" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Triple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9318 9334])
+                    ("CGOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9335 9364]))                  
+                :type "bool")
+                nil [9289 9788])
+            ("addAddressSanitizerPasses" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9828 9862])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9901 9929]))                  
+                :type "void")
+                nil [9790 10671])
+            ("addKernelAddressSanitizerPasses" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10717 10751])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10796 10824]))                  
+                :type "void")
+                nil [10673 11107])
+            ("addHWAddressSanitizerPasses" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11149 11183])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11228 11256]))                  
+                :type "void")
+                nil [11109 11598])
+            ("addKernelHWAddressSanitizerPasses" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11646 11680])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11725 11753]))                  
+                :type "void")
+                nil [11600 11856])
+            ("addGeneralOptsForMemorySanitizer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11903 11937])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11983 12011])
+                    ("CompileKernel" variable (:type "bool") (reparse-symbol arg-sub-list) [12057 12076]))                  
+                :type "void")
+                nil [11858 12973])
+            ("addMemorySanitizerPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13010 13044])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13080 13108]))                  
+                :type "void")
+                nil [12975 13186])
+            ("addKernelMemorySanitizerPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13229 13263])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13305 13333]))                  
+                :type "void")
+                nil [13188 13410])
+            ("addThreadSanitizerPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13447 13481])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13517 13545]))                  
+                :type "void")
+                nil [13412 13598])
+            ("addDataFlowSanitizerPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Builder" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13637 13671])
+                    ("PM" variable
+                       (:reference 1
+                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13709 13737]))                  
+                :type "void")
+                nil [13600 13990])
+            ("createTLII" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("TargetTriple" variable
+                       (:reference 1
+                        :type ("llvm::Triple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14033 14060])
+                    ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14102 14136]))                  
+                :type ("TargetLibraryInfoImpl" type (:type "class") nil nil))
+                nil [13992 14655])
+            ("addSymbolRewriterPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Opts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14691 14718])
+                    ("MPM" variable
+                       (:pointer 1
+                        :type ("legacy::PassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14753 14778]))                  
+                :type "void")
+                nil [14657 15014])
+            ("getCGOptLevel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15055 15089]))                  
+                :type ("CodeGenOpt::Level" type (:type "class") nil nil))
+                nil [15016 15381])
+            ("getCodeModel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15436 15470]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("llvm::CodeModel::Model" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15383 16123])
+            ("getCodeGenFileType" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16167 16188]))                  
+                :type ("CodeGenFileType" type (:type "class") nil nil))
+                nil [16125 16424])
+            ("initTargetOptions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Options" variable
+                       (:reference 1
+                        :type ("llvm::TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16456 16485])
+                    ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16516 16550])
+                    ("TargetOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("clang::TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16581 16620])
+                    ("LangOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16651 16679])
+                    ("HSOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("HeaderSearchOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16710 16744]))                  
+                :type "void")
+                nil [16426 20680])
+            ("getGCOVOptions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20725 20759]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("GCOVOptions" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20681 21604])
+            ("getInstrProfOptions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21660 21694])
+                    ("LangOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21715 21743]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("InstrProfOptions" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [21606 22130])
+            ("CreatePasses" function
+               (:parent "EmitAssemblyHelper"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("legacy::PassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22170 22195])
+                    ("FPM" variable
+                       (:reference 1
+                        :type ("legacy::FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22234 22267]))                  
+                :type "void")
+                nil [22132 30281])
+            ("setCommandLineOpts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30314 30348]))                  
+                :type "void")
+                nil [30283 30923])
+            ("CreateTargetMachine" function
+               (:parent "EmitAssemblyHelper"
+                :arguments 
+                  ( ("MustCreateTM" variable (:type "bool") (reparse-symbol arg-sub-list) [30970 30988]))                  
+                :type "void")
+                nil [30925 31865])
+            ("AddEmitPasses" function
+               (:parent "EmitAssemblyHelper"
+                :arguments 
+                  ( ("CodeGenPasses" variable
+                       (:reference 1
+                        :type ("legacy::PassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31906 31941])
+                    ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31981 32002])
+                    ("OS" variable
+                       (:reference 1
+                        :type ("raw_pwrite_stream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32042 32064])
+                    ("DwoOS" variable
+                       (:pointer 1
+                        :type ("raw_pwrite_stream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32104 32129]))                  
+                :type "bool")
+                nil [31867 33069])
+            ("EmitAssembly" function
+               (:parent "EmitAssemblyHelper"
+                :arguments 
+                  ( ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33109 33130])
+                    ("OS" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("raw_pwrite_stream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [33169 33207]))                  
+                :type "void")
+                nil [33071 36829])
+            ("mapToLevel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Opts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36880 36907]))                  
+                :type ("PassBuilder::OptimizationLevel" type (:type "class") nil nil))
+                nil [36831 37349])
+            ("addSanitizersAtO0" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37381 37404])
+                    ("TargetTriple" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Triple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37435 37462])
+                    ("LangOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37493 37521])
+                    ("CodeGenOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37552 37586]))                  
+                :type "void")
+                nil [37351 38982])
+            ("EmitAssemblyWithNewPassManager" function
+               (:parent "EmitAssemblyHelper"
+                :arguments 
+                  ( ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39447 39468])
+                    ("OS" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("raw_pwrite_stream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [39469 39507]))                  
+                :type "void")
+                nil [39386 53552])
+            ("FindThinLTOModule" function
+               (:parent "clang"
+                :arguments 
+                  ( ("MBRef" variable (:type ("MemoryBufferRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53603 53625]))                  
+                :type ("Expected" type
+                     (:template-specifier 
+                        ( ("BitcodeModule" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [53554 54081])
+            ("FindThinLTOModule" function
+               (:pointer 1
+                :parent "clang"
+                :arguments 
+                  ( ("BMs" variable (:type ("MutableArrayRef" type
+                         (:template-specifier 
+                            ( ("BitcodeModule" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [54123 54158]))                  
+                :type ("BitcodeModule" type (:type "class") nil nil))
+                nil [54083 54331])
+            ("runThinLTOBackend" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("CombinedIndex" variable
+                       (:pointer 1
+                        :type ("ModuleSummaryIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54363 54397])
+                    ("M" variable
+                       (:pointer 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54398 54408])
+                    ("HeaderOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("HeaderSearchOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54439 54477])
+                    ("CGOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54508 54537])
+                    ("TOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("clang::TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54568 54602])
+                    ("LOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54633 54658])
+                    ("OS" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("raw_pwrite_stream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [54689 54727])
+                    ("SampleProfile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54758 54784])
+                    ("ProfileRemapping" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54815 54844])
+                    ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54875 54896]))                  
+                :type "void")
+                nil [54333 59573])
+            ("EmitBackendOutput" function
+               (:parent "clang"
+                :arguments 
+                  ( ("Diags" variable
+                       (:reference 1
+                        :type ("DiagnosticsEngine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59605 59630])
+                    ("HeaderOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("HeaderSearchOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59661 59699])
+                    ("CGOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59730 59759])
+                    ("TOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("clang::TargetOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59790 59824])
+                    ("LOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("LangOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59855 59880])
+                    ("TDesc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("llvm::DataLayout" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59911 59941])
+                    ("M" variable
+                       (:pointer 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59942 59952])
+                    ("Action" variable (:type ("BackendAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59983 60004])
+                    ("OS" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("raw_pwrite_stream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [60035 60073]))                  
+                :type "void")
+                nil [59575 62771])
+            ("EmbedBitcode" function
+               (:parent "clang"
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62894 62910])
+                    ("CGOpts" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CodeGenOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62911 62940])
+                    ("Buf" variable (:type ("llvm::MemoryBufferRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62966 62992]))                  
+                :type "void")
+                nil [62869 63261]))          
+      :file "BackendUtil.cpp"
+      :pointmax 63262
+      :fsize 63261
+      :lastmodtime '(24391 26988 463260 348000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HANDLE_EXTENSION" (spp-arg-list ("Ext") 3245 . 3250) . 
+              ((symbol "llvm" 3304 . 3308) (punctuation ":" 3308 . 3309) (punctuation ":" 3309 . 3310) (symbol "PassPluginLibraryInfo" 3310 . 3331) (spp-symbol-merge ((spp-symbol-merge ((symbol "get" 3332 . 3335) (symbol "Ext" 3337 . 3340)) 3332 . 3340) (symbol "PluginInfo" 3342 . 3352)) 3332 . 3352) (semantic-list "()" 3352 . 3354) (punctuation ";" 3354 . 3355)))
+          )
+))
+  :file "!home!khadinh!gits!llvm-project!clang!lib!CodeGen!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

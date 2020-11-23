@@ -1,0 +1,92 @@
+;; Object semanticdb-project-database-file-155f76208956
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155f76208956"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155f76208960"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_ABI_BREAKING_CHECKS_H" variable (:constant-flag t) nil [772 798])
+            ("LLVM_ENABLE_ABI_BREAKING_CHECKS" variable (:constant-flag t) nil [866 897])
+            ("LLVM_ENABLE_REVERSE_ITERATION" variable (:constant-flag t) nil [979 1008])
+            ("LLVM_HIDDEN_VISIBILITY" variable (:constant-flag t) nil [1772 1794])
+            ("llvm" type
+               (:members 
+                  ( ("DisableABIBreakingChecks" variable
+                       (:typemodifiers ("extern")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2186 2222])
+                    ("VerifyDisableABIBreakingChecks" variable
+                       (:pointer 1
+                        :default-value "&DisableABIBreakingChecks"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2268 2336]))                  
+                :type "namespace")
+                nil [1979 2345]))          
+      :file "abi-breaking.h"
+      :pointmax 2457
+      :fsize 2456
+      :lastmodtime '(24221 12073 0 0)
+      :unmatched-syntax '((symbol 2223 . 2245))
+      :lexical-table 
+        '(("LLVM_ABI_BREAKING_CHECKS_H")
+          ("LLVM_ENABLE_ABI_BREAKING_CHECKS" . ((number "0" 898 . 899)))
+          ("LLVM_ENABLE_REVERSE_ITERATION" . ((number "0" 1009 . 1010)))
+          )
+)
+    (semanticdb-table "semanticdb-table-155f760fc11c"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_CONFIG_H" variable (:constant-flag t) nil [903 916])
+            ("LLVM_DEFAULT_TARGET_TRIPLE" variable (:constant-flag t) nil [1060 1086])
+            ("LLVM_ENABLE_THREADS" variable (:constant-flag t) nil [1150 1169])
+            ("LLVM_HAS_ATOMICS" variable (:constant-flag t) nil [1218 1234])
+            ("LLVM_HOST_TRIPLE" variable (:constant-flag t) nil [1289 1305])
+            ("LLVM_NATIVE_ARCH" variable (:constant-flag t) nil [1408 1424])
+            ("LLVM_NATIVE_ASMPARSER" variable (:constant-flag t) nil [1507 1528])
+            ("LLVM_NATIVE_ASMPRINTER" variable (:constant-flag t) nil [1635 1657])
+            ("LLVM_NATIVE_DISASSEMBLER" variable (:constant-flag t) nil [1767 1791])
+            ("LLVM_NATIVE_TARGET" variable (:constant-flag t) nil [1897 1915])
+            ("LLVM_NATIVE_TARGETINFO" variable (:constant-flag t) nil [2019 2041])
+            ("LLVM_NATIVE_TARGETMC" variable (:constant-flag t) nil [2148 2168])
+            ("LLVM_ON_UNIX" variable (:constant-flag t) nil [2245 2257])
+            ("LLVM_USE_INTEL_JITEVENTS" variable (:constant-flag t) nil [2335 2359])
+            ("LLVM_USE_OPROFILE" variable (:constant-flag t) nil [2428 2445])
+            ("LLVM_USE_PERF" variable (:constant-flag t) nil [2510 2523])
+            ("LLVM_VERSION_MAJOR" variable (:constant-flag t) nil [2571 2589])
+            ("LLVM_VERSION_MINOR" variable (:constant-flag t) nil [2638 2656])
+            ("LLVM_VERSION_PATCH" variable (:constant-flag t) nil [2704 2722])
+            ("LLVM_VERSION_STRING" variable (:constant-flag t) nil [2760 2779])
+            ("LLVM_FORCE_ENABLE_STATS" variable (:constant-flag t) nil [2913 2936]))          
+      :file "llvm-config.h"
+      :pointmax 2947
+      :fsize 2946
+      :lastmodtime '(24221 12073 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_ENABLE_THREADS" . ((number "1" 1170 . 1171)))
+          ("LLVM_HOST_TRIPLE" . ((string "\"x86_64-pc-linux-gnu\"" 1306 . 1327)))
+          ("LLVM_NATIVE_ASMPRINTER" . ((symbol "LLVMInitializeX86AsmPrinter" 1658 . 1685)))
+          ("LLVM_ON_UNIX" . ((number "1" 2258 . 2259)))
+          ("LLVM_NATIVE_TARGET" . ((symbol "LLVMInitializeX86Target" 1916 . 1939)))
+          ("LLVM_VERSION_MAJOR" . ((number "10" 2590 . 2592)))
+          ("LLVM_NATIVE_ARCH" . ((symbol "X86" 1425 . 1428)))
+          ("LLVM_VERSION_PATCH" . ((number "0" 2723 . 2724)))
+          ("LLVM_DEFAULT_TARGET_TRIPLE" . ((string "\"x86_64-pc-linux-gnu\"" 1087 . 1108)))
+          ("LLVM_NATIVE_ASMPARSER" . ((symbol "LLVMInitializeX86AsmParser" 1529 . 1555)))
+          ("LLVM_NATIVE_TARGETMC" . ((symbol "LLVMInitializeX86TargetMC" 2169 . 2194)))
+          ("LLVM_NATIVE_DISASSEMBLER" . ((symbol "LLVMInitializeX86Disassembler" 1792 . 1821)))
+          ("LLVM_NATIVE_TARGETINFO" . ((symbol "LLVMInitializeX86TargetInfo" 2042 . 2069)))
+          ("LLVM_USE_INTEL_JITEVENTS" . ((number "0" 2360 . 2361)))
+          ("LLVM_VERSION_STRING" . ((string "\"10.0.0\"" 2780 . 2788)))
+          ("LLVM_VERSION_MINOR" . ((number "0" 2657 . 2658)))
+          ("LLVM_USE_OPROFILE" . ((number "0" 2446 . 2447)))
+          ("LLVM_FORCE_ENABLE_STATS" . ((number "0" 2937 . 2938)))
+          ("LLVM_CONFIG_H")
+          ("LLVM_HAS_ATOMICS" . ((number "1" 1235 . 1236)))
+          ("LLVM_USE_PERF" . ((number "1" 2524 . 2525)))
+          )
+))
+  :file "!usr!include!llvm-10!llvm!Config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

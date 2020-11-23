@@ -1,0 +1,313 @@
+;; Object semanticdb-project-database-file-1558e60ad4e6
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1558e60ad4e6"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1558e60a67a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("mem/ruby/system/Sequencer.hh" include nil nil [2253 2292])
+            ("arch/x86/ldstflags.hh" include nil nil [2294 2326])
+            ("base/logging.hh" include nil nil [2327 2353])
+            ("base/str.hh" include nil nil [2354 2376])
+            ("cpu/testers/rubytest/RubyTester.hh" include nil nil [2377 2422])
+            ("debug/LLSC.hh" include nil nil [2423 2447])
+            ("debug/MemoryAccess.hh" include nil nil [2448 2480])
+            ("debug/ProtocolTrace.hh" include nil nil [2481 2514])
+            ("debug/RubySequencer.hh" include nil nil [2515 2548])
+            ("debug/RubyStats.hh" include nil nil [2549 2578])
+            ("mem/packet.hh" include nil nil [2579 2603])
+            ("mem/ruby/profiler/Profiler.hh" include nil nil [2604 2644])
+            ("mem/ruby/protocol/PrefetchBit.hh" include nil nil [2645 2688])
+            ("mem/ruby/protocol/RubyAccessMode.hh" include nil nil [2689 2735])
+            ("mem/ruby/slicc_interface/RubyRequest.hh" include nil nil [2736 2786])
+            ("mem/ruby/system/RubySystem.hh" include nil nil [2787 2827])
+            ("sim/system.hh" include nil nil [2828 2852])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2854 2874])
+            ("create" function
+               (:pointer 1
+                :parent "RubySequencerParams"
+                :type ("Sequencer" type (:type "class") nil nil))
+                nil [2876 2953])
+            ("Sequencer" function
+               (:constructor-flag t
+                :parent "Sequencer"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Params" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2976 2992]))                  
+                :type ("Sequencer" type (:type "class") nil nil))
+                nil [2955 3615])
+            ("Sequencer" function
+               (:destructor-flag t
+                :parent "Sequencer"
+                :type "void")
+                nil [3617 3644])
+            ("llscLoadLinked" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("claddr" variable
+                       (:constant-flag t
+                        :type ("Addr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3677 3695]))                  
+                :type "void")
+                nil [3646 3952])
+            ("llscClearMonitor" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("claddr" variable
+                       (:constant-flag t
+                        :type ("Addr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3987 4005]))                  
+                :type "void")
+                nil [3954 4284])
+            ("llscStoreConditional" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("claddr" variable
+                       (:constant-flag t
+                        :type ("Addr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4323 4341]))                  
+                :type "bool")
+                nil [4286 4779])
+            ("llscCheckMonitor" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("address" variable
+                       (:constant-flag t
+                        :type ("Addr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4814 4833]))                  
+                :type "bool")
+                nil [4781 5088])
+            ("wakeup" function
+               (:parent "Sequencer"
+                :type "void")
+                nil [5090 6329])
+            ("functionalWrite" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("func_pkt" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6362 6379]))                  
+                :type "int")
+                nil [6331 6676])
+            ("resetStats" function
+               (:parent "Sequencer"
+                :type "void")
+                nil [6678 7565])
+            ("insertRequest" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7716 7730])
+                    ("primary_type" variable (:type ("RubyRequestType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7731 7760])
+                    ("secondary_type" variable (:type ("RubyRequestType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7786 7817]))                  
+                :type ("RequestStatus" type (:type "class") nil nil))
+                nil [7677 8520])
+            ("markRemoved" function
+               (:parent "Sequencer"
+                :type "void")
+                nil [8522 8582])
+            ("recordMissLatency" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("srequest" variable
+                       (:pointer 1
+                        :type ("SequencerRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8618 8645])
+                    ("llscSuccess" variable (:type "bool") (reparse-symbol arg-sub-list) [8646 8663])
+                    ("respondingMach" variable
+                       (:constant-flag t
+                        :type ("MachineType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8693 8726])
+                    ("isExternalHit" variable (:type "bool") (reparse-symbol arg-sub-list) [8756 8775])
+                    ("initialRequestTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8776 8802])
+                    ("forwardRequestTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8832 8858])
+                    ("firstResponseTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8888 8913]))                  
+                :type "void")
+                nil [8584 11351])
+            ("writeCallbackScFail" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("address" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11389 11402])
+                    ("data" variable
+                       (:reference 1
+                        :type ("DataBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11403 11419]))                  
+                :type "void")
+                nil [11353 11488])
+            ("writeCallback" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("address" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11520 11533])
+                    ("data" variable
+                       (:reference 1
+                        :type ("DataBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11534 11550])
+                    ("externalHit" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [11576 11599])
+                    ("mach" variable
+                       (:constant-flag t
+                        :type ("MachineType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11600 11623])
+                    ("initialRequestTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11649 11681])
+                    ("forwardRequestTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11707 11739])
+                    ("firstResponseTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11765 11796]))                  
+                :type "void")
+                nil [11490 15513])
+            ("readCallback" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("address" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15544 15557])
+                    ("data" variable
+                       (:reference 1
+                        :type ("DataBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15558 15574])
+                    ("externalHit" variable (:type "bool") (reparse-symbol arg-sub-list) [15599 15616])
+                    ("mach" variable
+                       (:constant-flag t
+                        :type ("MachineType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15617 15640])
+                    ("initialRequestTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15665 15691])
+                    ("forwardRequestTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15716 15742])
+                    ("firstResponseTime" variable (:type ("Cycles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15767 15792]))                  
+                :type "void")
+                nil [15515 17660])
+            ("hitCallback" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("srequest" variable
+                       (:pointer 1
+                        :type ("SequencerRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17690 17717])
+                    ("data" variable
+                       (:reference 1
+                        :type ("DataBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17718 17734])
+                    ("llscSuccess" variable (:type "bool") (reparse-symbol arg-sub-list) [17758 17775])
+                    ("mach" variable
+                       (:constant-flag t
+                        :type ("MachineType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17799 17822])
+                    ("externalHit" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [17823 17846])
+                    ("initialRequestTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17870 17902])
+                    ("forwardRequestTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17926 17958])
+                    ("firstResponseTime" variable
+                       (:constant-flag t
+                        :type ("Cycles" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17982 18013]))                  
+                :type "void")
+                nil [17662 20910])
+            ("empty" function
+               (:methodconst-flag t
+                :parent "Sequencer"
+                :type "bool")
+                nil [20912 20980])
+            ("makeRequest" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21019 21033]))                  
+                :type ("RequestStatus" type (:type "class") nil nil))
+                nil [20982 25470])
+            ("issueRequest" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("pkt" variable (:type ("PacketPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25501 25515])
+                    ("secondary_type" variable (:type ("RubyRequestType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25516 25547]))                  
+                :type "void")
+                nil [25472 26862])
+            ("<<" function
+               (:template 
+                  ( ("KEY" type (:type "class") nil nil)
+                    ("VALUE" type (:type "class") nil nil))                  
+                :type ("std::ostream" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26924 26937])
+                    ("map" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::unordered_map" type
+                             (:template-specifier 
+                                ( ("KEY" type nil nil nil)
+                                  ("VALUE" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26938 26980]))                  
+                :operator-flag t)
+                nil [26864 27259])
+            ("print" function
+               (:methodconst-flag t
+                :parent "Sequencer"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27283 27296]))                  
+                :type "void")
+                nil [27261 27471])
+            ("checkCoherence" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("addr" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27661 27671]))                  
+                :type "void")
+                nil [27630 27675])
+            ("recordRequestType" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("requestType" variable (:type ("SequencerRequestType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27711 27744]))                  
+                :type "void")
+                nil [27677 27857])
+            ("evictionCallback" function
+               (:parent "Sequencer"
+                :arguments 
+                  ( ("address" variable (:type ("Addr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27892 27905]))                  
+                :type "void")
+                nil [27859 27977])
+            ("regStats" function
+               (:parent "Sequencer"
+                :type "void")
+                nil [27979 30034]))          
+      :file "Sequencer.cc"
+      :pointmax 30035
+      :fsize 30034
+      :lastmodtime '(24319 26497 393617 977000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1558e50a4ebe"
+      :file "Sequencer.hh"
+      :fsize 11655
+      :lastmodtime '(24319 26497 393617 977000))
+    (semanticdb-table "semanticdb-table-1558e50a4cf4"
+      :file "RubySystem.hh"
+      :fsize 5489
+      :lastmodtime '(24141 9154 41489 669000)))
+  :file "!home!khadinh!projects!gem5!src!mem!ruby!system!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

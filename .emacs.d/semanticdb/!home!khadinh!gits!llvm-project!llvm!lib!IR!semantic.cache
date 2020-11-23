@@ -1,0 +1,611 @@
+;; Object semanticdb-project-database-file-155c566817f0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155c566817f0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155c576d7d14"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/IR/Module.h" include nil nil [519 546])
+            ("SymbolTableListTraitsImpl.h" include nil nil [547 585])
+            ("llvm/ADT/Optional.h" include nil nil [586 616])
+            ("llvm/ADT/SmallPtrSet.h" include nil nil [617 650])
+            ("llvm/ADT/SmallString.h" include nil nil [651 684])
+            ("llvm/ADT/SmallVector.h" include nil nil [685 718])
+            ("llvm/ADT/StringMap.h" include nil nil [719 750])
+            ("llvm/ADT/StringRef.h" include nil nil [751 782])
+            ("llvm/ADT/Twine.h" include nil nil [783 810])
+            ("llvm/IR/Attributes.h" include nil nil [811 842])
+            ("llvm/IR/Comdat.h" include nil nil [843 870])
+            ("llvm/IR/Constants.h" include nil nil [871 901])
+            ("llvm/IR/DataLayout.h" include nil nil [902 933])
+            ("llvm/IR/DebugInfoMetadata.h" include nil nil [934 972])
+            ("llvm/IR/DerivedTypes.h" include nil nil [973 1006])
+            ("llvm/IR/Function.h" include nil nil [1007 1036])
+            ("llvm/IR/GVMaterializer.h" include nil nil [1037 1072])
+            ("llvm/IR/GlobalAlias.h" include nil nil [1073 1105])
+            ("llvm/IR/GlobalIFunc.h" include nil nil [1106 1138])
+            ("llvm/IR/GlobalValue.h" include nil nil [1139 1171])
+            ("llvm/IR/GlobalVariable.h" include nil nil [1172 1207])
+            ("llvm/IR/LLVMContext.h" include nil nil [1208 1240])
+            ("llvm/IR/Metadata.h" include nil nil [1241 1270])
+            ("llvm/IR/SymbolTableListTraits.h" include nil nil [1271 1313])
+            ("llvm/IR/Type.h" include nil nil [1314 1339])
+            ("llvm/IR/TypeFinder.h" include nil nil [1340 1371])
+            ("llvm/IR/Value.h" include nil nil [1372 1398])
+            ("llvm/IR/ValueSymbolTable.h" include nil nil [1399 1436])
+            ("llvm/Pass.h" include nil nil [1437 1459])
+            ("llvm/Support/Casting.h" include nil nil [1460 1493])
+            ("llvm/Support/CodeGen.h" include nil nil [1494 1527])
+            ("llvm/Support/Error.h" include nil nil [1528 1559])
+            ("llvm/Support/MemoryBuffer.h" include nil nil [1560 1598])
+            ("llvm/Support/Path.h" include nil nil [1599 1629])
+            ("llvm/Support/RandomNumberGenerator.h" include nil nil [1630 1677])
+            ("llvm/Support/VersionTuple.h" include nil nil [1678 1716])
+            ("algorithm" include (:system-flag t) nil [1717 1737])
+            ("cassert" include (:system-flag t) nil [1738 1756])
+            ("cstdint" include (:system-flag t) nil [1757 1775])
+            ("memory" include (:system-flag t) nil [1776 1793])
+            ("utility" include (:system-flag t) nil [1794 1812])
+            ("vector" include (:system-flag t) nil [1813 1830])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1832 1853])
+            ("SymbolTableListTraits" type
+               (:parent "llvm"
+                :prototype t
+                :template-specifier 
+                  ( ("Function" type nil nil nil))                  
+                :type "class")
+                nil [2122 2166])
+            ("SymbolTableListTraits" type
+               (:parent "llvm"
+                :prototype t
+                :template-specifier 
+                  ( ("GlobalVariable" type nil nil nil))                  
+                :type "class")
+                nil [2176 2226])
+            ("SymbolTableListTraits" type
+               (:parent "llvm"
+                :prototype t
+                :template-specifier 
+                  ( ("GlobalAlias" type nil nil nil))                  
+                :type "class")
+                nil [2236 2283])
+            ("SymbolTableListTraits" type
+               (:parent "llvm"
+                :prototype t
+                :template-specifier 
+                  ( ("GlobalIFunc" type nil nil nil))                  
+                :type "class")
+                nil [2293 2340])
+            ("Module" function
+               (:constructor-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("MID" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2471 2485])
+                    ("C" variable
+                       (:reference 1
+                        :type ("LLVMContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2486 2501]))                  
+                :type ("Module" type (:type "class") nil nil))
+                nil [2456 2697])
+            ("Module" function
+               (:destructor-flag t
+                :parent "Module"
+                :type "void")
+                nil [2699 2969])
+            ("createRNG" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3028 3042]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("RandomNumberGenerator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2971 3801])
+            ("getNamedValue" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4030 4045]))                  
+                :type ("GlobalValue" type (:type "class") nil nil))
+                nil [3995 4127])
+            ("getMDKindID" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4303 4318]))                  
+                :type "unsigned int")
+                nil [4274 4364])
+            ("getMDKindNames" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("Result" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("StringRef" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4590 4625]))                  
+                :type "void")
+                nil [4562 4676])
+            ("getOperandBundleTags" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("Result" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("StringRef" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4712 4747]))                  
+                :type "void")
+                nil [4678 4804])
+            ("getOrInsertFunction" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5282 5297])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("FunctionType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5298 5315])
+                    ("AttributeList" variable (:type ("AttributeList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5359 5387]))                  
+                :type ("FunctionCallee" type (:type "class") nil nil))
+                nil [5239 6204])
+            ("getOrInsertFunction" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6249 6264])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("FunctionType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6265 6282]))                  
+                :type ("FunctionCallee" type (:type "class") nil nil))
+                nil [6206 6343])
+            ("getFunction" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6492 6507]))                  
+                :type ("Function" type (:type "class") nil nil))
+                nil [6462 6575])
+            ("getGlobalVariable" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7204 7219])
+                    ("AllowLocal" variable (:type "bool") (reparse-symbol arg-sub-list) [7262 7278]))                  
+                :type ("GlobalVariable" type (:type "class") nil nil))
+                nil [7162 7469])
+            ("getOrInsertGlobal" function
+               (:pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7907 7922])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7923 7932])
+                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7937 7950])
+                    ("" variable
+                       (:pointer 1
+                        :type ("GlobalVariable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7950 7968])
+                    ("" variable (:type ("CreateGlobalCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7970 7991]))                  
+                :type ("Constant" type (:type "class") nil nil))
+                nil [7866 8605])
+            ("getOrInsertGlobal" function
+               (:pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8720 8735])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8736 8745]))                  
+                :type ("Constant" type (:type "class") nil nil))
+                nil [8684 8925])
+            ("getNamedAlias" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9230 9245]))                  
+                :type ("GlobalAlias" type (:type "class") nil nil))
+                nil [9195 9316])
+            ("getNamedIFunc" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9353 9368]))                  
+                :type ("GlobalIFunc" type (:type "class") nil nil))
+                nil [9318 9439])
+            ("getNamedMetadata" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Twine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9658 9676]))                  
+                :type ("NamedMDNode" type (:type "class") nil nil))
+                nil [9620 9846])
+            ("getOrInsertNamedMetadata" function
+               (:pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10095 10110]))                  
+                :type ("NamedMDNode" type (:type "class") nil nil))
+                nil [10049 10328])
+            ("eraseNamedMetadata" function
+               (:parent "Module"
+                :arguments 
+                  ( ("NMD" variable
+                       (:pointer 1
+                        :type ("NamedMDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10452 10469]))                  
+                :type "void")
+                nil [10420 10595])
+            ("isValidModFlagBehavior" function
+               (:parent "Module"
+                :arguments 
+                  ( ("MD" variable
+                       (:pointer 1
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10633 10646])
+                    ("MFB" variable
+                       (:reference 1
+                        :type ("ModFlagBehavior" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10647 10668]))                  
+                :type "bool")
+                nil [10597 10966])
+            ("getModuleFlagsMetadata" function
+               (:methodconst-flag t
+                :parent "Module"
+                :arguments 
+                  ( ("Flags" variable
+                       (:reference 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("ModuleFlagEntry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11083 11123]))                  
+                :type "void")
+                nil [11046 11750])
+            ("getModuleFlag" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Key" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11878 11892]))                  
+                :type ("Metadata" type (:type "class") nil nil))
+                nil [11846 12128])
+            ("getModuleFlagsMetadata" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "Module"
+                :type ("NamedMDNode" type (:type "class") nil nil))
+                nil [12302 12405])
+            ("getOrInsertModuleFlagsMetadata" function
+               (:pointer 1
+                :parent "Module"
+                :type ("NamedMDNode" type (:type "class") nil nil))
+                nil [12612 12725])
+            ("addModuleFlag" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Behavior" variable (:type ("ModFlagBehavior" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12924 12949])
+                    ("Key" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12950 12964])
+                    ("Val" variable
+                       (:pointer 1
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12992 13006]))                  
+                :type "void")
+                nil [12897 13262])
+            ("addModuleFlag" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Behavior" variable (:type ("ModFlagBehavior" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13290 13315])
+                    ("Key" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13316 13330])
+                    ("Val" variable
+                       (:pointer 1
+                        :type ("Constant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13358 13372]))                  
+                :type "void")
+                nil [13263 13438])
+            ("addModuleFlag" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Behavior" variable (:type ("ModFlagBehavior" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13466 13491])
+                    ("Key" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13492 13506])
+                    ("Val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13534 13547]))                  
+                :type "void")
+                nil [13439 13660])
+            ("addModuleFlag" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Node" variable
+                       (:pointer 1
+                        :type ("MDNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13688 13701]))                  
+                :type "void")
+                nil [13661 14015])
+            ("setDataLayout" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Desc" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14044 14059]))                  
+                :type "void")
+                nil [14017 14081])
+            ("setDataLayout" function
+               (:parent "Module"
+                :arguments 
+                  ( ("Other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DataLayout" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14110 14134]))                  
+                :type "void")
+                nil [14083 14150])
+            ("getDataLayout" function
+               (:methodconst-flag t
+                :parent "Module"
+                :constant-flag t
+                :type ("DataLayout" type (:type "class") nil nil))
+                nil [14152 14214])
+            ("" function
+               (:methodconst-flag t
+                :operator-flag t
+                :pointer 1
+                :function-pointer t
+                :parent "Module::debug_compile_units_iterator"
+                :type ("DICompileUnit" type (:type "class") nil nil))
+                nil [14216 14342])
+            ("->" function
+               (:methodconst-flag t
+                :operator-flag t
+                :pointer 1
+                :parent "Module::debug_compile_units_iterator"
+                :type ("DICompileUnit" type (:type "class") nil nil))
+                nil [14343 14470])
+            ("SkipNoDebugCUs" function
+               (:parent "Module::debug_compile_units_iterator"
+                :type "void")
+                nil [14472 14660])
+            ("global_objects" function
+               (:parent "Module"
+                :type ("iterator_range" type
+                     (:template-specifier 
+                        ( ("Module::global_object_iterator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14662 14792])
+            ("global_objects" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("iterator_range" type
+                     (:template-specifier 
+                        ( ("Module::const_global_object_iterator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14793 14941])
+            ("global_values" function
+               (:parent "Module"
+                :type ("iterator_range" type
+                     (:template-specifier 
+                        ( ("Module::global_value_iterator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [14943 15091])
+            ("global_values" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("iterator_range" type
+                     (:template-specifier 
+                        ( ("Module::const_global_value_iterator" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15092 15258])
+            ("setMaterializer" function
+               (:parent "Module"
+                :arguments 
+                  ( ("GVM" variable
+                       (:pointer 1
+                        :type ("GVMaterializer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15446 15466]))                  
+                :type "void")
+                nil [15417 15650])
+            ("materialize" function
+               (:parent "Module"
+                :arguments 
+                  ( ("GV" variable
+                       (:pointer 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15678 15694]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [15652 15789])
+            ("materializeAll" function
+               (:parent "Module"
+                :type ("Error" type (:type "class") nil nil))
+                nil [15791 15971])
+            ("materializeMetadata" function
+               (:parent "Module"
+                :type ("Error" type (:type "class") nil nil))
+                nil [15973 16108])
+            ("getIdentifiedStructTypes" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("StructType" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16226 16731])
+            ("dropAllReferences" function
+               (:parent "Module"
+                :type "void")
+                nil [17187 17477])
+            ("getNumberRegisterParameters" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type "unsigned int")
+                nil [17479 17716])
+            ("getDwarfVersion" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type "unsigned int")
+                nil [17718 17929])
+            ("getCodeViewFlag" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type "unsigned int")
+                nil [17931 18137])
+            ("getInstructionCount" function
+               (:parent "Module"
+                :type "unsigned int")
+                nil [18139 18304])
+            ("getOrInsertComdat" function
+               (:pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18340 18355]))                  
+                :type ("Comdat" type (:type "class") nil nil))
+                nil [18306 18489])
+            ("getPICLevel" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("PICLevel::Level" type (:type "class") nil nil))
+                nil [18491 18755])
+            ("setPICLevel" function
+               (:parent "Module"
+                :arguments 
+                  ( ("PL" variable (:type ("PICLevel::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18782 18801]))                  
+                :type "void")
+                nil [18757 18861])
+            ("getPIELevel" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("PIELevel::Level" type (:type "class") nil nil))
+                nil [18863 19128])
+            ("setPIELevel" function
+               (:parent "Module"
+                :arguments 
+                  ( ("PL" variable (:type ("PIELevel::Level" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19155 19174]))                  
+                :type "void")
+                nil [19130 19234])
+            ("getCodeModel" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("CodeModel::Model" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19236 19502])
+            ("setCodeModel" function
+               (:parent "Module"
+                :arguments 
+                  ( ("CL" variable (:type ("CodeModel::Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19530 19550]))                  
+                :type "void")
+                nil [19504 19902])
+            ("setProfileSummary" function
+               (:parent "Module"
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19935 19947])
+                    ("Kind" variable (:type ("ProfileSummary::Kind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19948 19974]))                  
+                :type "void")
+                nil [19904 20158])
+            ("getProfileSummary" function
+               (:pointer 1
+                :parent "Module"
+                :arguments 
+                  ( ("IsCS" variable (:type "bool") (reparse-symbol arg-sub-list) [20196 20206]))                  
+                :type ("Metadata" type (:type "class") nil nil))
+                nil [20160 20312])
+            ("setOwnedMemoryBuffer" function
+               (:parent "Module"
+                :arguments 
+                  ( ("MB" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("MemoryBuffer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [20348 20381]))                  
+                :type "void")
+                nil [20314 20422])
+            ("getRtLibUseGOT" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type "bool")
+                nil [20424 20615])
+            ("setRtLibUseGOT" function
+               (:parent "Module"
+                :type "void")
+                nil [20617 20707])
+            ("setSDKVersion" function
+               (:parent "Module"
+                :arguments 
+                  ( ("V" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("VersionTuple" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20736 20758]))                  
+                :type "void")
+                nil [20709 21186])
+            ("getSDKVersion" function
+               (:methodconst-flag t
+                :parent "Module"
+                :type ("VersionTuple" type (:type "class") nil nil))
+                nil [21188 21961])
+            ("collectUsedGlobalVariables" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22017 22033])
+                    ("Set" variable
+                       (:reference 1
+                        :type ("SmallPtrSetImpl" type
+                             (:template-specifier 
+                                ( ("GlobalValue" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22034 22070])
+                    ("CompilerUsed" variable (:type "bool") (reparse-symbol arg-sub-list) [22071 22089]))                  
+                :type ("GlobalVariable" type (:type "class") nil nil))
+                nil [21963 22480]))          
+      :file "Module.cpp"
+      :pointmax 22481
+      :fsize 22480
+      :lastmodtime '(24391 26990 151385 92000)
+      :unmatched-syntax '((punctuation 7968 . 7969) (semantic-list 7966 . 7968) (punctuation 7949 . 7950) (TEMPLATE 2284 . 2292) (TEMPLATE 2227 . 2235) (TEMPLATE 2167 . 2175) (TEMPLATE 2113 . 2121)))
+    (semanticdb-table "semanticdb-table-155c56d1b150"
+      :file "SymbolTableListTraitsImpl.h"
+      :fsize 3838
+      :lastmodtime '(24391 26990 155385 388000)))
+  :file "!home!khadinh!gits!llvm-project!llvm!lib!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

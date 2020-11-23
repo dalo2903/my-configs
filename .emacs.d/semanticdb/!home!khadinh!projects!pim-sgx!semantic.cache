@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file-15643b9a7748
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15643b9a7748"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15643b9a7708"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("CHUNK_SIZE" variable (:constant-flag t) nil [29 39])
+            ("mbedtls/md5.h" include nil nil [45 69])
+            ("main" function (:type "int") nil [71 384]))          
+      :file "main.c"
+      :pointmax 385
+      :fsize 384
+      :lastmodtime '(24489 2658 749869 502000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CHUNK_SIZE" . ((number "1024" 40 . 44)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15643b9a7728"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 11])
+            ("CC" variable (:default-value ("gcc")) nil [11 20])
+            ("CFLAGS" variable (:default-value ("-O0" "-Wall" "-Iinclude")) nil [20 49])
+            ("LFLAGS" variable (:default-value ("-static" "-lm" "-Llib" "-lwolfssl" "-std=c++11")) nil [49 97])
+            ("all" function (:arguments ("main")) nil [98 108])
+            ("main" function (:arguments ("main.o")) nil [109 155])
+            ("main.o" function (:arguments ("main.c")) nil [156 200])
+            ("clean" function nil nil [200 226]))          
+      :file "Makefile"
+      :pointmax 226
+      :fsize 367
+      :lastmodtime '(24489 3151 805640 34000)
+      :unmatched-syntax '((shell-command 208 . 225) (bol 207 . 207))))
+  :file "!home!khadinh!projects!pim-sgx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

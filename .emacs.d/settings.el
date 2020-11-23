@@ -1,0 +1,93 @@
+;; Directory tree
+(use-package neotree
+  :config
+  (global-set-key [f8] 'neotree-toggle)
+  )
+;;Auto resize windows
+(use-package zoom
+  :config
+  (zoom-mode)
+  (setq zoom-size '(0.618 . 0.618))
+
+  )
+;; Dashboard
+(use-package dashboard
+  :config
+  (dashboard-setup-startup-hook)
+  )
+;; Dim other panels when not used
+(use-package dimmer
+  :config
+  ;;  (dimmer-mode +1)
+  (dimmer-configure-helm)
+  (dimmer-configure-which-key)
+  ;; (dimmer-fraction 0.6)
+  )
+;; Centaur tabs
+(use-package centaur-tabs
+  :init
+  (centaur-tabs-mode +1)
+  (global-set-key (kbd "C-x <left>")  'centaur-tabs-backward)
+  (global-set-key (kbd "C-x <right>") 'centaur-tabs-forward)
+  (centaur-tabs-headline-match)
+  (centaur-tabs-group-by-projectile-project)
+  :config
+  (setq centaur-tabs-style "wave")
+  (setq centaur-tabs-set-icons t)
+  (setq sml/no-confirm-load-theme t)
+  (sml/setup)
+
+  )
+
+(setq c-default-style "linux")
+(setq c-basic-offset 4)
+;; Auto close brackets
+(electric-pair-mode)
+;; Redo
+(add-to-list 'load-path "~/.emacs.d/redo+")
+(require 'redo+)
+(define-key global-map (kbd "C-/") 'undo)
+(define-key global-map (kbd "C-x C-_") 'redo)
+
+;; Configs from tuhdo
+(add-to-list 'load-path "~/.emacs.d/custom")
+(require 'setup-general)
+(require 'setup-helm)
+(require 'setup-helm-gtags)
+(require 'setup-editing)
+
+;; Folding code
+(use-package hideshow
+  :init
+  (defun toggle-selective-display (column)
+    (interactive "P")
+    (set-selective-display
+     (or column
+         (unless selective-display
+           (1+ (current-column))))))
+
+  (defun toggle-hiding (column)
+    (interactive "P")
+    (if hs-minor-mode
+        (if (condition-case nil
+                (hs-toggle-hiding)
+              (error t))
+            (hs-show-all))
+      (toggle-selective-display column)))
+  (global-set-key (kbd "M-<up>") 'beginning-of-defun)
+  (global-set-key (kbd "M-<down>") 'end-of-defun)
+  (global-set-key (kbd "C-x \\") 'toggle-hiding)
+  (global-set-key (kbd "C-\\") 'toggle-selective-display)
+  (add-hook 'c-mode-common-hook  'hs-minor-mode)
+  (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+  (use-package aggressive-indent
+    :init
+    (global-aggressive-indent-mode 1)
+    (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+    )
+  )
+
+(defun reload-configs ()
+  (interactive)
+  (load-file "~/.emacs.d/init.el"))
+(define-key global-map (kbd "<f5>") 'reload-configs)

@@ -1,0 +1,14 @@
+;; Object semanticdb-project-database-file-1588d86361ac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1588d86361ac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1588d86361be"
+      :major-mode c-mode
+      :tags nil
+      :file "pimp-asan-rtlib.c"
+      :pointmax 3
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!pimp-asan!development!pimp-asan-gem5!rtlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,166 @@
+;; Object semanticdb-project-database-file-1568a2d47c9a
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1568a2d47c9a"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1568a2d47cb4"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_FPGA_ILA_H" variable (:constant-flag t) nil [187 201])
+            ("hw_dpu_sysfs.h" include nil nil [203 228])
+            ("trace_command" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [249 277])
+                    ("activate" variable (:type "bool") (reparse-symbol arg-sub-list) [278 292]))                  
+                :type "bool")
+                nil [230 293])
+            ("reset_ila" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [309 337]))                  
+                :type "bool")
+                nil [294 338])
+            ("activate_filter_ila" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [364 392]))                  
+                :type "bool")
+                nil [339 393])
+            ("deactivate_filter_ila" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [421 449]))                  
+                :type "bool")
+                nil [394 450])
+            ("activate_ila" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [469 497]))                  
+                :type "bool")
+                nil [451 498])
+            ("deactivate_ila" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [519 547]))                  
+                :type "bool")
+                nil [499 548])
+            ("set_mram_bypass_to" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [573 601])
+                    ("mram_bypass_is_enabled" variable (:type "bool") (reparse-symbol arg-sub-list) [602 630]))                  
+                :type "bool")
+                nil [549 631])
+            ("disable_refresh_emulation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [663 691]))                  
+                :type "bool")
+                nil [632 692])
+            ("enable_refresh_emulation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [723 751])
+                    ("threshold" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [752 771]))                  
+                :type "bool")
+                nil [693 772])
+            ("dump_ila_report" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [794 822])
+                    ("report_file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [823 852]))                  
+                :type "bool")
+                nil [773 853])
+            ("inject_faults" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rank_fs" variable
+                       (:pointer 1
+                        :type ("dpu_rank_fs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [873 901]))                  
+                :type "bool")
+                nil [854 902]))          
+      :file "dpu_fpga_ila.h"
+      :pointmax 929
+      :fsize 928
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_FPGA_ILA_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1568a2ac2994"
+      :file "hw_dpu_sysfs.h"
+      :fsize 2600
+      :lastmodtime '(24436 40959 0 0)))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!backends!hw!src!rank!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

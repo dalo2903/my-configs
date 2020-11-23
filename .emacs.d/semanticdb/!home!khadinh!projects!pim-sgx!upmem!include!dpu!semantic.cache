@@ -1,0 +1,428 @@
+;; Object semanticdb-project-database-file-15602244b7e2
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15602244b7e2"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15602244b7fc"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_TYPES_H" variable (:constant-flag t) nil [184 195])
+            ("stdint.h" include (:system-flag t) nil [266 285])
+            ("dpu_target.h" include (:system-flag t) nil [287 310])
+            ("DPU_MAX_NR_CIS" variable (:constant-flag t) nil [413 427])
+            ("DPU_BOOT_THREAD" variable (:constant-flag t) nil [546 561])
+            ("DPU_MAX_NR_GROUPS" variable (:constant-flag t) nil [666 683])
+            ("dpu_rank_id_t" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [749 780])
+            ("dpu_id_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [834 860])
+            ("dpu_slice_id_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [931 962])
+            ("dpu_member_id_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1041 1073])
+            ("dpu_group_id_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1150 1181])
+            ("dpu_thread_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1249 1278])
+            ("dpu_notify_bit_id_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1357 1393])
+            ("iram_addr_t" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1454 1483])
+            ("wram_addr_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1544 1573])
+            ("mram_addr_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1634 1663])
+            ("dpu_mem_max_addr_t" type
+               (:typedef ("mram_addr_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1755 1794])
+            ("iram_size_t" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1852 1881])
+            ("wram_size_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1939 1968])
+            ("mram_size_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2026 2055])
+            ("dpu_mem_max_size_t" type
+               (:typedef ("mram_size_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2144 2183])
+            ("dpuinstruction_t" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2249 2283])
+            ("dpuword_t" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2343 2370])
+            ("dpu_bitfield_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2443 2474])
+            ("DPU_BITFIELD_ALL" variable (:constant-flag t) nil [2484 2500])
+            ("dpu_ci_bitfield_t" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2598 2632])
+            ("_dpu_clock_division_t" type
+               (:members 
+                  ( ("DPU_CLOCK_DIV8" variable
+                       (:constant-flag t
+                        :default-value (2692 2695)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2675 2695])
+                    ("DPU_CLOCK_DIV4" variable
+                       (:constant-flag t
+                        :default-value (2718 2721)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2701 2721])
+                    ("DPU_CLOCK_DIV3" variable
+                       (:constant-flag t
+                        :default-value (2744 2747)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2727 2747])
+                    ("DPU_CLOCK_DIV2" variable
+                       (:constant-flag t
+                        :default-value (2770 2773)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2753 2773]))                  
+                :type "enum")
+                nil [2634 2798])
+            ("dpu_clock_division_t" type
+               (:typedef ("_dpu_clock_division_t" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [2634 2798])
+            ("dpu_slice_target_type" type
+               (:members 
+                  ( ("DPU_SLICE_TARGET_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2833 2855])
+                    ("DPU_SLICE_TARGET_DPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2860 2881])
+                    ("DPU_SLICE_TARGET_ALL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2886 2907])
+                    ("DPU_SLICE_TARGET_GROUP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2912 2935])
+                    ("NR_OF_DPU_SLICE_TARGETS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2940 2965]))                  
+                :type "enum")
+                nil [2800 2966])
+            ("dpu_slice_target" type
+               (:members 
+                  ( ("type" variable (:type ("dpu_slice_target_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [2998 3030])
+                    ("" type
+                       (:members 
+                          ( ("dpu_id" variable (:type ("dpu_member_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3051 3074])
+                            ("group_id" variable (:type ("dpu_group_id_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3083 3107]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [3035 3114]))                  
+                :type "struct")
+                nil [2968 3117])
+            ("DPU_SLICE_TARGET_TYPE_NAME" variable (:constant-flag t) nil [3127 3153])
+            ("dpu_slice_target_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3475 3542])
+            ("dpu_event_kind_t" variable (:type "int") nil [3775 3792])
+            ("DPU_API_DEPRECATED" variable (:constant-flag t) nil [3802 3820])
+            ("DPU_MRAM_HEAP_POINTER_NAME" variable (:constant-flag t) nil [3858 3884])
+            ("dpu_rank_t" type
+               (:prototype t
+                :type "struct")
+                nil [3966 3984])
+            ("dpu_t" type
+               (:prototype t
+                :type "struct")
+                nil [4034 4047])
+            ("dpu_transfer_matrix" type
+               (:prototype t
+                :type "struct")
+                nil [4049 4076])
+            ("_dpu_set_kind_t" type
+               (:members 
+                  ( ("DPU_SET_RANKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4113 4127])
+                    ("DPU_SET_DPU" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4132 4144]))                  
+                :type "enum")
+                nil [4078 4162])
+            ("dpu_set_kind_t" type
+               (:typedef ("_dpu_set_kind_t" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [4078 4162])
+            ("dpu_set_t" type
+               (:members 
+                  ( ("kind" variable (:type ("dpu_set_kind_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4187 4207])
+                    ("" type
+                       (:members 
+                          ( ("list" variable (:type ("" type
+                                 (:members 
+                                    ( ("nr_ranks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4249 4267])
+                                      ("ranks" variable
+                                         (:pointer 2
+                                          :type ("dpu_rank_t" type
+                                               (:prototype t
+                                                :type "struct")
+                                                nil nil))
+                                          (reparse-symbol classsubparts) [4280 4306]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [4228 4322])
+                            ("dpu" variable
+                               (:pointer 1
+                                :type ("dpu_t" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4331 4349]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [4212 4356]))                  
+                :type "struct")
+                nil [4164 4359])
+            ("dpu_program_t" type
+               (:prototype t
+                :type "struct")
+                nil [4361 4382])
+            ("dpu_symbol_t" type
+               (:members 
+                  ( ("address" variable (:type ("dpu_mem_max_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4497 4524])
+                    ("size" variable (:type ("dpu_mem_max_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4529 4553]))                  
+                :type "struct")
+                nil [4471 4556])
+            ("dpu_incbin_t" type
+               (:members 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4692 4708])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4713 4725])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [4730 4747]))                  
+                :type "struct")
+                nil [4666 4750])
+            ("dpu_bit_config" type
+               (:members 
+                  ( ("cpu2dpu" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4780 4797])
+                    ("dpu2cpu" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4802 4819])
+                    ("nibble_swap" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4824 4844])
+                    ("stutter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4849 4865]))                  
+                :type "struct")
+                nil [4752 4868])
+            ("dpu_carousel_config" type
+               (:members 
+                  ( ("cmd_duration" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4903 4924])
+                    ("cmd_sampling" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4929 4950])
+                    ("res_duration" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4955 4976])
+                    ("res_sampling" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4981 5002]))                  
+                :type "struct")
+                nil [4870 5005])
+            ("dpu_repair_config" type
+               (:members 
+                  ( ("AB_msbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5038 5054])
+                    ("CD_msbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5059 5075])
+                    ("A_lsbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5080 5095])
+                    ("B_lsbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5100 5115])
+                    ("C_lsbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5120 5135])
+                    ("D_lsbs" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5140 5155])
+                    ("even_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5160 5179])
+                    ("odd_index" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5184 5202]))                  
+                :type "struct")
+                nil [5007 5205])
+            ("dpu_temperature" type
+               (:members 
+                  ( ("DPU_TEMPERATURE_LESS_THAN_50" variable
+                       (:constant-flag t
+                        :default-value (5265 5266)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5234 5266])
+                    ("DPU_TEMPERATURE_BETWEEN_50_AND_60" variable
+                       (:constant-flag t
+                        :default-value (5308 5309)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5272 5309])
+                    ("DPU_TEMPERATURE_BETWEEN_60_AND_70" variable
+                       (:constant-flag t
+                        :default-value (5351 5352)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5315 5352])
+                    ("DPU_TEMPERATURE_BETWEEN_70_AND_80" variable
+                       (:constant-flag t
+                        :default-value (5394 5395)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5358 5395])
+                    ("DPU_TEMPERATURE_BETWEEN_80_AND_90" variable
+                       (:constant-flag t
+                        :default-value (5437 5438)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5401 5438])
+                    ("DPU_TEMPERATURE_BETWEEN_90_AND_100" variable
+                       (:constant-flag t
+                        :default-value (5481 5482)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5444 5482])
+                    ("DPU_TEMPERATURE_BETWEEN_100_AND_110" variable
+                       (:constant-flag t
+                        :default-value (5526 5527)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5488 5527])
+                    ("DPU_TEMPERATURE_GREATER_THAN_110" variable
+                       (:constant-flag t
+                        :default-value (5568 5569)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5533 5569]))                  
+                :type "enum")
+                nil [5207 5573])
+            ("dpu_pc_mode" type
+               (:members 
+                  ( ("DPU_PC_MODE_12" variable
+                       (:constant-flag t
+                        :default-value (5615 5616)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5598 5616])
+                    ("DPU_PC_MODE_13" variable
+                       (:constant-flag t
+                        :default-value (5639 5640)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5622 5640])
+                    ("DPU_PC_MODE_14" variable
+                       (:constant-flag t
+                        :default-value (5663 5664)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5646 5664])
+                    ("DPU_PC_MODE_15" variable
+                       (:constant-flag t
+                        :default-value (5687 5688)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5670 5688])
+                    ("DPU_PC_MODE_16" variable
+                       (:constant-flag t
+                        :default-value (5711 5712)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5694 5712]))                  
+                :type "enum")
+                nil [5575 5716])
+            ("dpu_context_t" type
+               (:members 
+                  ( ("info" variable (:type ("" type
+                         (:members 
+                            ( ("nr_threads" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6844 6864])
+                              ("nr_registers" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6873 6895])
+                              ("nr_atomic_bits" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6904 6928])
+                              ("iram_size" variable (:type ("iram_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6938 6960])
+                              ("mram_size" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6969 6991])
+                              ("wram_size" variable (:type ("wram_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7000 7022]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [6827 7034])
+                    ("iram" variable
+                       (:pointer 1
+                        :type ("dpuinstruction_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7040 7063])
+                    ("mram" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7068 7082])
+                    ("wram" variable
+                       (:pointer 1
+                        :type ("dpuword_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7087 7103])
+                    ("registers" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7109 7129])
+                    ("pcs" variable
+                       (:pointer 1
+                        :type ("iram_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7134 7151])
+                    ("atomic_register" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7156 7178])
+                    ("zero_flags" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7183 7200])
+                    ("carry_flags" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7205 7223])
+                    ("nr_of_running_threads" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7228 7258])
+                    ("scheduling" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7263 7283])
+                    ("bkp_fault" variable (:type "bool") (reparse-symbol classsubparts) [7288 7303])
+                    ("dma_fault" variable (:type "bool") (reparse-symbol classsubparts) [7308 7323])
+                    ("mem_fault" variable (:type "bool") (reparse-symbol classsubparts) [7328 7343])
+                    ("bkp_fault_thread_index" variable (:type ("dpu_thread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7348 7384])
+                    ("dma_fault_thread_index" variable (:type ("dpu_thread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7389 7425])
+                    ("mem_fault_thread_index" variable (:type ("dpu_thread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7430 7466])
+                    ("bkp_fault_id" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7471 7493]))                  
+                :type "struct")
+                nil [6800 7496]))          
+      :file "dpu_types.h"
+      :pointmax 7520
+      :fsize 7519
+      :lastmodtime '(24436 41091 0 0)
+      :unmatched-syntax '((semantic-list 3597 . 3774) (symbol 3579 . 3596) (semantic-list 3568 . 3578) (symbol 3557 . 3568) (semantic-list 3569 . 3577) (ENUM 3552 . 3556) (close-paren 3577 . 3578) (semantic-list 3569 . 3577) (open-paren 3568 . 3569) (close-paren 3577 . 3578) (semantic-list 3569 . 3577) (open-paren 3568 . 3569) (TYPEDEF 3544 . 3551) (close-paren 3577 . 3578) (semantic-list 3569 . 3577) (open-paren 3568 . 3569) (close-paren 3577 . 3578) (semantic-list 3569 . 3577) (open-paren 3568 . 3569))
+      :lexical-table 
+        '(("DPU_MAX_NR_CIS" . ((number "8" 428 . 429)))
+          ("DPU_MAX_NR_GROUPS" . ((number "8" 684 . 685)))
+          ("DPU_API_DEPRECATED" . ((symbol "__attribute__" 3821 . 3834) (semantic-list "((deprecated))" 3834 . 3848)))
+          ("DPU_TYPES_H")
+          ("DPU_BITFIELD_ALL" . ((semantic-list "((dpu_bitfield_t)-1)" 2501 . 2521)))
+          ("DPU_BOOT_THREAD" . ((number "0" 562 . 563)))
+          ("DPU_MRAM_HEAP_POINTER_NAME" . ((string "\"__sys_used_mram_end\"" 3885 . 3906)))
+          ("DPU_SLICE_TARGET_TYPE_NAME" (spp-arg-list ("target_type") 3153 . 3166) . ((semantic-list "((((uint32_t)(target_type)) < NR_OF_DPU_SLICE_TARGETS) ? dpu_slice_target_names[target_type]                                 \\
+                                                           : \"DPU_SLICE_TARGET_TYPE_UNKNOWN\")" 3254 . 3474)))
+          )
+)
+    (semanticdb-table "semanticdb-table-156022b65fc4"
+      :file "dpu_target.h"
+      :fsize 1647
+      :lastmodtime '(24436 41091 0 0)))
+  :file "!home!khadinh!projects!pim-sgx!upmem!include!dpu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

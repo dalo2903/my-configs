@@ -1,0 +1,645 @@
+;; Object semanticdb-project-database-file-1572abfa51be
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1572abfa51be"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1572abfa511e"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdint.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("sys/mman.h" include (:system-flag t) nil [80 101])
+            ("stdlib.h" include (:system-flag t) nil [102 121])
+            ("fcntl.h" include (:system-flag t) nil [122 140])
+            ("unistd.h" include (:system-flag t) nil [141 160])
+            ("PIM" variable (:constant-flag t) nil [248 251])
+            ("GEM5" variable (:constant-flag t) nil [275 279])
+            ("DEBUG" variable (:constant-flag t) nil [349 354])
+            ("DEBUG_PRINT" variable (:constant-flag t) nil [636 647])
+            ("m5ops.h" include nil nil [727 745])
+            ("PIM_SIZE" variable (:constant-flag t) nil [773 781])
+            ("DMA_SIZE" variable (:constant-flag t) nil [797 805])
+            ("DMA_PAGES" variable (:constant-flag t) nil [821 830])
+            ("PAGE_SIZE" variable (:constant-flag t) nil [844 853])
+            ("startCheckReg" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "0"
+                :type "int")
+                nil [858 893])
+            ("lowerBoundReg" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [894 929])
+            ("upperBoundReg" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "2"
+                :type "int")
+                nil [930 965])
+            ("dmaBufferReg" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [966 1000])
+            ("debugReg" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [1001 1031])
+            ("pim_registers_uint64_ptr" variable
+               (:pointer 1
+                :typemodifiers ("volatile")
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [1060 1104])
+            ("dma_region_uint64_ptr" variable
+               (:pointer 1
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [1105 1137])
+            ("dev" variable
+               (:default-value "0"
+                :type "int")
+                nil [1138 1150])
+            ("dma_dev" variable
+               (:default-value "0"
+                :type "int")
+                nil [1151 1167])
+            ("pim_mapping" variable
+               (:pointer 1
+                :typemodifiers ("volatile")
+                :type "void")
+                nil [1168 1195])
+            ("dma_mapping" variable
+               (:pointer 1
+                :typemodifiers ("volatile")
+                :type "void")
+                nil [1196 1223])
+            ("initialize" function (:type "int") nil [1278 2637])
+            ("cleanup" function (:type "int") nil [2638 2728])
+            ("setBounds" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("upperBound" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2751 2771])
+                    ("lowerBound" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2772 2792]))                  
+                :type "void")
+                nil [2729 2912])
+            ("checkBounds" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("access" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2937 2953])
+                    ("counter" variable (:type "int") (reparse-symbol arg-sub-list) [2954 2966]))                  
+                :type "void")
+                nil [2913 3025])
+            ("stack_write_test" function
+               (:arguments 
+                  ( ("iterations" variable (:type "int") (reparse-symbol arg-sub-list) [3246 3261]))                  
+                :type "void")
+                nil [3224 3952])
+            ("heap_write_test" function
+               (:arguments 
+                  ( ("iterations" variable (:type "int") (reparse-symbol arg-sub-list) [3975 3990]))                  
+                :type "void")
+                nil [3954 4708])
+            ("main" function (:type "int") nil [4710 5446]))          
+      :file "test_program.c"
+      :pointmax 5447
+      :fsize 5446
+      :lastmodtime '(24374 34051 118055 698000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GEM5")
+          ("PIM")
+          ("DEBUG_PRINT" (spp-arg-list ("x") 647 . 650) . ((symbol "printf" 651 . 657) (semantic-list "(x)" 657 . 660)))
+          ("PIM_SIZE" . ((number "0x1000" 782 . 788)))
+          ("DMA_SIZE" . ((number "0x1000" 806 . 812)))
+          ("DMA_PAGES" . ((semantic-list "(64)" 831 . 835)))
+          ("PAGE_SIZE" . ((number "64" 854 . 856)))
+          ("DEBUG")
+          )
+)
+    (semanticdb-table "semanticdb-table-1572abfa513e"
+      :file "m5ops.h"
+      :fsize 3463
+      :lastmodtime '(24369 50204 494753 254000))
+    (semanticdb-table "semanticdb-table-1572abfa515e"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [1 26])
+            ("linux/module.h" include (:system-flag t) nil [27 52])
+            ("linux/errno.h" include (:system-flag t) nil [53 77])
+            ("linux/ioport.h" include (:system-flag t) nil [78 103])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [104 134])
+            ("linux/interrupt.h" include (:system-flag t) nil [135 163])
+            ("linux/device.h" include (:system-flag t) nil [164 189])
+            ("linux/slab.h" include (:system-flag t) nil [190 213])
+            ("linux/set_memory.h" include (:system-flag t) nil [214 243])
+            ("asm/io.h" include (:system-flag t) nil [245 264])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [291 313])
+            ("BASE" variable (:constant-flag t) nil [323 327])
+            ("MMIO_BASE" variable (:constant-flag t) nil [343 352])
+            ("MMIO_SIZE" variable (:constant-flag t) nil [435 444])
+            ("DMA_SIZE" variable (:constant-flag t) nil [460 468])
+            ("IO_ADDRESS_BASE" variable (:constant-flag t) nil [484 499])
+            ("IRQ" variable (:constant-flag t) nil [548 551])
+            ("PIM_DMA_ATTR" variable (:constant-flag t) nil [594 606])
+            ("START_CHECK_REG" variable (:constant-flag t) nil [639 654])
+            ("ADDRESS_DMA_REG" variable (:constant-flag t) nil [665 680])
+            ("BOUNDS_DMA_REG" variable (:constant-flag t) nil [691 705])
+            ("INT_STATUS_REG" variable (:constant-flag t) nil [716 730])
+            ("CHECK_ADDRESS_REG" variable (:constant-flag t) nil [741 758])
+            ("DEBUG_REG" variable (:constant-flag t) nil [769 778])
+            ("device_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [856 876])
+                    ("filep" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [877 896]))                  
+                :type "int")
+                nil [840 897])
+            ("device_release" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [917 937])
+                    ("filep" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [938 957]))                  
+                :type "int")
+                nil [898 958])
+            ("device_read" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [979 997])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [998 1008])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1009 1022])
+                    ("f_pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1023 1037]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [959 1038])
+            ("device_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1060 1078])
+                    ("__user" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1079 1098])
+                    ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1102])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1103 1116])
+                    ("f_pos" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1117 1131]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [1039 1132])
+            ("device_ioctl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1151 1169])
+                    ("ioctl_num" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1170 1193])
+                    ("ioctl_param" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1194 1220]))                  
+                :type "long")
+                nil [1133 1221])
+            ("device_mmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1238 1256])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1257 1284]))                  
+                :type "int")
+                nil [1222 1285])
+            ("address_dma_mmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1307 1325])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1326 1353]))                  
+                :type "int")
+                nil [1286 1354])
+            ("bounds_dma_mmap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1375 1393])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1394 1421]))                  
+                :type "int")
+                nil [1355 1422])
+            ("device_fops" variable
+               (:default-value "{
+  //.read = device_read,
+  //.write = device_write,
+  //	.unlocked_ioctl = device_ioctl,
+  .open = device_open,
+  .release = device_release,
+  .mmap = device_mmap,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1464 1669])
+            ("address_dma_fops" variable
+               (:default-value "{
+  .open = device_open,
+  .release = device_release,
+  .mmap = address_dma_mmap,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1670 1796])
+            ("bounds_dma_fops" variable
+               (:default-value "{
+  .open = device_open,
+  .release = device_release,
+  .mmap = bounds_dma_mmap,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1798 1922])
+            ("DEVICE_NAME" variable (:constant-flag t) nil [1932 1943])
+            ("major" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1953 1970])
+            ("address_dma_major" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1971 2000])
+            ("bounds_dma_major" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2001 2029])
+            ("pim_dev_va" variable
+               (:pointer 1
+                :type ("__iomem" type (:type "class") nil nil))
+                nil [2041 2061])
+            ("pim_uint64_ptr" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [2062 2094])
+            ("address_dma_handle" variable
+               (:typemodifiers ("static")
+                :type ("phys_addr_t" type (:type "class") nil nil))
+                nil [2096 2134])
+            ("bounds_dma_handle" variable
+               (:typemodifiers ("static")
+                :type ("phys_addr_t" type (:type "class") nil nil))
+                nil [2135 2172])
+            ("address_dma_buffer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "void")
+                nil [2174 2206])
+            ("bounds_dma_buffer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "void")
+                nil [2207 2238])
+            ("dmamask" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "DMA_BIT_MASK(64)"
+                :type ("u64" type (:type "class") nil nil))
+                nil [2240 2284])
+            ("pim_handler" function
+               (:arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [2313 2321])
+                    ("device_id" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2322 2338])
+                    ("regs" variable
+                       (:pointer 1
+                        :type ("pt_regs" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2339 2360]))                  
+                :type ("irq_handler_t" type (:type "class") nil nil))
+                nil [2287 2452])
+            ("my_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2476 2495]))                  
+                :type "void")
+                nil [2453 2536])
+            ("pim_dev" variable
+               (:typemodifiers ("static")
+                :default-value "{
+  .release = my_release,
+  .dma_mask = (u64 *)&dmamask,
+  .coherent_dma_mask = DMA_BIT_MASK(64),
+}"
+                :type ("device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2539 2671])
+            ("bt_first_layer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "void")
+                nil [2672 2700])
+            ("bt_first_layer_phys" variable
+               (:typemodifiers ("static")
+                :type ("phys_addr_t" type (:type "class") nil nil))
+                nil [2701 2740])
+            ("BT_FIRST_LAYER_SIZE" variable (:constant-flag t) nil [2751 2770])
+            ("BT_SECOND_LAYER_SIZE" variable (:constant-flag t) nil [2784 2804])
+            ("BT_THIRD_LAYER_SIZE" variable (:constant-flag t) nil [2818 2837])
+            ("BT_FOURTH_LAYER_SIZE" variable (:constant-flag t) nil [2852 2872])
+            ("BT_FINAL_LAYER_SIZE" variable (:constant-flag t) nil [2887 2906])
+            ("allocate_bt_first_layer" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2975 2980]))                  
+                :type "void")
+                nil [2945 3035])
+            ("allocate_bt_second_layer" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3068 3073]))                  
+                :type "void")
+                nil [3037 3129])
+            ("allocate_bt_third_layer" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3161 3166]))                  
+                :type "void")
+                nil [3131 3221])
+            ("allocate_bt_fourth_layer" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3254 3259]))                  
+                :type "void")
+                nil [3223 3315])
+            ("allocate_bt_FINAL_layer" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3347 3352]))                  
+                :type "void")
+                nil [3317 3407])
+            ("init_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3427 3432]))                  
+                :type "int")
+                nil [3411 6663])
+            ("cleanup_module" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6685 6690]))                  
+                :type "void")
+                nil [6665 7046])
+            ("device_open" function
+               (:arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7066 7086])
+                    ("filep" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7087 7106]))                  
+                :type "int")
+                nil [7050 7155])
+            ("device_release" function
+               (:arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7176 7196])
+                    ("filep" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7197 7216]))                  
+                :type "int")
+                nil [7157 7266])
+            ("device_mmap" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7284 7302])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7303 7330]))                  
+                :type "int")
+                nil [7268 8379])
+            ("address_dma_mmap" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8402 8420])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8421 8448]))                  
+                :type "int")
+                nil [8381 9770])
+            ("bounds_dma_mmap" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9792 9810])
+                    ("vma" variable
+                       (:pointer 1
+                        :type ("vm_area_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9811 9838]))                  
+                :type "int")
+                nil [9772 11158]))          
+      :file "pim_driver.c"
+      :pointmax 11549
+      :fsize 11548
+      :lastmodtime '(24455 63868 82298 789000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IO_ADDRESS_BASE" . ((number "0x8000000000000000" 500 . 518)))
+          ("BT_SECOND_LAYER_SIZE" . ((number "8192" 2770 . 2774)))
+          ("BT_FOURTH_LAYER_SIZE" . ((number "32768" 2838 . 2843)))
+          ("MMIO_SIZE" . ((number "0x1000" 445 . 451)))
+          ("PIM_DMA_ATTR" . ((symbol "DMA_ATTR_WRITE_COMBINE" 607 . 629)))
+          ("DEVICE_NAME" . ((string "\"pimdev\"" 1944 . 1952)))
+          ("ADDRESS_DMA_REG" . ((number "1" 681 . 682)))
+          ("INT_STATUS_REG" . ((number "3" 731 . 732)))
+          ("CHECK_ADDRESS_REG" . ((number "4" 759 . 760)))
+          ("BT_FIRST_LAYER_SIZE" . ((number "1024" 2736 . 2740)))
+          ("BT_THIRD_LAYER_SIZE" . ((number "16384" 2803 . 2808)))
+          ("BASE" . ((number "0xe000" 328 . 334)))
+          ("DMA_SIZE" . ((number "0x1000" 469 . 475)))
+          ("BT_FINAL_LAYER_SIZE" . ((number "4096" 2872 . 2876)))
+          ("IRQ" . ((number "3" 552 . 553)))
+          ("START_CHECK_REG" . ((number "0" 655 . 656)))
+          ("BOUNDS_DMA_REG" . ((number "2" 706 . 707)))
+          ("DEBUG_REG" . ((number "5" 779 . 780)))
+          ("MMIO_BASE" . ((number "0xFFFEF000" 353 . 363)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1572abfa517e"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("obj-m" variable (:default-value ("pim_driver.o")) nil [2 24])
+            ("IDIR" variable (:default-value (".")) nil [106 113])
+            ("ODIR" variable (:default-value ("obj")) nil [113 122])
+            ("LINUXDIR" variable (:default-value ("../binaries/linux-5.7-rc1")) nil [195 230])
+            ("CC" variable (:default-value ("gcc")) nil [230 237])
+            ("CROSS_CC" variable (:default-value ("gcc")) nil [270 283])
+            ("CFLAG" variable (:default-value ("-I$(IDIR)" "-v" "-Wall" "-g" "-O3")) nil [283 315])
+            ("_DEPS" variable (:default-value ("m5ops.h")) nil [315 331])
+            ("DEPS" variable (:default-value ("$(patsubst %,$(IDIR)/%,$(_DEPS))")) nil [331 371])
+            ("_OBJ" variable (:default-value ("test_program.o" "m5op_arm_A64.o" "m5_mmap.o")) nil [372 419])
+            ("OBJ" variable (:default-value ("$(patsubst %,$(ODIR)/%,$(_OBJ))")) nil [419 457])
+            ("all" function (:arguments ("kern_module" "test_program")) nil [459 489])
+            ("kern_module" function nil nil [490 641])
+            ("test_program" function (:arguments ("$(OBJ)")) nil [641 693])
+            ("test_program_nopim" function (:arguments ("$(OBJ)")) nil [693 751])
+            ("test_program_asan" function (:arguments ("$(OBJ)")) nil [751 868])
+            ("$(ODIR)" function (:arguments ("%.S")) nil [869 920])
+            ("$(ODIR)" function (:arguments ("%.c")) nil [920 971])
+            (".PHONY" function (:arguments ("clean")) nil [972 986])
+            ("clean" function nil nil [986 1099]))          
+      :file "Makefile"
+      :pointmax 1099
+      :fsize 1098
+      :lastmodtime '(24456 12623 453163 580000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1572abfa519e"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 74]))          
+      :file "simple_program.c"
+      :pointmax 75
+      :fsize 74
+      :lastmodtime '(24355 53281 666742 380000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!gem5!pim_driver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

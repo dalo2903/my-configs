@@ -1,0 +1,535 @@
+;; Object semanticdb-project-database-file-155c55db79f6
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155c55db79f6"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155c55db7c24"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_SUPPORT_COMPILER_H" variable (:constant-flag t) nil [701 724])
+            ("llvm/Config/llvm-config.h" include nil nil [726 762])
+            ("new" include (:system-flag t) nil [783 797])
+            ("stddef.h" include (:system-flag t) nil [805 824])
+            ("__has_feature" variable (:constant-flag t) nil [904 917])
+            ("__has_extension" variable (:constant-flag t) nil [964 979])
+            ("__has_attribute" variable (:constant-flag t) nil [1026 1041])
+            ("__has_builtin" variable (:constant-flag t) nil [1086 1099])
+            ("LLVM_HAS_CPP_ATTRIBUTE" variable (:constant-flag t) nil [1430 1452])
+            ("LLVM_GNUC_PREREQ" variable (:constant-flag t) nil [1703 1719])
+            ("LLVM_GNUC_PREREQ" variable (:constant-flag t) nil [1921 1937])
+            ("LLVM_MSC_PREREQ" variable (:constant-flag t) nil [2758 2773])
+            ("LLVM_HAS_RVALUE_REFERENCE_THIS" variable (:constant-flag t) nil [3111 3141])
+            ("LLVM_LVALUE_FUNCTION" variable (:constant-flag t) nil [3451 3471])
+            ("LLVM_LIBRARY_VISIBILITY" variable (:constant-flag t) nil [4371 4394])
+            ("LLVM_EXTERNAL_VISIBILITY" variable (:constant-flag t) nil [4403 4427])
+            ("LLVM_PREFETCH" variable (:constant-flag t) nil [4466 4479])
+            ("LLVM_ATTRIBUTE_USED" variable (:constant-flag t) nil [4718 4737])
+            ("LLVM_NODISCARD" variable (:constant-flag t) nil [5468 5482])
+            ("LLVM_ATTRIBUTE_REINITIALIZES" variable (:constant-flag t) nil [5954 5982])
+            ("LLVM_ATTRIBUTE_UNUSED" variable (:constant-flag t) nil [6534 6555])
+            ("LLVM_ATTRIBUTE_WEAK" variable (:constant-flag t) nil [6829 6848])
+            ("LLVM_READNONE" variable (:constant-flag t) nil [7070 7083])
+            ("LLVM_READONLY" variable (:constant-flag t) nil [7248 7261])
+            ("LLVM_LIKELY" variable (:constant-flag t) nil [7532 7543])
+            ("LLVM_UNLIKELY" variable (:constant-flag t) nil [7565 7578])
+            ("LLVM_ATTRIBUTE_NOINLINE" variable (:constant-flag t) nil [7925 7948])
+            ("LLVM_ATTRIBUTE_ALWAYS_INLINE" variable (:constant-flag t) nil [8463 8491])
+            ("LLVM_ATTRIBUTE_NORETURN" variable (:constant-flag t) nil [8524 8547])
+            ("LLVM_ATTRIBUTE_NORETURN" variable (:constant-flag t) nil [8665 8688])
+            ("LLVM_ATTRIBUTE_RETURNS_NONNULL" variable (:constant-flag t) nil [8926 8956])
+            ("LLVM_ATTRIBUTE_RETURNS_NOALIAS" variable (:constant-flag t) nil [9127 9157])
+            ("LLVM_ATTRIBUTE_RETURNS_NOALIAS" variable (:constant-flag t) nil [9284 9314])
+            ("LLVM_FALLTHROUGH" variable (:constant-flag t) nil [9790 9806])
+            ("LLVM_REQUIRE_CONSTANT_INITIALIZATION" variable (:constant-flag t) nil [10137 10173])
+            ("LLVM_EXTENSION" variable (:constant-flag t) nil [10307 10321])
+            ("LLVM_ATTRIBUTE_DEPRECATED" variable (:constant-flag t) nil [10601 10626])
+            ("LLVM_ATTRIBUTE_DEPRECATED" variable (:constant-flag t) nil [10809 10834])
+            ("LLVM_BUILTIN_TRAP" variable (:constant-flag t) nil [11892 11909])
+            ("LLVM_BUILTIN_DEBUGTRAP" variable (:constant-flag t) nil [12630 12652])
+            ("LLVM_ASSUME_ALIGNED" variable (:constant-flag t) nil [13118 13137])
+            ("LLVM_PACKED" variable (:constant-flag t) nil [13659 13670])
+            ("LLVM_PACKED_START" variable (:constant-flag t) nil [13709 13726])
+            ("LLVM_PACKED_END" variable (:constant-flag t) nil [13761 13776])
+            ("LLVM_PTR_SIZE" variable (:constant-flag t) nil [14031 14044])
+            ("LLVM_PTR_SIZE" variable (:constant-flag t) nil [14268 14281])
+            ("LLVM_MEMORY_SANITIZER_BUILD" variable (:constant-flag t) nil [14623 14650])
+            ("__msan_allocated_memory" variable (:constant-flag t) nil [14662 14685])
+            ("__msan_unpoison" variable (:constant-flag t) nil [14704 14719])
+            ("LLVM_NO_SANITIZE_MEMORY_ATTRIBUTE" variable (:constant-flag t) nil [14738 14771])
+            ("LLVM_ADDRESS_SANITIZER_BUILD" variable (:constant-flag t) nil [15056 15084])
+            ("__asan_poison_memory_region" variable (:constant-flag t) nil [15096 15123])
+            ("__asan_unpoison_memory_region" variable (:constant-flag t) nil [15142 15171])
+            ("LLVM_THREAD_SANITIZER_BUILD" variable (:constant-flag t) nil [15421 15448])
+            ("TsanHappensBefore" variable (:constant-flag t) nil [16681 16698])
+            ("TsanHappensAfter" variable (:constant-flag t) nil [16712 16728])
+            ("TsanIgnoreWritesBegin" variable (:constant-flag t) nil [16742 16763])
+            ("TsanIgnoreWritesEnd" variable (:constant-flag t) nil [16775 16794])
+            ("LLVM_NO_SANITIZE" variable (:constant-flag t) nil [16997 17013])
+            ("LLVM_DUMP_METHOD" variable (:constant-flag t) nil [17443 17459])
+            ("LLVM_PRETTY_FUNCTION" variable (:constant-flag t) nil [18009 18029])
+            ("LLVM_THREAD_LOCAL" variable (:constant-flag t) nil [19171 19188])
+            ("LLVM_ENABLE_EXCEPTIONS" variable (:constant-flag t) nil [19405 19427])
+            ("llvm" type
+               (:members 
+                  ( ("allocate_buffer" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20040 20052])
+                            ("Alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20053 20070]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20011 20218])
+                    ("deallocate_buffer" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("Ptr" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [20581 20591])
+                            ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20592 20604])
+                            ("Alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20605 20622]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20551 20843]))                  
+                :type "namespace")
+                nil [19537 20846]))          
+      :file "Compiler.h"
+      :pointmax 20899
+      :fsize 20898
+      :lastmodtime '(24391 26990 7374 451000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_UNLIKELY" (spp-arg-list ("EXPR") 7578 . 7584) . ((semantic-list "(EXPR)" 7585 . 7591)))
+          ("LLVM_NO_SANITIZE_MEMORY_ATTRIBUTE")
+          ("__has_extension" (spp-arg-list ("x") 979 . 982) . ((number "0" 983 . 984)))
+          ("__has_builtin" (spp-arg-list ("x") 1099 . 1102) . ((number "0" 1103 . 1104)))
+          ("LLVM_HAS_RVALUE_REFERENCE_THIS" . ((number "0" 3142 . 3143)))
+          ("LLVM_PREFETCH" (spp-arg-list ("addr" "rw" "locality") 4479 . 4499) . ((symbol "__builtin_prefetch" 4500 . 4518) (semantic-list "(addr, rw, locality)" 4518 . 4538)))
+          ("LLVM_ATTRIBUTE_NORETURN")
+          ("LLVM_REQUIRE_CONSTANT_INITIALIZATION")
+          ("LLVM_PACKED_END" . ((symbol "_Pragma" 13779 . 13786) (semantic-list "(\"pack(pop)\")" 13786 . 13799)))
+          ("LLVM_ADDRESS_SANITIZER_BUILD" . ((number "0" 15085 . 15086)))
+          ("TsanHappensAfter" (spp-arg-list ("cv") 16728 . 16732))
+          ("TsanIgnoreWritesEnd" (spp-arg-list nil 16794 . 16796))
+          ("LLVM_NO_SANITIZE" (spp-arg-list ("KIND") 17013 . 17019))
+          ("__has_feature" (spp-arg-list ("x") 917 . 920) . ((number "0" 921 . 922)))
+          ("LLVM_ATTRIBUTE_RETURNS_NOALIAS")
+          ("LLVM_THREAD_LOCAL")
+          ("LLVM_LIBRARY_VISIBILITY")
+          ("LLVM_READONLY" . ((symbol "__attribute__" 7262 . 7275) (semantic-list "((__pure__))" 7275 . 7287)))
+          ("LLVM_LIKELY" (spp-arg-list ("EXPR") 7543 . 7549) . ((semantic-list "(EXPR)" 7550 . 7556)))
+          ("LLVM_BUILTIN_TRAP" . 
+              ((punctuation "*" 11910 . 11911) (semantic-list "(volatile int*)" 11911 . 11926) (number "0x11" 11926 . 11930) (punctuation "=" 11931 . 11932) (number "0" 11933 . 11934)))
+          ("LLVM_MEMORY_SANITIZER_BUILD" . ((number "0" 14651 . 14652)))
+          ("LLVM_SUPPORT_COMPILER_H")
+          ("LLVM_ATTRIBUTE_USED")
+          ("LLVM_NODISCARD")
+          ("LLVM_ATTRIBUTE_NOINLINE")
+          ("LLVM_EXTENSION" . ((symbol "__extension__" 10322 . 10335)))
+          ("__msan_allocated_memory" (spp-arg-list ("p" "size") 14685 . 14694))
+          ("LLVM_ATTRIBUTE_WEAK")
+          ("LLVM_ATTRIBUTE_ALWAYS_INLINE")
+          ("TsanIgnoreWritesBegin" (spp-arg-list nil 16763 . 16765))
+          ("LLVM_DUMP_METHOD" . ((symbol "LLVM_ATTRIBUTE_NOINLINE" 17460 . 17483) (symbol "LLVM_ATTRIBUTE_USED" 17484 . 17503)))
+          ("LLVM_EXTERNAL_VISIBILITY")
+          ("LLVM_FALLTHROUGH")
+          ("LLVM_ATTRIBUTE_DEPRECATED" (spp-arg-list ("decl" "message") 10834 . 10849) . ((symbol "decl" 10854 . 10858)))
+          ("LLVM_PACKED" (spp-arg-list ("d") 13670 . 13673) . 
+              ((symbol "d" 13674 . 13675) (symbol "__attribute__" 13676 . 13689) (semantic-list "((packed))" 13689 . 13699)))
+          ("LLVM_PTR_SIZE" . ((SIZEOF "sizeof" 14282 . 14288) (semantic-list "(void *)" 14288 . 14296)))
+          ("__asan_poison_memory_region" (spp-arg-list ("p" "size") 15123 . 15132))
+          ("LLVM_HAS_CPP_ATTRIBUTE" (spp-arg-list ("x") 1452 . 1455) . ((number "0" 1456 . 1457)))
+          ("LLVM_MSC_PREREQ" (spp-arg-list ("version") 2773 . 2782) . ((number "0" 2783 . 2784)))
+          ("LLVM_ATTRIBUTE_RETURNS_NONNULL")
+          ("__msan_unpoison" (spp-arg-list ("p" "size") 14719 . 14728))
+          ("__asan_unpoison_memory_region" (spp-arg-list ("p" "size") 15171 . 15180))
+          ("__has_attribute" (spp-arg-list ("x") 1041 . 1044) . ((number "0" 1045 . 1046)))
+          ("LLVM_GNUC_PREREQ" (spp-arg-list ("maj" "min" "patch") 1937 . 1954) . ((semantic-list "((__GNUC__ << 20) + (__GNUC_MINOR__ << 10) >= ((maj) << 20) + ((min) << 10))" 1961 . 2037)))
+          ("LLVM_LVALUE_FUNCTION")
+          ("LLVM_ATTRIBUTE_REINITIALIZES")
+          ("LLVM_PRETTY_FUNCTION" . ((symbol "__PRETTY_FUNCTION__" 18030 . 18049)))
+          ("LLVM_ENABLE_EXCEPTIONS" . ((number "1" 19428 . 19429)))
+          ("LLVM_ASSUME_ALIGNED" (spp-arg-list ("p" "a") 13137 . 13143) . ((semantic-list "(p)" 13144 . 13147)))
+          ("LLVM_THREAD_SANITIZER_BUILD" . ((number "0" 15449 . 15450)))
+          ("TsanHappensBefore" (spp-arg-list ("cv") 16698 . 16702))
+          ("LLVM_ATTRIBUTE_UNUSED")
+          ("LLVM_READNONE" . ((symbol "__attribute__" 7084 . 7097) (semantic-list "((__const__))" 7097 . 7110)))
+          ("LLVM_BUILTIN_DEBUGTRAP")
+          ("LLVM_PACKED_START" . ((symbol "_Pragma" 13727 . 13734) (semantic-list "(\"pack(push, 1)\")" 13734 . 13751)))
+          )
+)
+    (semanticdb-table "semanticdb-table-155c55eccd48"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_SUPPORT_ALLOCATOR_H" variable (:constant-flag t) nil [996 1020])
+            ("llvm/ADT/Optional.h" include nil nil [1022 1052])
+            ("llvm/ADT/SmallVector.h" include nil nil [1053 1086])
+            ("llvm/Support/Alignment.h" include nil nil [1087 1122])
+            ("llvm/Support/Compiler.h" include nil nil [1123 1157])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1158 1197])
+            ("llvm/Support/MathExtras.h" include nil nil [1198 1234])
+            ("llvm/Support/MemAlloc.h" include nil nil [1235 1269])
+            ("algorithm" include (:system-flag t) nil [1270 1290])
+            ("cassert" include (:system-flag t) nil [1291 1309])
+            ("cstddef" include (:system-flag t) nil [1310 1328])
+            ("cstdint" include (:system-flag t) nil [1329 1347])
+            ("cstdlib" include (:system-flag t) nil [1348 1366])
+            ("iterator" include (:system-flag t) nil [1367 1386])
+            ("type_traits" include (:system-flag t) nil [1387 1409])
+            ("utility" include (:system-flag t) nil [1410 1428])
+            ("llvm" type
+               (:members 
+                  ( ("AllocatorBase" type
+                       (:template 
+                          ( ("DerivedT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1827 1834])
+                            ("Allocate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1967 1979])
+                                    ("Alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 1997]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1952 2481])
+                            ("Deallocate" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [2587 2603])
+                                    ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2604 2616]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2571 3104])
+                            ("Allocate" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("T" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("Num" variable
+                                       (:default-value "1"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3313 3327]))                                  
+                                :pointer 1)
+                                (reparse-symbol classsubparts) [3279 3402])
+                            ("Deallocate" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3624 3631])
+                                    ("Num" variable
+                                       (:default-value "1"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3632 3646]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3606 3718]))                          )
+                        (reparse-symbol namespacesubparts) [1776 3721])
+                    ("MallocAllocator" type
+                       (:superclasses 
+                          ( ("AllocatorBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3787 3794])
+                            ("Reset" function (:type "void") (reparse-symbol classsubparts) [3797 3812])
+                            ("Allocate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3862 3874])
+                                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3923 3944]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3847 3980])
+                            ("AllocatorBase::Allocate" variable (:type "int") (reparse-symbol classsubparts) [4025 4066])
+                            ("Deallocate" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [4086 4102])
+                                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4103 4119]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4070 4160])
+                            ("AllocatorBase::Deallocate" variable (:type "int") (reparse-symbol classsubparts) [4205 4248])
+                            ("PrintStats" function
+                               (:methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4252 4278]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3723 4281])
+                    ("detail" type
+                       (:members 
+                          ( ("printBumpPtrAllocatorStats" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("NumSlabs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4468 4486])
+                                    ("BytesAllocated" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4487 4509])
+                                    ("TotalMemory" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4542 4561]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4436 4562]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4283 4565])
+                    ("BumpPtrAllocatorImpl" type
+                       (:superclasses 
+                          ( ("AllocatorBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5567 5574])
+                            ("static_assert" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("SizeThreshold" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5591 5606])
+                                    ("" variable (:type ("SlabSize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5608 5617]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5577 5801])
+                            ("BumpPtrAllocatorImpl" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("BumpPtrAllocatorImpl" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5887 5891])
+                                    ("" variable (:type ("Allocator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5891 5901]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5842 5953])
+                            ("BumpPtrAllocatorImpl" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("BumpPtrAllocatorImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6097 6120])
+                                    ("" variable (:type ("Old" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6120 6124]))                                  
+                                :type ("BumpPtrAllocatorImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6076 6499])
+                            ("BumpPtrAllocatorImpl" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6503 6615])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("BumpPtrAllocatorImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6651 6674])
+                                    ("" variable (:type ("RHS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6674 6678]))                                  
+                                :type ("BumpPtrAllocatorImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6619 7160])
+                            ("Reset" function (:type "void") (reparse-symbol classsubparts) [7303 7804])
+                            ("Allocate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7937 7949])
+                                    ("Alignment" variable (:type ("Align" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7950 7966]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7919 10202])
+                            ("Allocate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10293 10305])
+                                    ("Alignment" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10306 10323]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10275 10454])
+                            ("AllocatorBase::Allocate" variable (:type "int") (reparse-symbol classsubparts) [10499 10545])
+                            ("Deallocate" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [10742 10758])
+                                    ("Size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10759 10771]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10726 10821])
+                            ("AllocatorBase::Deallocate" variable (:type "int") (reparse-symbol classsubparts) [10866 10914])
+                            ("GetNumSlabs" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10918 10995])
+                            ("identifyObject" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [11319 11335]))                                  
+                                :type ("llvm::Optional" type
+                                     (:template-specifier 
+                                        ( ("int64_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [11280 12195])
+                            ("identifyKnownObject" function
+                               (:arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [12460 12476]))                                  
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12432 12591])
+                            ("identifyKnownAlignedObject" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("int64_t" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("Ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [13287 13303]))                                  )
+                                (reparse-symbol classsubparts) [13228 13450])
+                            ("getTotalMemory" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13454 13761])
+                            ("getBytesAllocated" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13765 13824])
+                            ("setRedZoneSize" function
+                               (:arguments 
+                                  ( ("NewSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13848 13863]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13828 13896])
+                            ("PrintStats" function
+                               (:methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13900 14056])
+                            ("private" label nil (reparse-symbol classsubparts) [14058 14066])
+                            ("CurPtr" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "char")
+                                (reparse-symbol classsubparts) [14177 14200])
+                            ("End" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "char")
+                                (reparse-symbol classsubparts) [14239 14259])
+                            ("Slabs" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("void" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14297 14326])
+                            ("CustomSizedSlabs" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type (:template-specifier 
+                                        ( ("void" type (:pointer 1) nil nil)
+                                          ("size_t" type nil nil nil))                                        ) nil nil)
+                                      ("0"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14400 14459])
+                            ("BytesAllocated" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14568 14594])
+                            ("RedZoneSize" variable
+                               (:default-value "1"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14689 14712])
+                            ("Allocator" variable (:type ("AllocatorT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14776 14797])
+                            ("computeSlabSize" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("SlabIdx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14831 14848]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14801 15172])
+                            ("StartNewSlab" function (:type "void") (reparse-symbol classsubparts) [15285 15753])
+                            ("DeallocateSlabs" function
+                               (:arguments 
+                                  ( ("" variable (:type ("SmallVectorImpl" type
+                                         (:template-specifier 
+                                            ( ("void" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [15816 15840])
+                                    ("I" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15841 15852])
+                                    ("" variable (:type ("SmallVectorImpl" type
+                                         (:template-specifier 
+                                            ( ("void" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [15876 15900])
+                                    ("E" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15901 15912]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15795 16094])
+                            ("DeallocateCustomSizedSlabs" function (:type "void") (reparse-symbol classsubparts) [16150 16357])
+                            ("SpecificBumpPtrAllocator" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol classsubparts) [16361 16421]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5441 16424])
+                    ("BumpPtrAllocator" type
+                       (:typedef ("BumpPtrAllocatorImpl" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [16513 16561])
+                    ("SpecificBumpPtrAllocator" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("Allocator" variable (:type ("BumpPtrAllocator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16809 16836])
+                            ("public" label nil (reparse-symbol classsubparts) [16838 16845])
+                            ("SpecificBumpPtrAllocator" function
+                               (:constructor-flag t
+                                :type ("SpecificBumpPtrAllocator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16848 17043])
+                            ("SpecificBumpPtrAllocator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("SpecificBumpPtrAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17071 17098])
+                                    ("" variable (:type ("Old" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17098 17102]))                                  
+                                :type ("SpecificBumpPtrAllocator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17046 17149])
+                            ("SpecificBumpPtrAllocator" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [17152 17197])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("SpecificBumpPtrAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17237 17264])
+                                    ("" variable (:type ("RHS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17264 17268]))                                  
+                                :type ("SpecificBumpPtrAllocator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17201 17334])
+                            ("DestroyAll" function (:type "void") (reparse-symbol classsubparts) [17532 18531])
+                            ("Allocate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("num" variable
+                                       (:default-value "1"
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18619 18633]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18607 18673]))                          )
+                        (reparse-symbol namespacesubparts) [16752 18676]))                  
+                :type "namespace")
+                nil [1430 18679]))          
+      :file "Allocator.h"
+      :pointmax 19387
+      :fsize 19386
+      :lastmodtime '(24391 26990 3374 155000)
+      :unmatched-syntax '((semantic-list 19347 . 19350) (semantic-list 19266 . 19346) (DELETE 19260 . 19266) (OPERATOR 19251 . 19259) (VOID 19246 . 19250) (punctuation 19244 . 19245) (symbol 19231 . 19244) (symbol 19224 . 19230) (punctuation 19222 . 19223) (symbol 19214 . 19222) (symbol 19207 . 19213) (punctuation 19205 . 19206) (symbol 19195 . 19205) (TYPENAME 19186 . 19194) (punctuation 19185 . 19186) (TEMPLATE 19176 . 19184) (semantic-list 18946 . 19174) (semantic-list 18791 . 18945) (NEW 18788 . 18791) (OPERATOR 18779 . 18787) (punctuation 18778 . 18779) (VOID 18773 . 18777) (punctuation 18771 . 18772) (symbol 18758 . 18771) (symbol 18751 . 18757) (punctuation 18749 . 18750) (symbol 18741 . 18749) (symbol 18734 . 18740) (punctuation 18732 . 18733) (symbol 18722 . 18732) (TYPENAME 18713 . 18721) (punctuation 18712 . 18713) (TEMPLATE 18703 . 18711) (punctuation 17263 . 17264) (punctuation 17097 . 17098) (punctuation 15900 . 15901) (punctuation 15899 . 15900) (punctuation 15840 . 15841) (punctuation 15839 . 15840) (USING 10860 . 10865) (USING 10493 . 10498) (symbol 10244 . 10274) (symbol 10213 . 10243) (INLINE 10206 . 10212) (symbol 7888 . 7918) (symbol 7857 . 7887) (punctuation 6673 . 6674) (punctuation 6119 . 6120) (punctuation 5890 . 5891) (punctuation 5837 . 5838) (DEFAULT 5830 . 5837) (punctuation 5828 . 5829) (semantic-list 5825 . 5827) (symbol 5805 . 5825) (string 5786 . 5799) (string 5710 . 5769) (string 5634 . 5693) (punctuation 5606 . 5607) (punctuation 5605 . 5606) (punctuation 5439 . 5440) (symbol 5431 . 5439) (punctuation 5429 . 5430) (symbol 5415 . 5428) (symbol 5408 . 5414) (punctuation 5396 . 5397) (number 5392 . 5396) (punctuation 5390 . 5391) (symbol 5381 . 5389) (symbol 5374 . 5380) (punctuation 5372 . 5373) (symbol 5357 . 5372) (punctuation 5355 . 5356) (symbol 5344 . 5354) (TYPENAME 5335 . 5343) (punctuation 5334 . 5335) (TEMPLATE 5325 . 5333) (USING 4199 . 4204) (USING 4019 . 4024) (symbol 3816 . 3846) (punctuation 3605 . 3606) (punctuation 3604 . 3605) (punctuation 3603 . 3604) (VOID 3599 . 3603) (punctuation 3597 . 3598) (symbol 3592 . 3597) (punctuation 3591 . 3592) (punctuation 3590 . 3591) (punctuation 3589 . 3590) (VOID 3585 . 3589) (punctuation 3583 . 3584) (symbol 3579 . 3583) (punctuation 3578 . 3579) (punctuation 3577 . 3578) (punctuation 3576 . 3577) (symbol 3575 . 3576) (punctuation 3574 . 3575) (symbol 3565 . 3574) (punctuation 3564 . 3565) (punctuation 3563 . 3564) (symbol 3560 . 3563) (TYPENAME 3551 . 3559) (punctuation 3550 . 3551) (symbol 3543 . 3550) (punctuation 3542 . 3543) (punctuation 3541 . 3542) (symbol 3538 . 3541) (punctuation 3537 . 3538) (punctuation 3529 . 3530) (symbol 3520 . 3529) (punctuation 3519 . 3520) (punctuation 3518 . 3519) (symbol 3515 . 3518) (TYPENAME 3506 . 3514) (punctuation 3502 . 3503) (symbol 3501 . 3502) (TYPENAME 3492 . 3500) (punctuation 3491 . 3492) (TEMPLATE 3482 . 3490))
+      :lexical-table 
+        '(("LLVM_SUPPORT_ALLOCATOR_H")
+          )
+))
+  :file "!home!khadinh!gits!llvm-project!llvm!include!llvm!Support!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

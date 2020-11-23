@@ -1,0 +1,404 @@
+;; Object semanticdb-project-database-file-155e09912b3e
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155e09912b3e"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155e09912b48"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_PROGRAM_H" variable (:constant-flag t) nil [186 199])
+            ("stdint.h" include (:system-flag t) nil [201 220])
+            ("stdbool.h" include (:system-flag t) nil [221 241])
+            ("dpu_types.h" include (:system-flag t) nil [243 265])
+            ("dpu_error.h" include (:system-flag t) nil [266 288])
+            ("dpu_elf.h" include (:system-flag t) nil [289 309])
+            ("dpu_program_t" type
+               (:members 
+                  ( ("nr_threads_enabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [414 441])
+                    ("printf_buffer_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [446 476])
+                    ("printf_buffer_size" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [481 508])
+                    ("printf_write_pointer_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [513 550])
+                    ("printf_buffer_has_wrapped_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [555 597])
+                    ("symbols" variable
+                       (:pointer 1
+                        :type ("dpu_elf_symbols_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [602 629])
+                    ("mcount_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [635 658])
+                    ("ret_mcount_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [663 690])
+                    ("thread_profiling_address" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [695 728])
+                    ("open_print_sequence_addr" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [734 767])
+                    ("close_print_sequence_addr" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [772 806])
+                    ("reference_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [812 837])
+                    ("program_path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [843 862]))                  
+                :type "struct")
+                nil [387 865])
+            ("dpu_init_program_ref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [893 923]))                  
+                :type "void")
+                nil [867 924])
+            ("dpu_take_program_ref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [951 981]))                  
+                :type "void")
+                nil [925 982])
+            ("dpu_free_program" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1005 1035]))                  
+                :type "void")
+                nil [983 1036])
+            ("dpu_get_program" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1299]))                  
+                :type ("dpu_program_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1242 1300])
+            ("dpu_set_program" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1529 1547])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1548 1578]))                  
+                :type "void")
+                nil [1508 1579])
+            ("dpu_load_elf_program_from_memory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("elf_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2080 2105])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2110 2127])
+                    ("buffer_start" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2132 2154])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2159 2178])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2183 2213])
+                    ("mram_size_hint" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2218 2245]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [2035 2246])
+            ("dpu_load_elf_program" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("elf_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2615 2640])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2641 2658])
+                    ("program" variable
+                       (:pointer 1
+                        :type ("dpu_program_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2659 2689])
+                    ("mram_size_hint" variable (:type ("mram_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2690 2717]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [2582 2718]))          
+      :file "dpu_program.h"
+      :pointmax 2744
+      :fsize 2743
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_PROGRAM_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155e0953cc7e"
+      :major-mode c-mode
+      :tags 
+        '( ("DPU_ELF_H" variable (:constant-flag t) nil [182 191])
+            ("stdint.h" include (:system-flag t) nil [193 212])
+            ("stdbool.h" include (:system-flag t) nil [213 233])
+            ("dpu_error.h" include (:system-flag t) nil [234 256])
+            ("EM_DPU" variable (:constant-flag t) nil [266 272])
+            ("dpu_elf_symbol" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1421 1432])
+                    ("value" variable (:type "unsigned int") (reparse-symbol classsubparts) [1437 1456])
+                    ("size" variable (:type "unsigned int") (reparse-symbol classsubparts) [1461 1479]))                  
+                :type "struct")
+                nil [1385 1499])
+            ("dpu_elf_symbol_t" type
+               (:typedef ("dpu_elf_symbol" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1385 1499])
+            ("dpu_elf_symbols" type
+               (:members 
+                  ( ("nr_symbols" variable (:type "unsigned int") (reparse-symbol classsubparts) [1698 1722])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("dpu_elf_symbol_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1727 1749]))                  
+                :type "struct")
+                nil [1661 1770])
+            ("dpu_elf_symbols_t" type
+               (:typedef ("dpu_elf_symbols" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1661 1770])
+            ("_dpu_elf_runtime_info_item" type
+               (:members 
+                  ( ("value" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2149 2164])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2169 2183])
+                    ("exists" variable (:type "bool") (reparse-symbol classsubparts) [2188 2200]))                  
+                :type "struct")
+                nil [2101 2231])
+            ("dpu_elf_runtime_info_item_t" type
+               (:typedef ("_dpu_elf_runtime_info_item" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2101 2231])
+            ("_dpu_elf_runtime_info" type
+               (:members 
+                  ( ("sys_heap_pointer_reset" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2382 2433])
+                    ("sys_heap_pointer" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2438 2483])
+                    ("sys_wq_table" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2488 2529])
+                    ("sys_stack_table" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2534 2578])
+                    ("printf_buffer" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2583 2625])
+                    ("printf_state" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2630 2671])
+                    ("sys_end" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2676 2712])
+                    ("mcount" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2717 2752])
+                    ("ret_mcount" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2757 2796])
+                    ("thread_profiling" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2801 2846])
+                    ("nr_threads" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2851 2890])
+                    ("open_print_sequence" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2895 2943])
+                    ("close_print_sequence" variable (:type ("dpu_elf_runtime_info_item_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2948 2997])
+                    ("mutex_info" variable (:type ("dpu_elf_symbols_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3002 3031])
+                    ("semaphore_info" variable (:type ("dpu_elf_symbols_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3036 3069])
+                    ("barrier_info" variable (:type ("dpu_elf_symbols_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3074 3105]))                  
+                :type "struct")
+                nil [2339 3131])
+            ("dpu_elf_runtime_info_t" type
+               (:typedef ("_dpu_elf_runtime_info" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2339 3131])
+            ("dpu_elf_file_t" type
+               (:typedef ("void")
+                :pointer 1
+                :type "typedef")
+                nil [3352 3381])
+            ("dpu_elf_open" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3643 3660])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3661 3682]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [3618 3683])
+            ("dpu_elf_map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("memory" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4094 4110])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4111 4129])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("dpu_elf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4130 4151])
+                    ("filename_or_null" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4152 4181]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [4070 4182])
+            ("dpu_elf_close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4313 4333]))                  
+                :type "void")
+                nil [4294 4334])
+            ("dpu_elf_load_section" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4732 4752])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4753 4770])
+                    ("size" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4771 4790])
+                    ("buffer" variable
+                       (:pointer 2
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4791 4808]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [4699 4809])
+            ("dpu_elf_load_symbols" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5388 5408])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5409 5426])
+                    ("symbols" variable
+                       (:pointer 2
+                        :type ("dpu_elf_symbols_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5427 5455]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [5355 5456])
+            ("dpu_elf_free_symbols" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("symbols" variable
+                       (:pointer 1
+                        :type ("dpu_elf_symbols_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5614 5641]))                  
+                :type "void")
+                nil [5588 5642])
+            ("dpu_elf_get_sections" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6031 6051])
+                    ("nr_sections" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [6052 6078])
+                    ("sections" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6079 6096]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [5998 6097])
+            ("dpu_elf_get_runtime_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable (:type ("dpu_elf_file_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6456 6476])
+                    ("runtime_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_runtime_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6477 6514]))                  
+                :type "void")
+                nil [6426 6515])
+            ("free_runtime_info" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("runtime_info" variable
+                       (:pointer 1
+                        :type ("dpu_elf_runtime_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6618 6655]))                  
+                :type "void")
+                nil [6595 6656])
+            ("dpu_elf_create_core_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("exe_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6695 6716])
+                    ("core_file_path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6721 6748])
+                    ("wram" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6753 6767])
+                    ("mram" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6772 6786])
+                    ("iram" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6791 6805])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6810 6827])
+                    ("wram_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6832 6851])
+                    ("mram_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6856 6875])
+                    ("iram_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6880 6899])
+                    ("context_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6904 6926]))                  
+                :type ("dpu_error_t" type (:type "class") nil nil))
+                nil [6658 6927]))          
+      :file "dpu_elf.h"
+      :pointmax 6949
+      :fsize 6948
+      :lastmodtime '(24436 40959 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_ELF_H")
+          ("EM_DPU" . ((number "245" 273 . 276)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!backends!api!include!lowlevel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

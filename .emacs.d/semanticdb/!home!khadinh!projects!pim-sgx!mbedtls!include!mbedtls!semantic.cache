@@ -1,0 +1,2356 @@
+;; Object semanticdb-project-database-file-15854a64202c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15854a64202c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15854a641fac"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_CONFIG_H" variable (:constant-flag t) nil [906 922])
+            ("MBEDTLS_CONFIG_H" variable (:constant-flag t) nil [906 922])
+            ("MBEDTLS_HAVE_ASM" variable (:constant-flag t) nil [1470 1486])
+            ("MBEDTLS_PLATFORM_NO_STD_FUNCTIONS" variable (:constant-flag t) nil [6548 6581])
+            ("MBEDTLS_CIPHER_MODE_CBC" variable (:constant-flag t) nil [23336 23359])
+            ("MBEDTLS_CIPHER_MODE_CFB" variable (:constant-flag t) nil [23472 23495])
+            ("MBEDTLS_CIPHER_MODE_CTR" variable (:constant-flag t) nil [23613 23636])
+            ("MBEDTLS_CIPHER_MODE_OFB" variable (:constant-flag t) nil [23749 23772])
+            ("MBEDTLS_CIPHER_MODE_XTS" variable (:constant-flag t) nil [23896 23919])
+            ("MBEDTLS_CIPHER_PADDING_PKCS7" variable (:constant-flag t) nil [25493 25521])
+            ("MBEDTLS_CIPHER_PADDING_ONE_AND_ZEROS" variable (:constant-flag t) nil [25530 25566])
+            ("MBEDTLS_CIPHER_PADDING_ZEROS_AND_LEN" variable (:constant-flag t) nil [25575 25611])
+            ("MBEDTLS_CIPHER_PADDING_ZEROS" variable (:constant-flag t) nil [25620 25648])
+            ("MBEDTLS_REMOVE_ARC4_CIPHERSUITES" variable (:constant-flag t) nil [26887 26919])
+            ("MBEDTLS_REMOVE_3DES_CIPHERSUITES" variable (:constant-flag t) nil [27795 27827])
+            ("MBEDTLS_ECP_DP_SECP192R1_ENABLED" variable (:constant-flag t) nil [28149 28181])
+            ("MBEDTLS_ECP_DP_SECP224R1_ENABLED" variable (:constant-flag t) nil [28190 28222])
+            ("MBEDTLS_ECP_DP_SECP256R1_ENABLED" variable (:constant-flag t) nil [28231 28263])
+            ("MBEDTLS_ECP_DP_SECP384R1_ENABLED" variable (:constant-flag t) nil [28272 28304])
+            ("MBEDTLS_ECP_DP_SECP521R1_ENABLED" variable (:constant-flag t) nil [28313 28345])
+            ("MBEDTLS_ECP_DP_SECP192K1_ENABLED" variable (:constant-flag t) nil [28354 28386])
+            ("MBEDTLS_ECP_DP_SECP224K1_ENABLED" variable (:constant-flag t) nil [28395 28427])
+            ("MBEDTLS_ECP_DP_SECP256K1_ENABLED" variable (:constant-flag t) nil [28436 28468])
+            ("MBEDTLS_ECP_DP_BP256R1_ENABLED" variable (:constant-flag t) nil [28477 28507])
+            ("MBEDTLS_ECP_DP_BP384R1_ENABLED" variable (:constant-flag t) nil [28516 28546])
+            ("MBEDTLS_ECP_DP_BP512R1_ENABLED" variable (:constant-flag t) nil [28555 28585])
+            ("MBEDTLS_ECP_DP_CURVE25519_ENABLED" variable (:constant-flag t) nil [28635 28668])
+            ("MBEDTLS_ECP_DP_CURVE448_ENABLED" variable (:constant-flag t) nil [28677 28708])
+            ("MBEDTLS_ECP_NIST_OPTIM" variable (:constant-flag t) nil [28994 29016])
+            ("MBEDTLS_ECDH_LEGACY_CONTEXT" variable (:constant-flag t) nil [32231 32258])
+            ("MBEDTLS_ECDSA_DETERMINISTIC" variable (:constant-flag t) nil [32637 32664])
+            ("MBEDTLS_KEY_EXCHANGE_PSK_ENABLED" variable (:constant-flag t) nil [33455 33487])
+            ("MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED" variable (:constant-flag t) nil [34662 34698])
+            ("MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED" variable (:constant-flag t) nil [35378 35416])
+            ("MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED" variable (:constant-flag t) nil [36351 36387])
+            ("MBEDTLS_KEY_EXCHANGE_RSA_ENABLED" variable (:constant-flag t) nil [37412 37444])
+            ("MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED" variable (:constant-flag t) nil [38755 38791])
+            ("MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED" variable (:constant-flag t) nil [39770 39808])
+            ("MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED" variable (:constant-flag t) nil [40786 40826])
+            ("MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED" variable (:constant-flag t) nil [41789 41828])
+            ("MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED" variable (:constant-flag t) nil [42761 42798])
+            ("MBEDTLS_PK_PARSE_EC_EXTENDED" variable (:constant-flag t) nil [43840 43868])
+            ("MBEDTLS_ERROR_STRERROR_DUMMY" variable (:constant-flag t) nil [44357 44385])
+            ("MBEDTLS_GENPRIME" variable (:constant-flag t) nil [44508 44524])
+            ("MBEDTLS_NO_PLATFORM_ENTROPY" variable (:constant-flag t) nil [45331 45358])
+            ("MBEDTLS_PK_RSA_ALT_SUPPORT" variable (:constant-flag t) nil [48625 48651])
+            ("MBEDTLS_PKCS1_V15" variable (:constant-flag t) nil [48827 48844])
+            ("MBEDTLS_PKCS1_V21" variable (:constant-flag t) nil [49048 49065])
+            ("MBEDTLS_SELF_TEST" variable (:constant-flag t) nil [50153 50170])
+            ("MBEDTLS_SSL_ALL_ALERT_MESSAGES" variable (:constant-flag t) nil [51716 51746])
+            ("MBEDTLS_SSL_RECORD_CHECKING" variable (:constant-flag t) nil [52194 52221])
+            ("MBEDTLS_SSL_CONTEXT_SERIALIZATION" variable (:constant-flag t) nil [54866 54899])
+            ("MBEDTLS_SSL_ENCRYPT_THEN_MAC" variable (:constant-flag t) nil [55981 56009])
+            ("MBEDTLS_SSL_EXTENDED_MASTER_SECRET" variable (:constant-flag t) nil [56655 56689])
+            ("MBEDTLS_SSL_FALLBACK_SCSV" variable (:constant-flag t) nil [57327 57352])
+            ("MBEDTLS_SSL_KEEP_PEER_CERTIFICATE" variable (:constant-flag t) nil [58205 58238])
+            ("MBEDTLS_SSL_CBC_RECORD_SPLITTING" variable (:constant-flag t) nil [58926 58958])
+            ("MBEDTLS_SSL_RENEGOTIATION" variable (:constant-flag t) nil [59776 59801])
+            ("MBEDTLS_SSL_MAX_FRAGMENT_LENGTH" variable (:constant-flag t) nil [60748 60779])
+            ("MBEDTLS_SSL_PROTO_TLS1" variable (:constant-flag t) nil [61309 61331])
+            ("MBEDTLS_SSL_PROTO_TLS1_1" variable (:constant-flag t) nil [61575 61599])
+            ("MBEDTLS_SSL_PROTO_TLS1_2" variable (:constant-flag t) nil [61895 61919])
+            ("MBEDTLS_SSL_PROTO_DTLS" variable (:constant-flag t) nil [63010 63032])
+            ("MBEDTLS_SSL_ALPN" variable (:constant-flag t) nil [63203 63219])
+            ("MBEDTLS_SSL_DTLS_ANTI_REPLAY" variable (:constant-flag t) nil [63567 63595])
+            ("MBEDTLS_SSL_DTLS_HELLO_VERIFY" variable (:constant-flag t) nil [64151 64180])
+            ("MBEDTLS_SSL_DTLS_CLIENT_PORT_REUSE" variable (:constant-flag t) nil [64710 64744])
+            ("MBEDTLS_SSL_DTLS_BADMAC_LIMIT" variable (:constant-flag t) nil [64945 64974])
+            ("MBEDTLS_SSL_SESSION_TICKETS" variable (:constant-flag t) nil [65504 65531])
+            ("MBEDTLS_SSL_EXPORT_KEYS" variable (:constant-flag t) nil [65764 65787])
+            ("MBEDTLS_SSL_SERVER_NAME_INDICATION" variable (:constant-flag t) nil [66038 66072])
+            ("MBEDTLS_SSL_TRUNCATED_HMAC" variable (:constant-flag t) nil [66252 66278])
+            ("MBEDTLS_VERSION_FEATURES" variable (:constant-flag t) nil [71785 71809])
+            ("MBEDTLS_X509_CHECK_KEY_USAGE" variable (:constant-flag t) nil [73632 73660])
+            ("MBEDTLS_X509_CHECK_EXTENDED_KEY_USAGE" variable (:constant-flag t) nil [74034 74071])
+            ("MBEDTLS_X509_RSASSA_PSS_SUPPORT" variable (:constant-flag t) nil [74320 74351])
+            ("MBEDTLS_AESNI_C" variable (:constant-flag t) nil [75530 75545])
+            ("MBEDTLS_AES_C" variable (:constant-flag t) nil [78866 78879])
+            ("MBEDTLS_ARC4_C" variable (:constant-flag t) nil [79786 79800])
+            ("MBEDTLS_ASN1_PARSE_C" variable (:constant-flag t) nil [80055 80075])
+            ("MBEDTLS_ASN1_WRITE_C" variable (:constant-flag t) nil [80359 80379])
+            ("MBEDTLS_BASE64_C" variable (:constant-flag t) nil [80579 80595])
+            ("MBEDTLS_BIGNUM_C" variable (:constant-flag t) nil [80965 80981])
+            ("MBEDTLS_BLOWFISH_C" variable (:constant-flag t) nil [81100 81118])
+            ("MBEDTLS_CAMELLIA_C" variable (:constant-flag t) nil [83751 83769])
+            ("MBEDTLS_CCM_C" variable (:constant-flag t) nil [86341 86354])
+            ("MBEDTLS_CERTS_C" variable (:constant-flag t) nil [86533 86548])
+            ("MBEDTLS_CHACHA20_C" variable (:constant-flag t) nil [86668 86686])
+            ("MBEDTLS_CHACHAPOLY_C" variable (:constant-flag t) nil [86887 86907])
+            ("MBEDTLS_CIPHER_C" variable (:constant-flag t) nil [87102 87118])
+            ("MBEDTLS_CTR_DRBG_C" variable (:constant-flag t) nil [87886 87904])
+            ("MBEDTLS_DEBUG_C" variable (:constant-flag t) nil [88149 88164])
+            ("MBEDTLS_DES_C" variable (:constant-flag t) nil [89142 89155])
+            ("MBEDTLS_DHM_C" variable (:constant-flag t) nil [89712 89725])
+            ("MBEDTLS_ECDH_C" variable (:constant-flag t) nil [90040 90054])
+            ("MBEDTLS_ECDSA_C" variable (:constant-flag t) nil [90437 90452])
+            ("MBEDTLS_ECP_C" variable (:constant-flag t) nil [91232 91245])
+            ("MBEDTLS_ENTROPY_C" variable (:constant-flag t) nil [91485 91502])
+            ("MBEDTLS_ERROR_C" variable (:constant-flag t) nil [91684 91699])
+            ("MBEDTLS_GCM_C" variable (:constant-flag t) nil [91995 92008])
+            ("MBEDTLS_HKDF_C" variable (:constant-flag t) nil [92982 92996])
+            ("MBEDTLS_HMAC_DRBG_C" variable (:constant-flag t) nil [93226 93245])
+            ("MBEDTLS_MD_C" variable (:constant-flag t) nil [93757 93769])
+            ("MBEDTLS_MD5_C" variable (:constant-flag t) nil [95302 95315])
+            ("MBEDTLS_NET_C" variable (:constant-flag t) nil [96362 96375])
+            ("MBEDTLS_OID_C" variable (:constant-flag t) nil [96911 96924])
+            ("MBEDTLS_PADLOCK_C" variable (:constant-flag t) nil [97161 97178])
+            ("MBEDTLS_PEM_PARSE_C" variable (:constant-flag t) nil [97538 97557])
+            ("MBEDTLS_PEM_WRITE_C" variable (:constant-flag t) nil [97870 97889])
+            ("MBEDTLS_PK_C" variable (:constant-flag t) nil [98203 98215])
+            ("MBEDTLS_PK_PARSE_C" variable (:constant-flag t) nil [98502 98520])
+            ("MBEDTLS_PK_WRITE_C" variable (:constant-flag t) nil [98777 98795])
+            ("MBEDTLS_PKCS5_C" variable (:constant-flag t) nil [98985 99000])
+            ("MBEDTLS_PKCS12_C" variable (:constant-flag t) nil [99821 99837])
+            ("MBEDTLS_PLATFORM_C" variable (:constant-flag t) nil [100532 100550])
+            ("MBEDTLS_POLY1305_C" variable (:constant-flag t) nil [100703 100721])
+            ("MBEDTLS_PSA_CRYPTO_C" variable (:constant-flag t) nil [101161 101181])
+            ("MBEDTLS_RIPEMD160_C" variable (:constant-flag t) nil [102357 102376])
+            ("MBEDTLS_RSA_C" variable (:constant-flag t) nil [102790 102803])
+            ("MBEDTLS_SHA1_C" variable (:constant-flag t) nil [103462 103476])
+            ("MBEDTLS_SHA256_C" variable (:constant-flag t) nil [103881 103897])
+            ("MBEDTLS_SHA512_C" variable (:constant-flag t) nil [104211 104227])
+            ("MBEDTLS_SSL_CACHE_C" variable (:constant-flag t) nil [104401 104420])
+            ("MBEDTLS_SSL_COOKIE_C" variable (:constant-flag t) nil [104588 104608])
+            ("MBEDTLS_SSL_TICKET_C" variable (:constant-flag t) nil [104816 104836])
+            ("MBEDTLS_SSL_CLI_C" variable (:constant-flag t) nil [105054 105071])
+            ("MBEDTLS_SSL_SRV_C" variable (:constant-flag t) nil [105289 105306])
+            ("MBEDTLS_SSL_TLS_C" variable (:constant-flag t) nil [105639 105656])
+            ("MBEDTLS_VERSION_C" variable (:constant-flag t) nil [107413 107430])
+            ("MBEDTLS_X509_USE_C" variable (:constant-flag t) nil [107810 107828])
+            ("MBEDTLS_X509_CRT_PARSE_C" variable (:constant-flag t) nil [108139 108163])
+            ("MBEDTLS_X509_CRL_PARSE_C" variable (:constant-flag t) nil [108399 108423])
+            ("MBEDTLS_X509_CSR_PARSE_C" variable (:constant-flag t) nil [108707 108731])
+            ("MBEDTLS_X509_CREATE_C" variable (:constant-flag t) nil [109008 109029])
+            ("MBEDTLS_X509_CRT_WRITE_C" variable (:constant-flag t) nil [109262 109286])
+            ("MBEDTLS_X509_CSR_WRITE_C" variable (:constant-flag t) nil [109548 109572])
+            ("MBEDTLS_XTEA_C" variable (:constant-flag t) nil [109690 109704])
+            ("MBEDTLS_TLS_DEFAULT_ALLOW_SHA1_IN_KEY_EXCHANGE" variable (:constant-flag t) nil [126022 126068])
+            ("mbedtls/check_config.h" include nil nil [128846 128879]))          
+      :file "config.h"
+      :pointmax 128911
+      :fsize 128911
+      :lastmodtime '(24489 8553 785252 878000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_CONFIG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-15854a641fcc"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_CHECK_CONFIG_H" variable (:constant-flag t) nil [896 918])
+            ("MBEDTLS_CHECK_CONFIG_H" variable (:constant-flag t) nil [896 918])
+            ("limits.h" include (:system-flag t) nil [1071 1090])
+            ("mbedtls_iso_c_forbids_empty_translation_units" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [35500 35558]))          
+      :file "check_config.h"
+      :pointmax 35596
+      :fsize 35595
+      :lastmodtime '(24489 8553 785252 878000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_CHECK_CONFIG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-15854a641fec"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_PLATFORM_H" variable (:constant-flag t) nil [1328 1346])
+            ("mbedtls/config.h" include nil nil [1382 1409])
+            ("MBEDTLS_ERR_PLATFORM_HW_ACCEL_FAILED" variable (:constant-flag t) nil [1535 1571])
+            ("MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED" variable (:constant-flag t) nil [1628 1668])
+            ("mbedtls_platform_teardown" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_platform_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14818 14849]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14786 14850])
+            ("mbedtls_platform_setup" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_platform_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14256 14287]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14228 14288])
+            ("mbedtls_platform_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("mbedtls_platform_context" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [13512 13662])
+            ("mbedtls_platform_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("dummy" variable (:type "char") (reparse-symbol classsubparts) [13558 13569]))                  )
+                (reparse-symbol extern-c-contents) [13512 13662])
+            ("MBEDTLS_EXIT_FAILURE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11519 11539])
+            ("MBEDTLS_EXIT_SUCCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11365 11385])
+            ("mbedtls_exit" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [11175 11187])
+            ("mbedtls_vsnprintf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10444 10461])
+            ("mbedtls_snprintf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9066 9082])
+            ("mbedtls_printf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7701 7715])
+            ("mbedtls_fprintf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6886 6901])
+            ("mbedtls_calloc" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6000 6014])
+            ("mbedtls_free" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5968 5980])
+            ("MBEDTLS_PLATFORM_STD_EXIT_FAILURE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4217 4250])
+            ("MBEDTLS_PLATFORM_STD_EXIT_SUCCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4067 4100])
+            ("MBEDTLS_PLATFORM_STD_TIME" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3919 3944])
+            ("MBEDTLS_PLATFORM_STD_EXIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3783 3808])
+            ("MBEDTLS_PLATFORM_STD_FREE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3646 3671])
+            ("MBEDTLS_PLATFORM_STD_CALLOC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3508 3535])
+            ("MBEDTLS_PLATFORM_STD_FPRINTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3366 3394])
+            ("MBEDTLS_PLATFORM_STD_PRINTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3224 3251])
+            ("MBEDTLS_PLATFORM_STD_VSNPRINTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3066 3096])
+            ("MBEDTLS_PLATFORM_STD_SNPRINTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2718 2747])
+            ("time.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2462 2479])
+            ("stdlib.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2442 2461])
+            ("stdio.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2423 2441]))          
+      :file "platform.h"
+      :pointmax 14905
+      :fsize 14904
+      :lastmodtime '(24490 20053 351216 375000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_PLATFORM_STD_EXIT" . ((symbol "exit" 3814 . 3818)))
+          ("MBEDTLS_PLATFORM_H")
+          ("MBEDTLS_PLATFORM_STD_EXIT_SUCCESS" . ((symbol "EXIT_SUCCESS" 4102 . 4114)))
+          ("MBEDTLS_PLATFORM_STD_EXIT_FAILURE" . ((symbol "EXIT_FAILURE" 4252 . 4264)))
+          ("mbedtls_fprintf" . ((symbol "fprintf" 6905 . 6912)))
+          ("MBEDTLS_PLATFORM_STD_CALLOC" . ((symbol "calloc" 3537 . 3543)))
+          ("mbedtls_calloc" . ((symbol "calloc" 6019 . 6025)))
+          ("MBEDTLS_EXIT_SUCCESS" . ((symbol "MBEDTLS_PLATFORM_STD_EXIT_SUCCESS" 11386 . 11419)))
+          ("MBEDTLS_EXIT_FAILURE" . ((symbol "MBEDTLS_PLATFORM_STD_EXIT_FAILURE" 11540 . 11573)))
+          ("MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED" . ((punctuation "-" 1669 . 1670) (number "0x0072" 1670 . 1676)))
+          ("MBEDTLS_PLATFORM_STD_SNPRINTF" . ((symbol "snprintf" 2750 . 2758)))
+          ("MBEDTLS_PLATFORM_STD_FPRINTF" . ((symbol "fprintf" 3395 . 3402)))
+          ("MBEDTLS_PLATFORM_STD_TIME" . ((symbol "time" 3951 . 3955)))
+          ("mbedtls_free" . ((symbol "free" 5987 . 5991)))
+          ("MBEDTLS_ERR_PLATFORM_HW_ACCEL_FAILED" . ((punctuation "-" 1576 . 1577) (number "0x0070" 1577 . 1583)))
+          ("mbedtls_snprintf" . ((symbol "MBEDTLS_PLATFORM_STD_SNPRINTF" 9085 . 9114)))
+          ("mbedtls_exit" . ((symbol "exit" 11190 . 11194)))
+          ("MBEDTLS_PLATFORM_STD_VSNPRINTF" . ((symbol "vsnprintf" 3099 . 3108)))
+          ("MBEDTLS_PLATFORM_STD_FREE" . ((symbol "free" 3678 . 3682)))
+          ("MBEDTLS_PLATFORM_STD_PRINTF" . ((symbol "printf" 3254 . 3260)))
+          ("mbedtls_printf" . ((symbol "printf" 7720 . 7726)))
+          ("mbedtls_vsnprintf" . ((symbol "vsnprintf" 10464 . 10473)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15854a64200c"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_BIGNUM_H" variable (:constant-flag t) nil [755 771])
+            ("mbedtls/config.h" include nil nil [807 834])
+            ("stddef.h" include (:system-flag t) nil [878 897])
+            ("stdint.h" include (:system-flag t) nil [898 917])
+            ("MBEDTLS_ERR_MPI_FILE_IO_ERROR" variable (:constant-flag t) nil [981 1010])
+            ("MBEDTLS_ERR_MPI_BAD_INPUT_DATA" variable (:constant-flag t) nil [1115 1145])
+            ("MBEDTLS_ERR_MPI_INVALID_CHARACTER" variable (:constant-flag t) nil [1224 1257])
+            ("MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL" variable (:constant-flag t) nil [1350 1382])
+            ("MBEDTLS_ERR_MPI_NEGATIVE_VALUE" variable (:constant-flag t) nil [1462 1492])
+            ("MBEDTLS_ERR_MPI_DIVISION_BY_ZERO" variable (:constant-flag t) nil [1599 1631])
+            ("MBEDTLS_ERR_MPI_NOT_ACCEPTABLE" variable (:constant-flag t) nil [1737 1767])
+            ("MBEDTLS_ERR_MPI_ALLOC_FAILED" variable (:constant-flag t) nil [1852 1880])
+            ("MBEDTLS_MPI_CHK" variable (:constant-flag t) nil [1954 1969])
+            ("MBEDTLS_MPI_MAX_LIMBS" variable (:constant-flag t) nil [2218 2239])
+            ("MBEDTLS_MPI_WINDOW_SIZE" variable (:constant-flag t) nil [2603 2626])
+            ("MBEDTLS_MPI_MAX_SIZE" variable (:constant-flag t) nil [3066 3086])
+            ("MBEDTLS_MPI_MAX_BITS" variable (:constant-flag t) nil [3218 3238])
+            ("MBEDTLS_MPI_MAX_BITS_SCALE100" variable (:constant-flag t) nil [4149 4178])
+            ("MBEDTLS_LN_2_DIV_LN_10_SCALE100" variable (:constant-flag t) nil [4227 4258])
+            ("MBEDTLS_MPI_RW_BUFFER_SIZE" variable (:constant-flag t) nil [4287 4313])
+            ("MBEDTLS_HAVE_INT64" variable (:constant-flag t) nil [5606 5624])
+            ("mbedtls_mpi_sint" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [5673 5707])
+            ("mbedtls_mpi_uint" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [5716 5750])
+            ("mbedtls_t_udbl" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [5875 5937])
+            ("MBEDTLS_HAVE_UDBL" variable (:constant-flag t) nil [5958 5975])
+            ("mbedtls_mpi_sint" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6809 6843])
+            ("mbedtls_mpi_uint" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [6852 6886])
+            ("mbedtls_mpi" type
+               (:members 
+                  ( ("s" variable (:type "int") (reparse-symbol classsubparts) [7501 7507])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7579 7588])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi_uint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7630 7650]))                  
+                :type "struct")
+                nil [7468 7701])
+            ("mbedtls_mpi" type
+               (:typedef ("mbedtls_mpi" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [7468 7701])
+            ("mbedtls_mpi_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7990 8006]))                  
+                :type "void")
+                nil [7967 8007])
+            ("mbedtls_mpi_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8324 8340]))                  
+                :type "void")
+                nil [8301 8341])
+            ("mbedtls_mpi_grow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8849 8864])
+                    ("nblimbs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8865 8881]))                  
+                :type "int")
+                nil [8827 8882])
+            ("mbedtls_mpi_shrink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9534 9549])
+                    ("nblimbs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9550 9566]))                  
+                :type "int")
+                nil [9510 9567])
+            ("mbedtls_mpi_copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10133 10148])
+                    ("Y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10149 10171]))                  
+                :type "int")
+                nil [10111 10172])
+            ("mbedtls_mpi_swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10375 10390])
+                    ("Y" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10391 10407]))                  
+                :type "void")
+                nil [10352 10408])
+            ("mbedtls_mpi_safe_cond_assign" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11633 11648])
+                    ("Y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11649 11670])
+                    ("assign" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [11671 11693]))                  
+                :type "int")
+                nil [11599 11694])
+            ("mbedtls_mpi_safe_cond_swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12819 12834])
+                    ("Y" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12835 12850])
+                    ("assign" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [12851 12873]))                  
+                :type "int")
+                nil [12787 12874])
+            ("mbedtls_mpi_lset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13248 13263])
+                    ("z" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13264 13284]))                  
+                :type "int")
+                nil [13226 13285])
+            ("mbedtls_mpi_get_bit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13670 13691])
+                    ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13692 13704]))                  
+                :type "int")
+                nil [13645 13705])
+            ("mbedtls_mpi_set_bit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14389 14404])
+                    ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14405 14416])
+                    ("val" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [14417 14436]))                  
+                :type "int")
+                nil [14364 14437])
+            ("mbedtls_mpi_lsb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14893 14915]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [14869 14916])
+            ("mbedtls_mpi_bitlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15396 15418]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [15369 15419])
+            ("mbedtls_mpi_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15963 15985]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [15938 15986])
+            ("mbedtls_mpi_read_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16364 16379])
+                    ("radix" variable (:type "int") (reparse-symbol arg-sub-list) [16380 16390])
+                    ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16391 16406]))                  
+                :type "int")
+                nil [16335 16407])
+            ("mbedtls_mpi_write_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17571 17592])
+                    ("radix" variable (:type "int") (reparse-symbol arg-sub-list) [17593 17603])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17634 17644])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17645 17659])
+                    ("olen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17660 17674]))                  
+                :type "int")
+                nil [17541 17675])
+            ("mbedtls_mpi_read_binary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20020 20035])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [20036 20061])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20091 20106]))                  
+                :type "int")
+                nil [19991 20107])
+            ("mbedtls_mpi_read_binary_le" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20677 20692])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [20725 20750])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20751 20766]))                  
+                :type "int")
+                nil [20645 20767])
+            ("mbedtls_mpi_write_binary" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21503 21524])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [21525 21544])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21575 21590]))                  
+                :type "int")
+                nil [21473 21591])
+            ("mbedtls_mpi_write_binary_le" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22331 22352])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [22386 22405])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22406 22421]))                  
+                :type "int")
+                nil [22298 22422])
+            ("mbedtls_mpi_shift_l" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22850 22865])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22866 22880]))                  
+                :type "int")
+                nil [22825 22881])
+            ("mbedtls_mpi_shift_r" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23310 23325])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23326 23340]))                  
+                :type "int")
+                nil [23285 23341])
+            ("mbedtls_mpi_cmp_abs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23761 23782])
+                    ("Y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23783 23805]))                  
+                :type "int")
+                nil [23736 23806])
+            ("mbedtls_mpi_cmp_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24197 24218])
+                    ("Y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24219 24241]))                  
+                :type "int")
+                nil [24172 24242])
+            ("mbedtls_mpi_lt_mpi_ct" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24957 24978])
+                    ("Y" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24979 25000])
+                    ("ret" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [25009 25024]))                  
+                :type "int")
+                nil [24930 25025])
+            ("mbedtls_mpi_cmp_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25409 25430])
+                    ("z" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25431 25451]))                  
+                :type "int")
+                nil [25384 25452])
+            ("mbedtls_mpi_add_abs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25995 26010])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26011 26032])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26058 26080]))                  
+                :type "int")
+                nil [25970 26081])
+            ("mbedtls_mpi_sub_abs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26621 26636])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26637 26658])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26684 26706]))                  
+                :type "int")
+                nil [26596 26707])
+            ("mbedtls_mpi_add_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27243 27258])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27259 27280])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27306 27328]))                  
+                :type "int")
+                nil [27218 27329])
+            ("mbedtls_mpi_sub_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27858 27873])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27874 27895])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27921 27943]))                  
+                :type "int")
+                nil [27833 27944])
+            ("mbedtls_mpi_add_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28458 28473])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28474 28495])
+                    ("b" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28521 28541]))                  
+                :type "int")
+                nil [28433 28542])
+            ("mbedtls_mpi_sub_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29068 29083])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29084 29105])
+                    ("b" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29131 29151]))                  
+                :type "int")
+                nil [29043 29152])
+            ("mbedtls_mpi_mul_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29692 29707])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29708 29729])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29755 29777]))                  
+                :type "int")
+                nil [29667 29778])
+            ("mbedtls_mpi_mul_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30321 30336])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30337 30358])
+                    ("b" variable (:type ("mbedtls_mpi_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30384 30404]))                  
+                :type "int")
+                nil [30296 30405])
+            ("mbedtls_mpi_div_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31283 31298])
+                    ("R" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31299 31314])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31315 31336])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31362 31384]))                  
+                :type "int")
+                nil [31258 31385])
+            ("mbedtls_mpi_div_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32236 32251])
+                    ("R" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32252 32267])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32268 32289])
+                    ("b" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32315 32335]))                  
+                :type "int")
+                nil [32211 32336])
+            ("mbedtls_mpi_mod_mpi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("R" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33127 33142])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33143 33164])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33190 33212]))                  
+                :type "int")
+                nil [33102 33213])
+            ("mbedtls_mpi_mod_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi_uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33984 34004])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34005 34026])
+                    ("b" variable (:type ("mbedtls_mpi_sint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34052 34072]))                  
+                :type "int")
+                nil [33959 34073])
+            ("mbedtls_mpi_exp_mod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35579 35594])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35595 35616])
+                    ("E" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35642 35663])
+                    ("N" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35664 35685])
+                    ("_RR" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35711 35729]))                  
+                :type "int")
+                nil [35554 35730])
+            ("mbedtls_mpi_fill_random" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36583 36598])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36599 36611])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [36646 36653])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [36654 36670])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36671 36678]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36701 36714]))                  
+                :type "int")
+                nil [36554 36715])
+            ("mbedtls_mpi_gcd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37253 37268])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37269 37290])
+                    ("B" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37312 37334]))                  
+                :type "int")
+                nil [37232 37335])
+            ("mbedtls_mpi_inv_mod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38100 38115])
+                    ("A" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38116 38137])
+                    ("N" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38163 38185]))                  
+                :type "int")
+                nil [38075 38186])
+            ("MBEDTLS_DEPRECATED" variable (:constant-flag t) nil [38343 38361])
+            ("mbedtls_mpi_is_prime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39328 39349])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [39389 39396])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [39397 39413])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39414 39421]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [39449 39462]))                  
+                :type "int")
+                nil [39302 39463])
+            ("mbedtls_mpi_is_prime_ext" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41064 41085])
+                    ("rounds" variable (:type "int") (reparse-symbol arg-sub-list) [41086 41097])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [41141 41148])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [41149 41165])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41166 41173]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [41205 41218]))                  
+                :type "int")
+                nil [41034 41219])
+            ("mbedtls_mpi_gen_prime_flag_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MBEDTLS_MPI_GEN_PRIME_FLAG_DH" variable
+                             (:constant-flag t
+                              :default-value (41426 41432)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [41389 41432])
+                          ("MBEDTLS_MPI_GEN_PRIME_FLAG_LOW_ERR" variable
+                             (:constant-flag t
+                              :default-value (41504 41510)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [41467 41510]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [41370 41609])
+            ("mbedtls_mpi_gen_prime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42593 42608])
+                    ("nbits" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42609 42622])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [42623 42633])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [42666 42673])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [42674 42690])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42691 42698]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [42719 42732]))                  
+                :type "int")
+                nil [42566 42733]))          
+      :file "bignum.h"
+      :pointmax 42999
+      :fsize 42998
+      :lastmodtime '(24490 25347 268608 333000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_MPI_WINDOW_SIZE" . ((number "6" 2653 . 2654)))
+          ("MBEDTLS_ERR_MPI_FILE_IO_ERROR" . ((punctuation "-" 1031 . 1032) (number "0x0002" 1032 . 1038)))
+          ("MBEDTLS_ERR_MPI_NEGATIVE_VALUE" . ((punctuation "-" 1512 . 1513) (number "0x000A" 1513 . 1519)))
+          ("MBEDTLS_MPI_RW_BUFFER_SIZE" . ((semantic-list "( ((MBEDTLS_MPI_MAX_BITS_SCALE100 + MBEDTLS_LN_2_DIV_LN_10_SCALE100 - 1) / MBEDTLS_LN_2_DIV_LN_10_SCALE100) + 10 + 6 )" 4326 . 4444)))
+          ("MBEDTLS_BIGNUM_H")
+          ("MBEDTLS_MPI_MAX_BITS_SCALE100" . ((semantic-list "( 100 * MBEDTLS_MPI_MAX_BITS )" 4188 . 4218)))
+          ("MBEDTLS_HAVE_INT64")
+          ("MBEDTLS_ERR_MPI_ALLOC_FAILED" . ((punctuation "-" 1902 . 1903) (number "0x0010" 1903 . 1909)))
+          ("MBEDTLS_HAVE_UDBL")
+          ("MBEDTLS_MPI_MAX_SIZE" . ((number "1024" 3116 . 3120)))
+          ("MBEDTLS_ERR_MPI_DIVISION_BY_ZERO" . ((punctuation "-" 1649 . 1650) (number "0x000C" 1650 . 1656)))
+          ("MBEDTLS_ERR_MPI_INVALID_CHARACTER" . ((punctuation "-" 1274 . 1275) (number "0x0006" 1275 . 1281)))
+          ("MBEDTLS_MPI_MAX_LIMBS" . ((number "10000" 2268 . 2273)))
+          ("MBEDTLS_LN_2_DIV_LN_10_SCALE100" . ((number "332" 4275 . 4278)))
+          ("MBEDTLS_MPI_MAX_BITS" . ((semantic-list "( 8 * MBEDTLS_MPI_MAX_SIZE )" 3268 . 3296)))
+          ("MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL" . ((punctuation "-" 1400 . 1401) (number "0x0008" 1401 . 1407)))
+          ("MBEDTLS_MPI_CHK" (spp-arg-list ("f") 1969 . 1972) . 
+              ((DO "do" 1985 . 1987) (semantic-list "{                            \\
+        if( ( ret = (f) ) != 0 ) \\
+            goto cleanup;        \\
+    }" 2020 . 2126) (WHILE "while" 2127 . 2132) (semantic-list "( 0 )" 2132 . 2137)))
+          ("MBEDTLS_ERR_MPI_BAD_INPUT_DATA" . ((punctuation "-" 1165 . 1166) (number "0x0004" 1166 . 1172)))
+          ("MBEDTLS_ERR_MPI_NOT_ACCEPTABLE" . ((punctuation "-" 1787 . 1788) (number "0x000E" 1788 . 1794)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15854ae74c10"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_RSA_H" variable (:constant-flag t) nil [1014 1027])
+            ("mbedtls/config.h" include nil nil [1063 1090])
+            ("mbedtls/bignum.h" include nil nil [1134 1161])
+            ("mbedtls/md.h" include nil nil [1162 1185])
+            ("MBEDTLS_ERR_RSA_BAD_INPUT_DATA" variable (:constant-flag t) nil [1293 1323])
+            ("MBEDTLS_ERR_RSA_INVALID_PADDING" variable (:constant-flag t) nil [1402 1433])
+            ("MBEDTLS_ERR_RSA_KEY_GEN_FAILED" variable (:constant-flag t) nil [1530 1560])
+            ("MBEDTLS_ERR_RSA_KEY_CHECK_FAILED" variable (:constant-flag t) nil [1650 1682])
+            ("MBEDTLS_ERR_RSA_PUBLIC_FAILED" variable (:constant-flag t) nil [1779 1808])
+            ("MBEDTLS_ERR_RSA_PRIVATE_FAILED" variable (:constant-flag t) nil [1887 1917])
+            ("MBEDTLS_ERR_RSA_VERIFY_FAILED" variable (:constant-flag t) nil [1996 2025])
+            ("MBEDTLS_ERR_RSA_OUTPUT_TOO_LARGE" variable (:constant-flag t) nil [2103 2135])
+            ("MBEDTLS_ERR_RSA_RNG_FAILED" variable (:constant-flag t) nil [2232 2258])
+            ("MBEDTLS_ERR_RSA_UNSUPPORTED_OPERATION" variable (:constant-flag t) nil [2442 2479])
+            ("MBEDTLS_ERR_RSA_HW_ACCEL_FAILED" variable (:constant-flag t) nil [2723 2754])
+            ("MBEDTLS_RSA_PUBLIC" variable (:constant-flag t) nil [2856 2874])
+            ("MBEDTLS_RSA_PRIVATE" variable (:constant-flag t) nil [2929 2948])
+            ("MBEDTLS_RSA_PKCS_V15" variable (:constant-flag t) nil [3002 3022])
+            ("MBEDTLS_RSA_PKCS_V21" variable (:constant-flag t) nil [3070 3090])
+            ("MBEDTLS_RSA_SIGN" variable (:constant-flag t) nil [3139 3155])
+            ("MBEDTLS_RSA_CRYPT" variable (:constant-flag t) nil [3222 3239])
+            ("MBEDTLS_RSA_SALT_LEN_ANY" variable (:constant-flag t) nil [3322 3346])
+            ("mbedtls_rsa_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64290 64316]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [64267 64317])
+            ("mbedtls_rsa_copy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63921 63946])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63947 63979]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [63899 63980])
+            ("mbedtls_rsa_rsassa_pss_verify_ext" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63027 63052])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [63097 63104])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [63105 63121])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63122 63129]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [63162 63174])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [63206 63215])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63247 63272])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [63304 63325])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [63357 63383])
+                    ("mgf1_hash_id" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63415 63446])
+                    ("expected_salt_len" variable (:type "int") (reparse-symbol arg-sub-list) [63478 63500])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [63532 63558]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [62988 63559])
+            ("mbedtls_rsa_rsassa_pss_verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60347 60372])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [60413 60420])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [60421 60437])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60438 60445]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [60474 60486])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [60514 60523])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60551 60576])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [60604 60625])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [60653 60679])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [60707 60733]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [60312 60734])
+            ("mbedtls_rsa_rsassa_pkcs1_v15_verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57025 57050])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [57097 57104])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [57105 57121])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57122 57129]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [57164 57176])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [57210 57219])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57253 57278])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [57312 57333])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [57367 57393])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [57427 57453]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [56984 57454])
+            ("mbedtls_rsa_pkcs1_verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54440 54465])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [54501 54508])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [54509 54525])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54526 54533]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [54557 54569])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [54592 54601])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54624 54649])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [54672 54693])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [54716 54742])
+                    ("sig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [54765 54791]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [54410 54792])
+            ("mbedtls_rsa_rsassa_pss_sign" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51557 51582])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [51621 51628])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [51629 51645])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51646 51653]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [51680 51692])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [51718 51727])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51753 51778])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [51804 51825])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [51851 51877])
+                    ("sig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [51903 51923]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [51524 51924])
+            ("mbedtls_rsa_rsassa_pkcs1_v15_sign" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47953 47978])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [48023 48030])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [48031 48047])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48048 48055]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [48088 48100])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [48132 48141])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48173 48198])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [48230 48251])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [48283 48309])
+                    ("sig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [48341 48361]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47914 48362])
+            ("mbedtls_rsa_pkcs1_sign" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45275 45300])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [45334 45341])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [45342 45358])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45359 45366]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [45388 45400])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [45421 45430])
+                    ("md_alg" variable (:type ("mbedtls_md_type_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45451 45476])
+                    ("hashlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [45497 45518])
+                    ("hash" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [45539 45565])
+                    ("sig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [45586 45606]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [45247 45607])
+            ("mbedtls_rsa_rsaes_oaep_decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41927 41952])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [41994 42001])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [42002 42018])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42019 42026]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [42056 42068])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [42097 42106])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [42135 42162])
+                    ("label_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42163 42180])
+                    ("olen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42209 42222])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [42251 42278])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [42307 42329])
+                    ("output_max_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42358 42381]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [41891 42382])
+            ("mbedtls_rsa_rsaes_pkcs1_v15_decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38806 38831])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [38878 38885])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [38886 38902])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38903 38910]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [38945 38957])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [38991 39000])
+                    ("olen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39001 39014])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [39048 39075])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [39109 39131])
+                    ("output_max_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39165 39188]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [38765 39189])
+            ("mbedtls_rsa_pkcs1_decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36085 36110])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [36147 36154])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [36155 36171])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36172 36179]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [36204 36216])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [36240 36249])
+                    ("olen" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36250 36263])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [36287 36314])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [36338 36360])
+                    ("output_max_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36384 36407]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [36054 36408])
+            ("mbedtls_rsa_rsaes_oaep_encrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33158 33183])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [33225 33232])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [33233 33249])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33250 33257]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [33287 33299])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [33328 33337])
+                    ("label" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [33366 33393])
+                    ("label_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33394 33411])
+                    ("ilen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33440 33452])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [33481 33508])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [33537 33560]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [33122 33561])
+            ("mbedtls_rsa_rsaes_pkcs1_v15_encrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30684 30709])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [30756 30763])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [30764 30780])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30781 30788]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30823 30835])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [30869 30878])
+                    ("ilen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30879 30891])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [30925 30952])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [30986 31009]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30643 31010])
+            ("mbedtls_rsa_pkcs1_encrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28515 28540])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [28577 28584])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [28585 28601])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28602 28609]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28634 28646])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [28670 28679])
+                    ("ilen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28680 28692])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28716 28743])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28767 28790]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28484 28791])
+            ("mbedtls_rsa_private" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26155 26180])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [26211 26218])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [26219 26235])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26236 26243]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26262 26274])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [26292 26319])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [26337 26360]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26130 26361])
+            ("mbedtls_rsa_public" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24520 24545])
+                    ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24562 24589])
+                    ("output" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24606 24629]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24496 24630])
+            ("mbedtls_rsa_check_pub_priv" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pub" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23586 23617])
+                    ("prv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23650 23682]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23554 23683])
+            ("mbedtls_rsa_check_privkey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23106 23138]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23075 23139])
+            ("mbedtls_rsa_check_pubkey" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20963 20995]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20933 20996])
+            ("mbedtls_rsa_gen_key" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20234 20259])
+                    ("f_rng" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [20298 20305])
+                            ("" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [20306 20322])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20323 20330]))                          
+                        :type "int")
+                        nil nil)
+                    ("p_rng" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20357 20369])
+                    ("nbits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20395 20414])
+                    ("exponent" variable (:type "int") (reparse-symbol arg-sub-list) [20415 20429]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20209 20430])
+            ("mbedtls_rsa_get_len" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19372 19404]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19344 19405])
+            ("mbedtls_rsa_set_padding" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19056 19081])
+                    ("padding" variable (:type "int") (reparse-symbol arg-sub-list) [19082 19094])
+                    ("hash_id" variable (:type "int") (reparse-symbol arg-sub-list) [19125 19138]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19026 19139])
+            ("mbedtls_rsa_export_crt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18502 18533])
+                    ("DP" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18562 18578])
+                    ("DQ" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18579 18595])
+                    ("QP" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18596 18613]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18474 18614])
+            ("mbedtls_rsa_export_raw" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17362 17393])
+                    ("N" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17422 17439])
+                    ("N_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17440 17453])
+                    ("P" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17482 17499])
+                    ("P_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17500 17513])
+                    ("Q" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17542 17559])
+                    ("Q_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17560 17573])
+                    ("D" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17602 17619])
+                    ("D_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17620 17633])
+                    ("E" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17662 17679])
+                    ("E_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17680 17694]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17334 17695])
+            ("mbedtls_rsa_export" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14576 14607])
+                    ("N" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14632 14647])
+                    ("P" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14648 14663])
+                    ("Q" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14664 14679])
+                    ("D" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14704 14719])
+                    ("E" variable
+                       (:pointer 1
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14720 14736]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14552 14737])
+            ("mbedtls_rsa_complete" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12417 12443]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12391 12444])
+            ("mbedtls_rsa_import_raw" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10547 10572])
+                    ("N" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10601 10624])
+                    ("N_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10625 10638])
+                    ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10667 10690])
+                    ("P_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10691 10704])
+                    ("Q" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10733 10756])
+                    ("Q_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10757 10770])
+                    ("D" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10799 10822])
+                    ("D_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10823 10836])
+                    ("E" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10865 10888])
+                    ("E_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10889 10903]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10519 10904])
+            ("mbedtls_rsa_import" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8532 8557])
+                    ("N" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8582 8603])
+                    ("P" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8628 8649])
+                    ("Q" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8650 8671])
+                    ("D" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8696 8717])
+                    ("E" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mbedtls_mpi" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8718 8740]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8508 8741])
+            ("mbedtls_rsa_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_rsa_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7035 7060])
+                    ("padding" variable (:type "int") (reparse-symbol arg-sub-list) [7084 7096])
+                    ("hash_id" variable (:type "int") (reparse-symbol arg-sub-list) [7120 7133]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7012 7134])
+            ("mbedtls_rsa_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("mbedtls_rsa_context" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3839 5527])
+            ("mbedtls_rsa_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ver" variable (:type "int") (reparse-symbol classsubparts) [3880 3888])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3930 3941])
+                    ("N" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3999 4013])
+                    ("E" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4060 4074])
+                    ("D" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4123 4137])
+                    ("P" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4186 4200])
+                    ("Q" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4251 4265])
+                    ("DP" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4318 4333])
+                    ("DQ" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4385 4400])
+                    ("QP" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4452 4467])
+                    ("RN" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4520 4535])
+                    ("RP" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4593 4608])
+                    ("RQ" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4665 4680])
+                    ("Vi" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4738 4753])
+                    ("Vf" variable (:type ("mbedtls_mpi" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4806 4821])
+                    ("padding" variable (:type "int") (reparse-symbol classsubparts) [4878 4890])
+                    ("hash_id" variable (:type "int") (reparse-symbol classsubparts) [5095 5107]))                  )
+                (reparse-symbol extern-c-contents) [3839 5527]))          
+      :file "rsa.h"
+      :pointmax 64601
+      :fsize 64602
+      :lastmodtime '(24489 8553 789253 113000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_RSA_PUBLIC" . ((number "0" 2880 . 2881)))
+          ("MBEDTLS_RSA_PKCS_V21" . ((number "1" 3094 . 3095)))
+          ("MBEDTLS_ERR_RSA_RNG_FAILED" . ((punctuation "-" 2282 . 2283) (number "0x4480" 2283 . 2289)))
+          ("MBEDTLS_RSA_PKCS_V15" . ((number "0" 3026 . 3027)))
+          ("MBEDTLS_ERR_RSA_OUTPUT_TOO_LARGE" . ((punctuation "-" 2153 . 2154) (number "0x4400" 2154 . 2160)))
+          ("MBEDTLS_RSA_SALT_LEN_ANY" . ((punctuation "-" 3350 . 3351) (number "1" 3351 . 3352)))
+          ("MBEDTLS_RSA_H")
+          ("MBEDTLS_RSA_SIGN" . ((number "1" 3163 . 3164)))
+          ("MBEDTLS_RSA_CRYPT" . ((number "2" 3246 . 3247)))
+          ("MBEDTLS_ERR_RSA_PRIVATE_FAILED" . ((punctuation "-" 1937 . 1938) (number "0x4300" 1938 . 1944)))
+          ("MBEDTLS_ERR_RSA_VERIFY_FAILED" . ((punctuation "-" 2046 . 2047) (number "0x4380" 2047 . 2053)))
+          ("MBEDTLS_ERR_RSA_HW_ACCEL_FAILED" . ((punctuation "-" 2773 . 2774) (number "0x4580" 2774 . 2780)))
+          ("MBEDTLS_ERR_RSA_INVALID_PADDING" . ((punctuation "-" 1452 . 1453) (number "0x4100" 1453 . 1459)))
+          ("MBEDTLS_ERR_RSA_BAD_INPUT_DATA" . ((punctuation "-" 1343 . 1344) (number "0x4080" 1344 . 1350)))
+          ("MBEDTLS_ERR_RSA_KEY_GEN_FAILED" . ((punctuation "-" 1580 . 1581) (number "0x4180" 1581 . 1587)))
+          ("MBEDTLS_ERR_RSA_KEY_CHECK_FAILED" . ((punctuation "-" 1700 . 1701) (number "0x4200" 1701 . 1707)))
+          ("MBEDTLS_ERR_RSA_PUBLIC_FAILED" . ((punctuation "-" 1829 . 1830) (number "0x4280" 1830 . 1836)))
+          ("MBEDTLS_RSA_PRIVATE" . ((number "1" 2953 . 2954)))
+          ("MBEDTLS_ERR_RSA_UNSUPPORTED_OPERATION" . ((punctuation "-" 2492 . 2493) (number "0x4500" 2493 . 2499)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15854aaf1b28"
+      :file "md.h"
+      :fsize 18157
+      :lastmodtime '(24489 8553 789253 113000))
+    (semanticdb-table "semanticdb-table-15854a2ba260"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_AES_H" variable (:constant-flag t) nil [1618 1631])
+            ("mbedtls/config.h" include nil nil [1667 1694])
+            ("stddef.h" include (:system-flag t) nil [1738 1757])
+            ("stdint.h" include (:system-flag t) nil [1758 1777])
+            ("MBEDTLS_AES_ENCRYPT" variable (:constant-flag t) nil [1837 1856])
+            ("MBEDTLS_AES_DECRYPT" variable (:constant-flag t) nil [1895 1914])
+            ("MBEDTLS_ERR_AES_INVALID_KEY_LENGTH" variable (:constant-flag t) nil [1995 2029])
+            ("MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH" variable (:constant-flag t) nil [2090 2126])
+            ("MBEDTLS_ERR_AES_BAD_INPUT_DATA" variable (:constant-flag t) nil [2234 2264])
+            ("MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE" variable (:constant-flag t) nil [2410 2445])
+            ("MBEDTLS_ERR_AES_HW_ACCEL_FAILED" variable (:constant-flag t) nil [2627 2658])
+            ("mbedtls_aes_decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28829 28854])
+                    ("input" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28900 28930])
+                    ("output" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28976 29002]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28803 29003])
+            ("mbedtls_aes_encrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28274 28299])
+                    ("input" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28345 28375])
+                    ("output" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28421 28447]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28248 28448])
+            ("MBEDTLS_DEPRECATED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [27869 27887])
+            ("mbedtls_internal_aes_decrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27560 27585])
+                    ("input" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [27620 27650])
+                    ("output" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [27685 27711]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27526 27712])
+            ("mbedtls_internal_aes_encrypt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26988 27013])
+                    ("input" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [27048 27078])
+                    ("output" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [27113 27139]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26954 27140])
+            ("mbedtls_aes_crypt_ecb" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10246 10271])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [10292 10301])
+                    ("input" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10322 10352])
+                    ("output" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10373 10399]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10219 10400])
+            ("mbedtls_aes_setkey_dec" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7031 7056])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7057 7082])
+                    ("keybits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7103 7125]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7003 7126])
+            ("mbedtls_aes_setkey_enc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6322 6347])
+                    ("key" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6348 6373])
+                    ("keybits" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6394 6416]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6294 6417])
+            ("mbedtls_aes_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4923 4949]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4900 4950])
+            ("mbedtls_aes_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("ctx" variable
+                       (:pointer 1
+                        :type ("mbedtls_aes_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4589 4615]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4566 4616])
+            ("mbedtls_aes_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("mbedtls_aes_context" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3016 3763])
+            ("mbedtls_aes_context" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("nr" variable (:type "int") (reparse-symbol classsubparts) [3057 3064])
+                    ("rk" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3119 3132])
+                    ("buf" variable
+                       (:dereference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3175 3192]))                  )
+                (reparse-symbol extern-c-contents) [3016 3763]))          
+      :file "aes.h"
+      :pointmax 29347
+      :fsize 29346
+      :lastmodtime '(24489 8553 785252 878000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_AES_DECRYPT" . ((number "0" 1919 . 1920)))
+          ("MBEDTLS_ERR_AES_INVALID_KEY_LENGTH" . ((punctuation "-" 2045 . 2046) (number "0x0020" 2046 . 2052)))
+          ("MBEDTLS_ERR_AES_FEATURE_UNAVAILABLE" . ((punctuation "-" 2460 . 2461) (number "0x0023" 2461 . 2467)))
+          ("MBEDTLS_AES_ENCRYPT" . ((number "1" 1861 . 1862)))
+          ("MBEDTLS_AES_H")
+          ("MBEDTLS_ERR_AES_BAD_INPUT_DATA" . ((punctuation "-" 2284 . 2285) (number "0x0021" 2285 . 2291)))
+          ("MBEDTLS_ERR_AES_HW_ACCEL_FAILED" . ((punctuation "-" 2677 . 2678) (number "0x0025" 2678 . 2684)))
+          ("MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH" . ((punctuation "-" 2140 . 2141) (number "0x0022" 2141 . 2147)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!mbedtls!include!mbedtls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

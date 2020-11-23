@@ -1,0 +1,277 @@
+;; Object semanticdb-project-database-file-157a40470c6c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157a40470c6c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157a40470c7e"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [156 175])
+            ("dpu_description.h" include (:system-flag t) nil [176 204])
+            ("vD_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD,
+    .hw.topology.nr_of_control_interfaces = 8,
+    .hw.topology.nr_of_dpus_per_control_interface = 8,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 8192, /* Changed from 4096 to 8192 */
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [257 1076])
+            ("vD_cas_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_cas,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 1,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1078 1873])
+            ("vD_fun_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_fun,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 1,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1875 2670])
+            ("vD_asic1_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_asic1,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 1,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2672 3471])
+            ("vD_asic8_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_asic8,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 8,
+    .hw.timings.carousel.cmd_duration = 6,
+    .hw.timings.carousel.cmd_sampling = 3,
+    .hw.timings.carousel.res_duration = 6,
+    .hw.timings.carousel.res_sampling = 3,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3473 4272])
+            ("vD_fpga1_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_fpga1,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 1,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4274 5073])
+            ("vD_fpga8_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_fpga8,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 8,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5075 5874])
+            ("vD_asic4_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_asic4,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 4,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5876 6675])
+            ("vD_fpga4_description" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    .hw.signature.chip_id = vD_fpga4,
+    .hw.topology.nr_of_control_interfaces = 1,
+    .hw.topology.nr_of_dpus_per_control_interface = 4,
+    .hw.timings.carousel.cmd_duration = 2,
+    .hw.timings.carousel.cmd_sampling = 1,
+    .hw.timings.carousel.res_duration = 2,
+    .hw.timings.carousel.res_sampling = 1,
+    .hw.timings.reset_wait_duration = 20,
+    .hw.timings.std_temperature = 110,
+    .hw.timings.fck_frequency_in_mhz = 1000,
+    .hw.timings.clock_division = 2,
+    .hw.memories.mram_size = 67108864,
+    .hw.memories.wram_size = 16384,
+    .hw.memories.iram_size = 4096,
+    .hw.dpu.nr_of_threads = 24,
+    .hw.dpu.nr_of_atomic_bits = 256,
+    .hw.dpu.nr_of_notify_bits = 40,
+    .hw.dpu.nr_of_work_registers_per_thread = 24,
+}"
+                :type ("_dpu_description_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6677 7476])
+            ("dpu_chip_descriptions" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+    [vD] = &vD_description,
+    [vD_cas] = &vD_cas_description,
+    [vD_fun] = &vD_fun_description,
+    [vD_asic1] = &vD_asic1_description,
+    [vD_asic8] = &vD_asic8_description,
+    [vD_fpga1] = &vD_fpga1_description,
+    [vD_fpga8] = &vD_fpga8_description,
+    [vD_asic4] = &vD_asic4_description,
+    [vD_fpga4] = &vD_fpga4_description,
+}"
+                :type ("dpu_description_t" type (:type "class") nil nil))
+                nil [7478 7888]))          
+      :file "dpu_chip_description.c"
+      :pointmax 7889
+      :fsize 7888
+      :lastmodtime '(24498 6542 554177 508000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!backends!commons!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

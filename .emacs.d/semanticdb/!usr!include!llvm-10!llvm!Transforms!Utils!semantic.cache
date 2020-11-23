@@ -1,0 +1,915 @@
+;; Object semanticdb-project-database-file-1559f8a1a68c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1559f8a1a68c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1559f8a1a66c"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_UTILS_LCSSA_H" variable (:constant-flag t) nil [1273 1302])
+            ("llvm/IR/PassManager.h" include nil nil [1304 1336])
+            ("llvm" type
+               (:members 
+                  ( ("LCSSAPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1454 1461])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1486 1498])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1499 1527]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1464 1528]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1402 1531]))                  
+                :type "namespace")
+                nil [1338 1533]))          
+      :file "LCSSA.h"
+      :pointmax 1597
+      :fsize 1596
+      :lastmodtime '(24013 11271 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_UTILS_LCSSA_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1559f88ba304"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_UTILS_LOOPSIMPLIFY_H" variable (:constant-flag t) nil [1889 1925])
+            ("llvm/Analysis/AssumptionCache.h" include nil nil [1927 1969])
+            ("llvm/Analysis/ScalarEvolution.h" include nil nil [1970 2012])
+            ("llvm/IR/Dominators.h" include nil nil [2013 2044])
+            ("llvm/IR/PassManager.h" include nil nil [2045 2077])
+            ("llvm" type
+               (:members 
+                  ( ("MemorySSAUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2097 2120])
+                    ("LoopSimplifyPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2244 2251])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2276 2288])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2289 2317]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2254 2318]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2178 2321])
+                    ("simplifyLoop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type ("Loop" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2707 2715])
+                            ("DT" variable
+                               (:pointer 1
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2716 2734])
+                            ("LI" variable
+                               (:pointer 1
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2735 2748])
+                            ("SE" variable
+                               (:pointer 1
+                                :type ("ScalarEvolution" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2749 2769])
+                            ("AC" variable
+                               (:pointer 1
+                                :type ("AssumptionCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2788 2808])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2809 2833])
+                            ("PreserveLCSSA" variable (:type "bool") (reparse-symbol arg-sub-list) [2852 2871]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2689 2872]))                  
+                :type "namespace")
+                nil [2079 2875]))          
+      :file "LoopSimplify.h"
+      :pointmax 2946
+      :fsize 2945
+      :lastmodtime '(24013 11271 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_UTILS_LOOPSIMPLIFY_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1559f88ba324"
+      :file "ModuleUtils.h"
+      :fsize 5042
+      :lastmodtime '(24013 11271 0 0))
+    (semanticdb-table "semanticdb-table-1559f88ba344"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_UTILS_BASICBLOCKUTILS_H" variable (:constant-flag t) nil [632 671])
+            ("llvm/ADT/ArrayRef.h" include nil nil [754 784])
+            ("llvm/Analysis/DomTreeUpdater.h" include nil nil [785 826])
+            ("llvm/IR/BasicBlock.h" include nil nil [827 858])
+            ("llvm/IR/CFG.h" include nil nil [859 883])
+            ("llvm/IR/InstrTypes.h" include nil nil [884 915])
+            ("cassert" include (:system-flag t) nil [916 934])
+            ("llvm" type
+               (:members 
+                  ( ("BlockFrequencyInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [954 979])
+                    ("BranchProbabilityInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [980 1008])
+                    ("DominatorTree" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1009 1029])
+                    ("DomTreeUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1030 1051])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1052 1067])
+                    ("Instruction" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1068 1086])
+                    ("LoopInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1087 1102])
+                    ("MDNode" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1103 1116])
+                    ("MemoryDependenceResults" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1117 1147])
+                    ("MemorySSAUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1148 1171])
+                    ("PostDominatorTree" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1172 1196])
+                    ("ReturnInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1197 1214])
+                    ("TargetLibraryInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1215 1239])
+                    ("Value" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1240 1252])
+                    ("DetatchDeadBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BBs" variable (:type ("ArrayRef" type
+                                 (:template-specifier 
+                                    ( ("BasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1555 1583])
+                            ("Updates" variable
+                               (:pointer 1
+                                :type ("SmallVectorImpl" type
+                                     (:template-specifier 
+                                        ( ("DominatorTree::UpdateType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1607 1659])
+                            ("KeepOneInputPHIs" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1683 1712]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1532 1714])
+                    ("DeleteDeadBlock" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1802 1817])
+                            ("DTU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DomTreeUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1818 1847])
+                            ("KeepOneInputPHIs" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1870 1899]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1781 1901])
+                    ("DeleteDeadBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BBs" variable (:type ("ArrayRef" type
+                                 (:template-specifier 
+                                    ( ("BasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2347 2375])
+                            ("DTU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DomTreeUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2398 2427])
+                            ("KeepOneInputPHIs" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2451 2480]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2325 2482])
+                    ("EliminateUnreachableBlocks" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("F" variable
+                               (:reference 1
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2710 2722])
+                            ("DTU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DomTreeUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2723 2752])
+                            ("KeepOneInputPHIs" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2786 2815]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2678 2817])
+                    ("FoldSingleEntryPHINodes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3105 3120])
+                            ("MemDep" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3150 3191]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3076 3193])
+                    ("DeleteDeadPHIs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3521 3536])
+                            ("TLI" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3537 3575]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3501 3577])
+                    ("MergeBlockIntoPredecessor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4105 4120])
+                            ("DTU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DomTreeUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4121 4150])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4183 4205])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4238 4271])
+                            ("MemDep" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4304 4345])
+                            ("PredecessorWithTwoSuccessors" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4378 4419]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4074 4421])
+                    ("RemoveRedundantDbgInstrs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4586 4601]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4556 4602])
+                    ("ReplaceInstWithValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BIL" variable
+                               (:reference 1
+                                :type ("BasicBlock::InstListType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4754 4784])
+                            ("BI" variable
+                               (:reference 1
+                                :type ("BasicBlock::iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4811 4836])
+                            ("V" variable
+                               (:pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4837 4846]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4728 4847])
+                    ("ReplaceInstWithInst" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("BIL" variable
+                               (:reference 1
+                                :type ("BasicBlock::InstListType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5122 5152])
+                            ("BI" variable
+                               (:reference 1
+                                :type ("BasicBlock::iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5178 5203])
+                            ("I" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5204 5219]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5097 5220])
+                    ("ReplaceInstWithInst" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("From" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5403 5421])
+                            ("To" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5422 5438]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5378 5439])
+                    ("CriticalEdgeSplittingOptions" type
+                       (:members 
+                          ( ("DT" variable
+                               (:pointer 1
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5645 5663])
+                            ("PDT" variable
+                               (:pointer 1
+                                :type ("PostDominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5666 5689])
+                            ("LI" variable
+                               (:pointer 1
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5692 5705])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5708 5732])
+                            ("MergeIdenticalEdges" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5735 5768])
+                            ("KeepOneInputPHIs" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5771 5801])
+                            ("PreserveLCSSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5804 5831])
+                            ("IgnoreUnreachableDests" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5834 5870])
+                            ("CriticalEdgeSplittingOptions" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("DT" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("DominatorTree" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5903 5930])
+                                    ("LI" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("LoopInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5963 5985])
+                                    ("MSSAU" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6018 6051])
+                                    ("PDT" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("PostDominatorTree" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6084 6116]))                                  
+                                :type ("CriticalEdgeSplittingOptions" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5874 6167])
+                            ("setMergeIdenticalEdges" function (:type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6171 6281])
+                            ("setKeepOneInputPHIs" function (:type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6285 6389])
+                            ("setPreserveLCSSA" function (:type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6393 6491])
+                            ("setIgnoreUnreachableDests" function (:type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6495 6611]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5605 6614])
+                    ("SplitCriticalEdge" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("TI" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7589 7605])
+                            ("SuccNum" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7606 7623])
+                            ("Options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "CriticalEdgeSplittingOptions()"
+                                :type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7654 7764]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7559 7766])
+                    ("SplitCriticalEdge" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7806 7821])
+                            ("SI" variable (:type ("succ_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7822 7839])
+                            ("Options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "CriticalEdgeSplittingOptions()"
+                                :type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7858 7956]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7768 8070])
+                    ("SplitCriticalEdge" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("Succ" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8382 8399])
+                            ("PI" variable (:type ("pred_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8400 8417])
+                            ("Options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "CriticalEdgeSplittingOptions()"
+                                :type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8448 8558]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8352 8813])
+                    ("SplitCriticalEdge" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("Src" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9081 9097])
+                            ("Dst" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9098 9114])
+                            ("Options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "CriticalEdgeSplittingOptions()"
+                                :type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9133 9231]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9043 9476])
+                    ("SplitAllCriticalEdges" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("F" variable
+                               (:reference 1
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9635 9647])
+                            ("Options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "CriticalEdgeSplittingOptions()"
+                                :type ("CriticalEdgeSplittingOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9679 9790]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [9604 9792])
+                    ("SplitEdge" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("From" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9863 9880])
+                            ("To" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9881 9896])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9919 9946])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9948 9970])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9994 10027]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9841 10029])
+                    ("SplitBlock" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("Old" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10308 10324])
+                            ("SplitPt" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10325 10346])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10370 10397])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10399 10421])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10446 10479])
+                            ("BBName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"\""
+                                :type ("Twine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10504 10528]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10285 10530])
+                    ("SplitBlockPredecessors" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11381 11396])
+                            ("Preds" variable (:type ("ArrayRef" type
+                                 (:template-specifier 
+                                    ( ("BasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [11397 11426])
+                            ("Suffix" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [11462 11481])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11517 11544])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11581 11603])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11640 11673])
+                            ("PreserveLCSSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11710 11736]))                          
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11346 11738])
+                    ("SplitLandingPadPredecessors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("OrigBB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12502 12521])
+                            ("Preds" variable (:type ("ArrayRef" type
+                                 (:template-specifier 
+                                    ( ("BasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [12522 12551])
+                            ("Suffix" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12552 12571])
+                            ("Suffix2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12576 12596])
+                            ("NewBBs" variable
+                               (:reference 1
+                                :type ("SmallVectorImpl" type
+                                     (:template-specifier 
+                                        ( ("BasicBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12597 12635])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12640 12667])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12669 12691])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12697 12730])
+                            ("PreserveLCSSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12732 12758]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12464 12760])
+                    ("FoldReturnIntoUncondBranch" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("RI" variable
+                               (:pointer 1
+                                :type ("ReturnInst" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13092 13107])
+                            ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13108 13123])
+                            ("Pred" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13163 13180])
+                            ("DTU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DomTreeUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13220 13249]))                          
+                        :type ("ReturnInst" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13053 13251])
+                    ("SplitBlockAndInsertIfThen" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("Cond" variable
+                               (:pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14005 14017])
+                            ("SplitBefore" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14018 14043])
+                            ("Unreachable" variable (:type "bool") (reparse-symbol arg-sub-list) [14083 14100])
+                            ("BranchWeights" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14140 14171])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14212 14239])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14280 14302])
+                            ("ThenBlock" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14343 14374]))                          
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13966 14376])
+                    ("SplitBlockAndInsertIfThenElse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Cond" variable
+                               (:pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14690 14702])
+                            ("SplitBefore" variable
+                               (:pointer 1
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14703 14728])
+                            ("ThenTerm" variable
+                               (:pointer 2
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14764 14787])
+                            ("ElseTerm" variable
+                               (:pointer 2
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14823 14846])
+                            ("BranchWeights" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MDNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14882 14913]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14655 14915])
+                    ("GetIfCondition" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("BB" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15361 15376])
+                            ("" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15377 15390])
+                            ("" variable (:type ("IfTrue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15390 15397])
+                            ("" variable
+                               (:pointer 1
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15420 15433])
+                            ("" variable (:type ("IfFalse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15433 15441]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [15339 15442])
+                    ("SplitIndirectBrCriticalEdges" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("F" variable
+                               (:reference 1
+                                :type ("Function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16702 16714])
+                            ("BPI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("BranchProbabilityInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16749 16785])
+                            ("BFI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("BlockFrequencyInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16821 16854]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [16668 16856]))                  
+                :type "namespace")
+                nil [936 16859]))          
+      :file "BasicBlockUtils.h"
+      :pointmax 16933
+      :fsize 16932
+      :lastmodtime '(24186 12264 0 0)
+      :unmatched-syntax '((punctuation 15432 . 15433) (punctuation 15389 . 15390))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_UTILS_BASICBLOCKUTILS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1559f88ba364"
+      :file "Cloning.h"
+      :fsize 13000
+      :lastmodtime '(24013 11271 0 0))
+    (semanticdb-table "semanticdb-table-1559f88ba384"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_UTILS_INTEGERDIVISION_H" variable (:constant-flag t) nil [795 834])
+            ("llvm" type
+               (:members 
+                  ( ("BinaryOperator" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [855 876]))                  
+                :type "namespace")
+                nil [836 878])
+            ("llvm" type
+               (:members 
+                  ( ("expandRemainder" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Rem" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1314 1334]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1293 1335])
+                    ("expandDivision" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Div" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1744 1764]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1724 1765])
+                    ("expandRemainderUpTo32Bits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Rem" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2096 2116]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2065 2117])
+                    ("expandRemainderUpTo64Bits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Rem" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2344 2364]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2313 2365])
+                    ("expandDivisionUpTo32Bits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Div" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2669 2689]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2639 2690])
+                    ("expandDivisionUpTo64Bits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Div" variable
+                               (:pointer 1
+                                :type ("BinaryOperator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2896 2916]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2866 2917]))                  
+                :type "namespace")
+                nil [880 2920]))          
+      :file "IntegerDivision.h"
+      :pointmax 2951
+      :fsize 2950
+      :lastmodtime '(24013 11271 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_UTILS_INTEGERDIVISION_H")
+          )
+))
+  :file "!usr!include!llvm-10!llvm!Transforms!Utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

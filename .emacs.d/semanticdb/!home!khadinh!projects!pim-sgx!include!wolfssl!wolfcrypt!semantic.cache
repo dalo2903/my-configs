@@ -1,0 +1,217 @@
+;; Object semanticdb-project-database-file-156cc4ca1414
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156cc4ca1414"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156cc4ca07b4"
+      :major-mode c-mode
+      :tags 
+        '( ("WOLF_CRYPT_SHA256_H" variable (:constant-flag t) nil [890 909])
+            ("wolfssl/wolfcrypt/types.h" include (:system-flag t) nil [911 947])
+            ("wc_Sha256Copy" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5749 5764])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5765 5780]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5731 5781])
+            ("wc_Sha256GetHash" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5699 5710])
+                    ("" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5711 5717]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5678 5718])
+            ("wc_Sha256Free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5652 5663]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5633 5664])
+            ("wc_Sha256Final" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5601 5612])
+                    ("" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5613 5619]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5582 5620])
+            ("wc_Sha256FinalRaw" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5550 5561])
+                    ("" variable
+                       (:pointer 1
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5562 5568]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5528 5569])
+            ("wc_Sha256Update" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5482 5493])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("byte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5494 5506])
+                    ("" variable (:type ("word32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5507 5514]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5462 5515])
+            ("wc_InitSha256_ex" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5425 5436])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5437 5443])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5444 5448]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5404 5449])
+            ("wc_InitSha256" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("wc_Sha256" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5379 5390]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5361 5391])
+            ("WC_SHA256_TYPE_DEFINED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5286 5308])
+            ("wc_Sha256" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("wc_Sha256" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5238 5273])
+            ("wc_Sha256" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("digest" variable
+                       (:dereference 1
+                        :type ("word32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4123 4178])
+                    ("buffer" variable
+                       (:dereference 1
+                        :type ("word32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4191 4246])
+                    ("buffLen" variable (:type ("word32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4251 4267])
+                    ("loLen" variable (:type ("word32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4298 4312])
+                    ("hiLen" variable (:type ("word32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4345 4359])
+                    ("heap" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4392 4405]))                  )
+                (reparse-symbol extern-c-contents) [3900 5201])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("WC_SHA256" variable
+                       (:constant-flag t
+                        :default-value (3230 3249)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3204 3249])
+                    ("WC_SHA256_BLOCK_SIZE" variable
+                       (:constant-flag t
+                        :default-value (3280 3282)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3255 3282])
+                    ("WC_SHA256_DIGEST_SIZE" variable
+                       (:constant-flag t
+                        :default-value (3313 3315)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3288 3315])
+                    ("WC_SHA256_PAD_SIZE" variable
+                       (:constant-flag t
+                        :default-value (3346 3348)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3321 3348]))                  )
+                (reparse-symbol extern-c-contents) [3193 3351])
+            ("SHA256_PAD_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3132 3147])
+            ("SHA256_DIGEST_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3079 3097])
+            ("SHA256_BLOCK_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3027 3044])
+            ("Sha256" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2986 2992])
+            ("SHA256" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2913 2919])
+            ("SHA256_NOINLINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2786 2801]))          
+      :file "sha256.h"
+      :pointmax 7586
+      :fsize 7585
+      :lastmodtime '(24489 234 115255 554000)
+      :unmatched-syntax '((symbol 5719 . 5730) (symbol 5666 . 5677) (symbol 5621 . 5632) (symbol 5570 . 5581) (symbol 5516 . 5527) (symbol 5450 . 5461) (symbol 5392 . 5403) (symbol 5349 . 5360) (symbol 4183 . 4190) (symbol 4115 . 4122) (semantic-list 2000 . 2056))
+      :lexical-table 
+        '(("WOLF_CRYPT_SHA256_H")
+          ("SHA256" . ((symbol "WC_SHA256" 2932 . 2941)))
+          ("SHA256_NOINLINE" . ((symbol "__attribute__" 2802 . 2815) (semantic-list "((noinline))" 2815 . 2827)))
+          ("SHA256_BLOCK_SIZE" . ((symbol "WC_SHA256_BLOCK_SIZE" 3046 . 3066)))
+          ("SHA256_PAD_SIZE" . ((symbol "WC_SHA256_PAD_SIZE" 3151 . 3169)))
+          ("WC_SHA256_TYPE_DEFINED")
+          ("SHA256_DIGEST_SIZE" . ((symbol "WC_SHA256_DIGEST_SIZE" 3098 . 3119)))
+          ("Sha256" . ((symbol "wc_Sha256" 3005 . 3014)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!include!wolfssl!wolfcrypt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

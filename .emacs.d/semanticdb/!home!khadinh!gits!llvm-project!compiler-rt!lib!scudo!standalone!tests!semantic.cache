@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file-1585eb501158
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1585eb501158"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1585eb50116a"
+      :major-mode c++-mode
+      :tags 
+        '( ("platform.h" include nil nil [371 392])
+            ("gtest/gtest.h" include nil nil [445 469])
+            ("EXPECT_DEATH" variable (:constant-flag t) nil [558 570])
+            ("EXPECT_STREQ" variable (:constant-flag t) nil [824 836])
+            ("UseQuarantine" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [878 904]))          
+      :file "scudo_unit_test.h"
+      :pointmax 905
+      :fsize 904
+      :lastmodtime '(24391 25612 283948 166000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EXPECT_STREQ" (spp-arg-list ("X" "Y") 836 . 842) . ((symbol "EXPECT_EQ" 843 . 852) (semantic-list "(strcmp(X, Y), 0)" 852 . 869)))
+          ("EXPECT_DEATH" (spp-arg-list ("X" "Y") 570 . 576) . 
+              ((DO "do" 633 . 635) (semantic-list "{                                                                         \\
+  }" 636 . 715) (WHILE "while" 716 . 721) (semantic-list "(0)" 722 . 725)))
+          )
+))
+  :file "!home!khadinh!gits!llvm-project!compiler-rt!lib!scudo!standalone!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

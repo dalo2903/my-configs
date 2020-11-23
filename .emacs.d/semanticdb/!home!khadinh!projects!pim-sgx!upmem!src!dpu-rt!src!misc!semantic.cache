@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file-15854a2d68ec
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15854a2d68ec"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15854b38bf08"
+      :major-mode c-mode
+      :tags 
+        '( ("macro_utils.h" include (:system-flag t) nil [156 180])
+            ("attributes.h" include (:system-flag t) nil [181 204])
+            ("stdint.h" include (:system-flag t) nil [205 224])
+            ("dpuruntime.h" include (:system-flag t) nil [225 248])
+            ("__sys_used_mram_end" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [264 295])
+            ("__sys_null_pointer" variable
+               (:default-value "0ULL"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [297 383])
+            ("thread_profiling" variable
+               (:dereference 1
+                :type "int")
+                nil [427 456])
+            ("DECLARE_STACK" variable (:constant-flag t) nil [466 479])
+            ("SET_STACK_TABLE_PTR" variable (:constant-flag t) nil [770 789])
+            ("x" variable (:type "int") nil [630 632])
+            ("__sys_stack_thread_x" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [740 756])
+            ("STACK_SIZE_TASKLET_x" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [740 756])
+            ("x" variable (:type "int") nil [759 761])
+            ("SET_STACK_TABLE_PTR" variable (:constant-flag t) nil [770 789])
+            ("__FOR_EACH_THREAD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("__sys_stack_thread_" variable
+                       (:typemodifiers ("extern")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1023 1037])
+                    ("STACK_SIZE_TASKLET_" variable
+                       (:typemodifiers ("extern")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1023 1037]))                  
+                :type "int")
+                nil [1005 1038])
+            ("__SP_TABLE__" variable
+               (:dereference 1
+                :default-value "{ __FOR_EACH_THREAD(SET_STACK_TABLE_PTR) }"
+                :type ("__dma_aligned" type (:type "class") nil nil))
+                nil [1062 1146])
+            ("__bootstrap" function (:type "void") nil [1148 1971]))          
+      :file "crt0.c"
+      :pointmax 1972
+      :fsize 1973
+      :lastmodtime '(24436 40926 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DECLARE_STACK" (spp-arg-list ("x") 479 . 482) . 
+              ((EXTERN "extern" 593 . 599) (symbol "uint32_t" 600 . 608) (spp-symbol-merge ((symbol "__sys_stack_thread_" 609 . 628) (symbol "x" 630 . 631)) 609 . 631) (punctuation ";" 631 . 632) (EXTERN "extern" 724 . 730) (symbol "uint32_t" 731 . 739) (spp-symbol-merge ((symbol "STACK_SIZE_TASKLET_" 740 . 759) (symbol "x" 761 . 762)) 740 . 762) (punctuation ";" 762 . 763)))
+          ("SET_STACK_TABLE_PTR" (spp-arg-list ("x") 789 . 792) . 
+              ((semantic-list "[x]" 897 . 900) (punctuation "=" 901 . 902) (semantic-list "{ .stack_ptr = (uint32_t)&__sys_stack_thread_##x, .stack_size = (uint32_t)&STACK_SIZE_TASKLET_##x }" 903 . 1002) (punctuation "," 1002 . 1003)))
+          )
+))
+  :file "!home!khadinh!projects!pim-sgx!upmem!src!dpu-rt!src!misc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

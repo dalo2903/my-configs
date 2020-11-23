@@ -1,0 +1,557 @@
+;; Object semanticdb-project-database-file-157e0d01532c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157e0d01532c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157e0d062df6"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Record of phased-in incompatible language changes.
+
+Each line is of the form:
+
+    FeatureName = \"_Feature(\" OptionalRelease \",\" MandatoryRelease \",\"
+                              CompilerFlag \")\"
+
+where, normally, OptionalRelease < MandatoryRelease, and both are 5-tuples
+of the same form as sys.version_info:
+
+    (PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int
+     PY_MINOR_VERSION, # the 1; an int
+     PY_MICRO_VERSION, # the 0; an int
+     PY_RELEASE_LEVEL, # \"alpha\", \"beta\", \"candidate\" or \"final\"; string
+     PY_RELEASE_SERIAL # the 3; an int
+    )
+
+OptionalRelease records the first release in which
+
+    from __future__ import FeatureName
+
+was accepted.
+
+In the case of MandatoryReleases that have not yet occurred,
+MandatoryRelease predicts the release in which the feature will become part
+of the language.
+
+Else MandatoryRelease records when the feature became part of the language;
+in releases at or after that, modules no longer need
+
+    from __future__ import FeatureName
+
+to use the feature in question, but may continue to use such imports.
+
+MandatoryRelease may also be None, meaning that a planned feature got
+dropped.
+
+Instances of class _Feature have two corresponding methods,
+.getOptionalRelease() and .getMandatoryRelease().
+
+CompilerFlag is the (bitfield) flag that should be passed in the fourth
+argument to the builtin function compile() to enable the feature in
+dynamically compiled code.  This flag is stored in the .compiler_flag
+attribute on _Future instances.  These values must match the appropriate
+#defines of CO_xxx flags in Include/compile.h.
+
+No feature line is ever to be deleted from this file.
+\"\"\"" code nil nil [1 1645])
+            ("all_feature_names" variable nil nil [1647 1816])
+            ("__all__" code nil nil [1818 1869])
+            ("CO_NESTED" variable nil nil [2093 2122])
+            ("CO_GENERATOR_ALLOWED" variable nil nil [2141 2165])
+            ("CO_FUTURE_DIVISION" variable nil nil [2209 2238])
+            ("CO_FUTURE_ABSOLUTE_IMPORT" variable nil nil [2252 2286])
+            ("CO_FUTURE_WITH_STATEMENT" variable nil nil [2325 2359])
+            ("CO_FUTURE_PRINT_FUNCTION" variable nil nil [2379 2414])
+            ("CO_FUTURE_UNICODE_LITERALS" variable nil nil [2434 2470])
+            ("_Feature" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2596 2627])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2636 2669])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2678 2712]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2531 2535])
+                            ("optionalRelease" variable nil (reparse-symbol function_parameters) [2537 2552])
+                            ("mandatoryRelease" variable nil (reparse-symbol function_parameters) [2554 2570])
+                            ("compiler_flag" variable nil (reparse-symbol function_parameters) [2572 2585]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2518 2713])
+                    ("getOptionalRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2741 2745]))                          
+                        :documentation "Return first release in which this feature was recognized.
+
+        This is a 5-tuple, of the same form as sys.version_info.
+        ")
+                        (reparse-symbol indented_block_body) [2718 2926])
+                    ("getMandatoryRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2955 2959]))                          
+                        :documentation "Return release in which this feature will become mandatory.
+
+        This is a 5-tuple, of the same form as sys.version_info, or, if
+        the feature was dropped, is None.
+        ")
+                        (reparse-symbol indented_block_body) [2931 3191])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3209 3213]))                          )
+                        (reparse-symbol indented_block_body) [3196 3370]))                  
+                :type "class")
+                nil [2498 3370])
+            ("nested_scopes" variable nil nil [3371 3502])
+            ("generators" variable nil nil [3504 3637])
+            ("division" variable nil nil [3639 3764])
+            ("absolute_import" variable nil nil [3766 3919])
+            ("with_statement" variable nil nil [3921 4070])
+            ("print_function" variable nil nil [4072 4221])
+            ("unicode_literals" variable nil nil [4223 4380]))          
+      :file "__future__.py"
+      :pointmax 4381
+      :fsize 4380
+      :lastmodtime '(24204 27811 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e0d176930"
+      :file "optparse.py"
+      :fsize 61203
+      :lastmodtime '(24204 27811 0 0))
+    (semanticdb-table "semanticdb-table-157e0c83f204"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"functools.py - Tools for working with functions and callable objects
+\"\"\"" code nil nil [1 76])
+            ("_functools" include nil nil [358 396])
+            ("WRAPPER_ASSIGNMENTS" variable nil nil [510 569])
+            ("WRAPPER_UPDATES" variable nil nil [570 601])
+            ("update_wrapper" function
+               (:documentation "Update a wrapper function to look like the wrapped function
+
+       wrapper is the function to be updated
+       wrapped is the original function
+       assigned is a tuple naming the attributes assigned directly
+       from the wrapped function to the wrapper function (defaults to
+       functools.WRAPPER_ASSIGNMENTS)
+       updated is a tuple naming the attributes of the wrapper that
+       are updated with the corresponding attribute from the wrapped
+       function (defaults to functools.WRAPPER_UPDATES)
+    "
+                :arguments 
+                  ( ("wrapper" variable nil (reparse-symbol function_parameters) [621 628])
+                    ("wrapped" variable nil (reparse-symbol function_parameters) [649 656])
+                    ("assigned" variable nil (reparse-symbol function_parameters) [677 685])
+                    ("updated" variable nil (reparse-symbol function_parameters) [728 735]))                  )
+                nil [602 1550])
+            ("wraps" function
+               (:documentation "Decorator factory to apply update_wrapper() to a wrapper function
+
+       Returns a decorator that invokes update_wrapper() with the decorated
+       function as the wrapper argument and the arguments to wraps() as the
+       remaining arguments. Default arguments are as for update_wrapper().
+       This is a convenience function to simplify applying partial() to
+       update_wrapper().
+    "
+                :arguments 
+                  ( ("wrapped" variable nil (reparse-symbol function_parameters) [1561 1568])
+                    ("assigned" variable nil (reparse-symbol function_parameters) [1580 1588])
+                    ("updated" variable nil (reparse-symbol function_parameters) [1622 1629]))                  )
+                nil [1551 2163])
+            ("total_ordering" function
+               (:documentation "Class decorator that fills in missing ordering methods"
+                :arguments 
+                  ( ("cls" variable nil (reparse-symbol function_parameters) [2183 2186]))                  )
+                nil [2164 4017])
+            ("cmp_to_key" function
+               (:documentation "Convert a cmp= function into a key= function"
+                :arguments 
+                  ( ("mycmp" variable nil (reparse-symbol function_parameters) [4033 4038]))                  )
+                nil [4018 4807]))          
+      :file "functools.py"
+      :pointmax 4807
+      :fsize 4806
+      :lastmodtime '(24204 27811 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e0c840f9e"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Define names for all type symbols known in the standard interpreter.
+
+Types that are part of optional modules (e.g. array) are not listed.
+\"\"\"" code nil nil [1 146])
+            ("sys" include nil nil [147 157])
+            ("NoneType" variable nil nil [408 429])
+            ("TypeType" variable nil nil [430 445])
+            ("ObjectType" variable nil nil [446 465])
+            ("IntType" variable nil nil [467 480])
+            ("LongType" variable nil nil [481 496])
+            ("FloatType" variable nil nil [497 514])
+            ("BooleanType" variable nil nil [515 533])
+            ("try" code nil nil [534 592])
+            ("StringType" variable nil nil [593 609])
+            ("try" code nil nil [801 926])
+            ("BufferType" variable nil nil [927 946])
+            ("TupleType" variable nil nil [948 965])
+            ("ListType" variable nil nil [966 981])
+            ("DictType" variable nil nil [982 1014])
+            ("_f" function nil nil [1016 1031])
+            ("FunctionType" variable nil nil [1031 1054])
+            ("LambdaType" variable nil nil [1055 1086])
+            ("CodeType" variable nil nil [1118 1147])
+            ("_g" function nil nil [1149 1171])
+            ("GeneratorType" variable nil nil [1171 1197])
+            ("_C" type
+               (:members 
+                  ( ("_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1220 1224]))                          )
+                        (reparse-symbol indented_block_body) [1213 1232]))                  
+                :type "class")
+                nil [1199 1232])
+            ("ClassType" variable nil nil [1232 1252])
+            ("UnboundMethodType" variable nil nil [1253 1284])
+            ("_x" variable nil nil [1314 1323])
+            ("InstanceType" variable nil nil [1324 1347])
+            ("MethodType" variable nil nil [1348 1372])
+            ("BuiltinFunctionType" variable nil nil [1374 1405])
+            ("BuiltinMethodType" variable nil nil [1406 1441])
+            ("ModuleType" variable nil nil [1477 1499])
+            ("FileType" variable nil nil [1500 1515])
+            ("XRangeType" variable nil nil [1516 1535])
+            ("try" code nil nil [1537 1681])
+            ("SliceType" variable nil nil [1682 1699])
+            ("EllipsisType" variable nil nil [1700 1729])
+            ("DictProxyType" variable nil nil [1731 1770])
+            ("NotImplementedType" variable nil nil [1771 1812])
+            ("GetSetDescriptorType" variable nil nil [1866 1917])
+            ("MemberDescriptorType" variable nil nil [1918 1972])
+            ("del" code nil nil [1974 1997])
+            ("__all__" variable nil nil [2042 2094]))          
+      :file "types.py"
+      :pointmax 2095
+      :fsize 2094
+      :lastmodtime '(24204 27811 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e0c8e1a54"
+      :major-mode python-mode
+      :tags 
+        '( ("r\"\"\"OS routines for NT or Posix depending on what system we're on.
+
+This exports:
+  - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+  - os.path is one of the modules posixpath, or ntpath
+  - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+  - os.curdir is a string representing the current directory ('.' or ':')
+  - os.pardir is a string representing the parent directory ('..' or '::')
+  - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\\\')
+  - os.extsep is the extension separator ('.' or '/')
+  - os.altsep is the alternate pathname separator (None or '/')
+  - os.pathsep is the component separator used in $PATH etc
+  - os.linesep is the line separator in text files ('\\r' or '\\n' or '\\r\\n')
+  - os.defpath is the default search path for executables
+  - os.devnull is the file path of the null device ('/dev/null', etc.)
+
+Programs that import and use 'os' stand a better chance of being
+portable between different platforms.  Of course, they must then
+only use functions that are defined by all platforms (e.g., unlink
+and opendir), and leave all pathname manipulation to os.path
+(e.g., split and join).
+\"\"\"" code nil nil [1 1157])
+            ("errno" include nil nil [1163 1180])
+            ("sys" include nil nil [1163 1180])
+            ("_names" variable nil nil [1182 1215])
+            ("__all__" variable nil nil [1265 1440])
+            ("_get_exports_list" function (:arguments 
+              ( ("module" variable nil (reparse-symbol function_parameters) [1464 1470]))              ) nil [1442 1600])
+            ("if" code nil nil [1601 3131])
+            ("sys" variable nil nil [3132 3161])
+            ("" code nil nil [3182 3250])
+            ("del" code nil nil [3252 3262])
+            ("SEEK_SET" variable nil nil [3384 3396])
+            ("SEEK_CUR" variable nil nil [3397 3409])
+            ("SEEK_END" variable nil nil [3410 3422])
+            ("makedirs" function
+               (:documentation "makedirs(path [, mode=0777])
+
+    Super-mkdir; create a leaf directory and all intermediate ones.
+    Works like mkdir, except that any intermediate path segment (not
+    just the rightmost) will be created if it does not exist.  This is
+    recursive.
+
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3532 3536])
+                    ("mode" variable nil (reparse-symbol function_parameters) [3538 3542]))                  )
+                nil [3519 4271])
+            ("removedirs" function
+               (:documentation "removedirs(path)
+
+    Super-rmdir; remove a leaf directory and all empty intermediate
+    ones.  Works like rmdir except that, if the leaf directory is
+    successfully removed, directories corresponding to rightmost path
+    segments will be pruned away until either the whole path is
+    consumed or an error occurs.  Errors during this latter phase are
+    ignored -- they generally mean that a directory was not empty.
+
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4287 4291]))                  )
+                nil [4272 4978])
+            ("renames" function
+               (:documentation "renames(old, new)
+
+    Super-rename; create directories as necessary and delete any left
+    empty.  Works like rename, except creation of any intermediate
+    directories needed to make the new pathname good is attempted
+    first.  After the rename, directories corresponding to rightmost
+    path segments of the old name will be pruned until either the
+    whole path is consumed or a nonempty directory is found.
+
+    Note: this function can fail with the new directory structure made
+    if you lack permissions needed to unlink the leaf directory or
+    file.
+
+    "
+                :arguments 
+                  ( ("old" variable nil (reparse-symbol function_parameters) [4991 4994])
+                    ("new" variable nil (reparse-symbol function_parameters) [4996 4999]))                  )
+                nil [4979 5846])
+            ("__all__" code nil nil [5847 5900])
+            ("walk" function
+               (:documentation "Directory tree generator.
+
+    For each directory in the directory tree rooted at top (including top
+    itself, but excluding '.' and '..'), yields a 3-tuple
+
+        dirpath, dirnames, filenames
+
+    dirpath is a string, the path to the directory.  dirnames is a list of
+    the names of the subdirectories in dirpath (excluding '.' and '..').
+    filenames is a list of the names of the non-directory files in dirpath.
+    Note that the names in the lists are just names, with no path components.
+    To get a full path (which begins with top) to a file or directory in
+    dirpath, do os.path.join(dirpath, name).
+
+    If optional arg 'topdown' is true or not specified, the triple for a
+    directory is generated before the triples for any of its subdirectories
+    (directories are generated top down).  If topdown is false, the triple
+    for a directory is generated after the triples for all of its
+    subdirectories (directories are generated bottom up).
+
+    When topdown is true, the caller can modify the dirnames list in-place
+    (e.g., via del or slice assignment), and walk will only recurse into the
+    subdirectories whose names remain in dirnames; this can be used to prune the
+    search, or to impose a specific order of visiting.  Modifying dirnames when
+    topdown is false is ineffective, since the directories in dirnames have
+    already been generated by the time dirnames itself is generated. No matter
+    the value of topdown, the list of subdirectories is retrieved before the
+    tuples for the directory and its subdirectories are generated.
+
+    By default errors from the os.listdir() call are ignored.  If
+    optional arg 'onerror' is specified, it should be a function; it
+    will be called with one argument, an os.error instance.  It can
+    report the error to continue with the walk, or raise the exception
+    to abort the walk.  Note that the filename is available as the
+    filename attribute of the exception object.
+
+    By default, os.walk does not follow symbolic links to subdirectories on
+    systems that support them.  In order to get this functionality, set the
+    optional argument 'followlinks' to true.
+
+    Caution:  if you pass a relative pathname for top, don't change the
+    current working directory between resumptions of walk.  walk never
+    changes the current directory, and assumes that the client doesn't
+    either.
+
+    Example:
+
+    import os
+    from os.path import join, getsize
+    for root, dirs, files in os.walk('python/Lib/email'):
+        print root, \"consumes\",
+        print sum([getsize(join(root, name)) for name in files]),
+        print \"bytes in\", len(files), \"non-directory files\"
+        if 'CVS' in dirs:
+            dirs.remove('CVS')  # don't visit CVS directories
+
+    "
+                :arguments 
+                  ( ("top" variable nil (reparse-symbol function_parameters) [5911 5914])
+                    ("topdown" variable nil (reparse-symbol function_parameters) [5916 5923])
+                    ("onerror" variable nil (reparse-symbol function_parameters) [5930 5937])
+                    ("followlinks" variable nil (reparse-symbol function_parameters) [5944 5955]))                  )
+                nil [5902 9834])
+            ("__all__" code nil nil [9835 9857])
+            ("try" code nil nil [9899 9951])
+            ("execl" function
+               (:documentation "execl(file, *args)
+
+    Execute the executable file with argument list args, replacing the
+    current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [9962 9966])
+                    ("args" variable nil (reparse-symbol function_parameters) [9968 9973]))                  )
+                nil [9952 10121])
+            ("execle" function
+               (:documentation "execle(file, *args, env)
+
+    Execute the executable file with argument list args and
+    environment env, replacing the current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10133 10137])
+                    ("args" variable nil (reparse-symbol function_parameters) [10139 10144]))                  )
+                nil [10122 10348])
+            ("execlp" function
+               (:documentation "execlp(file, *args)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args, replacing the current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10360 10364])
+                    ("args" variable nil (reparse-symbol function_parameters) [10366 10371]))                  )
+                nil [10349 10557])
+            ("execlpe" function
+               (:documentation "execlpe(file, *args, env)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args and environment env, replacing the current
+    process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10570 10574])
+                    ("args" variable nil (reparse-symbol function_parameters) [10576 10581]))                  )
+                nil [10558 10827])
+            ("execvp" function
+               (:documentation "execvp(file, args)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args, replacing the current process.
+    args may be a list or tuple of strings. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10839 10843])
+                    ("args" variable nil (reparse-symbol function_parameters) [10845 10849]))                  )
+                nil [10828 11080])
+            ("execvpe" function
+               (:documentation "execvpe(file, args, env)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args and environment env , replacing the
+    current process.
+    args may be a list or tuple of strings. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [11093 11097])
+                    ("args" variable nil (reparse-symbol function_parameters) [11099 11103])
+                    ("env" variable nil (reparse-symbol function_parameters) [11105 11108]))                  )
+                nil [11081 11375])
+            ("__all__" code nil nil [11376 11448])
+            ("_execvpe" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [11463 11467])
+                ("args" variable nil (reparse-symbol function_parameters) [11469 11473])
+                ("env" variable nil (reparse-symbol function_parameters) [11475 11478]))              ) nil [11450 12318])
+            ("try" code nil nil [12380 16589])
+            ("getenv" function
+               (:documentation "Get an environment variable, return None if it doesn't exist.
+    The optional second argument can specify an alternate default."
+                :arguments 
+                  ( ("key" variable nil (reparse-symbol function_parameters) [16601 16604])
+                    ("default" variable nil (reparse-symbol function_parameters) [16606 16613]))                  )
+                nil [16590 16797])
+            ("__all__" code nil nil [16797 16821])
+            ("_exists" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [16835 16839]))              ) nil [16823 16871])
+            ("if" code nil nil [16915 19818])
+            ("if" code nil nil [19819 20816])
+            ("if" code nil nil [20818 21924])
+            ("if" code nil nil [21958 25224])
+            ("copy_reg" include nil nil [25225 25253])
+            ("_make_stat_result" function (:arguments 
+              ( ("tup" variable nil (reparse-symbol function_parameters) [25277 25280])
+                ("dict" variable nil (reparse-symbol function_parameters) [25282 25286]))              ) nil [25255 25323])
+            ("_pickle_stat_result" function (:arguments 
+              ( ("sr" variable nil (reparse-symbol function_parameters) [25348 25350]))              ) nil [25324 25425])
+            ("try" code nil nil [25426 25560])
+            ("_make_statvfs_result" function (:arguments 
+              ( ("tup" variable nil (reparse-symbol function_parameters) [25586 25589])
+                ("dict" variable nil (reparse-symbol function_parameters) [25591 25595]))              ) nil [25561 25635])
+            ("_pickle_statvfs_result" function (:arguments 
+              ( ("sr" variable nil (reparse-symbol function_parameters) [25663 25665]))              ) nil [25636 25743])
+            ("try" code nil nil [25744 25911]))          
+      :file "os.py"
+      :pointmax 25911
+      :fsize 25910
+      :lastmodtime '(24204 27811 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157e0c8e6566"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Helper to provide extensibility for pickle/cPickle.
+
+This is only useful to add pickle support for extension types defined in
+C, not for instances of user-defined classes.
+\"\"\"" code nil nil [1 179])
+            ("types" include nil nil [181 222])
+            ("__all__" variable nil nil [224 332])
+            ("dispatch_table" variable nil nil [334 353])
+            ("pickle" function (:arguments 
+              ( ("ob_type" variable nil (reparse-symbol function_parameters) [366 373])
+                ("pickle_function" variable nil (reparse-symbol function_parameters) [375 390])
+                ("constructor_ob" variable nil (reparse-symbol function_parameters) [392 406]))              ) nil [355 886])
+            ("constructor" function (:arguments 
+              ( ("object" variable nil (reparse-symbol function_parameters) [903 909]))              ) nil [887 1009])
+            ("try" code nil nil [1068 1233])
+            ("_reconstructor" function (:arguments 
+              ( ("cls" variable nil (reparse-symbol function_parameters) [1295 1298])
+                ("base" variable nil (reparse-symbol function_parameters) [1300 1304])
+                ("state" variable nil (reparse-symbol function_parameters) [1306 1311]))              ) nil [1276 1518])
+            ("_HEAPTYPE" code nil nil [1519 1535])
+            ("_reduce_ex" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1614 1618])
+                    ("proto" variable nil (reparse-symbol function_parameters) [1620 1625]))                  )
+                nil [1599 2561])
+            ("__newobj__" function (:arguments 
+              ( ("cls" variable nil (reparse-symbol function_parameters) [2616 2619])
+                ("args" variable nil (reparse-symbol function_parameters) [2621 2626]))              ) nil [2601 2664])
+            ("_slotnames" function
+               (:documentation "Return a list of slot names for a given class.
+
+    This needs to find slots defined by the class and its bases, so we
+    can't simply return the __slots__ attribute.  We must walk down
+    the Method Resolution Order and concatenate the __slots__ of each
+    class found there.  (This assumes classes don't modify their
+    __slots__ attribute to misrepresent their slots after the class is
+    defined.)
+    "
+                :arguments 
+                  ( ("cls" variable nil (reparse-symbol function_parameters) [2680 2683]))                  )
+                nil [2665 4520])
+            ("_extension_registry" variable nil nil [5002 5026])
+            ("_inverted_registry" variable nil nil [5056 5079])
+            ("_extension_cache" variable nil nil [5110 5131])
+            ("add_extension" function
+               (:documentation "Register an extension code."
+                :arguments 
+                  ( ("module" variable nil (reparse-symbol function_parameters) [5306 5312])
+                    ("name" variable nil (reparse-symbol function_parameters) [5314 5318])
+                    ("code" variable nil (reparse-symbol function_parameters) [5320 5324]))                  )
+                nil [5288 6035])
+            ("remove_extension" function
+               (:documentation "Unregister an extension code.  For testing only."
+                :arguments 
+                  ( ("module" variable nil (reparse-symbol function_parameters) [6057 6063])
+                    ("name" variable nil (reparse-symbol function_parameters) [6065 6069])
+                    ("code" variable nil (reparse-symbol function_parameters) [6071 6075]))                  )
+                nil [6036 6495])
+            ("clear_extension_cache" function nil nil [6496 6554]))          
+      :file "copy_reg.py"
+      :pointmax 6975
+      :fsize 6974
+      :lastmodtime '(24204 27811 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!lib!python2.7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

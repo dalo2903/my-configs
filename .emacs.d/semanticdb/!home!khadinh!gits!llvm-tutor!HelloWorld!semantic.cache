@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file-1559f870b432
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1559f870b432"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1559f870b412"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/IR/LegacyPassManager.h" include nil nil [820 858])
+            ("llvm/Passes/PassBuilder.h" include nil nil [859 895])
+            ("llvm/Passes/PassPlugin.h" include nil nil [896 931])
+            ("llvm/Support/raw_ostream.h" include nil nil [932 969])
+            ("llvm/Transforms/Utils/BasicBlockUtils.h" include nil nil [970 1020])
+            ("llvm/IR/IRBuilder.h" include nil nil [1021 1051])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1053 1074])
+            ("unnamed" type
+               (:members 
+                  ( ("injectEvenChecks" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1419 1429]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1397 7295])
+                    ("HelloWorld" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9556 9566])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9567 9591]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9534 9825]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [9355 9828])
+                    ("LegacyHelloWorld" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [9908 9923])
+                            ("LegacyHelloWorld" function
+                               (:constructor-flag t
+                                :type ("LegacyHelloWorld" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [9926 9966]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [9858 10192]))                  
+                :type "namespace")
+                nil [1381 10194])
+            ("getHelloWorldPluginInfo" function (:type ("llvm::PassPluginLibraryInfo" type (:type "class") nil nil)) nil [10392 10932])
+            ("llvmGetPassPluginInfo" function (:type ("LLVM_ATTRIBUTE_WEAK::llvm::PassPluginLibraryInfo" type (:type "class") nil nil)) nil [11145 11258])
+            ("LegacyHelloWorld::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [11553 11583])
+            ("X" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11874 11879])
+                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11930 11991]))                  
+                :type ("RegisterPass" type
+                     (:template-specifier 
+                        ( ("LegacyHelloWorld" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11782 11992]))          
+      :file "HelloWorld.cpp"
+      :pointmax 11993
+      :fsize 11992
+      :lastmodtime '(24392 55994 579350 206000)
+      :unmatched-syntax nil))
+  :file "!home!khadinh!gits!llvm-tutor!HelloWorld!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

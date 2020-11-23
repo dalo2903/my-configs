@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file-156b1ad2fa52
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156b1ad2fa52"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156b1a2ee964"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TUTOR_INSTRUMENT_BASIC_H" variable (:constant-flag t) nil [374 403])
+            ("llvm/IR/PassManager.h" include nil nil [405 437])
+            ("llvm/Pass.h" include nil nil [438 460])
+            ("DynamicCallCounter" type
+               (:superclasses 
+                  ( ("llvm::PassInfoMixin" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("run" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("llvm::Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [751 767])
+                            ("" variable
+                               (:reference 1
+                                :type ("llvm::ModuleAnalysisManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [798 828]))                          
+                        :type ("llvm::PreservedAnalyses" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [723 829])
+                    ("runOnModule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("llvm::Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [849 865]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [832 866]))                  
+                :type "struct")
+                nil [644 869])
+            ("LegacyDynamicCallCounter" type
+               (:superclasses 
+                  ( ("llvm::ModulePass" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("ID" variable
+                       (:typemodifiers ("static")
+                        :type "char")
+                        (reparse-symbol classsubparts) [1118 1133])
+                    ("LegacyDynamicCallCounter" function
+                       (:constructor-flag t
+                        :type ("LegacyDynamicCallCounter" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1136 1182])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [1219 1228])
+                    ("Impl" variable (:type ("DynamicCallCounter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1232 1256]))                  
+                :type "struct")
+                nil [1056 1259]))          
+      :file "DynamicCallCounter.h"
+      :pointmax 1268
+      :fsize 1267
+      :lastmodtime '(24391 25506 863808 162000)
+      :unmatched-syntax '((semantic-list 1201 . 1218) (symbol 1190 . 1201) (BOOL 1185 . 1189))
+      :lexical-table 
+        '(("LLVM_TUTOR_INSTRUMENT_BASIC_H")
+          )
+))
+  :file "!home!khadinh!gits!llvm-tutor!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

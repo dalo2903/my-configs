@@ -1,0 +1,313 @@
+;; Object semanticdb-project-database-file-15862f6e5122
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15862f6e5122"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15862f6e50e2"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/module.h" include (:system-flag t) nil [89 114])
+            ("linux/kernel.h" include (:system-flag t) nil [115 140])
+            ("linux/device.h" include (:system-flag t) nil [141 166])
+            ("linux/platform_device.h" include (:system-flag t) nil [167 201])
+            ("dpu_region_dev.h" include nil nil [202 229])
+            ("DPU_REGION_SIZE" variable (:constant-flag t) nil [239 254])
+            ("DPU_PHYS_START_ADDR" variable (:constant-flag t) nil [292 311])
+            ("dpu_region_mem_resource" variable
+               (:dereference 1
+                :default-value "{
+	//DEFINE_RES_MEM(DPU_PHYS_START_ADDR, DPU_REGION_SIZE),
+	//DEFINE_RES_MEM((resource_size_t)DPU_PHYS_START_ADDR + DPU_REGION_SIZE,
+	//	       DPU_REGION_SIZE),
+}"
+                :type ("resource" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [369 577])
+            ("NB_DPU_REGION" variable (:constant-flag t) nil [586 599])
+            ("dpu_region_device" variable
+               (:pointer 1
+                :dereference 1
+                :type ("platform_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [639 696])
+            ("dpu_region_dev_probe" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [723 728]))                  
+                :type "int")
+                nil [698 1088]))          
+      :file "dpu_region_dev.c"
+      :pointmax 1089
+      :fsize 1088
+      :lastmodtime '(24442 53316 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DPU_REGION_SIZE" . ((semantic-list "(16ULL * 1024 * 1024 * 1024)" 255 . 283)))
+          ("NB_DPU_REGION" . ((semantic-list "(ARRAY_SIZE(dpu_region_mem_resource))" 600 . 637)))
+          ("DPU_PHYS_START_ADDR" . ((semantic-list "(0x100000000)" 312 . 325)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15862f6e5102"
+      :file "dpu_region_dev.h"
+      :fsize 218
+      :lastmodtime '(24442 53316 0 0))
+    (semanticdb-table "semanticdb-table-15862f6e5140"
+      :major-mode c-mode
+      :tags 
+        '( ("linux/elf.h" include (:system-flag t) nil [89 111])
+            ("linux/firmware.h" include (:system-flag t) nil [112 139])
+            ("linux/types.h" include (:system-flag t) nil [140 164])
+            ("linux/slab.h" include (:system-flag t) nil [165 188])
+            ("dpu_config.h" include nil nil [190 213])
+            ("dpu_memory.h" include nil nil [214 237])
+            ("dpu_rank.h" include nil nil [238 259])
+            ("dpu_region.h" include nil nil [260 283])
+            ("dpu_runner.h" include nil nil [284 307])
+            ("dpu_types.h" include nil nil [308 330])
+            ("dpu_utils.h" include nil nil [331 353])
+            ("dpu/ufi.h" include nil nil [354 374])
+            ("IRAM_MASK" variable (:constant-flag t) nil [384 393])
+            ("MRAM_MASK" variable (:constant-flag t) nil [415 424])
+            ("REGS_MASK" variable (:constant-flag t) nil [446 455])
+            ("IRAM_ALIGN" variable (:constant-flag t) nil [478 488])
+            ("WRAM_ALIGN" variable (:constant-flag t) nil [501 511])
+            ("ALIGN_MASK" variable (:constant-flag t) nil [525 535])
+            ("IRAM_ALIGN_MASK" variable (:constant-flag t) nil [575 590])
+            ("WRAM_ALIGN_MASK" variable (:constant-flag t) nil [622 637])
+            ("load_iram" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [688 712])
+                    ("content" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [713 733])
+                    ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [739 753])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [754 768]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [662 1226])
+            ("load_wram" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1278])
+                    ("content" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1279 1299])
+                    ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1305 1319])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1320 1334]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1228 1777])
+            ("load_mram" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1805 1829])
+                    ("content" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1830 1850])
+                    ("addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1856 1870])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1871 1885]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1779 2276])
+            ("dpu_load" function
+               (:arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2296 2320])
+                    ("program" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2321 2341]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2278 3887])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_load" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3902 3911]))                  
+                :type "int")
+                nil [3888 3912])
+            ("dpu_poll_rank" function
+               (:arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3937 3961])
+                    ("nb_dpu_running" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3962 3986]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3914 5082])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_poll_rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5097 5111]))                  
+                :type "int")
+                nil [5083 5112])
+            ("dpu_poll_dpu" function
+               (:arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5136 5154])
+                    ("dpu_is_running" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5155 5176])
+                    ("dpu_is_in_fault" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [5185 5207]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5114 5703])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_poll_dpu" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5718 5731]))                  
+                :type "int")
+                nil [5704 5732])
+            ("dpu_thread_boot_safe_for_rank" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5780 5804])
+                    ("ci_mask" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5816 5832])
+                    ("thread" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5833 5848])
+                    ("previous" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5860 5878]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [5734 7113])
+            ("dpu_boot_rank" function
+               (:arguments 
+                  ( ("rank" variable
+                       (:pointer 1
+                        :type ("dpu_rank_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7138 7162]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [7115 8049])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_boot_rank" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8064 8078]))                  
+                :type "int")
+                nil [8050 8079])
+            ("dpu_thread_boot_safe_for_dpu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8126 8144])
+                    ("ci_mask" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8145 8161])
+                    ("thread" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8172 8187])
+                    ("previous" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8188 8206]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [8081 9141])
+            ("dpu_boot_dpu" function
+               (:arguments 
+                  ( ("dpu" variable
+                       (:pointer 1
+                        :type ("dpu_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9165 9183]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [9143 9920])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dpu_boot_dpu" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9935 9948]))                  
+                :type "int")
+                nil [9921 9949]))          
+      :file "dpu_runner.c"
+      :pointmax 9950
+      :fsize 9949
+      :lastmodtime '(24442 53316 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WRAM_ALIGN_MASK" . ((symbol "ALIGN_MASK" 638 . 648) (semantic-list "(WRAM_ALIGN)" 648 . 660)))
+          ("MRAM_MASK" . ((semantic-list "(0x08000000)" 425 . 437)))
+          ("REGS_MASK" . ((semantic-list "(0xa0000000)" 456 . 468)))
+          ("IRAM_ALIGN_MASK" . ((symbol "ALIGN_MASK" 591 . 601) (semantic-list "(IRAM_ALIGN)" 601 . 613)))
+          ("IRAM_MASK" . ((semantic-list "(0x80000000)" 394 . 406)))
+          ("ALIGN_MASK" (spp-arg-list ("align") 535 . 542) . ((semantic-list "(~((1 << (align)) - 1))" 543 . 566)))
+          ("IRAM_ALIGN" . ((semantic-list "(3)" 489 . 492)))
+          ("WRAM_ALIGN" . ((semantic-list "(2)" 512 . 515)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15862f100390"
+      :file "dpu_config.h"
+      :fsize 722
+      :lastmodtime '(24442 53316 0 0))
+    (semanticdb-table "semanticdb-table-15862f151244"
+      :file "dpu_rank.h"
+      :fsize 2849
+      :lastmodtime '(24442 53316 0 0))
+    (semanticdb-table "semanticdb-table-15862f151264"
+      :file "dpu_region.h"
+      :fsize 2815
+      :lastmodtime '(24442 53316 0 0))
+    (semanticdb-table "semanticdb-table-15862f151288"
+      :file "dpu_types.h"
+      :fsize 3411
+      :lastmodtime '(24442 53316 0 0))
+    (semanticdb-table "semanticdb-table-15862f1512a8"
+      :file "dpu_utils.h"
+      :fsize 1406
+      :lastmodtime '(24442 53316 0 0)))
+  :file "!home!khadinh!projects!pim-sgx!upmem!modules!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

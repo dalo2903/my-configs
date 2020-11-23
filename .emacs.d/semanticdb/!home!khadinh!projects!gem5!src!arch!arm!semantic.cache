@@ -1,0 +1,204 @@
+;; Object semanticdb-project-database-file-1584c8a39c54
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1584c8a39c54"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1584c8a39c66"
+      :major-mode c++-mode
+      :tags 
+        '( ("__ARCH_ARM_INTERRUPT_HH__" variable (:constant-flag t) nil [2261 2286])
+            ("arch/arm/faults.hh" include nil nil [2288 2317])
+            ("arch/arm/isa_traits.hh" include nil nil [2318 2351])
+            ("arch/arm/miscregs.hh" include nil nil [2352 2383])
+            ("arch/arm/registers.hh" include nil nil [2384 2416])
+            ("arch/arm/utility.hh" include nil nil [2417 2447])
+            ("arch/generic/interrupts.hh" include nil nil [2448 2485])
+            ("cpu/thread_context.hh" include nil nil [2486 2518])
+            ("debug/Interrupt.hh" include nil nil [2519 2548])
+            ("params/ArmInterrupts.hh" include nil nil [2549 2583])
+            ("ArmISA" type
+               (:members 
+                  ( ("Interrupts" type
+                       (:superclasses 
+                          ( ("BaseInterrupts" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2650 2658])
+                            ("cpu" variable
+                               (:pointer 1
+                                :type ("BaseCPU" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2663 2677])
+                            ("interrupts" variable
+                               (:dereference 1
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2683 2718])
+                            ("intStatus" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2723 2742])
+                            ("public" label nil (reparse-symbol classsubparts) [2746 2753])
+                            ("setCPU" function
+                               (:arguments 
+                                  ( ("_cpu" variable
+                                       (:pointer 1
+                                        :type ("BaseCPU" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2775 2790]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2759 2822])
+                            ("Params" type
+                               (:typedef ("ArmInterruptsParams" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2828 2863])
+                            ("params" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("Params" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2869 2968])
+                            ("Interrupts" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("Params" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2985 2996]))                                  
+                                :type ("Interrupts" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2974 3059])
+                            ("post" function
+                               (:arguments 
+                                  ( ("int_num" variable (:type "int") (reparse-symbol arg-sub-list) [3080 3092])
+                                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [3093 3103]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3066 3456])
+                            ("clear" function
+                               (:arguments 
+                                  ( ("int_num" variable (:type "int") (reparse-symbol arg-sub-list) [3477 3489])
+                                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [3490 3500]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3462 3858])
+                            ("clearAll" function (:type "void") (reparse-symbol classsubparts) [3864 4025])
+                            ("InterruptMask" type
+                               (:members 
+                                  ( ("INT_MASK_M" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4060 4071])
+                                    ("INT_MASK_T" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4126 4137])
+                                    ("INT_MASK_P" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4174 4202]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [4031 4203])
+                            ("takeInt" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("tc" variable
+                                       (:pointer 1
+                                        :type ("ThreadContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4222 4240])
+                                    ("int_type" variable (:type ("InterruptTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4241 4265]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4209 4272])
+                            ("checkInterrupts" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("tc" variable
+                                       (:pointer 1
+                                        :type ("ThreadContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4303 4321]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4278 5679])
+                            ("checkWfiWake" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("hcr" variable (:type ("HCR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5913 5921])
+                                    ("cpsr" variable (:type ("CPSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5922 5932])
+                                    ("scr" variable (:type ("SCR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5933 5941]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5891 6470])
+                            ("getISR" function
+                               (:arguments 
+                                  ( ("hcr" variable (:type ("HCR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6496 6504])
+                                    ("cpsr" variable (:type ("CPSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6505 6515])
+                                    ("scr" variable (:type ("SCR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6516 6524]))                                  
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6476 7085])
+                            ("checkRaw" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("interrupt" variable (:type ("InterruptTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7508 7533]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7490 7689])
+                            ("getInterrupt" function
+                               (:arguments 
+                                  ( ("tc" variable
+                                       (:pointer 1
+                                        :type ("ThreadContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7718 7736]))                                  
+                                :type ("Fault" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7695 9495])
+                            ("updateIntrInfo" function
+                               (:arguments 
+                                  ( ("tc" variable
+                                       (:pointer 1
+                                        :type ("ThreadContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9525 9543]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9501 9582])
+                            ("serialize" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("cp" variable
+                                       (:reference 1
+                                        :type ("CheckpointOut" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9607 9625]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9588 9736])
+                            ("unserialize" function
+                               (:arguments 
+                                  ( ("cp" variable
+                                       (:reference 1
+                                        :type ("CheckpointIn" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9763 9780]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9742 9889]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2605 9892]))                  
+                :type "namespace")
+                nil [2585 9894]))          
+      :file "interrupts.hh"
+      :pointmax 9953
+      :fsize 9952
+      :lastmodtime '(24319 26497 213604 577000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ARCH_ARM_INTERRUPT_HH__")
+          )
+)
+    (semanticdb-table "semanticdb-table-1584c7231b02"
+      :file "faults.hh"
+      :fsize 24110
+      :lastmodtime '(24319 26497 209604 280000))
+    (semanticdb-table "semanticdb-table-1584c72415f4"
+      :file "isa_traits.hh"
+      :fsize 4417
+      :lastmodtime '(24319 26497 225605 471000))
+    (semanticdb-table "semanticdb-table-1584c7241618"
+      :file "miscregs.hh"
+      :fsize 53679
+      :lastmodtime '(24319 26497 229605 769000))
+    (semanticdb-table "semanticdb-table-1584c724165a"
+      :file "registers.hh"
+      :fsize 5607
+      :lastmodtime '(24319 26497 229605 769000))
+    (semanticdb-table "semanticdb-table-1584c72416a4"
+      :file "utility.hh"
+      :fsize 14171
+      :lastmodtime '(24319 26497 237606 364000)))
+  :file "!home!khadinh!projects!gem5!src!arch!arm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
