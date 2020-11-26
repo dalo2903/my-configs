@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15854a532dac
+;; Object semanticdb-project-database-file-157318b03452
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15854a532dac"
+(semanticdb-project-database-file "semanticdb-project-database-file-157318b03452"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15854a532d0c"
+    (semanticdb-table "semanticdb-table-157318b033d2"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [1115 1134]))          
@@ -12,7 +12,7 @@
       :fsize 78052
       :lastmodtime '(24491 53281 834889 8000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854a532d2c"
+    (semanticdb-table "semanticdb-table-157318b033f2"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_LIBRARY_COMMON_H" variable (:constant-flag t) nil [779 803])
@@ -28,57 +28,58 @@
           ("MBEDTLS_LIBRARY_COMMON_H")
           )
 )
-    (semanticdb-table "semanticdb-table-15854a532d4c"
+    (semanticdb-table "semanticdb-table-157318b03412"
       :major-mode makefile-gmake-mode
       :tags 
-        '( ("LOCAL_CFLAGS" variable (:default-value ("$(WARNING_CFLAGS)" "-I." "-I../include" "-D_FILE_OFFSET_BITS=64" "-I/home/khadinh/projects/pim-sgx/upmem/include/dpu")) nil [327 451])
-            ("LOCAL_LDFLAGS" variable (:default-value ("-L/home/khadinh/projects/pim-sgx/upmem/lib" "-ldpu")) nil [451 516])
-            ("LOCAL_CFLAGS" variable (:default-value ("-g3")) nil [529 549])
-            ("WINDOWS_BUILD" variable (:default-value ("1")) nil [749 765])
-            ("LOCAL_CFLAGS" variable (:default-value ("-fPIC" "-fpic")) nil [990 1018])
-            ("SOEXT_TLS" variable (:default-value ("so.13")) nil [1031 1047])
-            ("SOEXT_X509" variable (:default-value ("so.1")) nil [1047 1063])
-            ("SOEXT_CRYPTO" variable (:default-value ("so.5")) nil [1063 1081])
-            ("ARFLAGS" variable (:default-value ("$(AR_DASH)src")) nil [1230 1254])
-            ("ARFLAGS" variable (:default-value ("$(AR_DASH)Src")) nil [1297 1321])
-            ("RLFLAGS" variable (:default-value ("-no_warning_for_no_symbols" "-c")) nil [1321 1361])
-            ("DLEXT" variable (:default-value ("dll")) nil [1455 1467])
-            ("DLEXT" variable (:default-value ("dylib")) nil [1552 1566])
-            ("OBJS_CRYPTO" variable (:default-value ("aes.o" "aesni.o" "arc4.o" "aria.o" "asn1parse.o" "asn1write.o" "base64.o" "bignum.o" "blowfish.o" "camellia.o" "ccm.o" "chacha20.o" "chachapoly.o" "cipher.o" "cipher_wrap.o" "cmac.o" "ctr_drbg.o" "des.o" "dhm.o" "ecdh.o" "ecdsa.o" "ecjpake.o" "ecp.o" "ecp_curves.o" "entropy.o" "entropy_poll.o" "error.o" "gcm.o" "havege.o" "hkdf.o" "hmac_drbg.o" "md.o" "md2.o" "md4.o" "md5.o" "memory_buffer_alloc.o" "nist_kw.o" "oid.o" "padlock.o" "pem.o" "pk.o" "pk_wrap.o" "pkcs12.o" "pkcs5.o" "pkparse.o" "pkwrite.o" "platform.o" "platform_util.o" "poly1305.o" "psa_crypto.o" "psa_crypto_se.o" "psa_crypto_slot_management.o" "psa_crypto_storage.o" "psa_its_file.o" "ripemd160.o" "rsa.o" "rsa_internal.o" "sha1.o" "sha256.o" "sha512.o" "threading.o" "timing.o" "version.o" "version_features.o" "xtea.o")) nil [1579 2822])
-            ("../3rdparty/Makefile.inc" include nil nil [2823 2856])
-            ("LOCAL_CFLAGS" variable (:default-value ("$(THIRDPARTY_INCLUDES)")) nil [2856 2893])
-            ("OBJS_CRYPTO" variable (:default-value ("$(THIRDPARTY_CRYPTO_OBJECTS)")) nil [2893 2935])
-            ("OBJS_X509" variable (:default-value ("certs.o" "pkcs11.o" "x509.o" "x509_create.o" "x509_crl.o" "x509_crt.o" "x509_csr.o" "x509write_crt.o" "x509write_csr.o")) nil [2936 3150])
-            ("OBJS_TLS" variable (:default-value ("debug.o" "net_sockets.o" "ssl_cache.o" "ssl_ciphersuites.o" "ssl_cli.o" "ssl_cookie.o" "ssl_msg.o" "ssl_srv.o" "ssl_ticket.o" "ssl_tls.o")) nil [3151 3375])
-            (".SILENT" function nil nil [3376 3385])
-            (".PHONY" function (:arguments ("all" "static" "shared" "clean")) nil [3386 3418])
-            ("all" function (:arguments ("static")) nil [3433 3445])
-            ("all" function (:arguments ("shared" "static")) nil [3450 3469])
-            ("static" function (:arguments ("libmbedcrypto.a" "libmbedx509.a" "libmbedtls.a")) nil [3476 3527])
-            ("shared" function (:arguments ("libmbedcrypto.$(DLEXT)" "libmbedx509.$(DLEXT)" "libmbedtls.$(DLEXT)")) nil [3528 3600])
-            ("libmbedtls.a" function (:arguments ("$(OBJS_TLS)")) nil [3607 3685])
-            ("libmbedtls." function (:arguments ("$(OBJS_TLS)" "libmbedx509.so")) nil [3781 3956])
-            ("libmbedtls.so" function (:arguments ("libmbedtls.$(SOEXT_TLS)")) nil [3957 4035])
-            ("libmbedtls.dylib" function (:arguments ("$(OBJS_TLS)" "libmbedx509.dylib")) nil [4036 4196])
-            ("libmbedtls.dll" function (:arguments ("$(OBJS_TLS)" "libmbedx509.dll")) nil [4197 4426])
-            ("libmbedx509.a" function (:arguments ("$(OBJS_X509)")) nil [4434 4515])
-            ("libmbedx509." function (:arguments ("$(OBJS_X509)" "libmbedcrypto.so")) nil [4611 4781])
-            ("libmbedx509.so" function (:arguments ("libmbedx509.$(SOEXT_X509)")) nil [4782 4863])
-            ("libmbedx509.dylib" function (:arguments ("$(OBJS_X509)" "libmbedcrypto.dylib")) nil [4864 5019])
-            ("libmbedx509.dll" function (:arguments ("$(OBJS_X509)" "libmbedcrypto.dll")) nil [5020 5243])
-            ("libmbedcrypto.a" function (:arguments ("$(OBJS_CRYPTO)")) nil [5253 5340])
-            ("libmbedcrypto." function (:arguments ("$(OBJS_CRYPTO)")) nil [5436 5580])
-            ("libmbedcrypto.so" function (:arguments ("libmbedcrypto.$(SOEXT_CRYPTO)")) nil [5581 5668])
-            ("libmbedcrypto.dylib" function (:arguments ("$(OBJS_CRYPTO)")) nil [5669 5792])
-            ("libmbedcrypto.dll" function (:arguments ("$(OBJS_CRYPTO)")) nil [5793 5987])
-            (".c.o" function nil nil [5988 6058])
-            ("clean" function nil nil [6059 6066]))          
+        '( ("CFLAGS" variable (:default-value ("-fpic" "-fPIC" "-I/home/khadinh/projects/pim-sgx/mbedtls/configs" "-DMBEDTLS_CONFIG_FILE='<config-mini-tls1_1.h>'")) nil [74 193])
+            ("LOCAL_CFLAGS" variable (:default-value ("$(WARNING_CFLAGS)" "-I." "-I../include" "-D_FILE_OFFSET_BITS=64" "-I/home/khadinh/projects/pim-sgx/upmem/include/dpu")) nil [465 589])
+            ("LOCAL_LDFLAGS" variable (:default-value ("-L/home/khadinh/projects/pim-sgx/upmem/lib" "-ldpu")) nil [589 654])
+            ("LOCAL_CFLAGS" variable (:default-value ("-g3")) nil [667 687])
+            ("WINDOWS_BUILD" variable (:default-value ("1")) nil [887 903])
+            ("LOCAL_CFLAGS" variable (:default-value ("-fPIC" "-fpic")) nil [1128 1156])
+            ("SOEXT_TLS" variable (:default-value ("so.13")) nil [1169 1185])
+            ("SOEXT_X509" variable (:default-value ("so.1")) nil [1185 1201])
+            ("SOEXT_CRYPTO" variable (:default-value ("so.5")) nil [1201 1219])
+            ("ARFLAGS" variable (:default-value ("$(AR_DASH)src")) nil [1368 1392])
+            ("ARFLAGS" variable (:default-value ("$(AR_DASH)Src")) nil [1435 1459])
+            ("RLFLAGS" variable (:default-value ("-no_warning_for_no_symbols" "-c")) nil [1459 1499])
+            ("DLEXT" variable (:default-value ("dll")) nil [1593 1605])
+            ("DLEXT" variable (:default-value ("dylib")) nil [1690 1704])
+            ("OBJS_CRYPTO" variable (:default-value ("aes.o" "aesni.o" "arc4.o" "aria.o" "asn1parse.o" "asn1write.o" "base64.o" "bignum.o" "blowfish.o" "camellia.o" "ccm.o" "chacha20.o" "chachapoly.o" "cipher.o" "cipher_wrap.o" "cmac.o" "ctr_drbg.o" "des.o" "dhm.o" "ecdh.o" "ecdsa.o" "ecjpake.o" "ecp.o" "ecp_curves.o" "entropy.o" "entropy_poll.o" "error.o" "gcm.o" "havege.o" "hkdf.o" "hmac_drbg.o" "md.o" "md2.o" "md4.o" "md5.o" "memory_buffer_alloc.o" "nist_kw.o" "oid.o" "padlock.o" "pem.o" "pk.o" "pk_wrap.o" "pkcs12.o" "pkcs5.o" "pkparse.o" "pkwrite.o" "platform.o" "platform_util.o" "poly1305.o" "psa_crypto.o" "psa_crypto_se.o" "psa_crypto_slot_management.o" "psa_crypto_storage.o" "psa_its_file.o" "ripemd160.o" "rsa.o" "rsa_internal.o" "sha1.o" "sha256.o" "sha512.o" "threading.o" "timing.o" "version.o" "version_features.o" "xtea.o")) nil [1717 2960])
+            ("../3rdparty/Makefile.inc" include nil nil [2961 2994])
+            ("LOCAL_CFLAGS" variable (:default-value ("$(THIRDPARTY_INCLUDES)")) nil [2994 3031])
+            ("OBJS_CRYPTO" variable (:default-value ("$(THIRDPARTY_CRYPTO_OBJECTS)")) nil [3031 3073])
+            ("OBJS_X509" variable (:default-value ("certs.o" "pkcs11.o" "x509.o" "x509_create.o" "x509_crl.o" "x509_crt.o" "x509_csr.o" "x509write_crt.o" "x509write_csr.o")) nil [3074 3288])
+            ("OBJS_TLS" variable (:default-value ("debug.o" "net_sockets.o" "ssl_cache.o" "ssl_ciphersuites.o" "ssl_cli.o" "ssl_cookie.o" "ssl_msg.o" "ssl_srv.o" "ssl_ticket.o" "ssl_tls.o")) nil [3289 3513])
+            (".SILENT" function nil nil [3514 3523])
+            (".PHONY" function (:arguments ("all" "static" "shared" "clean")) nil [3524 3556])
+            ("all" function (:arguments ("static")) nil [3571 3583])
+            ("all" function (:arguments ("shared" "static")) nil [3588 3607])
+            ("static" function (:arguments ("libmbedcrypto.a" "libmbedx509.a" "libmbedtls.a")) nil [3614 3665])
+            ("shared" function (:arguments ("libmbedcrypto.$(DLEXT)" "libmbedx509.$(DLEXT)" "libmbedtls.$(DLEXT)")) nil [3666 3738])
+            ("libmbedtls.a" function (:arguments ("$(OBJS_TLS)")) nil [3745 3823])
+            ("libmbedtls." function (:arguments ("$(OBJS_TLS)" "libmbedx509.so")) nil [3919 4094])
+            ("libmbedtls.so" function (:arguments ("libmbedtls.$(SOEXT_TLS)")) nil [4095 4173])
+            ("libmbedtls.dylib" function (:arguments ("$(OBJS_TLS)" "libmbedx509.dylib")) nil [4174 4334])
+            ("libmbedtls.dll" function (:arguments ("$(OBJS_TLS)" "libmbedx509.dll")) nil [4335 4564])
+            ("libmbedx509.a" function (:arguments ("$(OBJS_X509)")) nil [4572 4653])
+            ("libmbedx509." function (:arguments ("$(OBJS_X509)" "libmbedcrypto.so")) nil [4749 4919])
+            ("libmbedx509.so" function (:arguments ("libmbedx509.$(SOEXT_X509)")) nil [4920 5001])
+            ("libmbedx509.dylib" function (:arguments ("$(OBJS_X509)" "libmbedcrypto.dylib")) nil [5002 5157])
+            ("libmbedx509.dll" function (:arguments ("$(OBJS_X509)" "libmbedcrypto.dll")) nil [5158 5381])
+            ("libmbedcrypto.a" function (:arguments ("$(OBJS_CRYPTO)")) nil [5391 5478])
+            ("libmbedcrypto." function (:arguments ("$(OBJS_CRYPTO)")) nil [5574 5718])
+            ("libmbedcrypto.so" function (:arguments ("libmbedcrypto.$(SOEXT_CRYPTO)")) nil [5719 5806])
+            ("libmbedcrypto.dylib" function (:arguments ("$(OBJS_CRYPTO)")) nil [5807 5930])
+            ("libmbedcrypto.dll" function (:arguments ("$(OBJS_CRYPTO)")) nil [5931 6125])
+            (".c.o" function nil nil [6126 6196])
+            ("clean" function nil nil [6197 6204]))          
       :file "Makefile"
-      :pointmax 6341
-      :fsize 6340
-      :lastmodtime '(24490 18534 212282 128000)
+      :pointmax 6479
+      :fsize 6478
+      :lastmodtime '(24508 45087 383929 445000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854a532d6c"
+    (semanticdb-table "semanticdb-table-157318b03432"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [1309 1328]))          
@@ -87,7 +88,7 @@
       :fsize 87031
       :lastmodtime '(24491 31080 300510 999000)
       :unmatched-syntax '((symbol 1 . 2)))
-    (semanticdb-table "semanticdb-table-15854a532d8c"
+    (semanticdb-table "semanticdb-table-157318cad10c"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [694 713]))          
@@ -96,7 +97,7 @@
       :fsize 21023
       :lastmodtime '(24489 8553 793253 347000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854a583d28"
+    (semanticdb-table "semanticdb-table-157318cad12c"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [785 804]))          
@@ -105,7 +106,7 @@
       :fsize 24096
       :lastmodtime '(24489 8553 793253 347000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854a583d48"
+    (semanticdb-table "semanticdb-table-157318cad14c"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [698 717]))          
@@ -114,16 +115,16 @@
       :fsize 14411
       :lastmodtime '(24489 8553 797253 582000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854a583d7c"
+    (semanticdb-table "semanticdb-table-157318cad16c"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [906 925]))          
       :file "aes.c"
-      :pointmax 74022
-      :fsize 74021
-      :lastmodtime '(24489 8553 793253 347000)
+      :pointmax 74213
+      :fsize 74212
+      :lastmodtime '(24507 57577 839944 678000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15854b3ca408"
+    (semanticdb-table "semanticdb-table-157318cad18c"
       :major-mode c-mode
       :tags 
         '( ("common.h" include nil nil [968 987])
@@ -146,7 +147,16 @@
       :pointmax 4915
       :fsize 4914
       :lastmodtime '(24489 8553 797253 582000)
-      :unmatched-syntax '((punctuation 2457 . 2458) (semantic-list 2433 . 2456) (semantic-list 2403 . 2433) (punctuation 2401 . 2402) (VOID 2396 . 2400) (STATIC 2389 . 2395))))
+      :unmatched-syntax '((punctuation 2457 . 2458) (semantic-list 2433 . 2456) (semantic-list 2403 . 2433) (punctuation 2401 . 2402) (VOID 2396 . 2400) (STATIC 2389 . 2395)))
+    (semanticdb-table "semanticdb-table-157318cad1b0"
+      :major-mode c-mode
+      :tags 
+        '( ("common.h" include nil nil [689 708]))          
+      :file "memory_buffer_alloc.c"
+      :pointmax 19209
+      :fsize 19208
+      :lastmodtime '(24489 8553 793253 347000)
+      :unmatched-syntax nil))
   :file "!home!khadinh!projects!pim-sgx!mbedtls!library!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

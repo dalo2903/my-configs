@@ -66,7 +66,7 @@ If invoked outside of a project, displays a list of known projects to jump.
 
 (eval-after-load 'projectile '(progn (define-key projectile-command-map (kbd "h") #'helm-projectile)))
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-projectile" '("helm-")))
+(register-definition-prefixes "helm-projectile" '("helm-"))
 
 ;;;***
 

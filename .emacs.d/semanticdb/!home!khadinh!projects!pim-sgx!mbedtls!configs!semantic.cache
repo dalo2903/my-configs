@@ -1,33 +1,45 @@
-;; Object semanticdb-project-database-file-15854a7247e4
+;; Object semanticdb-project-database-file-157318dc226c
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15854a7247e4"
+(semanticdb-project-database-file "semanticdb-project-database-file-157318dc226c"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15854a7247c4"
+    (semanticdb-table "semanticdb-table-157318dc224c"
       :major-mode c-mode
       :tags 
-        '( ("MBEDTLS_CONFIG_H" variable (:constant-flag t) nil [967 983])
-            ("MBEDTLS_HAVE_ASM" variable (:constant-flag t) nil [1014 1030])
-            ("MBEDTLS_PLATFORM_NO_STD_FUNCTIONS" variable (:constant-flag t) nil [1039 1072])
-            ("MBEDTLS_PLATFORM_C" variable (:constant-flag t) nil [1081 1099])
-            ("MBEDTLS_OID_C" variable (:constant-flag t) nil [1135 1148])
-            ("MBEDTLS_BIGNUM_C" variable (:constant-flag t) nil [1157 1173])
-            ("MBEDTLS_MD_C" variable (:constant-flag t) nil [1182 1194])
-            ("MBEDTLS_AES_C" variable (:constant-flag t) nil [1936 1949])
-            ("MBEDTLS_CIPHER_C" variable (:constant-flag t) nil [1958 1974])
-            ("MBEDTLS_CIPHER_MODE_CBC" variable (:constant-flag t) nil [1983 2006])
-            ("mbedtls/check_config.h" include nil nil [2245 2278]))          
+        '( ("MBEDTLS_CONFIG_H" variable (:constant-flag t) nil [1085 1101])
+            ("MBEDTLS_HAVE_ASM" variable (:constant-flag t) nil [1132 1148])
+            ("MBEDTLS_PLATFORM_C" variable (:constant-flag t) nil [1157 1175])
+            ("MBEDTLS_NO_UDBL_DIVISION" variable (:constant-flag t) nil [1184 1208])
+            ("MBEDTLS_MPI_MAX_SIZE" variable (:constant-flag t) nil [1248 1268])
+            ("MBEDTLS_MEMORY_ALIGN_MULTIPLE" variable (:constant-flag t) nil [1283 1312])
+            ("MBEDTLS_PLATFORM_NO_STD_FUNCTIONS" variable (:constant-flag t) nil [1483 1516])
+            ("MBEDTLS_PLATFORM_NO_STD_FUNCTIONS" variable (:constant-flag t) nil [1483 1516])
+            ("MBEDTLS_OID_C" variable (:constant-flag t) nil [1552 1565])
+            ("MBEDTLS_BIGNUM_C" variable (:constant-flag t) nil [1574 1590])
+            ("MBEDTLS_MD_C" variable (:constant-flag t) nil [1599 1611])
+            ("MBEDTLS_PKCS1_V15" variable (:constant-flag t) nil [1728 1745])
+            ("MBEDTLS_RSA_C" variable (:constant-flag t) nil [1754 1767])
+            ("MBEDTLS_AES_C" variable (:constant-flag t) nil [2344 2357])
+            ("MBEDTLS_CIPHER_C" variable (:constant-flag t) nil [2366 2382])
+            ("MBEDTLS_GCM_C" variable (:constant-flag t) nil [2391 2404])
+            ("mbedtls/check_config.h" include nil nil [2681 2714]))          
       :file "config-mini-tls1_1.h"
-      :pointmax 2310
-      :fsize 2309
-      :lastmodtime '(24502 14685 273956 613000)
+      :pointmax 2746
+      :fsize 2745
+      :lastmodtime '(24508 49102 794645 305000)
       :unmatched-syntax nil
       :lexical-table 
-        '(("MBEDTLS_CIPHER_C")
+        '(("MBEDTLS_NO_UDBL_DIVISION")
+          ("MBEDTLS_PLATFORM_MEMORY")
+          ("MBEDTLS_RSA_C")
+          ("MBEDTLS_MEMORY_ALIGN_MULTIPLE" . ((number "8" 1314 . 1315)))
+          ("MBEDTLS_CIPHER_C")
+          ("MBEDTLS_PKCS1_V15")
           ("MBEDTLS_HAVE_ASM")
-          ("MBEDTLS_CIPHER_MODE_CBC")
+          ("MBEDTLS_MPI_MAX_SIZE" . ((number "512" 1271 . 1274)))
           ("MBEDTLS_PLATFORM_NO_STD_FUNCTIONS")
           ("MBEDTLS_AES_C")
+          ("MBEDTLS_GCM_C")
           ("MBEDTLS_OID_C")
           ("MBEDTLS_MD_C")
           ("MBEDTLS_CONFIG_H")

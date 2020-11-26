@@ -1,5 +1,5 @@
 (use-package helm
-  :init
+  :config
   (progn
     (require 'helm-config)
     (require 'helm-grep)
@@ -17,7 +17,7 @@
                                   `(:background ,bg-color :foreground ,bg-color)))
           (setq-local cursor-type nil))))
 
-    (add-hook 'helm-minibuffer-set-up-hook 'helm-hide-minibuffer-maybe)
+    ;; (add-hook 'helm-minibuffer-set-up-hook 'helm-hide-minibuffer-maybe)
     ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
     ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
     ;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
@@ -98,8 +98,8 @@
     (add-hook 'helm-goto-line-before-hook 'helm-save-current-pos-to-mark-ring)
 
     ;; show minibuffer history with Helm
-    (define-key minibuffer-local-map (kbd "M-p") 'helm-minibuffer-history)
-    (define-key minibuffer-local-map (kbd "M-n") 'helm-minibuffer-history)
+    ;; (define-key minibuffer-local-map (kbd "M-p") 'helm-minibuffer-history)
+    ;; (define-key minibuffer-local-map (kbd "M-n") 'helm-minibuffer-history)
 
     (define-key global-map [remap find-tag] 'helm-etags-select)
 

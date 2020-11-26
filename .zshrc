@@ -10,7 +10,11 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export XAUTHORITY=~/.Xauthority
 
+# Run emacsd
+alias emacsc="~/my-configs/start-emacs.sh"
+# export DISPLAY=localhost:0.0
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -127,5 +131,5 @@ export EDITOR='emacs'
 
 # Connect to available sessions
 if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
-    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+    tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux -d && tmux attach-session -t ssh_tmux
 fi

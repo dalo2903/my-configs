@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15565eaa8420
+;; Object semanticdb-project-database-file-15731924d182
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15565eaa8420"
+(semanticdb-project-database-file "semanticdb-project-database-file-15731924d182"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15565eaa8240"
+    (semanticdb-table "semanticdb-table-15731924cfe2"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_PLATFORM_H" variable (:constant-flag t) nil [1328 1346])
@@ -159,7 +159,7 @@
           ("mbedtls_vsnprintf" . ((symbol "vsnprintf" 10465 . 10474)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8260"
+    (semanticdb-table "semanticdb-table-15731924d002"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_MD_H" variable (:constant-flag t) nil [822 834])
@@ -569,7 +569,7 @@
           ("MBEDTLS_ERR_MD_FILE_IO_ERROR" . ((punctuation "-" 1345 . 1346) (number "0x5200" 1346 . 1352)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8280"
+    (semanticdb-table "semanticdb-table-15731924d022"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_RSA_H" variable (:constant-flag t) nil [1014 1027])
@@ -1551,7 +1551,7 @@
           ("MBEDTLS_ERR_RSA_UNSUPPORTED_OPERATION" . ((punctuation "-" 2492 . 2493) (number "0x4500" 2493 . 2499)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa82a0"
+    (semanticdb-table "semanticdb-table-15731924d042"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_CONFIG_H" variable (:constant-flag t) nil [906 922])
@@ -1837,7 +1837,7 @@
           ("MBEDTLS_X509_CSR_WRITE_C")
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa82c0"
+    (semanticdb-table "semanticdb-table-15731924d062"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_CHECK_CONFIG_H" variable (:constant-flag t) nil [896 918])
@@ -1855,7 +1855,7 @@
         '(("MBEDTLS_CHECK_CONFIG_H")
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa82e0"
+    (semanticdb-table "semanticdb-table-15731924d082"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_BIGNUM_H" variable (:constant-flag t) nil [755 771])
@@ -2690,7 +2690,7 @@
           ("MBEDTLS_ERR_MPI_NOT_ACCEPTABLE" . ((punctuation "-" 1787 . 1788) (number "0x000E" 1788 . 1794)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8300"
+    (semanticdb-table "semanticdb-table-15731924d0a2"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_ECDSA_H" variable (:constant-flag t) nil [1100 1115])
@@ -2720,7 +2720,7 @@
           ("MBEDTLS_ECDSA_H")
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8320"
+    (semanticdb-table "semanticdb-table-15731924d0c2"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_SHA256_H" variable (:constant-flag t) nil [952 968])
@@ -2952,7 +2952,7 @@
           ("MBEDTLS_ERR_SHA256_BAD_INPUT_DATA" . ((punctuation "-" 1364 . 1365) (number "0x0074" 1365 . 1371)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8340"
+    (semanticdb-table "semanticdb-table-15731924d0e2"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_ECP_H" variable (:constant-flag t) nil [1142 1155])
@@ -3909,7 +3909,7 @@
           ("MBEDTLS_ERR_ECP_HW_ACCEL_FAILED" . ((punctuation "-" 2419 . 2420) (number "0x4B80" 2420 . 2426)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8360"
+    (semanticdb-table "semanticdb-table-15731924d102"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_ENTROPY_H" variable (:constant-flag t) nil [760 777])
@@ -4081,7 +4081,7 @@
           ("MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR" . ((punctuation "-" 1808 . 1809) (number "0x003F" 1809 . 1815)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8380"
+    (semanticdb-table "semanticdb-table-15731924d122"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_CTR_DRBG_H" variable (:constant-flag t) nil [1701 1719])
@@ -4356,7 +4356,7 @@
           ("MBEDTLS_CTR_DRBG_RESEED_INTERVAL" . ((number "10000" 4564 . 4569)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa83a0"
+    (semanticdb-table "semanticdb-table-15731924d142"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_AES_H" variable (:constant-flag t) nil [1618 1631])
@@ -4557,7 +4557,7 @@
           ("MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH" . ((punctuation "-" 2140 . 2141) (number "0x0022" 2141 . 2147)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa83c0"
+    (semanticdb-table "semanticdb-table-15731924d162"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_PK_H" variable (:constant-flag t) nil [745 757])
@@ -5125,7 +5125,7 @@
           ("MBEDTLS_PK_DEBUG_MAX_ITEMS" . ((number "3" 6361 . 6362)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa83e0"
+    (semanticdb-table "semanticdb-table-157319251700"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_PKCS5_H" variable (:constant-flag t) nil [793 808])
@@ -5183,7 +5183,7 @@
           ("MBEDTLS_ERR_PKCS5_PASSWORD_MISMATCH" . ((punctuation "-" 1397 . 1398) (number "0x2e00" 1398 . 1404)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565eaa8400"
+    (semanticdb-table "semanticdb-table-157319251720"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_ASN1_H" variable (:constant-flag t) nil [741 755])
@@ -5626,7 +5626,7 @@
           ("MBEDTLS_ASN1_TAG_CLASS_MASK" . ((number "0xC0" 4503 . 4507)))
           )
 )
-    (semanticdb-table "semanticdb-table-15565e55f5ae"
+    (semanticdb-table "semanticdb-table-157319251740"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_MD5_H" variable (:constant-flag t) nil [947 960])
@@ -5851,7 +5851,7 @@
           ("MBEDTLS_MD5_H")
           )
 )
-    (semanticdb-table "semanticdb-table-15565e4a27c8"
+    (semanticdb-table "semanticdb-table-157319251760"
       :major-mode c-mode
       :tags 
         '( ("MBEDTLS_SHA1_H" variable (:constant-flag t) nil [1094 1108])
@@ -6076,6 +6076,63 @@
         '(("MBEDTLS_SHA1_H")
           ("MBEDTLS_ERR_SHA1_HW_ACCEL_FAILED" . ((punctuation "-" 1391 . 1392) (number "0x0035" 1392 . 1398)))
           ("MBEDTLS_ERR_SHA1_BAD_INPUT_DATA" . ((punctuation "-" 1500 . 1501) (number "0x0073" 1501 . 1507)))
+          )
+)
+    (semanticdb-table "semanticdb-table-157317f5d760"
+      :major-mode c-mode
+      :tags 
+        '( ("MBEDTLS_MEMORY_BUFFER_ALLOC_H" variable (:constant-flag t) nil [779 808])
+            ("mbedtls/config.h" include nil nil [844 871])
+            ("stddef.h" include (:system-flag t) nil [915 934])
+            ("MBEDTLS_MEMORY_ALIGN_MULTIPLE" variable (:constant-flag t) nil [1197 1226])
+            ("MBEDTLS_MEMORY_VERIFY_NONE" variable (:constant-flag t) nil [1332 1358])
+            ("MBEDTLS_MEMORY_VERIFY_ALLOC" variable (:constant-flag t) nil [1377 1404])
+            ("MBEDTLS_MEMORY_VERIFY_FREE" variable (:constant-flag t) nil [1429 1455])
+            ("MBEDTLS_MEMORY_VERIFY_ALWAYS" variable (:constant-flag t) nil [1481 1509])
+            ("mbedtls_memory_buffer_alloc_verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4793 4799]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4753 4800])
+            ("mbedtls_memory_buffer_set_verify" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("verify" variable (:type "int") (reparse-symbol arg-sub-list) [2868 2880]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2829 2881])
+            ("mbedtls_memory_buffer_alloc_free" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2461 2467]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2422 2468])
+            ("mbedtls_memory_buffer_alloc_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2307 2326])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2327 2339]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2268 2340]))          
+      :file "memory_buffer_alloc.h"
+      :pointmax 5067
+      :fsize 5066
+      :lastmodtime '(24489 9822 951367 352000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MBEDTLS_MEMORY_ALIGN_MULTIPLE" . ((number "4" 1233 . 1234)))
+          ("MBEDTLS_MEMORY_VERIFY_FREE" . ((semantic-list "(1 << 1)" 1464 . 1472)))
+          ("MBEDTLS_MEMORY_VERIFY_ALWAYS" . ((semantic-list "(MBEDTLS_MEMORY_VERIFY_ALLOC | MBEDTLS_MEMORY_VERIFY_FREE)" 1516 . 1574)))
+          ("MBEDTLS_MEMORY_VERIFY_NONE" . ((number "0" 1367 . 1368)))
+          ("MBEDTLS_MEMORY_BUFFER_ALLOC_H")
+          ("MBEDTLS_MEMORY_VERIFY_ALLOC" . ((semantic-list "(1 << 0)" 1412 . 1420)))
           )
 ))
   :file "!home!khadinh!projects!pim-sgx!test_program!mbedtls!semantic.cache"
