@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-156211e3ed70
+;; Object semanticdb-project-database-file-157130a177ac
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-156211e3ed70"
+(semanticdb-project-database-file "semanticdb-project-database-file-157130a177ac"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-156211e39f84"
+    (semanticdb-table "semanticdb-table-1571309c3fca"
       :major-mode c-mode
       :tags 
         '( ("_FEATURES_H" variable (:constant-flag t) nil [819 830])
@@ -102,7 +102,7 @@
           ("_LARGEFILE_SOURCE" . ((number "1" 12699 . 12700)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e39fa4"
+    (semanticdb-table "semanticdb-table-1571309c3fea"
       :major-mode c-mode
       :tags nil
       :file "stdc-predef.h"
@@ -110,7 +110,7 @@
       :fsize 2290
       :lastmodtime '(24378 57964 0 0)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-156211e39fc4"
+    (semanticdb-table "semanticdb-table-1571309c400a"
       :major-mode c-mode
       :tags 
         '( ("_STDINT_H" variable (:constant-flag t) nil [867 876])
@@ -333,7 +333,7 @@
           ("__UINT64_C" (spp-arg-list ("c") 2761 . 2764) . ((spp-symbol-merge ((symbol "c" 2765 . 2766) (symbol "ULL" 2770 . 2773)) 2765 . 2773)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e39fe4"
+    (semanticdb-table "semanticdb-table-1571309c402a"
       :major-mode c-mode
       :tags 
         '( ("_ASSERT_H" variable (:constant-flag t) nil [1007 1016])
@@ -422,7 +422,7 @@
     }))" 3462 . 3670)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a004"
+    (semanticdb-table "semanticdb-table-1571309c404a"
       :major-mode c-mode
       :tags 
         '( ("_STRING_H" variable (:constant-flag t) nil [878 887])
@@ -771,7 +771,7 @@
           ("__need_NULL")
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a024"
+    (semanticdb-table "semanticdb-table-1571309c406a"
       :major-mode c-mode
       :tags 
         '( ("_STRINGS_H" variable (:constant-flag t) nil [818 828])
@@ -952,7 +952,7 @@
           ("__need_size_t")
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a044"
+    (semanticdb-table "semanticdb-table-1571309c408a"
       :major-mode c-mode
       :tags 
         '( ("_INTTYPES_H" variable (:constant-flag t) nil [891 902])
@@ -1372,7 +1372,7 @@
           ("SCNiPTR" . ((symbol "__PRIPTR_PREFIX" 6747 . 6762) (string "\"i\"" 6763 . 6766)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a064"
+    (semanticdb-table "semanticdb-table-1571309c40aa"
       :major-mode c-mode
       :tags 
         '( ("_STDIO_H" variable (:constant-flag t) nil [920 928])
@@ -2874,7 +2874,7 @@
           ("RENAME_EXCHANGE" . ((semantic-list "(1 << 1)" 4432 . 4440)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a084"
+    (semanticdb-table "semanticdb-table-1571309c40ca"
       :major-mode c-mode
       :tags 
         '( ("_WCHAR_H" variable (:constant-flag t) nil [916 924])
@@ -4396,7 +4396,7 @@
           ("__need___va_list")
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a0a4"
+    (semanticdb-table "semanticdb-table-1571309c40ea"
       :major-mode c-mode
       :tags 
         '( ("_CTYPE_H" variable (:constant-flag t) nil [878 886])
@@ -4984,7 +4984,7 @@
           ("__isblank_l" (spp-arg-list ("c" "l") 9997 . 10002) . ((symbol "__isctype_l" 10003 . 10014) (semantic-list "((c), _ISblank, (l))" 10014 . 10034)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a0c4"
+    (semanticdb-table "semanticdb-table-1571309c410a"
       :major-mode c-mode
       :tags 
         '( ("_ENDIAN_H" variable (:constant-flag t) nil [817 826])
@@ -5033,7 +5033,7 @@
           ("be64toh" (spp-arg-list ("x") 1716 . 1719) . ((symbol "__bswap_64" 1720 . 1730) (semantic-list "(x)" 1731 . 1734)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a0e4"
+    (semanticdb-table "semanticdb-table-1571309c412a"
       :major-mode c-mode
       :tags 
         '( ("_LIBC_LIMITS_H_" variable (:constant-flag t) nil [901 916])
@@ -5060,7 +5060,7 @@
           ("_LIBC_LIMITS_H_" . ((number "1" 917 . 918)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a104"
+    (semanticdb-table "semanticdb-table-1571309c414a"
       :major-mode c-mode
       :tags 
         '( ("_ERRNO_H" variable (:constant-flag t) nil [866 874])
@@ -5102,7 +5102,7 @@
           ("errno" . ((semantic-list "(*__errno_location ())" 1263 . 1285)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a124"
+    (semanticdb-table "semanticdb-table-1571309c416a"
       :major-mode c-mode
       :tags 
         '( ("_LOCALE_H" variable (:constant-flag t) nil [875 884])
@@ -5388,7 +5388,7 @@
           ("LC_MEASUREMENT_MASK" . ((semantic-list "(1 << __LC_MEASUREMENT)" 6343 . 6366)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a144"
+    (semanticdb-table "semanticdb-table-1571309c418a"
       :major-mode c++-mode
       :tags 
         '( ("_PTHREAD_H" variable (:constant-flag t) nil [818 828])
@@ -7336,7 +7336,7 @@
           ("__cleanup_fct_attribute")
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3a164"
+    (semanticdb-table "semanticdb-table-1571309c41aa"
       :major-mode c-mode
       :tags 
         '( ("_TIME_H" variable (:constant-flag t) nil [872 879])
@@ -7748,7 +7748,7 @@
           ("__need_NULL")
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ec90"
+    (semanticdb-table "semanticdb-table-1571309c41ca"
       :major-mode c-mode
       :tags 
         '( ("_SCHED_H" variable (:constant-flag t) nil [890 898])
@@ -8006,7 +8006,7 @@
           ("CPU_ALLOC_SIZE" (spp-arg-list ("count") 4272 . 4279) . ((symbol "__CPU_ALLOC_SIZE" 4280 . 4296) (semantic-list "(count)" 4297 . 4304)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ecb0"
+    (semanticdb-table "semanticdb-table-1571309c41ea"
       :major-mode c-mode
       :tags 
         '( ("_WCTYPE_H" variable (:constant-flag t) nil [918 927])
@@ -8208,7 +8208,7 @@
           ("WEOF" . ((semantic-list "(0xffffffffu)" 1160 . 1173)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ecd0"
+    (semanticdb-table "semanticdb-table-1571309c420a"
       :major-mode c-mode
       :tags 
         '( ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION" variable (:constant-flag t) nil [881 928])
@@ -9905,7 +9905,7 @@
           ("EXIT_SUCCESS" . ((number "0" 2768 . 2769)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ecf0"
+    (semanticdb-table "semanticdb-table-1571309c422a"
       :major-mode c-mode
       :tags 
         '( ("_FCNTL_H" variable (:constant-flag t) nil [881 889])
@@ -10231,7 +10231,7 @@
           ("S_IRWXO" . ((semantic-list "(S_IRWXG >> 3)" 3787 . 3801)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ed10"
+    (semanticdb-table "semanticdb-table-1571309c424a"
       :major-mode c-mode
       :tags 
         '( ("_UNISTD_H" variable (:constant-flag t) nil [880 889])
@@ -11889,7 +11889,7 @@
           ("L_INCR" . ((symbol "SEEK_CUR" 11769 . 11777)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ed30"
+    (semanticdb-table "semanticdb-table-157130a1776c"
       :major-mode c++-mode
       :tags 
         '( ("_MATH_H" variable (:constant-flag t) nil [906 913])
@@ -12378,7 +12378,7 @@
           ("FP_NORMAL" . ((number "4" 26113 . 26114)))
           )
 )
-    (semanticdb-table "semanticdb-table-156211e3ed50"
+    (semanticdb-table "semanticdb-table-157130a1778c"
       :major-mode c-mode
       :tags 
         '( ("_ALLOCA_H" variable (:constant-flag t) nil [817 826])

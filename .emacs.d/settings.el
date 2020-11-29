@@ -62,78 +62,78 @@
       )
 ;;    (setq zone-timer (run-with-idle-timer  t 'zone))
 
-(setq c-default-style "linux")
-(setq c-basic-offset 4)
-;; Auto close brackets
-(electric-pair-mode)
+(setq c-default-style "gnu")
+    ;; (setq c-basic-offset 2)
+;;    Auto close brackets
+    (electric-pair-mode)
 
-;; Redo
-(add-to-list 'load-path "~/.emacs.d/redo+")
-(require 'redo+)
-(define-key global-map (kbd "C-/") 'undo)
-(define-key global-map (kbd "C-x C-_") 'redo)
+    ;; Redo
+    (add-to-list 'load-path "~/.emacs.d/redo+")
+    (require 'redo+)
+    (define-key global-map (kbd "C-/") 'undo)
+    (define-key global-map (kbd "C-x C-/") 'redo)
 
-;; linker scrip mode
-(add-to-list 'load-path "~/.emacs.d/ld-mode")
-(require 'ld-mode)
-(ld-mode)
+    ;; linker scrip mode
+    (add-to-list 'load-path "~/.emacs.d/ld-mode")
+    (require 'ld-mode)
+    (ld-mode)
 
 
-;; Configs from tuhdo
-(add-to-list 'load-path "~/.emacs.d/custom")
-(require 'setup-general)
-(require 'setup-helm)
-(require 'setup-cedet)
-;; Mouse?
-(setq helm-allow-mouse t)
+    ;; Configs from tuhdo
+    (add-to-list 'load-path "~/.emacs.d/custom")
+    (require 'setup-general)
+    (require 'setup-helm)
+    (require 'setup-cedet)
+    ;; Mouse?
+    (setq helm-allow-mouse t)
 
-(require 'setup-helm-gtags)
-(require 'setup-editing)
+    (require 'setup-helm-gtags)
+    (require 'setup-editing)
 
-;; Folding code
-(use-package hideshow
-  :init
-  (defun toggle-selective-display (column)
-    (interactive "P")
-    (set-selective-display
-     (or column
-         (unless selective-display
-           (1+ (current-column))))))
+    ;; Folding code
+    (use-package hideshow
+      :init
+      (defun toggle-selective-display (column)
+        (interactive "P")
+        (set-selective-display
+         (or column
+             (unless selective-display
+               (1+ (current-column))))))
 
-  (defun toggle-hiding (column)
-    (interactive "P")
-    (if hs-minor-mode
-        (if (condition-case nil
-                (hs-toggle-hiding)
-              (error t))
-            (hs-show-all))
-      (toggle-selective-display column)))
-  (global-set-key (kbd "M-<up>") 'beginning-of-defun)
-  (global-set-key (kbd "M-<down>") 'end-of-defun)
-  (global-set-key (kbd "C-x \\") 'toggle-hiding)
-  (global-set-key (kbd "C-\\") 'toggle-selective-display)
-  (add-hook 'c-mode-common-hook  'hs-minor-mode)
-  (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
-  (use-package aggressive-indent
-    :init
-    (global-aggressive-indent-mode 1)
-    (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
-    )
-  )
+      (defun toggle-hiding (column)
+        (interactive "P")
+        (if hs-minor-mode
+            (if (condition-case nil
+                    (hs-toggle-hiding)
+                  (error t))
+                (hs-show-all))
+          (toggle-selective-display column)))
+      (global-set-key (kbd "M-<up>") 'beginning-of-defun)
+      (global-set-key (kbd "M-<down>") 'end-of-defun)
+      (global-set-key (kbd "C-x \\") 'toggle-hiding)
+      (global-set-key (kbd "C-\\") 'toggle-selective-display)
+      (add-hook 'c-mode-common-hook  'hs-minor-mode)
+      (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+      (use-package aggressive-indent
+        :init
+        (global-aggressive-indent-mode 1)
+        (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+        )
+      )
 
-;; Fix indent in orgmode
-(setq org-src-tab-acts-natively t)
-(defun my-org-mode-hook ()
-  (add-hook 'completion-at-point-functions 'pcomplete-completions-at-point nil t))
-(add-hook 'org-mode-hook #'my-org-mode-hook)
-(use-package helm-ag)
-(use-package markdown-mode
-  :ensure t
-  :commands (markdown-mode gfm-mode)
-  :mode (("README\\.md\\'" . gfm-mode)
-         ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
+    ;; Fix indent in orgmode
+    (setq org-src-tab-acts-natively t)
+    (defun my-org-mode-hook ()
+      (add-hook 'completion-at-point-functions 'pcomplete-completions-at-point nil t))
+    (add-hook 'org-mode-hook #'my-org-mode-hook)
+    (use-package helm-ag)
+    (use-package markdown-mode
+      :ensure t
+      :commands (markdown-mode gfm-mode)
+      :mode (("README\\.md\\'" . gfm-mode)
+             ("\\.md\\'" . markdown-mode)
+             ("\\.markdown\\'" . markdown-mode))
+      :init (setq markdown-command "multimarkdown"))
 
 (defun reload-configs ()
   ;; Reload the config file

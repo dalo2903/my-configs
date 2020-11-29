@@ -1,5 +1,6 @@
 ;;; -*- lisp-data -*-
-(("~/projects/sslab-website/")
+(("~/projects/juliet-test-suite-c/")
  ("~/projects/pim-sgx/")
+ ("~/projects/sslab-website/")
  ("~/sslab-ctf-framework/")
  ("~/.emacs.d/"))

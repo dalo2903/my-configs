@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15581e5bed02
+;; Object semanticdb-project-database-file-156db69aad6a
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15581e5bed02"
+(semanticdb-project-database-file "semanticdb-project-database-file-156db69aad6a"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15581e5bed1c"
+    (semanticdb-table "semanticdb-table-156db69aad4a"
       :major-mode makefile-gmake-mode
       :tags 
         '( ("DESTDIR" variable (:default-value ("/usr/local")) nil [1 20])
@@ -14,38 +14,39 @@
             ("no_test" function (:arguments ("programs")) nil [196 214])
             ("programs" function (:arguments ("lib" "mbedtls_test")) nil [215 263])
             ("lib" function nil nil [264 289])
-            ("tests" function (:arguments ("lib" "mbedtls_test")) nil [290 332])
-            ("mbedtls_test" function nil nil [333 378])
-            ("install" function (:arguments ("no_test")) nil [394 563])
-            ("uninstall" function nil nil [1021 1176])
-            ("WARNING_BORDER" variable (:default-value ("*******************************************************\\n")) nil [1448 1527])
-            ("NULL_ENTROPY_WARN_L1" variable (:default-value ("****" "WARNING!" "MBEDTLS_TEST_NULL_ENTROPY" "defined!" "****\\n")) nil [1527 1606])
-            ("NULL_ENTROPY_WARN_L2" variable (:default-value ("****" "THIS" "BUILD" "HAS" "NO" "DEFINED" "ENTROPY" "SOURCES" "****\\n")) nil [1606 1685])
-            ("NULL_ENTROPY_WARN_L3" variable (:default-value ("****" "AND" "IS" "*NOT*" "SUITABLE" "FOR" "PRODUCTION" "USE" "****\\n")) nil [1685 1764])
-            ("NULL_ENTROPY_WARNING" variable (:default-value ("\\n$(WARNING_BORDER)$(NULL_ENTROPY_WARN_L1)$(NULL_ENTROPY_WARN_L2)$(NULL_ENTROPY_WARN_L3)$(WARNING_BORDER)")) nil [1765 1892])
-            ("WARNING_BORDER_LONG" variable (:default-value ("**********************************************************************************\\n")) nil [1893 2004])
-            ("CTR_DRBG_128_BIT_KEY_WARN_L1" variable (:default-value ("****" "WARNING!" "MBEDTLS_CTR_DRBG_USE_128_BIT_KEY" "defined!" "****\\n")) nil [2004 2119])
-            ("CTR_DRBG_128_BIT_KEY_WARN_L2" variable (:default-value ("****" "Using" "128-bit" "keys" "for" "CTR_DRBG" "limits" "the" "security" "of" "generated" "****\\n")) nil [2119 2234])
-            ("CTR_DRBG_128_BIT_KEY_WARN_L3" variable (:default-value ("****" "keys" "and" "operations" "that" "use" "random" "values" "generated" "to" "128-bit" "security" "****\\n")) nil [2234 2349])
-            ("CTR_DRBG_128_BIT_KEY_WARNING" variable (:default-value ("\\n$(WARNING_BORDER_LONG)$(CTR_DRBG_128_BIT_KEY_WARN_L1)$(CTR_DRBG_128_BIT_KEY_WARN_L2)$(CTR_DRBG_128_BIT_KEY_WARN_L3)$(WARNING_BORDER_LONG)")) nil [2350 2519])
-            ("post_build" function nil nil [2539 2551])
-            ("clean" function nil nil [2954 3038])
-            ("check" function (:arguments ("lib" "tests")) nil [3136 3177])
-            ("test" function (:arguments ("check")) nil [3178 3190])
-            ("covtest" function nil nil [3283 3366])
-            ("lcov" function nil nil [3367 3940])
-            ("apidoc" function nil nil [3941 4006])
-            ("apidoc_clean" function nil nil [4007 4036])
-            ("C_SOURCE_FILES" variable (:default-value ("$(wildcard include/*/*.h library/*.[hc] programs/*/*.[hc] tests/suites/*.function)")) nil [4070 4170])
-            ("CTAGS" variable (:default-value ("ctags" "--langmap=c:+.h.function" "-o")) nil [4259 4301])
-            ("tags" function (:arguments ("$(C_SOURCE_FILES)")) nil [4301 4356])
-            ("TAGS" function (:arguments ("$(C_SOURCE_FILES)")) nil [4356 4411])
-            ("GRTAGS" function (:arguments ("$(C_SOURCE_FILES)")) nil [4411 4512])
-            ("GPATH" function (:arguments ("$(C_SOURCE_FILES)")) nil [4411 4512]))          
+            ("lib_host" function nil nil [289 324])
+            ("tests" function (:arguments ("lib" "mbedtls_test")) nil [325 367])
+            ("mbedtls_test" function nil nil [368 413])
+            ("install" function (:arguments ("no_test")) nil [429 598])
+            ("uninstall" function nil nil [1056 1211])
+            ("WARNING_BORDER" variable (:default-value ("*******************************************************\\n")) nil [1483 1562])
+            ("NULL_ENTROPY_WARN_L1" variable (:default-value ("****" "WARNING!" "MBEDTLS_TEST_NULL_ENTROPY" "defined!" "****\\n")) nil [1562 1641])
+            ("NULL_ENTROPY_WARN_L2" variable (:default-value ("****" "THIS" "BUILD" "HAS" "NO" "DEFINED" "ENTROPY" "SOURCES" "****\\n")) nil [1641 1720])
+            ("NULL_ENTROPY_WARN_L3" variable (:default-value ("****" "AND" "IS" "*NOT*" "SUITABLE" "FOR" "PRODUCTION" "USE" "****\\n")) nil [1720 1799])
+            ("NULL_ENTROPY_WARNING" variable (:default-value ("\\n$(WARNING_BORDER)$(NULL_ENTROPY_WARN_L1)$(NULL_ENTROPY_WARN_L2)$(NULL_ENTROPY_WARN_L3)$(WARNING_BORDER)")) nil [1800 1927])
+            ("WARNING_BORDER_LONG" variable (:default-value ("**********************************************************************************\\n")) nil [1928 2039])
+            ("CTR_DRBG_128_BIT_KEY_WARN_L1" variable (:default-value ("****" "WARNING!" "MBEDTLS_CTR_DRBG_USE_128_BIT_KEY" "defined!" "****\\n")) nil [2039 2154])
+            ("CTR_DRBG_128_BIT_KEY_WARN_L2" variable (:default-value ("****" "Using" "128-bit" "keys" "for" "CTR_DRBG" "limits" "the" "security" "of" "generated" "****\\n")) nil [2154 2269])
+            ("CTR_DRBG_128_BIT_KEY_WARN_L3" variable (:default-value ("****" "keys" "and" "operations" "that" "use" "random" "values" "generated" "to" "128-bit" "security" "****\\n")) nil [2269 2384])
+            ("CTR_DRBG_128_BIT_KEY_WARNING" variable (:default-value ("\\n$(WARNING_BORDER_LONG)$(CTR_DRBG_128_BIT_KEY_WARN_L1)$(CTR_DRBG_128_BIT_KEY_WARN_L2)$(CTR_DRBG_128_BIT_KEY_WARN_L3)$(WARNING_BORDER_LONG)")) nil [2385 2554])
+            ("post_build" function nil nil [2574 2586])
+            ("clean" function nil nil [2989 3073])
+            ("check" function (:arguments ("lib" "tests")) nil [3171 3212])
+            ("test" function (:arguments ("check")) nil [3213 3225])
+            ("covtest" function nil nil [3318 3401])
+            ("lcov" function nil nil [3402 3975])
+            ("apidoc" function nil nil [3976 4041])
+            ("apidoc_clean" function nil nil [4042 4071])
+            ("C_SOURCE_FILES" variable (:default-value ("$(wildcard include/*/*.h library/*.[hc] programs/*/*.[hc] tests/suites/*.function)")) nil [4105 4205])
+            ("CTAGS" variable (:default-value ("ctags" "--langmap=c:+.h.function" "-o")) nil [4294 4336])
+            ("tags" function (:arguments ("$(C_SOURCE_FILES)")) nil [4336 4391])
+            ("TAGS" function (:arguments ("$(C_SOURCE_FILES)")) nil [4391 4446])
+            ("GRTAGS" function (:arguments ("$(C_SOURCE_FILES)")) nil [4446 4547])
+            ("GPATH" function (:arguments ("$(C_SOURCE_FILES)")) nil [4446 4547]))          
       :file "Makefile"
-      :pointmax 4512
-      :fsize 4511
-      :lastmodtime '(24489 8553 777252 409000)
+      :pointmax 4547
+      :fsize 4546
+      :lastmodtime '(24512 39792 25778 176000)
       :unmatched-syntax nil))
   :file "!home!khadinh!projects!pim-sgx!mbedtls!semantic.cache"
   :semantic-tag-version "2.0"
