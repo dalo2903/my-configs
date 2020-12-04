@@ -1,2 +1,0 @@
-;;; Generated package description from /home/khadinh/.emacs.d/elpa/nimbus-theme-20200812.915/nimbus-theme.el  -*- no-byte-compile: t -*-
-(define-package "nimbus-theme" "20200812.915" "An awesome dark theme" '((emacs "24.1")) :commit "1a828c1fa0574503014afe8dda3229fb76a4bf64" :keywords '("faces") :authors '(("Marcin Swieczkowski" . "marcin.swieczkowski@gmail.com") ("See README.md for full list of contributors.")) :maintainer '("Marcin Swieczkowski" . "marcin.swieczkowski@gmail.com") :url "https://github.com/m-cat/nimbus-theme")
