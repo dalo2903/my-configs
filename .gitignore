@@ -3,3 +3,4 @@
 *.cache
 *~
 *.eld
+.emacs.d/semanticdb
