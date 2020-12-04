@@ -66,14 +66,14 @@
       :config
       (nyan-start-animation)
       )
-;;    (setq zone-timer (run-with-idle-timer  t 'zone)) 
+    ;;    (setq zone-timer (run-with-idle-timer  t 'zone))
   #+END_SRC
 
 * Programming Stuffs
   #+BEGIN_SRC emacs-lisp
-    (setq c-default-style "gnu")
-    ;; (setq c-basic-offset 2)
-;;    Auto close brackets
+    (setq c-default-style "linux")
+    (setq c-basic-offset 2)
+    ;;    Auto close brackets
     (electric-pair-mode)
 
     ;; Redo
