@@ -4,3 +4,4 @@
 *~
 *.eld
 .emacs.d/semanticdb
+.emacs.d/elpa

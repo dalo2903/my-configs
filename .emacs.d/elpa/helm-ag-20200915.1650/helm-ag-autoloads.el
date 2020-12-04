@@ -10,10 +10,14 @@
 ;;; Generated autoloads from helm-ag.el
 
 (autoload 'helm-ag-pop-stack "helm-ag" "\
-Not documented." t nil)
+Not documented.
+
+\(fn)" t nil)
 
 (autoload 'helm-ag-clear-stack "helm-ag" "\
-Not documented." t nil)
+Not documented.
+
+\(fn)" t nil)
 
 (autoload 'helm-ag-this-file "helm-ag" "\
 Do ag with in this file with QUERY.
@@ -55,7 +59,7 @@ Not documented, QUERY.
 
 \(fn &optional QUERY)" t nil)
 
-(register-definition-prefixes "helm-ag" '("helm-"))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helm-ag" '("helm-")))
 
 ;;;***
 
