@@ -87,7 +87,6 @@ plugins=(git
          zsh-autosuggestions
          zsh-syntax-highlighting
          history-substring-search
-         zsh-256color
         )
 
 # Auto suggestion settings

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rsync -a ~/.emacs.d . --exclude .git --exclude semanticdb
+rsync -a ~/.emacs.d . --exclude .git --exclude semanticdb --exclude elpa
 rsync -a ~/.tmux . --exclude .git
 rsync -a ~/.oh-my-zsh . --exclude .git
 
