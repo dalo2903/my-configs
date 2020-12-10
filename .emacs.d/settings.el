@@ -22,7 +22,7 @@
 (use-package zoom
   :config
   (zoom-mode)
-  (setq zoom-size '(0.618 . 0.618))
+  (setq zoom-size '(0.618 . 0.8))
 
   )
 ;; Dashboard
@@ -49,10 +49,21 @@
   :config
   (setq centaur-tabs-style "wave")
   (setq centaur-tabs-set-icons t)
-  (setq sml/no-confirm-load-theme t)
-  (sml/setup)
   )
 
+(use-package smart-mode-line
+  :init
+  (use-package smart-mode-line-atom-one-dark-theme
+    :config
+
+
+    )
+  (setq sml/no-confirm-load-theme t)
+  (setq sml/theme 'atom-one-dark)
+  :config
+
+  (sml/setup)
+  )
 (use-package nyan-mode
   :init
   (setq nyan-wavy-trail t)
@@ -60,7 +71,11 @@
   :config
   (nyan-start-animation)
   )
-;;    (setq zone-timer (run-with-idle-timer  t 'zone))
+;;(setq zone-timer (run-with-idle-timer  t 'zone))
+(use-package material-theme
+  :config
+  (add-hook 'after-init-hook (lambda () (load-theme 'material t)))
+  )
 
 (setq c-default-style "linux")
 (setq c-basic-offset 2)
@@ -83,7 +98,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 (require 'setup-general)
 (require 'setup-helm)
-(require 'setup-cedet)
+;; (require 'setup-cedet)
 ;; Mouse?
 (setq helm-allow-mouse t)
 
@@ -135,13 +150,85 @@
          ("\\.markdown\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 
+;; (defun my-helm-display-child-frame (buffer &optional resume)
+;;   "Display `helm-buffer' in a separate frame.
+;; Function suitable for `helm-display-function',
+;; `helm-completion-in-region-display-function'
+;; and/or `helm-show-completion-default-display-function'.
+;; See `helm-display-buffer-height' and `helm-display-buffer-width' to
+;; configure frame size."
+;;   (if (not (display-graphic-p))
+;;       ;; Fallback to default when frames are not usable.
+;;       (helm-default-display-buffer buffer)
+;;     (setq helm--buffer-in-new-frame-p t)
+;;     (let* ((pos (window-absolute-pixel-position))
+;;            (half-screen-size (/ (display-pixel-height x-display-name) 2))
+;;            (frame-info (frame-geometry))
+;;            (prmt-size (length helm--prompt))
+;;            (line-height (frame-char-height))
+;;            (default-frame-alist
+;;              `((parent . ,(selected-frame))
+;;                (width . ,helm-display-buffer-width)
+;;                (height . ,helm-display-buffer-height)
+;;                (undecorated . t)
+;;                (left-fringe . 0)
+;;                (right-fringe . 0)
+;;                (tool-bar-lines . 0)
+;;                (line-spacing . 0)
+;;                (desktop-dont-save . t)
+;;                (no-special-glyphs . t)
+;;                (inhibit-double-buffering . t)
+;;                (tool-bar-lines . 0)
+;;                (left . ,(- (car pos)
+;;                            (* (frame-char-width)
+;;                               (if (< (- (point) (point-at-bol)) prmt-size)
+;;                                   (- (point) (point-at-bol))
+;;                                 prmt-size))))
+;;                ;; Try to put frame at the best possible place.
+;;                ;; Frame should be below point if enough
+;;                ;; place, otherwise above point and
+;;                ;; current line should not be hidden
+;;                ;; by helm frame.
+;;                (top . ,(if (> (cdr pos) half-screen-size)
+;;                            ;; Above point
+;;                            (- (cdr pos)
+;;                               ;; add 2 lines to make sure there is always a gap
+;;                               (* (+ helm-display-buffer-height 2) line-height)
+;;                               ;; account for title bar height too
+;;                               (cddr (assq 'title-bar-size frame-info)))
+;;                          ;; Below point
+;;                          (+ (cdr pos) line-height)))
+;;                (title . "Helm")
+;;                (vertical-scroll-bars . nil)
+;;                (menu-bar-lines . 0)
+;;                (fullscreen . nil)
+;;                (visible . ,(null helm-display-buffer-reuse-frame))
+;;                (minibuffer . t)))
+;;            display-buffer-alist)
+;;       ;; Add the hook inconditionally, if
+;;       ;; helm-echo-input-in-header-line is nil helm-hide-minibuffer-maybe
+;;       ;; will have anyway no effect so no need to remove the hook.
+;;       (add-hook 'helm-minibuffer-set-up-hook 'helm-hide-minibuffer-maybe)
+;;       (with-helm-buffer
+;;         (setq-local helm-echo-input-in-header-line
+;;                     (not (> (cdr pos) half-screen-size))))
+;;       (helm-display-buffer-popup-frame buffer default-frame-alist))
+;;     (helm-log-run-hook 'helm-window-configuration-hook)))
+
+
+(setq  helm-display-function 'helm-display-buffer-in-own-frame
+ ;; helm-display-function 'my-helm-display-child-frame
+ helm-display-buffer-reuse-frame t
+ helm-display-buffer-width 100)
+
 (defun reload-configs ()
   ;; Reload the config file
   (interactive)
   (load-file "~/.emacs.d/init.el")
   )
 (defun open-config-file ()
-  ;; Open this file
+  ;;
+  Open this file
   (interactive)
   (find-file "~/.emacs.d/settings.org")
   (org-mode)
@@ -169,7 +256,9 @@
 (xterm-mouse-mode +1)
 ;; terminal
 
-
-(define-key global-map (kbd "<f2>") 'vterm )
+(use-package vterm
+  :init
+  (define-key global-map (kbd "<f2>") 'vterm )
+  )
 (global-auto-revert-mode t)
 (add-hook 'emacs-startup-hook 'desktop-read)

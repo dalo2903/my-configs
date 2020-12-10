@@ -2,342 +2,270 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Dec  4 20:11:24 2020
+;; Created Tue Dec  8 12:34:44 2020
 ;; Desktop file format version 208
 ;; Emacs version 28.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24522 6492 375940 559000) (desktop . "208") "khadinh@sslab" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 78) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (environment) (zoom--frame-snapshot . "(nil ((#<window 8 on .zshrc<my-configs>> 170 77) (#<window 3 on juliet-run.sh> 170 77) (#<window 7 on .zshrc<my-configs>> 170 77)))") (powerline-cache) (sticky) (last-focus-update . t) (modeline . t) (unsplittable) (frameset--id . "7873-7B7B-D3A4-36C6") (frameset--mini t . t) (display . "localhost:10.0") (icon-name) (explicit-name) (tabs (current-tab (name . "*helm M-x*") (explicit-name))) (width . 274) (left . 2560) (top . 23)) ((min-height . 4) (min-width . 30) (min-height-ignore . 2) (min-width-ignore . 18) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 72) (min-pixel-width . 270) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 162) (min-pixel-height-safe . 18) (min-pixel-width-safe . 54)) hc (pixel-width . 2498) (pixel-height . 1386) (total-width . 278) (total-height . 77) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 487) (pixel-height . 1386) (total-width . 54) (total-height . 77) (normal-height . 1.0) (normal-width . 0.19475580464371497) (buffer "juliet-run.sh" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1521) (start . 1)) (prev-buffers ("juliet-run.sh" 1 1376) ("juliet.py" 1 1150) ("pim-sgx" 1 377) ("dpu-main.c" 396 1452) (".tmux.conf" 1 822) (".gitignore<my-configs>" 1 3) ("backup-configs.sh" 1 61) ("*Messages*" 646 646))) (leaf (pixel-width . 486) (pixel-height . 1386) (total-width . 54) (total-height . 77) (normal-height . 1.0) (normal-width . 0.19475580464371497) (buffer ".zshrc<my-configs>" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 4169) (start . 3297)) (prev-buffers (".tmux.conf" 1 415) ("create-dataset.sh" 1 16) ("events" 1 170) ("juliet-run.sh" 1 1651))) (leaf (last . t) (pixel-width . 1525) (pixel-height . 1386) (total-width . 170) (total-height . 77) (normal-height . 1.0) (normal-width . 0.61048839071257) (buffer ".zshrc<my-configs>" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 3492) (start . 3297)) (prev-buffers ("backup-configs.sh" 1 206) (".zshrc<khadinh>" 2968 3493) ("events" 1 170)))))])
+(setq desktop-saved-frameset [frameset 1 (24526 62548 725506 552000) (desktop . "208") "khadinh@sslab" nil nil ((((minibuffer . t) (undecorated . t) (override-redirect) (font . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 673 on  *Minibuf-1*> 74 1) (#<window 672 on *helm kill ring*> 74 1)))") (last-focus-update) (powerline-cache) (frameset--id . "A040-037A-404B-0C5D") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:10.0") (explicit-name) (width . 72) (left . 2568) (top . 183)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 664) (pixel-height . 342) (total-width . 73) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "rsa_check.c" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 11) (start . 1)) (prev-buffers ("rsa_check.c" 1 11))) (((minibuffer . t) (undecorated) (override-redirect) (font . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 78) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (environment) (last-focus-update . t) (zoom--frame-snapshot . "(nil ((#<window 3 on settings.org> 169 78) (#<window 9 on host-main.c> 169 78) (#<window 10 on dpu.lds> 169 78)))") (sticky) (powerline-cache) (modeline . t) (unsplittable) (frameset--id . "7873-7B7B-D3A4-36C6") (frameset--mini t . t) (display . "localhost:10.0") (icon-name) (explicit-name) (tabs (current-tab (name . "*helm M-x*") (explicit-name))) (width . 274) (left . 2560) (top . 23)) ((min-height . 4) (min-width . 30) (min-height-ignore . 2) (min-width-ignore . 18) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 72) (min-pixel-width . 270) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 162) (min-pixel-height-safe . 18) (min-pixel-width-safe . 54)) hc (pixel-width . 2498) (pixel-height . 1399) (total-width . 278) (total-height . 78) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1517) (pixel-height . 1399) (total-width . 169) (total-height . 78) (normal-height . 1.0) (normal-width . 0.6072858286629303) (buffer "settings.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 4461) (start . 1)) (prev-buffers ("settings.org" 1 4460) ("rsa_sign.c" 354 1081) ("dpu-main.c" 2523 4028) ("rsa_check.c" 1 599) ("dpu.lds" 11210 12136))) (leaf (pixel-width . 491) (pixel-height . 1399) (total-width . 55) (total-height . 78) (normal-height . 1.0) (normal-width . 0.19647501785211954) (buffer "host-main.c" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1234) (start . 1024)) (prev-buffers ("host-main.c" 1024 1234) ("dpu-main.c" 4156 4635))) (leaf (last . t) (pixel-width . 490) (pixel-height . 1399) (total-width . 54) (total-height . 78) (normal-height . 1.0) (normal-width . 0.19623915348495014) (buffer "dpu.lds" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 12725) (start . 12398)) (prev-buffers ("dpu.lds" 12398 12725)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name "/home/khadinh/projects/pim-sgx/TAGS")
 (setq tags-table-list '("/home/khadinh/projects/pim-sgx/TAGS"))
-(setq search-ring nil)
+(setq search-ring '(#("\n" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("bi" 0 2 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
-(setq register-alist (list (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/.tmux.conf" "~/projects/juliet-test-suite-c/bin/juliet-run.sh" "~/projects/juliet-test-suite-c/juliet.py" "~/my-configs/.zshrc" "~/my-configs/backup-configs.sh" "~/my-configs/.gitignore" "~/projects/pim-sgx/remote_attestation/library/mac_attestation.c" "~/projects/pim-sgx/remote_attestation/library/build.sh" "~/projects/pim-sgx/overlay-kha/.gitignore" "~/projects/pim-sgx/overlay-kha/build.sh" "~/projects/pim-sgx/overlay-kha/overlay1.c" "~/projects/pim-sgx/overlay-kha/host-main.c" "~/projects/pim-sgx/overlay-kha/host-main" "~/projects/pim-sgx/overlay-kha/overlay0.c" "~/projects/pim-sgx/overlay-kha/dpu-main.c" "~/projects/pim-sgx/overlay-kha/dpu.lds" "~/projects/pim-sgx/overlay/build.sh" "~/projects/pim-sgx/overlay/dpu-main.c" "~/projects/pim-sgx/overlay/host-main.c" "~/projects/pim-sgx/overlay/dpu.lds" "~/projects/pim-sgx/overlay/host.c" "~/projects/pim-sgx/overlay/overlay3.c" "~/projects/pim-sgx/overlay/.gitignore" "~/projects/pim-sgx/overlay/main.c" "~/projects/pim-sgx/overlay/overlay1.c" "~/projects/pim-sgx/overlay/overlay0.c" "~/projects/pim-sgx/test_program/Makefile" "~/projects/pim-sgx/mbedtls/programs/pkey/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa.c" "~/projects/pim-sgx/.gitignore" "~/projects/gem5/.gitignore" "~/projects/sslab-website/_pages/team.md" "~/projects/sslab-website/_pages/home.md" "~/projects/sslab-website/_config.yml" "~/projects/sslab-website/docker-compose.yml" "~/projects/pim-sgx/test_program/main.c" "~/courses/compuer_graphic_theory/area_sampling.ppm" "~/projects/pim-sgx/upmem/share/upmem/include/syslib/dpuruntime.h" "~/courses/compuer_graphic_theory/untitled.ppm" "~/courses/compuer_graphic_theory/raytracer.cpp" "~/projects/pim-sgx/test_program/dpu_alloc.c" "~/.emacs.d/init.el" "~/.emacs.d/settings.org" "~/.emacs.d/bookmarks" "~/projects/pim-sgx/upmem/share/upmem/include/link/dpu.lds" "~/projects/pim-sgx/upmem/src/dpu-rt/src/misc/dpu.lds" "~/projects/pim-sgx/mbedtls/library/aes.c" "~/.emacs.d/custom/setup-cedet.el" "~/.emacs.d/custom/setup-editing.el" "~/.emacs.d/custom/setup-helm.el" "~/projects/pim-sgx/mbedtls/library/padlock.c" "~/projects/pim-sgx/mbedtls/library/rsa.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_elf.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_program.c" "~/projects/pim-sgx/upmem/src/backends/api/src/api/dpu_loader.c" "~/projects/pim-sgx/test_program/main_host.c" "~/projects/pim-sgx/test_program/tiny-AES-c/aes.h" "~/projects/pim-sgx/test_program/tiny-AES-c/test.c"))
+(setq register-alist (list (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 1141 (get-buffer "pim-sgx")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
+(setq file-name-history '("~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_init.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_check.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/host-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/include/mac_attestation.h" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu.lds" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/sha512.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa1.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/bignum.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/Makefile" "~/.tmux.conf" "~/projects/juliet-test-suite-c/bin/juliet-run.sh" "~/projects/juliet-test-suite-c/juliet.py" "~/my-configs/.zshrc" "~/my-configs/backup-configs.sh" "~/my-configs/.gitignore" "~/projects/pim-sgx/remote_attestation/library/mac_attestation.c" "~/projects/pim-sgx/remote_attestation/library/build.sh" "~/projects/pim-sgx/overlay-kha/.gitignore" "~/projects/pim-sgx/overlay-kha/build.sh" "~/projects/pim-sgx/overlay-kha/overlay1.c" "~/projects/pim-sgx/overlay-kha/host-main.c" "~/projects/pim-sgx/overlay-kha/host-main" "~/projects/pim-sgx/overlay-kha/overlay0.c" "~/projects/pim-sgx/overlay-kha/dpu-main.c" "~/projects/pim-sgx/overlay-kha/dpu.lds" "~/projects/pim-sgx/overlay/build.sh" "~/projects/pim-sgx/overlay/dpu-main.c" "~/projects/pim-sgx/overlay/host-main.c" "~/projects/pim-sgx/overlay/dpu.lds" "~/projects/pim-sgx/overlay/host.c" "~/projects/pim-sgx/overlay/overlay3.c" "~/projects/pim-sgx/overlay/.gitignore" "~/projects/pim-sgx/overlay/main.c" "~/projects/pim-sgx/overlay/overlay1.c" "~/projects/pim-sgx/overlay/overlay0.c" "~/projects/pim-sgx/test_program/Makefile" "~/projects/pim-sgx/mbedtls/programs/pkey/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa.c" "~/projects/pim-sgx/.gitignore" "~/projects/gem5/.gitignore" "~/projects/sslab-website/_pages/team.md" "~/projects/sslab-website/_pages/home.md" "~/projects/sslab-website/_config.yml" "~/projects/sslab-website/docker-compose.yml" "~/projects/pim-sgx/test_program/main.c" "~/courses/compuer_graphic_theory/area_sampling.ppm" "~/projects/pim-sgx/upmem/share/upmem/include/syslib/dpuruntime.h" "~/courses/compuer_graphic_theory/untitled.ppm" "~/courses/compuer_graphic_theory/raytracer.cpp" "~/projects/pim-sgx/test_program/dpu_alloc.c" "~/.emacs.d/init.el" "~/.emacs.d/settings.org" "~/.emacs.d/bookmarks" "~/projects/pim-sgx/upmem/share/upmem/include/link/dpu.lds" "~/projects/pim-sgx/upmem/src/dpu-rt/src/misc/dpu.lds" "~/projects/pim-sgx/mbedtls/library/aes.c" "~/.emacs.d/custom/setup-cedet.el" "~/.emacs.d/custom/setup-editing.el" "~/.emacs.d/custom/setup-helm.el" "~/projects/pim-sgx/mbedtls/library/padlock.c" "~/projects/pim-sgx/mbedtls/library/rsa.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_elf.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_program.c" "~/projects/pim-sgx/upmem/src/backends/api/src/api/dpu_loader.c" "~/projects/pim-sgx/test_program/main_host.c" "~/projects/pim-sgx/test_program/tiny-AES-c/aes.h" "~/projects/pim-sgx/test_program/tiny-AES-c/test.c"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/khadinh/my-configs/.zshrc"
-  ".zshrc"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  3492
-  '(4154 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24522 6484 636011 503000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (4154 3920 3890 3892 4500 4154))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/my-configs/backup-configs.sh"
-  "backup-configs.sh"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  206
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24522 6478 196176 534000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/.zshrc"
-  ".zshrc"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  3493
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24522 6458 215892 218000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/juliet-test-suite-c/events"
-  "events"
-  'fundamental-mode
+  "/home/khadinh/.emacs.d/settings.org"
+  "settings.org"
+  'org-mode
   '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  170
-  '(26 nil)
+  4461
+  '(4461 nil)
   nil
   nil
-  '((buffer-display-time 24522 6439 737174 244000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1 112 97 112 112 142 142 129 27 53 170 170))))
+  '((buffer-display-time 24526 62533 454003 510000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring (4461 4460 4991 4620 5554 4476))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/.tmux.conf"
-  ".tmux.conf"
-  'conf-space-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  415
-  '(415 nil)
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_check.c"
+  "rsa_check.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  11
+  '(904 nil)
   nil
   nil
-  '((buffer-display-time 24522 6067 31477 733000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62505 372830 203000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1432 1172 1055))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/juliet-test-suite-c/bin/create-dataset.sh"
-  "create-dataset.sh"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  16
-  '(177 nil)
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_sign.c"
+  "rsa_sign.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  1081
+  '(96 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24522 5856 65463 328000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (68 110 1 178 40 92))))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62387 506430 40000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (17000 16890 97 70 12986 18795 18845 16644 6437 804 6384 818 938 17083 400 11341 2 17 17 4938 19668 40 31 16 440 402 4072 1340 1245 1081))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/juliet-test-suite-c/bin/juliet-run.sh"
-  "juliet-run.sh"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  1521
-  '(614 nil)
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu-main.c"
+  "dpu-main.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  4028
+  '(3994 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24522 6478 196175 630000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (978))))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62212 116433 163000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3916 4114 4110 4066 4028 2592 2886 2380 376 4643 4643 4661 3739 1050 1029 4317 1066 4746 5526 8040 652 1521 718 4674 5469 1501 7303 3882 3827 3828 3827 4283 3741 2883 258 2918 3740 2883 3738 2805 2636 135 2831 3740 3391 79 96 408 3883 4166 4157 4358 2829 4590 4230 3923 2860 2862 2863 4282 4204 3947 3923 4246 4636 4384 4281 4264 4281 4264 4280 2775 5736 4732 4728 5512 1054 4285 2580 2940 2942 3937 2629 4188 4264 4316 451 4281 4872 3765 4341 408 3398 408 1358 1231 1139 3996 4635 387 408 4156 4156))))
 
 (desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/host-main.c"
+  "host-main.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  1234
+  '(1149 nil)
   nil
-  "juliet-test-suite-c"
-  'dired-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
-  269
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62533 454003 925000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (289 663 682 1023 1299 1133 663 642 682 289 999 994 717 663 323 291 289 289 717 682 289 695 2334 291))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu.lds"
+  "dpu.lds"
+  'ld-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode aggressive-indent-mode global-auto-revert-mode)
+  12725
+  '(12738 nil)
+  nil
+  nil
+  '((buffer-display-time 24526 62533 454004 60000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1508 1171 12729 12638 12691 13010 12522 12781 12444 12574 12353 12352 12396 12247 12480 12774 11515 11401 696 1321 12370 12702 12679 12724 12681 12681 12397 12566 12441 12574 12397 12461 12464 12820 12773 11897 696 696 873 696 700 699 1283 13079 13000 13082 696 12744 12740 12593 696 1164 2278 2278 4045 4501 4106 13010 13078 13083))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/mbedtls/include/mbedtls/compat-1.3.h"
+  "compat-1.3.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  108458
   '(nil nil)
-  t
-  '("/home/khadinh/projects/juliet-test-suite-c/")
-  '((buffer-display-time 24522 5069 353594 499000))
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 60502 614996 569000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/juliet-test-suite-c/juliet.py"
-  "juliet.py"
-  'python-mode
-  '(eldoc-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
-  1150
-  '(1192 nil)
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/bignum.c"
+  "bignum.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  48166
+  '(28293 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (tab-width . 8) (indent-tabs-mode) (buffer-display-time 24521 63267 190656 189000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1247 1191 1248 1674 1246))))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 12172 48255 104000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2755 1146 104 28220))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/dpu_alloc.h"
+  "dpu_alloc.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10915 775594 996000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_init.c"
+  "rsa_init.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  3315
+  '(3013 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10788 395724 459000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/sha512.h"
+  "sha512.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  900
+  '(900 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10737 466411 34000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (701))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/mac_attestation.h"
+  "mac_attestation.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  496
+  '(496 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10345 493725 62000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/sha512.c"
+  "sha512.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  5146
+  '(1996 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10316 876605 722000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (10646 7800 9846 8597 6680 4311 3827 3651 1677 1696 8596 8812 10814 10814))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/Makefile"
+  "Makefile"
+  'makefile-gmake-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
+  260
+  '(239 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indent-tabs-mode . t) (buffer-display-time 24526 10082 138449 516000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (515 259 338 141 186 195 199 466 220 129 129 947 299 267 499 326 259))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa.h"
+  "rsa.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  1094
+  '(1094 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 9666 646186 738000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1238 19))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/mbedtls/include/mbedtls/oid.h"
+  "oid.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  33424
+  '(27898 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8920 723308 721000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (27898))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/test_program/mbedtls/oid.h"
+  "oid.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  29685
+  '(24893 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8920 87065 701000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (24893 19967))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/mbedtls/library/oid.c"
+  "oid.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  23575
+  '(17704 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8904 719887 855000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (17704 17602))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/pim-sgx/remote_attestation/mac_attestation/library/mac_attestation.c"
+  "mac_attestation.c"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  349
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24526 4267 405255 101000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
   nil
   "pim-sgx"
   'dired-mode
   '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
-  377
+  254
   '(nil nil)
   t
   '("/home/khadinh/projects/pim-sgx/")
-  '((buffer-display-time 24521 63014 144355 117000))
+  '((buffer-display-time 24526 62505 188729 675000))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/dpu-main.c"
-  "dpu-main.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1978
-  '(2003 nil)
   nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 64174 893173 461000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1800 3085 3674 4030 4101 3645 4127 4055 4055 3346 2253 1449 2124 1281 1316 1320 1320 1059 1277 2134 2157 945 1277 574 375 2102 2079 1504 296 779 849 709 876 678 1897 1947 349 297 202 778 1846 710 203 2213 866 912 1320 1320 912 1277 2194 912 2177 2104 1347 2177 2158 2158 1451 1359 874 514 2158 80 2229 201 2207 1947 1845 2179 2210 1947 1845 1399 2209 2293 2576 1364 1452 2210 1452 122 146 169 1389 1430 912 1359 1442 1845 1452 1442 1442 855 1355 2179 1376 1359 2179 912 912 912 860 843 872 123 872 872 912 872 1376 1364 1359 1442 1359 1364 1376 1359 123 912 875 912 913 913 912 201 912 912 2209 1277 2179 827 2256 721 1947 911 541 560 620 620 1947 1947 1947 1947 1947 1886 1888 1143 1141 1198 1430 1278 1200 1200 1452 1946 1360 2575 2207 2378 2212 1364 1185 1183 1143 1219 1223 2132 2078 1973 1973 1961 2078 1961 1961 2078 1963 1967 1799 1626 1652 1626 2617 1981 2002 1452))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/my-configs/.gitignore"
-  ".gitignore"
-  'fundamental-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  3
-  '(49 nil)
-  nil
-  nil
-  '((buffer-display-time 24521 55833 289779 587000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (3))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/library/sha512.c"
-  "sha512.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  10811
-  '(2158 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 54469 742678 876000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (10811))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/library/mac_attestation.c"
-  "mac_attestation.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1290
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 3709 817310 220000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/library/hmac.c"
-  "hmac.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1291
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 3660 322089 612000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/include/mac_attestation.h"
-  "mac_attestation.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  353
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 3401 477750 703000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/library/Makefile"
-  "Makefile"
-  'makefile-gmake-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
-  570
-  '(388 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (indent-tabs-mode . t) (buffer-display-time 24521 3309 674616 833000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
-  '((mark-ring (489 178 233 351 271 8 1 555 453 490 482 570 447 446 525 570 272 271 161 160 554 570))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/test_program/Makefile"
-  "Makefile"
-  'makefile-gmake-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
-  12
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (indent-tabs-mode . t) (buffer-display-time 24521 496 580042 829000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/overlay1.c"
-  "overlay1.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  33
-  '(33 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24521 487 228108 518000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (189 29 30 33 189 160))))
-
-(desktop-create-buffer 208
-  nil
-  "library"
+  "projects"
   'dired-mode
   '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
-  641
+  1383
   '(nil nil)
   t
-  '("/home/khadinh/projects/pim-sgx/remote_attestation/library/")
-  '((buffer-display-time 24521 378 565790 822000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/README.md"
-  "README.md"
-  'markdown-mode
-  '(eldoc-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  36
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 4) (buffer-display-time 24521 379 101005 728000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/.gitignore"
-  ".gitignore"
-  'fundamental-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  39
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 24520 65165 257098 35000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/host-main.c"
-  "host-main.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1968
-  '(1344 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24520 65048 654632 86000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (384 1487 1771 1941 1859 1606 2205 2398 385 1385 1416 1408 1384 386 1226 1432 1432 1233 1461 826 1160 1010 888 1433 1042 969 1967 643 2229 2277 1970 473 1972 2205 531 2382 509 2037 543 495 2347 2037 2074 1968 2058 1968 118 544 2226 2303 2346 2303 2276 2246 2226 148 149 2115 1486 1009 1102 1010 846 644 737 887 826 741 846 826 782 1010 1122 1126 1041 1481 1637 1481 1432 1456 1652 2037 1941 1966 2036 1967 1966 1966 1891 1881 1658 1728 1713 1966 1761 777 765 1543 789 1942 1924))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/overlay0.c"
-  "overlay0.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  32
-  '(107 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24520 64960 301815 540000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (32 57 126 129 126 165 32 32 165 126))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/dpu.lds"
-  "dpu.lds"
-  'ld-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode aggressive-indent-mode global-auto-revert-mode)
-  1286
-  '(12505 nil)
-  nil
-  nil
-  '((buffer-display-time 24520 64218 873319 190000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (12505 12505 10610 12241 11904 12419 1233 12531 12505 12273 1286 12193 1287 1282 2906 1462 993 12586 12505 12505 2241 12586 12586 922 12272 12362))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/overlay-kha/build.sh"
-  "build.sh"
-  'sh-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
-  480
-  '(723 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24521 55956 710804 66000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (49 593 480 580 558 542 382 558 552 99 347 1 503 557 74 648 480))))
-
-(desktop-create-buffer 208
-  "/usr/lib/python2.7/ntpath.py"
-  "ntpath.py"
-  'python-mode
-  '(eldoc-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
-  952
-  '(nil nil)
-  t
-  nil
-  '((show-trailing-whitespace . 1) (tab-width . 8) (indent-tabs-mode) (buffer-display-time 24522 6451 299308 767000) (buffer-file-coding-system . undecided-unix))
+  '("/home/khadinh/projects/")
+  '((buffer-display-time 24526 62505 188310 88000))
   '((mark-ring nil)))
 
