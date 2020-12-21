@@ -1,0 +1,15 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("localhost"
+  [url-cookie "username-localhost-8888" "2|1:0|10:1608000852|23:username-localhost-8888|44:ZmE1YWVkZmExNDk3NGNiOTk0OGFiN2U4MDZkOTkxN2I=|ef44b7b2e1ba7fab76059513fbd69044af3788d8fb67e6856827720e2afdf681" "Thu, 14 Jan 2021 02:54:12 GMT" "/" "localhost" nil]
+  [url-cookie "_xsrf" "2|4a402bcb|9a2bbc0bc2c639d36e9defc0ee38c357|1608089365" "Fri, 15 Jan 2021 03:29:25 GMT" "/" "localhost" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

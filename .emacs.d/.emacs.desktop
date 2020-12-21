@@ -2,248 +2,164 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Dec  8 12:34:44 2020
+;; Created Wed Dec 16 12:29:00 2020
 ;; Desktop file format version 208
 ;; Emacs version 28.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24526 62548 725506 552000) (desktop . "208") "khadinh@sslab" nil nil ((((minibuffer . t) (undecorated . t) (override-redirect) (font . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 673 on  *Minibuf-1*> 74 1) (#<window 672 on *helm kill ring*> 74 1)))") (last-focus-update) (powerline-cache) (frameset--id . "A040-037A-404B-0C5D") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:10.0") (explicit-name) (width . 72) (left . 2568) (top . 183)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 664) (pixel-height . 342) (total-width . 73) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "rsa_check.c" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 11) (start . 1)) (prev-buffers ("rsa_check.c" 1 11))) (((minibuffer . t) (undecorated) (override-redirect) (font . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 78) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (environment) (last-focus-update . t) (zoom--frame-snapshot . "(nil ((#<window 3 on settings.org> 169 78) (#<window 9 on host-main.c> 169 78) (#<window 10 on dpu.lds> 169 78)))") (sticky) (powerline-cache) (modeline . t) (unsplittable) (frameset--id . "7873-7B7B-D3A4-36C6") (frameset--mini t . t) (display . "localhost:10.0") (icon-name) (explicit-name) (tabs (current-tab (name . "*helm M-x*") (explicit-name))) (width . 274) (left . 2560) (top . 23)) ((min-height . 4) (min-width . 30) (min-height-ignore . 2) (min-width-ignore . 18) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 72) (min-pixel-width . 270) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 162) (min-pixel-height-safe . 18) (min-pixel-width-safe . 54)) hc (pixel-width . 2498) (pixel-height . 1399) (total-width . 278) (total-height . 78) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1517) (pixel-height . 1399) (total-width . 169) (total-height . 78) (normal-height . 1.0) (normal-width . 0.6072858286629303) (buffer "settings.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 4461) (start . 1)) (prev-buffers ("settings.org" 1 4460) ("rsa_sign.c" 354 1081) ("dpu-main.c" 2523 4028) ("rsa_check.c" 1 599) ("dpu.lds" 11210 12136))) (leaf (pixel-width . 491) (pixel-height . 1399) (total-width . 55) (total-height . 78) (normal-height . 1.0) (normal-width . 0.19647501785211954) (buffer "host-main.c" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1234) (start . 1024)) (prev-buffers ("host-main.c" 1024 1234) ("dpu-main.c" 4156 4635))) (leaf (last . t) (pixel-width . 490) (pixel-height . 1399) (total-width . 54) (total-height . 78) (normal-height . 1.0) (normal-width . 0.19623915348495014) (buffer "dpu.lds" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 12725) (start . 12398)) (prev-buffers ("dpu.lds" 12398 12725)))))])
+(setq desktop-saved-frameset [frameset 1 (24537 32508 345855 464000) (desktop . "208") "khadinh@sslab" nil nil ((((minibuffer . t) (undecorated . t) (override-redirect) (font-parameter . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 19 on  *Minibuf-1*> 101 1) (#<window 18 on *helm occur*> 101 1)))") (last-focus-update) (powerline-cache) (frameset--id . "D346-EF0E-FECD-EF4D") (frameset--mini t) (width . 100) (modeline . t) (unsplittable) (left . 2576) (top . 355) (icon-name) (display . "localhost:11.0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 101) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "*scratch*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 145) (start . 1)) (prev-buffers ("*scratch*" 1 145))) (((minibuffer . t) (undecorated . t) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (last-focus-update) (zoom--frame-snapshot . "(nil ((#<window 16 on  *Minibuf-1*> 101 1) (#<window 15 on *helm M-x*> 101 1)))") (powerline-cache) (frameset--id . "F718-0C05-3B94-8A18") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:11.0") (explicit-name) (width . 100) (left . 2568) (top . 117)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 101) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "*scratch*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 145) (start . 1)) (prev-buffers ("*scratch*" 1 145))) (((minibuffer . t) (undecorated . t) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 12 on *dashboard*> 102 19)))") (last-focus-update) (powerline-cache) (frameset--id . "489E-C36C-26A3-7FD6") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:11.0") (explicit-name) (width . 100) (left . 3393) (top . 189)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 102) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "*dashboard*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*dashboard*" 1 1))) (((minibuffer . t) (undecorated . t) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 12 on *dashboard*> 102 19)))") (last-focus-update) (powerline-cache) (frameset--id . "FF47-E270-8B21-FD6E") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:11.0") (explicit-name) (width . 100) (left . 3350) (top . 441)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 101) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "*dashboard*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*dashboard*" 1 1))) (((minibuffer . t) (undecorated . t) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (zoom--frame-snapshot . "(nil ((#<window 9 on dpu-main.c> 102 19)))") (last-focus-update) (powerline-cache) (frameset--id . "4D33-05D6-E2F3-4CF8") (frameset--mini t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:11.0") (explicit-name) (width . 100) (left . 2838) (top . 765)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 101) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "dpu-main.c" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 9570) (start . 1)) (prev-buffers ("dpu-main.c" 1 9570))) (((minibuffer . t) (undecorated . t) (override-redirect) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "-GOOG-Noto Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (mouse-color . "white smoke") (border-color . "#37474f") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background) (menu-bar-lines . 0) (tab-bar-lines . 0) (height . 20) (tool-bar-lines . 0) (title . "Helm") (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha . 100) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (environment "OLDPWD=/home/khadinh" "SSH_TTY=/dev/pts/4" "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1003/bus" "PATH=/home/khadinh/anaconda3/bin:/home/khadinh/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" "P9K_SSH=1" "SSH_CLIENT=115.145.154.253 55973 1221" "XDG_RUNTIME_DIR=/run/user/1003" "XDG_SESSION_ID=13" "PAGER=less" "SHLVL=2" "DISPLAY=localhost:11.0" "TMUX_PANE=%2" "USER=khadinh" "ZSH=/home/khadinh/.oh-my-zsh" "TERM=screen-256color" "XDG_SESSION_CLASS=user" "SSH_CONNECTION=115.145.154.253 55973 115.145.154.77 1221" "LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:" "LANG=en_US.UTF-8" "HOME=/home/khadinh" "MOTD_SHOWN=pam" "XAUTHORITY=/home/khadinh/.Xauthority" "_=/usr/bin/nohup" "XDG_SESSION_TYPE=tty" "LOGNAME=khadinh" "PWD=/home/khadinh" "EDITOR=emacs" "TMUX_PLUGIN_MANAGER_PATH=/home/khadinh/.tmux/plugins/" "P9K_TTY=old" "_P9K_TTY=/dev/pts/7" "TMUX=/tmp/tmux-1003/default,60591,0" "LESS=-R" "LSCOLORS=Gxfxcxdxbxegedabagacad" "SHELL=/usr/bin/zsh") (zoom--frame-snapshot . "(nil ((#<window 3 on settings.org> 102 19)))") (powerline-cache) (last-focus-update . t) (sticky) (frameset--id . "9D3F-C207-CBF0-5119") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "localhost:11.0") (explicit-name) (width . 100) (left . 2568) (top . 153)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 916) (pixel-height . 342) (total-width . 102) (total-height . 19) (normal-height . 1.0) (normal-width . 1.0) (buffer "settings.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 9371) (start . 9196)) (prev-buffers ("*scratch*" 1 145))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name "/home/khadinh/projects/pim-sgx/TAGS")
 (setq tags-table-list '("/home/khadinh/projects/pim-sgx/TAGS"))
-(setq search-ring '(#("\n" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("bi" 0 2 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring nil)
 (setq regexp-search-ring nil)
-(setq register-alist (list (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 1141 (get-buffer "pim-sgx")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_init.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_check.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/host-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/include/mac_attestation.h" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu.lds" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/sha512.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa1.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/bignum.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/Makefile" "~/.tmux.conf" "~/projects/juliet-test-suite-c/bin/juliet-run.sh" "~/projects/juliet-test-suite-c/juliet.py" "~/my-configs/.zshrc" "~/my-configs/backup-configs.sh" "~/my-configs/.gitignore" "~/projects/pim-sgx/remote_attestation/library/mac_attestation.c" "~/projects/pim-sgx/remote_attestation/library/build.sh" "~/projects/pim-sgx/overlay-kha/.gitignore" "~/projects/pim-sgx/overlay-kha/build.sh" "~/projects/pim-sgx/overlay-kha/overlay1.c" "~/projects/pim-sgx/overlay-kha/host-main.c" "~/projects/pim-sgx/overlay-kha/host-main" "~/projects/pim-sgx/overlay-kha/overlay0.c" "~/projects/pim-sgx/overlay-kha/dpu-main.c" "~/projects/pim-sgx/overlay-kha/dpu.lds" "~/projects/pim-sgx/overlay/build.sh" "~/projects/pim-sgx/overlay/dpu-main.c" "~/projects/pim-sgx/overlay/host-main.c" "~/projects/pim-sgx/overlay/dpu.lds" "~/projects/pim-sgx/overlay/host.c" "~/projects/pim-sgx/overlay/overlay3.c" "~/projects/pim-sgx/overlay/.gitignore" "~/projects/pim-sgx/overlay/main.c" "~/projects/pim-sgx/overlay/overlay1.c" "~/projects/pim-sgx/overlay/overlay0.c" "~/projects/pim-sgx/test_program/Makefile" "~/projects/pim-sgx/mbedtls/programs/pkey/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa.c" "~/projects/pim-sgx/.gitignore" "~/projects/gem5/.gitignore" "~/projects/sslab-website/_pages/team.md" "~/projects/sslab-website/_pages/home.md" "~/projects/sslab-website/_config.yml" "~/projects/sslab-website/docker-compose.yml" "~/projects/pim-sgx/test_program/main.c" "~/courses/compuer_graphic_theory/area_sampling.ppm" "~/projects/pim-sgx/upmem/share/upmem/include/syslib/dpuruntime.h" "~/courses/compuer_graphic_theory/untitled.ppm" "~/courses/compuer_graphic_theory/raytracer.cpp" "~/projects/pim-sgx/test_program/dpu_alloc.c" "~/.emacs.d/init.el" "~/.emacs.d/settings.org" "~/.emacs.d/bookmarks" "~/projects/pim-sgx/upmem/share/upmem/include/link/dpu.lds" "~/projects/pim-sgx/upmem/src/dpu-rt/src/misc/dpu.lds" "~/projects/pim-sgx/mbedtls/library/aes.c" "~/.emacs.d/custom/setup-cedet.el" "~/.emacs.d/custom/setup-editing.el" "~/.emacs.d/custom/setup-helm.el" "~/projects/pim-sgx/mbedtls/library/padlock.c" "~/projects/pim-sgx/mbedtls/library/rsa.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_elf.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_program.c" "~/projects/pim-sgx/upmem/src/backends/api/src/api/dpu_loader.c" "~/projects/pim-sgx/test_program/main_host.c" "~/projects/pim-sgx/test_program/tiny-AES-c/aes.h" "~/projects/pim-sgx/test_program/tiny-AES-c/test.c"))
+(setq register-alist (list (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk)) (list "zygospore-windows-time-machine" "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
+(setq file-name-history '("~/projects/perf_vulnerability/Untitled.ipynb" "~/anaconda3/share/jupyter/kernels/python3/kernel.json" "~/.emacs.d/settings.org" "~/.emacs.d/settings.el" "~/projects/rsa_attestion_on_upmem/library/rsa1.h" "~/projects/rsa_attestion_on_upmem/library/dpu-main.c" "~/projects/rsa_attestion_on_upmem/library/Makefile" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_init.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_check.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/host-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/include/mac_attestation.h" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu.lds" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/sha512.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa1.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/bignum.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu-main.c" "~/projects/pim-sgx/remote_attestation/rsa_attestation/library/Makefile" "~/.tmux.conf" "~/projects/juliet-test-suite-c/bin/juliet-run.sh" "~/projects/juliet-test-suite-c/juliet.py" "~/my-configs/.zshrc" "~/my-configs/backup-configs.sh" "~/my-configs/.gitignore" "~/projects/pim-sgx/remote_attestation/library/mac_attestation.c" "~/projects/pim-sgx/remote_attestation/library/build.sh" "~/projects/pim-sgx/overlay-kha/.gitignore" "~/projects/pim-sgx/overlay-kha/build.sh" "~/projects/pim-sgx/overlay-kha/overlay1.c" "~/projects/pim-sgx/overlay-kha/host-main.c" "~/projects/pim-sgx/overlay-kha/host-main" "~/projects/pim-sgx/overlay-kha/overlay0.c" "~/projects/pim-sgx/overlay-kha/dpu-main.c" "~/projects/pim-sgx/overlay-kha/dpu.lds" "~/projects/pim-sgx/overlay/build.sh" "~/projects/pim-sgx/overlay/dpu-main.c" "~/projects/pim-sgx/overlay/host-main.c" "~/projects/pim-sgx/overlay/dpu.lds" "~/projects/pim-sgx/overlay/host.c" "~/projects/pim-sgx/overlay/overlay3.c" "~/projects/pim-sgx/overlay/.gitignore" "~/projects/pim-sgx/overlay/main.c" "~/projects/pim-sgx/overlay/overlay1.c" "~/projects/pim-sgx/overlay/overlay0.c" "~/projects/pim-sgx/test_program/Makefile" "~/projects/pim-sgx/mbedtls/programs/pkey/rsa_sign.c" "~/projects/pim-sgx/remote_attestation/rsa.c" "~/projects/pim-sgx/.gitignore" "~/projects/gem5/.gitignore" "~/projects/sslab-website/_pages/team.md" "~/projects/sslab-website/_pages/home.md" "~/projects/sslab-website/_config.yml" "~/projects/sslab-website/docker-compose.yml" "~/projects/pim-sgx/test_program/main.c" "~/courses/compuer_graphic_theory/area_sampling.ppm" "~/projects/pim-sgx/upmem/share/upmem/include/syslib/dpuruntime.h" "~/courses/compuer_graphic_theory/untitled.ppm" "~/courses/compuer_graphic_theory/raytracer.cpp" "~/projects/pim-sgx/test_program/dpu_alloc.c" "~/.emacs.d/init.el" "~/.emacs.d/bookmarks" "~/projects/pim-sgx/upmem/share/upmem/include/link/dpu.lds" "~/projects/pim-sgx/upmem/src/dpu-rt/src/misc/dpu.lds" "~/projects/pim-sgx/mbedtls/library/aes.c" "~/.emacs.d/custom/setup-cedet.el" "~/.emacs.d/custom/setup-editing.el" "~/.emacs.d/custom/setup-helm.el" "~/projects/pim-sgx/mbedtls/library/padlock.c" "~/projects/pim-sgx/mbedtls/library/rsa.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_elf.c" "~/projects/pim-sgx/upmem/src/backends/api/src/dpu_program.c" "~/projects/pim-sgx/upmem/src/backends/api/src/api/dpu_loader.c" "~/projects/pim-sgx/test_program/main_host.c" "~/projects/pim-sgx/test_program/tiny-AES-c/aes.h" "~/projects/pim-sgx/test_program/tiny-AES-c/test.c"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
   "/home/khadinh/.emacs.d/settings.org"
   "settings.org"
   'org-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode)
-  4461
-  '(4461 nil)
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode scroll-lock-mode)
+  9371
+  '(9024 nil)
   nil
   nil
-  '((buffer-display-time 24526 62533 454003 510000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
-  '((mark-ring (4461 4460 4991 4620 5554 4476))))
+  '((buffer-display-time 24537 32502 881819 484000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring (9024 4456 9427))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_check.c"
-  "rsa_check.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  11
-  '(904 nil)
+  "/home/khadinh/projects/perf_vulnerability/Untitled.ipynb"
+  "Untitled.ipynb"
+  'fundamental-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode global-auto-revert-mode scroll-lock-mode)
+  1
+  '(766 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62505 372830 203000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1432 1172 1055))))
+  '((buffer-display-time 24537 32366 102721 411000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 1 1 1560 1453))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_sign.c"
-  "rsa_sign.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1081
-  '(96 nil)
   nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62387 506430 40000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (17000 16890 97 70 12986 18795 18845 16644 6437 804 6384 818 938 17083 400 11341 2 17 17 4938 19668 40 31 16 440 402 4072 1340 1245 1081))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu-main.c"
-  "dpu-main.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  4028
-  '(3994 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62212 116433 163000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (3916 4114 4110 4066 4028 2592 2886 2380 376 4643 4643 4661 3739 1050 1029 4317 1066 4746 5526 8040 652 1521 718 4674 5469 1501 7303 3882 3827 3828 3827 4283 3741 2883 258 2918 3740 2883 3738 2805 2636 135 2831 3740 3391 79 96 408 3883 4166 4157 4358 2829 4590 4230 3923 2860 2862 2863 4282 4204 3947 3923 4246 4636 4384 4281 4264 4281 4264 4280 2775 5736 4732 4728 5512 1054 4285 2580 2940 2942 3937 2629 4188 4264 4316 451 4281 4872 3765 4341 408 3398 408 1358 1231 1139 3996 4635 387 408 4156 4156))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/host-main.c"
-  "host-main.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1234
-  '(1149 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 62533 454003 925000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (289 663 682 1023 1299 1133 663 642 682 289 999 994 717 663 323 291 289 289 717 682 289 695 2334 291))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/dpu.lds"
-  "dpu.lds"
-  'ld-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode anzu-mode aggressive-indent-mode global-auto-revert-mode)
-  12725
-  '(12738 nil)
-  nil
-  nil
-  '((buffer-display-time 24526 62533 454004 60000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
-  '((mark-ring (1508 1171 12729 12638 12691 13010 12522 12781 12444 12574 12353 12352 12396 12247 12480 12774 11515 11401 696 1321 12370 12702 12679 12724 12681 12681 12397 12566 12441 12574 12397 12461 12464 12820 12773 11897 696 696 873 696 700 699 1283 13079 13000 13082 696 12744 12740 12593 696 1164 2278 2278 4045 4501 4106 13010 13078 13083))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/mbedtls/include/mbedtls/compat-1.3.h"
-  "compat-1.3.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  108458
+  "perf_vulnerability"
+  'dired-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
+  917
   '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 60502 614996 569000) (buffer-file-coding-system . undecided-unix))
+  t
+  '("/home/khadinh/projects/perf_vulnerability/")
+  '((buffer-display-time 24537 32043 476133 314000))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/bignum.c"
-  "bignum.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  48166
-  '(28293 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 12172 48255 104000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (2755 1146 104 28220))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/dpu_alloc.h"
-  "dpu_alloc.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  "/home/khadinh/.emacs.d/settings.el"
+  "settings.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
   1
   '(nil nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10915 775594 996000) (buffer-file-coding-system . undecided-unix))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24537 30868 164663 320000) (buffer-file-coding-system . prefer-utf-8-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa_init.c"
-  "rsa_init.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  3315
-  '(3013 nil)
+  "/home/khadinh/projects/perf_vulnerability/bin/juliet-run.sh"
+  "juliet-run.sh"
+  'sh-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode scroll-lock-mode yas-minor-mode)
+  1531
+  '(1576 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10788 395724 459000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1))))
+  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24537 30849 170434 594000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2001 1307 2165 483 485 2019 1843 2026 2036 2037))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/sha512.h"
-  "sha512.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  900
-  '(900 nil)
+  "/home/khadinh/projects/perf_vulnerability/juliet.py"
+  "juliet.py"
+  'python-mode
+  '(eldoc-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode scroll-lock-mode yas-minor-mode)
+  1225
+  '(1160 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10737 466411 34000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (701))))
+  '((show-trailing-whitespace . 1) (tab-width . 8) (indent-tabs-mode) (buffer-display-time 24537 30545 374172 691000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1249 1266 2240 3855 2672 1149 1270))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/include/mac_attestation.h"
-  "mac_attestation.h"
+  "/home/khadinh/projects/rsa_attestion_on_upmem/library/dpu-main.c"
+  "dpu-main.c"
   'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  496
-  '(496 nil)
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode scroll-lock-mode yas-minor-mode)
+  9570
+  '(6356 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10345 493725 62000) (buffer-file-coding-system . undecided-unix))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24537 32477 258971 464000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (7873 5983 2822 2824 160 10965 5260 5318 9663 10091 8988 9570))))
+
+(desktop-create-buffer 208
+  nil
+  "bin"
+  'dired-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
+  1234
+  '(nil nil)
+  t
+  '("/home/khadinh/projects/perf_vulnerability/bin/")
+  '((buffer-display-time 24537 29969 701400 159000))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/sha512.c"
+  "/home/khadinh/projects/rsa_attestion_on_upmem/include/bignum.h"
+  "bignum.h"
+  'c-mode
+  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
+  74
+  '(1138 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24537 29819 687332 485000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2296 341 74))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/rsa_attestion_on_upmem/build.sh"
+  "build.sh"
+  'sh-mode
+  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode global-auto-revert-mode yas-minor-mode)
+  12
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24537 29815 737587 264000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (153 107 64 65 66 101 161 192 12))))
+
+(desktop-create-buffer 208
+  "/home/khadinh/projects/rsa_attestion_on_upmem/library/sha512.c"
   "sha512.c"
   'c-mode
   '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  5146
-  '(1996 nil)
+  10493
+  '(10537 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 10316 876605 722000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (10646 7800 9846 8597 6680 4311 3827 3651 1677 1696 8596 8812 10814 10814))))
+  '((show-trailing-whitespace . 1) (buffer-display-time 24537 29815 376729 28000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (9886 10970 11010 10493 10493))))
 
 (desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/Makefile"
+  "/home/khadinh/projects/rsa_attestion_on_upmem/library/Makefile"
   "Makefile"
   'makefile-gmake-mode
   '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode global-auto-revert-mode yas-minor-mode)
-  260
-  '(239 nil)
+  73
+  '(8 nil)
   nil
   nil
-  '((show-trailing-whitespace . 1) (indent-tabs-mode . t) (buffer-display-time 24526 10082 138449 516000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (515 259 338 141 186 195 199 466 220 129 129 947 299 267 499 326 259))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/rsa_attestation/library/rsa.h"
-  "rsa.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  1094
-  '(1094 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 9666 646186 738000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1238 19))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/mbedtls/include/mbedtls/oid.h"
-  "oid.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  33424
-  '(27898 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8920 723308 721000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (27898))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/test_program/mbedtls/oid.h"
-  "oid.h"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  29685
-  '(24893 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8920 87065 701000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (24893 19967))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/mbedtls/library/oid.c"
-  "oid.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  23575
-  '(17704 nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 8904 719887 855000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (17704 17602))))
-
-(desktop-create-buffer 208
-  "/home/khadinh/projects/pim-sgx/remote_attestation/mac_attestation/library/mac_attestation.c"
-  "mac_attestation.c"
-  'c-mode
-  '(abbrev-mode override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode aggressive-indent-mode hs-minor-mode global-auto-revert-mode yas-minor-mode)
-  349
-  '(nil nil)
-  nil
-  nil
-  '((show-trailing-whitespace . 1) (buffer-display-time 24526 4267 405255 101000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
+  '((show-trailing-whitespace . 1) (indent-tabs-mode . t) (buffer-display-time 24537 29508 12348 42000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1023 1018 1022))))
 
 (desktop-create-buffer 208
   nil
@@ -254,18 +170,6 @@
   '(nil nil)
   t
   '("/home/khadinh/projects/pim-sgx/")
-  '((buffer-display-time 24526 62505 188729 675000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "projects"
-  'dired-mode
-  '(override-global-mode zoom-mode dimmer-mode company-mode projectile-mode helm-ff-cache-mode helm-mode helm-gtags-mode volatile-highlights-mode anzu-mode global-auto-revert-mode)
-  1383
-  '(nil nil)
-  t
-  '("/home/khadinh/projects/")
-  '((buffer-display-time 24526 62505 188310 88000))
+  '((buffer-display-time 24537 32476 868506 541000))
   '((mark-ring nil)))
 

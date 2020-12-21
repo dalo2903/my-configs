@@ -164,76 +164,16 @@
 
 * Utilities
   #+BEGIN_SRC emacs-lisp
-    ;; (defun my-helm-display-child-frame (buffer &optional resume)
-    ;;   "Display `helm-buffer' in a separate frame.
-    ;; Function suitable for `helm-display-function',
-    ;; `helm-completion-in-region-display-function'
-    ;; and/or `helm-show-completion-default-display-function'.
-    ;; See `helm-display-buffer-height' and `helm-display-buffer-width' to
-    ;; configure frame size."
-    ;;   (if (not (display-graphic-p))
-    ;;       ;; Fallback to default when frames are not usable.
-    ;;       (helm-default-display-buffer buffer)
-    ;;     (setq helm--buffer-in-new-frame-p t)
-    ;;     (let* ((pos (window-absolute-pixel-position))
-    ;;            (half-screen-size (/ (display-pixel-height x-display-name) 2))
-    ;;            (frame-info (frame-geometry))
-    ;;            (prmt-size (length helm--prompt))
-    ;;            (line-height (frame-char-height))
-    ;;            (default-frame-alist
-    ;;              `((parent . ,(selected-frame))
-    ;;                (width . ,helm-display-buffer-width)
-    ;;                (height . ,helm-display-buffer-height)
-    ;;                (undecorated . t)
-    ;;                (left-fringe . 0)
-    ;;                (right-fringe . 0)
-    ;;                (tool-bar-lines . 0)
-    ;;                (line-spacing . 0)
-    ;;                (desktop-dont-save . t)
-    ;;                (no-special-glyphs . t)
-    ;;                (inhibit-double-buffering . t)
-    ;;                (tool-bar-lines . 0)
-    ;;                (left . ,(- (car pos)
-    ;;                            (* (frame-char-width)
-    ;;                               (if (< (- (point) (point-at-bol)) prmt-size)
-    ;;                                   (- (point) (point-at-bol))
-    ;;                                 prmt-size))))
-    ;;                ;; Try to put frame at the best possible place.
-    ;;                ;; Frame should be below point if enough
-    ;;                ;; place, otherwise above point and
-    ;;                ;; current line should not be hidden
-    ;;                ;; by helm frame.
-    ;;                (top . ,(if (> (cdr pos) half-screen-size)
-    ;;                            ;; Above point
-    ;;                            (- (cdr pos)
-    ;;                               ;; add 2 lines to make sure there is always a gap
-    ;;                               (* (+ helm-display-buffer-height 2) line-height)
-    ;;                               ;; account for title bar height too
-    ;;                               (cddr (assq 'title-bar-size frame-info)))
-    ;;                          ;; Below point
-    ;;                          (+ (cdr pos) line-height)))
-    ;;                (title . "Helm")
-    ;;                (vertical-scroll-bars . nil)
-    ;;                (menu-bar-lines . 0)
-    ;;                (fullscreen . nil)
-    ;;                (visible . ,(null helm-display-buffer-reuse-frame))
-    ;;                (minibuffer . t)))
-    ;;            display-buffer-alist)
-    ;;       ;; Add the hook inconditionally, if
-    ;;       ;; helm-echo-input-in-header-line is nil helm-hide-minibuffer-maybe
-    ;;       ;; will have anyway no effect so no need to remove the hook.
-    ;;       (add-hook 'helm-minibuffer-set-up-hook 'helm-hide-minibuffer-maybe)
-    ;;       (with-helm-buffer
-    ;;         (setq-local helm-echo-input-in-header-line
-    ;;                     (not (> (cdr pos) half-screen-size))))
-    ;;       (helm-display-buffer-popup-frame buffer default-frame-alist))
-    ;;     (helm-log-run-hook 'helm-window-configuration-hook)))
+
+    (use-package sublimity
+      :init
+      (sublimity-mode 1))
 
 
     (setq  helm-display-function 'helm-display-buffer-in-own-frame
-     ;; helm-display-function 'my-helm-display-child-frame
-     helm-display-buffer-reuse-frame t
-     helm-display-buffer-width 100)
+           ;; helm-display-function 'my-helm-display-child-frame
+           helm-display-buffer-reuse-frame t
+           helm-display-buffer-width 100)
 
     (defun reload-configs ()
       ;; Reload the config file
@@ -241,8 +181,7 @@
       (load-file "~/.emacs.d/init.el")
       )
     (defun open-config-file ()
-      ;;
-      Open this file
+      "Open this file"
       (interactive)
       (find-file "~/.emacs.d/settings.org")
       (org-mode)
@@ -259,9 +198,40 @@
       (kill-emacs)
       )
 
+    ;;    (use-package jupyter
+    ;;    :init
+    ;;  (use-package zmq))
+    (use-package ace-window
+      :bind
+      (("M-o". 'ace-window))
+      )
+    (use-package avy
+      :init
+      :bind
+      (("C-c SPC". 'avy-goto-word-1))
+      (("M-g g". 'avy-goto-line))
+      )
+    (use-package jedi
+      :init
+      (add-hook 'python-mode-hook 'jedi:setup)
+      (setq jedi:complete-on-dot t)
+      (setq jedi:get-in-function-call-delay 5000)
+      (setq jedi:tooltip-medthod nil)
+      :config
+      (jedi:install-server))
+    (use-package auto-complete
+      :init
+      (use-package popup))
+    (use-package ein
+      :init
+      (setq ein:use-auto-complete-superpack t)
+  :bind
+(("C-<return>". 'ein:worksheet-execute-cell-km))
+      )
     (setq org-support-shift-select t)
     ;; Save sessions
-    (setq desktop-save-mode t)
+    ;; (setq desktop-save-mode t)
+    ;; ;;
     ;; Mouse scrolling in terminal
     (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
     (global-set-key (kbd "<mouse-5>") 'scroll-up-line)
@@ -275,5 +245,7 @@
       (define-key global-map (kbd "<f2>") 'vterm )
       )
     (global-auto-revert-mode t)
-    (add-hook 'emacs-startup-hook 'desktop-read)
+    ;;(add-hook 'emacs-startup-hook 'desktop-read)
   #+END_SRC
+
+* 

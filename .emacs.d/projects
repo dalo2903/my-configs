@@ -1,5 +1,8 @@
 ;;; -*- lisp-data -*-
-(("~/projects/pim-sgx/")
+(("~/projects/perf_vulnerability/")
+ ("~/projects/rsa_attestion_on_upmem/")
+ ("~/projects/pim-sgx/")
+ ("~/my-configs/")
  ("~/projects/gem5/")
  ("~/projects/juliet-test-suite-c/")
  ("~/projects/sslab-website/")

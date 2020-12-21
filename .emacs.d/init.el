@@ -43,7 +43,7 @@
      ("\\?\\?\\?+" . "#dc752f")))
  '(nyan-mode t)
  '(package-selected-packages
-   '(vterm cmake-mode helm-ag zone-nyan nyan-mode org-beautify-theme company-c-headers redo+ centaur-tabs selectrum helm-smex smex function-args aggressive-indent immaterial-theme atom-dark-theme badger-theme gruvbox-theme nimbus-theme docker-compose-mode dashboard vimish-fold dimmer neotree zoom spacemacs-theme smart-mode-line-atom-one-dark-theme atom-one-dark-theme material-theme flycheck dracula-theme zygospore yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))
+   '(ace-window avy ace-jump-mode jedi auto-complete jupyter vterm cmake-mode helm-ag zone-nyan nyan-mode org-beautify-theme company-c-headers redo+ centaur-tabs selectrum helm-smex smex function-args aggressive-indent immaterial-theme atom-dark-theme badger-theme gruvbox-theme nimbus-theme docker-compose-mode dashboard vimish-fold dimmer neotree zoom spacemacs-theme smart-mode-line-atom-one-dark-theme atom-one-dark-theme material-theme flycheck dracula-theme zygospore yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))
  '(pdf-view-midnight-colors '("#b2b2b2" . "#262626"))
  '(projectile-mode t nil (projectile))
  '(tetris-x-colors
@@ -80,5 +80,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#263238" :foreground "#ffffff" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight semi-light :height 110 :width normal :foundry "PfEda" :family "Noto Mono"))))
  '(mouse ((t (:background "white smoke")))))
