@@ -15,6 +15,10 @@ export XAUTHORITY=~/.Xauthority
 # Run emacsd
 alias emacsc="~/my-configs/start-emacs.sh"
 # export DISPLAY=localhost:0.0
+WINDOWS=/mnt/c/Windows
+if [ -d "$WINDOWS" ] ; then
+    export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+fi
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
