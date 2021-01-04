@@ -11,3 +11,4 @@
 	313
 /home/khadinh	40
 /home/khadinh	40
+/home/khadinh/projects/gem5-skylake-config/gem5	40

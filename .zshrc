@@ -14,9 +14,6 @@ export XAUTHORITY=~/.Xauthority
 
 # Run emacsd
 alias emacsc="~/my-configs/start-emacs.sh"
-if [ -d "$HOME/anaconda3/bin" ] ; then
-    PATH="$HOME/anaconda3/bin:$PATH"
-fi
 # export DISPLAY=localhost:0.0
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -90,7 +87,7 @@ plugins=(git
          zsh-autosuggestions
          zsh-syntax-highlighting
          history-substring-search
-         # zsh-256color
+         zsh-256color
         )
 
 # Auto suggestion settings
