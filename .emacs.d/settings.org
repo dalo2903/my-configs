@@ -133,16 +133,29 @@
     ;; Configs from tuhdo
     (add-to-list 'load-path "~/.emacs.d/custom")
     (require 'setup-general)
-    (require 'setup-helm)
+    ;;    (require 'setup-helm)
     ;; (require 'setup-cedet)
     ;; Mouse?
-    (setq helm-allow-mouse t)
+    ;;  (setq helm-allow-mouse t)
 
-    (require 'setup-helm-gtags)
+    ;;(require 'setup-helm-gtags)
     (require 'setup-editing)
 
+    (use-package ivy
+      :init
+      (ivy-mode 1)
+      (use-package counsel
+        :init
+        (counse-mode 1))
+      (use-package counsel-gtags
+        :bind-keymap ("C-c g" . counsel-gtags-command-map)
+        :config
+        (counsel-gtags-mode 1))
 
-
+      (use-package counsel-projectile
+        :bind-keymap ("C-x p" . projectile-command-map)
+        :config
+        (counsel-projectile-mode 1)))
     (use-package irony
       :init
       (use-package rtags

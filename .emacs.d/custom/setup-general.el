@@ -32,21 +32,9 @@
  gdb-show-main t
  )
 
-;; company
-(use-package company
-  :init
-  (global-company-mode 1)
-  (delete 'company-semantic company-backends))
-;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; (define-key c++-mode-map  [(control tab)] 'company-complete)
 
 ;; Package: projejctile
-(use-package projectile
-  :init
-  (projectile-global-mode)
-  (setq projectile-enable-caching t)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-  )
+
 
 
 ;; Package zygospore
