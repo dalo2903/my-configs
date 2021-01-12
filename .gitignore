@@ -2,7 +2,7 @@
 *.saves*
 *.cache
 *~
-*.eld
+.emacs.d/*.eld
 .emacs.d/semanticdb
 .emacs.d/elpa
 *desktop
