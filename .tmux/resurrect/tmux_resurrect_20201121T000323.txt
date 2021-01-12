@@ -1,5 +1,0 @@
-pane	0	0	:zsh	1	:*	0	:/home/khadinh	1	zsh	:emacs /home/khadinh/.tmux.conf
-pane	ssh_tmux	0	:zsh	1	:*	0	:/home/khadinh	1	zsh	:
-window	0	0	1	:*	d45d,232x69,0,0,0
-window	ssh_tmux	0	1	:*	6a5f,232x69,0,0,10
-state	ssh_tmux	

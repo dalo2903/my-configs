@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/projects/" "~/my-configs/" "~/.oh-my-zsh/")
+("~/my-configs/" "~/.emacs.d/" "~/projects/")
